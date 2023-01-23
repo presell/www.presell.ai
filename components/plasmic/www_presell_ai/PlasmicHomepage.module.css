@@ -66,6 +66,8 @@
 @media (max-width: 930px) {
   .freeBox__nVoEl {
     height: 700px;
+    padding-right: 10px;
+    padding-left: 10px;
     flex-shrink: 0;
   }
 }
@@ -149,6 +151,9 @@
     display: flex;
     flex-direction: column;
     padding-top: 40px;
+    padding-right: 20px;
+    padding-left: 14px;
+    width: 337px;
   }
 }
 @media (max-width: 930px) {
@@ -191,18 +196,20 @@
     justify-content: center;
     width: auto;
     display: flex;
+    padding: 10px 0px 10px 10px;
   }
 }
 .textInput__o6AXp:global(.__wab_instance) {
   max-width: 100%;
   width: 407px;
   height: 70px;
+  margin-left: 0px;
   flex-shrink: 0;
 }
 @media (max-width: 930px) {
   .textInput__o6AXp:global(.__wab_instance) {
     margin-right: 0px;
-    width: 229px;
+    width: 215px;
     flex-shrink: 0;
   }
 }
@@ -223,10 +230,12 @@
   position: relative;
   margin-bottom: 0px;
   margin-left: 15px;
+  width: 162px;
+  flex-shrink: 0;
 }
 @media (max-width: 930px) {
   .button__rbLrl:global(.__wab_instance) {
-    width: 105px;
+    width: 154px;
     margin-left: 0px;
     flex-shrink: 0;
   }
@@ -253,7 +262,7 @@
 }
 @media (max-width: 930px) {
   .text___6PBza {
-    width: auto;
+    width: 100%;
     padding-top: 1px;
     padding-bottom: 3px;
     left: auto;
@@ -261,8 +270,10 @@
     z-index: 1;
     position: relative;
     height: auto;
-    max-width: 64px;
+    max-width: 36px;
     padding-right: 63px;
+    font-size: 16px;
+    min-width: 0;
     margin: 2px 0px 0px;
   }
 }
