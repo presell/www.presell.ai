@@ -226,7 +226,7 @@ function PlasmicHomepage__RenderFunc(props: {
                                 role={"img"}
                               />
                             }
-                            link={"#" as const}
+                            link={"https://app.presell.ai/generator" as const}
                             showEndIcon={true}
                           >
                             <div

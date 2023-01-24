@@ -121,11 +121,13 @@ function PlasmicSection__RenderFunc(props: {
       {
         path: "background",
         type: "private",
+        variableType: "variant",
         initFunc: true ? ($props, $state, $ctx) => $props.background : undefined
       },
       {
         path: "size",
         type: "private",
+        variableType: "variant",
         initFunc: true ? ($props, $state, $ctx) => $props.size : undefined
       }
     ],
