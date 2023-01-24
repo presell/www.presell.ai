@@ -227,7 +227,16 @@ function PlasmicHomepage__RenderFunc(props: {
                               />
                             }
                             link={"https://app.presell.ai/generator" as const}
-                            showEndIcon={true}
+                            showEndIcon={
+                              hasVariant(globalVariants, "screen", "mobile")
+                                ? true
+                                : true
+                            }
+                            showStartIcon={
+                              hasVariant(globalVariants, "screen", "mobile")
+                                ? true
+                                : undefined
+                            }
                           >
                             <div
                               className={classNames(

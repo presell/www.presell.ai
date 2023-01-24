@@ -5,6 +5,13 @@
   border-width: 2px;
   border-color: #185adb;
 }
+@media (max-width: 930px) {
+  .root {
+    padding-right: 14px;
+    padding-left: 17px;
+    border-width: 4px;
+  }
+}
 .rootshowStartIcon {
   display: flex;
 }
