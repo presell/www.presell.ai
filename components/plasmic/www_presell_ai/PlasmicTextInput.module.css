@@ -77,9 +77,14 @@
 }
 @media (max-width: 930px) {
   .input {
-    font-size: 14px;
+    font-size: 12px;
     color: #0000004d;
     height: 100%;
+    padding-left: 2px;
+    max-width: 197px;
+    width: 100%;
+    margin-right: 0px;
+    min-width: 0;
     min-height: 0;
     border: 1px solid #000000;
   }
