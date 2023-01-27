@@ -34,8 +34,8 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
-import Button from "../../Button"; // plasmic-import: CnJoQKF1JUjMXv/component
 import TextInput from "../../TextInput"; // plasmic-import: whnP1U9nG_tYGg/component
+import Button from "../../Button"; // plasmic-import: CnJoQKF1JUjMXv/component
 
 import { useScreenVariants as useScreenVariantscvQoPsTOivAmc4 } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: CVQoPsTOivAmc4/globalVariant
 
@@ -52,10 +52,16 @@ import Searchsvg2Icon from "./icons/PlasmicIcon__Searchsvg2"; // plasmic-import:
 import ChecksvgIcon from "./icons/PlasmicIcon__Checksvg"; // plasmic-import: q1JO1GFRPkcbBU/icon
 import ChevronRightIcon from "./icons/PlasmicIcon__ChevronRight"; // plasmic-import: Yq9TX85itfl8Tl/icon
 
-export type PlasmicFooterSection__VariantMembers = {};
-export type PlasmicFooterSection__VariantsArgs = {};
+export type PlasmicFooterSection__VariantMembers = {
+  unnamedVariant: "unnamedVariant";
+};
+export type PlasmicFooterSection__VariantsArgs = {
+  unnamedVariant?: SingleBooleanChoiceArg<"unnamedVariant">;
+};
 type VariantPropType = keyof PlasmicFooterSection__VariantsArgs;
-export const PlasmicFooterSection__VariantProps = new Array<VariantPropType>();
+export const PlasmicFooterSection__VariantProps = new Array<VariantPropType>(
+  "unnamedVariant"
+);
 
 export type PlasmicFooterSection__ArgsType = {};
 type ArgPropType = keyof PlasmicFooterSection__ArgsType;
@@ -64,11 +70,13 @@ export const PlasmicFooterSection__ArgProps = new Array<ArgPropType>();
 export type PlasmicFooterSection__OverridesType = {
   root?: p.Flex<"div">;
   img?: p.Flex<typeof p.PlasmicImg>;
+  h5?: p.Flex<"h5">;
   textInput?: p.Flex<typeof TextInput>;
   textbox?: p.Flex<typeof TextInput>;
 };
 
 export interface DefaultFooterSectionProps {
+  unnamedVariant?: SingleBooleanChoiceArg<"unnamedVariant">;
   className?: string;
 }
 
@@ -99,6 +107,23 @@ function PlasmicFooterSection__RenderFunc(props: {
 
   const currentUser = p.useCurrentUser?.() || {};
 
+  const stateSpecs = React.useMemo(
+    () => [
+      {
+        path: "unnamedVariant",
+        type: "private",
+        variableType: "variant",
+        initFunc: true
+          ? ($props, $state, $ctx) => $props.unnamedVariant
+          : undefined,
+
+        variableType: "variant"
+      }
+    ],
+    [$props, $ctx]
+  );
+  const $state = p.useDollarState(stateSpecs, $props, $ctx);
+
   const [$queries, setDollarQueries] = React.useState({});
 
   const globalVariants = ensureGlobalVariants({
@@ -117,16 +142,37 @@ function PlasmicFooterSection__RenderFunc(props: {
         projectcss.plasmic_default_styles,
         projectcss.plasmic_mixins,
         projectcss.plasmic_tokens,
-        sty.root
+        sty.root,
+        {
+          [sty.rootunnamedVariant]: hasVariant(
+            $state,
+            "unnamedVariant",
+            "unnamedVariant"
+          )
+        }
       )}
     >
       <p.Stack
         as={"div"}
         hasGap={true}
-        className={classNames(projectcss.all, sty.freeBox__oo29Y)}
+        className={classNames(projectcss.all, sty.freeBox__oo29Y, {
+          [sty.freeBoxunnamedVariant__oo29YoxEvg]: hasVariant(
+            $state,
+            "unnamedVariant",
+            "unnamedVariant"
+          )
+        })}
       >
         {true ? (
-          <div className={classNames(projectcss.all, sty.freeBox__xoWvX)}>
+          <div
+            className={classNames(projectcss.all, sty.freeBox__xoWvX, {
+              [sty.freeBoxunnamedVariant__xoWvXoxEvg]: hasVariant(
+                $state,
+                "unnamedVariant",
+                "unnamedVariant"
+              )
+            })}
+          >
             <p.PlasmicImg
               data-plasmic-name={"img"}
               data-plasmic-override={overrides.img}
@@ -147,21 +193,48 @@ function PlasmicFooterSection__RenderFunc(props: {
               }}
             />
 
+            <h5
+              data-plasmic-name={"h5"}
+              data-plasmic-override={overrides.h5}
+              className={classNames(
+                projectcss.all,
+                projectcss.h5,
+                projectcss.__wab_text,
+                sty.h5
+              )}
+            >
+              {"Programmatic Funnels & Ads"}
+            </h5>
+
             <div
               className={classNames(
                 projectcss.all,
                 projectcss.__wab_text,
-                sty.text__nl7Ru
+                sty.text__deJbg
               )}
             >
               {
-                "Skip the guesswork. Generate proven to convert funnels and ads."
+                "Skip the guesswork. Generate proven to convert marketing campaigns."
               }
             </div>
 
-            <div className={classNames(projectcss.all, sty.freeBox__hZnSg)}>
+            <div
+              className={classNames(projectcss.all, sty.freeBox__hZnSg, {
+                [sty.freeBoxunnamedVariant__hZnSgoxEvg]: hasVariant(
+                  $state,
+                  "unnamedVariant",
+                  "unnamedVariant"
+                )
+              })}
+            >
               <FacebooksvgIcon
-                className={classNames(projectcss.all, sty.svg__slVsB)}
+                className={classNames(projectcss.all, sty.svg__slVsB, {
+                  [sty.svgunnamedVariant__slVsBoxEvg]: hasVariant(
+                    $state,
+                    "unnamedVariant",
+                    "unnamedVariant"
+                  )
+                })}
                 link={"https://www.facebook.com/PresellAI" as const}
                 role={"img"}
               />
@@ -174,7 +247,13 @@ function PlasmicFooterSection__RenderFunc(props: {
               ) : null}
 
               <InstagramsvgIcon
-                className={classNames(projectcss.all, sty.svg__uj6UR)}
+                className={classNames(projectcss.all, sty.svg__uj6UR, {
+                  [sty.svgunnamedVariant__uj6URoxEvg]: hasVariant(
+                    $state,
+                    "unnamedVariant",
+                    "unnamedVariant"
+                  )
+                })}
                 link={"https://www.instagram.com/presellai/?hl=en" as const}
                 role={"img"}
               />
@@ -189,7 +268,122 @@ function PlasmicFooterSection__RenderFunc(props: {
           </div>
         ) : null}
         {true ? (
-          <div className={classNames(projectcss.all, sty.freeBox__e4Sk)}>
+          <div
+            className={classNames(projectcss.all, sty.freeBox__pDQI, {
+              [sty.freeBoxunnamedVariant__pDQIoxEvg]: hasVariant(
+                $state,
+                "unnamedVariant",
+                "unnamedVariant"
+              )
+            })}
+          >
+            <h4
+              className={classNames(
+                projectcss.all,
+                projectcss.h4,
+                projectcss.__wab_text,
+                sty.h4__jZui
+              )}
+            >
+              {"Company"}
+            </h4>
+
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text__heFnr,
+                {
+                  [sty.textunnamedVariant__heFnroxEvg]: hasVariant(
+                    $state,
+                    "unnamedVariant",
+                    "unnamedVariant"
+                  )
+                }
+              )}
+            >
+              {"Presell Vision"}
+            </div>
+
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text___8HfjG
+              )}
+            >
+              {"Documentation"}
+            </div>
+
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text__ev7Pp
+              )}
+            >
+              {"Pricing"}
+            </div>
+
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text__kW5Yf,
+                {
+                  [sty.textunnamedVariant__kW5YFoxEvg]: hasVariant(
+                    $state,
+                    "unnamedVariant",
+                    "unnamedVariant"
+                  )
+                }
+              )}
+            >
+              {"Support"}
+            </div>
+
+            {true ? (
+              <TextInput
+                data-plasmic-name={"textInput"}
+                data-plasmic-override={overrides.textInput}
+                className={classNames("__wab_instance", sty.textInput)}
+              />
+            ) : null}
+            {true ? (
+              <Button
+                className={classNames("__wab_instance", sty.button__xxL7)}
+                color={"white" as const}
+                small={
+                  hasVariant(globalVariants, "screen", "mobile")
+                    ? true
+                    : undefined
+                }
+              >
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__vaxiz
+                  )}
+                >
+                  {hasVariant(globalVariants, "screen", "mobile")
+                    ? "Subscribe"
+                    : "Subscribe"}
+                </div>
+              </Button>
+            ) : null}
+          </div>
+        ) : null}
+        {true ? (
+          <div
+            className={classNames(projectcss.all, sty.freeBox__e4Sk, {
+              [sty.freeBoxunnamedVariant__e4SkoxEvg]: hasVariant(
+                $state,
+                "unnamedVariant",
+                "unnamedVariant"
+              )
+            })}
+          >
             <h4
               className={classNames(
                 projectcss.all,
@@ -198,7 +392,7 @@ function PlasmicFooterSection__RenderFunc(props: {
                 sty.h4__q6GYm
               )}
             >
-              {"Menu"}
+              {"Product"}
             </h4>
 
             {true ? (
@@ -226,7 +420,7 @@ function PlasmicFooterSection__RenderFunc(props: {
                     sty.text__aRIx
                   )}
                 >
-                  {"How it work"}
+                  {"Advertorials"}
                 </div>
               </Button>
             ) : null}
@@ -255,7 +449,7 @@ function PlasmicFooterSection__RenderFunc(props: {
                   sty.text___9FF1K
                 )}
               >
-                {"Pricing"}
+                {"Quizzes"}
               </div>
             </Button>
 
@@ -283,13 +477,105 @@ function PlasmicFooterSection__RenderFunc(props: {
                   sty.text__dBiSz
                 )}
               >
-                {"FAQs"}
+                {"Lead Pages"}
+              </div>
+            </Button>
+
+            <Button
+              className={classNames("__wab_instance", sty.button__fwOnx)}
+              color={"footerButton" as const}
+              endIcon={
+                <svg
+                  className={classNames(projectcss.all, sty.svg__moqj7)}
+                  role={"img"}
+                />
+              }
+              link={"#" as const}
+              startIcon={
+                <svg
+                  className={classNames(projectcss.all, sty.svg__j0Lna)}
+                  role={"img"}
+                />
+              }
+            >
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__n9IHi
+                )}
+              >
+                {"Offer Pages"}
+              </div>
+            </Button>
+
+            <Button
+              className={classNames("__wab_instance", sty.button__k5Oxv)}
+              color={"footerButton" as const}
+              endIcon={
+                <svg
+                  className={classNames(projectcss.all, sty.svg__krZ3)}
+                  role={"img"}
+                />
+              }
+              link={"#" as const}
+              startIcon={
+                <svg
+                  className={classNames(projectcss.all, sty.svg___5WhDl)}
+                  role={"img"}
+                />
+              }
+            >
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__iaPAm
+                )}
+              >
+                {"Ad Creation"}
+              </div>
+            </Button>
+
+            <Button
+              className={classNames("__wab_instance", sty.button__r9A3N)}
+              color={"footerButton" as const}
+              endIcon={
+                <svg
+                  className={classNames(projectcss.all, sty.svg__lsfc9)}
+                  role={"img"}
+                />
+              }
+              link={"#" as const}
+              startIcon={
+                <svg
+                  className={classNames(projectcss.all, sty.svg__nXsC4)}
+                  role={"img"}
+                />
+              }
+            >
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__v8EAr
+                )}
+              >
+                {"Ad Managment"}
               </div>
             </Button>
           </div>
         ) : null}
         {true ? (
-          <div className={classNames(projectcss.all, sty.freeBox___9YgNs)}>
+          <div
+            className={classNames(projectcss.all, sty.freeBox___9YgNs, {
+              [sty.freeBoxunnamedVariant___9YgNsoxEvg]: hasVariant(
+                $state,
+                "unnamedVariant",
+                "unnamedVariant"
+              )
+            })}
+          >
             <h4
               className={classNames(
                 projectcss.all,
@@ -298,7 +584,7 @@ function PlasmicFooterSection__RenderFunc(props: {
                 sty.h4__gOk8
               )}
             >
-              {"Help"}
+              {"Learn AI"}
             </h4>
 
             <Button
@@ -325,7 +611,7 @@ function PlasmicFooterSection__RenderFunc(props: {
                   sty.text__iBrZe
                 )}
               >
-                {"Privacy and Policy"}
+                {"Lead Generation"}
               </div>
             </Button>
 
@@ -353,59 +639,125 @@ function PlasmicFooterSection__RenderFunc(props: {
                   sty.text__l4ISu
                 )}
               >
-                {"Terms of Use"}
+                {"DTC eCommerce"}
               </div>
             </Button>
-          </div>
-        ) : null}
-        {true ? (
-          <div className={classNames(projectcss.all, sty.freeBox__pDQI)}>
-            <h4
-              className={classNames(
-                projectcss.all,
-                projectcss.h4,
-                projectcss.__wab_text,
-                sty.h4__jZui
-              )}
-            >
-              {"Company"}
-            </h4>
-
-            <div
-              className={classNames(
-                projectcss.all,
-                projectcss.__wab_text,
-                sty.text__heFnr
-              )}
-            >
-              {"Lorem ipsum dolor sit amet, consectetur."}
-            </div>
-
-            <TextInput
-              data-plasmic-name={"textInput"}
-              data-plasmic-override={overrides.textInput}
-              className={classNames("__wab_instance", sty.textInput)}
-            />
 
             <Button
-              className={classNames("__wab_instance", sty.button__xxL7)}
-              color={"white" as const}
-              small={
-                hasVariant(globalVariants, "screen", "mobile")
-                  ? true
-                  : undefined
+              className={classNames("__wab_instance", sty.button__ulfco)}
+              color={"footerButton" as const}
+              endIcon={
+                <svg
+                  className={classNames(projectcss.all, sty.svg___9IPnv)}
+                  role={"img"}
+                />
+              }
+              link={"#" as const}
+              startIcon={
+                <svg
+                  className={classNames(projectcss.all, sty.svg___339Gy)}
+                  role={"img"}
+                />
               }
             >
               <div
                 className={classNames(
                   projectcss.all,
                   projectcss.__wab_text,
-                  sty.text__vaxiz
+                  sty.text__ouHUb
                 )}
               >
-                {hasVariant(globalVariants, "screen", "mobile")
-                  ? "Subscribe"
-                  : "Subscribe"}
+                {"Go-To-Market"}
+              </div>
+            </Button>
+
+            <Button
+              className={classNames("__wab_instance", sty.button__bgPxH)}
+              color={"footerButton" as const}
+              endIcon={
+                <svg
+                  className={classNames(projectcss.all, sty.svg__fYEjm)}
+                  role={"img"}
+                />
+              }
+              link={"#" as const}
+              startIcon={
+                <svg
+                  className={classNames(projectcss.all, sty.svg__mtfWh)}
+                  role={"img"}
+                />
+              }
+            >
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__pxGgV
+                )}
+              >
+                {"Ad Agencies"}
+              </div>
+            </Button>
+
+            <Button
+              className={classNames("__wab_instance", sty.button__qLf9, {
+                [sty.buttonunnamedVariant__qLf9OxEvg]: hasVariant(
+                  $state,
+                  "unnamedVariant",
+                  "unnamedVariant"
+                )
+              })}
+              color={"footerButton" as const}
+              endIcon={
+                <svg
+                  className={classNames(projectcss.all, sty.svg__nJoU1)}
+                  role={"img"}
+                />
+              }
+              link={"#" as const}
+              startIcon={
+                <svg
+                  className={classNames(projectcss.all, sty.svg__jdZLr)}
+                  role={"img"}
+                />
+              }
+            >
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__u5FFa
+                )}
+              >
+                {"Insurance Agents"}
+              </div>
+            </Button>
+
+            <Button
+              className={classNames("__wab_instance", sty.button___4Sj0S)}
+              color={"footerButton" as const}
+              endIcon={
+                <svg
+                  className={classNames(projectcss.all, sty.svg__tkTiq)}
+                  role={"img"}
+                />
+              }
+              link={"#" as const}
+              startIcon={
+                <svg
+                  className={classNames(projectcss.all, sty.svg__xlSBh)}
+                  role={"img"}
+                />
+              }
+            >
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__nW7Rr
+                )}
+              >
+                {"Medical Practices"}
               </div>
             </Button>
           </div>
@@ -428,8 +780,9 @@ function PlasmicFooterSection__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "img", "textInput", "textbox"],
+  root: ["root", "img", "h5", "textInput", "textbox"],
   img: ["img"],
+  h5: ["h5"],
   textInput: ["textInput", "textbox"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -438,6 +791,7 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   img: typeof p.PlasmicImg;
+  h5: "h5";
   textInput: typeof TextInput;
 };
 
@@ -503,6 +857,7 @@ export const PlasmicFooterSection = Object.assign(
   {
     // Helper components rendering sub-elements
     img: makeNodeComponent("img"),
+    h5: makeNodeComponent("h5"),
     textInput: makeNodeComponent("textInput"),
 
     // Metadata about props expected for PlasmicFooterSection

@@ -246,7 +246,16 @@ function PlasmicNavbar__RenderFunc(props: {
                   />
                 }
               >
-                {"Log in"}
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__krBvg
+                  )}
+                  link={"https://app.presell.ai/" as const}
+                >
+                  {"Log in"}
+                </div>
               </Button>
             ) : null}
             {(hasVariant(globalVariants, "screen", "mobile") ? true : true) ? (

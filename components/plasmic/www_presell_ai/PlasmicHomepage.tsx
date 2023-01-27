@@ -120,6 +120,21 @@ function PlasmicHomepage__RenderFunc(props: {
           name="twitter:title"
           content={PlasmicHomepage.pageMetadata.title}
         />
+        <meta
+          key="description"
+          name="description"
+          content={PlasmicHomepage.pageMetadata.description}
+        />
+        <meta
+          key="og:description"
+          property="og:description"
+          content={PlasmicHomepage.pageMetadata.description}
+        />
+        <meta
+          key="twitter:description"
+          name="twitter:description"
+          content={PlasmicHomepage.pageMetadata.description}
+        />
       </Head>
 
       <style>{`
@@ -181,9 +196,27 @@ function PlasmicHomepage__RenderFunc(props: {
                         sty.text___67RyA
                       )}
                     >
-                      {
-                        "🖱️ 𝗦𝘁𝗲𝗽 𝟭: Paste ANY web link \n🪄 𝗦𝘁𝗲𝗽 𝟮: Generate funnel & ads \n📢  𝗦𝘁𝗲𝗽 𝟯: Plug-and-play in any ad account"
-                      }
+                      {"🖱️ 𝗦𝘁𝗲𝗽 𝟭: Paste ANY web link "}
+                    </div>
+
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__o8Uwq
+                      )}
+                    >
+                      {"🪄 𝗦𝘁𝗲𝗽 𝟮: Generate funnel & ads "}
+                    </div>
+
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text___4TFeL
+                      )}
+                    >
+                      {"📢  𝗦𝘁𝗲𝗽 𝟯: Plug-and-play in any ad account"}
                     </div>
 
                     <p.Stack
@@ -210,6 +243,7 @@ function PlasmicHomepage__RenderFunc(props: {
                               "__wab_instance",
                               sty.textInput__o6AXp
                             )}
+                            required={true}
                           />
 
                           <Button
@@ -2908,8 +2942,9 @@ export const PlasmicHomepage = Object.assign(
 
     // Page metadata
     pageMetadata: {
-      title: "Home",
-      description: "",
+      title: "Presell AI - Instantly Generate Funnels & Ads",
+      description:
+        "Skip the guesswork. Generate proven to convert marketing campaigns.",
       ogImageSrc: "",
       canonical: ""
     }

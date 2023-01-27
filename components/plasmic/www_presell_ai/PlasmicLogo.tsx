@@ -102,13 +102,17 @@ function PlasmicLogo__RenderFunc(props: {
         path: "_50Opaque",
         type: "private",
         variableType: "variant",
-        initFunc: true ? ($props, $state, $ctx) => $props._50Opaque : undefined
+        initFunc: true ? ($props, $state, $ctx) => $props._50Opaque : undefined,
+
+        variableType: "variant"
       },
       {
         path: "largeLogo",
         type: "private",
         variableType: "variant",
-        initFunc: true ? ($props, $state, $ctx) => $props.largeLogo : undefined
+        initFunc: true ? ($props, $state, $ctx) => $props.largeLogo : undefined,
+
+        variableType: "variant"
       }
     ],
     [$props, $ctx]
@@ -166,16 +170,23 @@ function PlasmicLogo__RenderFunc(props: {
         src={
           hasVariant($state, "largeLogo", "largeLogo")
             ? {
-                src: "/plasmic/www_presell_ai/images/presellAiDrarkGraphTextpng.png",
-                fullWidth: 306,
-                fullHeight: 55,
-                aspectRatio: undefined
+                src: "/plasmic/www_presell_ai/images/presellAiIconRightText172X31Svg.svg",
+                fullWidth: 300,
+                fullHeight: 54,
+                aspectRatio: 5.580645
+              }
+            : hasVariant($state, "_50Opaque", "_50Opaque")
+            ? {
+                src: "/plasmic/www_presell_ai/images/presellAiIconRightText172X31Svg.svg",
+                fullWidth: 300,
+                fullHeight: 54,
+                aspectRatio: 5.580645
               }
             : {
-                src: "/plasmic/www_presell_ai/images/presellAiDrarkGraphTextpng.png",
-                fullWidth: 306,
-                fullHeight: 55,
-                aspectRatio: undefined
+                src: "/plasmic/www_presell_ai/images/presellAiIconRightText172X31Svg.svg",
+                fullWidth: 300,
+                fullHeight: 54,
+                aspectRatio: 5.580645
               }
         }
       />

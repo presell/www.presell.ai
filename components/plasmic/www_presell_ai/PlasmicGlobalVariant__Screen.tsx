@@ -5,7 +5,7 @@
 import * as React from "react";
 import * as p from "@plasmicapp/react-web";
 
-export type ScreenValue = "mobile";
+export type ScreenValue = "mobile" | "footer";
 export const ScreenContext = React.createContext<ScreenValue[] | undefined>(
   "PLEASE_RENDER_INSIDE_PROVIDER" as any
 );
@@ -23,7 +23,8 @@ export function ScreenVariantProvider(props: React.PropsWithChildren) {
 }
 
 export const useScreenVariants = p.createUseScreenVariants(true, {
-  mobile: "(max-width:930px)",
+  mobile: "(max-width:1152px)",
+  footer: "(max-width:1252px)",
 });
 
 export default ScreenContext;
