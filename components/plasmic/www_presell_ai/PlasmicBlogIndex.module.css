@@ -162,6 +162,11 @@
     padding-left: 114px;
   }
 }
+@media (max-width: 1152px) {
+  .column__xpani {
+    padding-left: 20px;
+  }
+}
 .text___1XqdD {
   position: relative;
   width: 100%;
@@ -172,6 +177,11 @@
   font-weight: 700;
   margin-bottom: 10px;
   min-width: 0;
+}
+@media (max-width: 1152px) {
+  .text___1XqdD {
+    text-align: left;
+  }
 }
 .text__d0MXe {
   position: relative;
@@ -315,9 +325,9 @@
   width: 100%;
   height: auto;
   max-width: 800px;
-  font-size: 22px;
+  font-size: 20px;
   text-align: center;
-  color: var(--token-vHb3nx1t6Zc1Q1);
+  color: var(--token-4lVQ5Rf5x);
   font-weight: 500;
   min-width: 0;
 }
