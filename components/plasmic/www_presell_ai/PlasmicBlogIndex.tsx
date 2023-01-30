@@ -352,24 +352,17 @@ function PlasmicBlogIndex__RenderFunc(props: {
                                     }
                                   })()}
                                 />
-                              </div>
 
-                              <div
-                                className={classNames(
-                                  projectcss.all,
-                                  sty.column__fvvCv
-                                )}
-                              >
                                 <div
                                   className={classNames(
                                     projectcss.all,
                                     projectcss.__wab_text,
-                                    sty.text__ylWhw
+                                    sty.text__utCdD
                                   )}
                                 >
                                   {(() => {
                                     try {
-                                      return currentItem.fields.Type;
+                                      return currentItem.fields.heroHeadline;
                                     } catch (e) {
                                       if (e instanceof TypeError) {
                                         return "Enter some text";
@@ -383,12 +376,12 @@ function PlasmicBlogIndex__RenderFunc(props: {
                                   className={classNames(
                                     projectcss.all,
                                     projectcss.__wab_text,
-                                    sty.text__utCdD
+                                    sty.text__ylWhw
                                   )}
                                 >
                                   {(() => {
                                     try {
-                                      return currentItem.fields.heroHeadline;
+                                      return currentItem.fields.heroSubHeadline;
                                     } catch (e) {
                                       if (e instanceof TypeError) {
                                         return "Enter some text";

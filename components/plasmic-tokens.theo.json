@@ -31,6 +31,16 @@
       }
     },
     {
+      "name": "UnnamedStyleToken 3",
+      "type": "color",
+      "value": "#0A84FF",
+      "category": "color",
+      "meta": {
+        "projectId": "hgYa2chxELsjCrsDiarb3T",
+        "id": "LUzL-ikOZ"
+      }
+    },
+    {
       "name": "dark/blue",
       "type": "color",
       "value": "#0A84FF",
