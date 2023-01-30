@@ -246,19 +246,6 @@
           "cssFilePath": "plasmic/www_presell_ai/PlasmicSignUp.module.css",
           "scheme": "blackbox",
           "componentType": "page"
-        },
-        {
-          "id": "bW6pyJavum",
-          "name": "NewPage",
-          "type": "managed",
-          "projectId": "hgYa2chxELsjCrsDiarb3T",
-          "renderModuleFilePath": "plasmic/www_presell_ai/PlasmicNewPage.tsx",
-          "importSpec": {
-            "modulePath": "../pages/new-page.tsx"
-          },
-          "cssFilePath": "plasmic/www_presell_ai/PlasmicNewPage.module.css",
-          "scheme": "blackbox",
-          "componentType": "page"
         }
       ],
       "icons": [

@@ -209,6 +209,13 @@
     margin-top: 16px;
   }
 }
+.httpApiFetcher:global(.__wab_instance) {
+  width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  position: relative;
+  min-width: 0;
+}
 .form {
   display: flex;
   position: relative;

@@ -35,6 +35,7 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import Navbar from "../../Navbar"; // plasmic-import: 1Ua3Zd0YazUX91/component
+import { DataFetcher } from "@plasmicpkgs/plasmic-query"; // plasmic-import: ae7V86eNoXA/codeComponent
 import TextInput from "../../TextInput"; // plasmic-import: whnP1U9nG_tYGg/component
 import Button from "../../Button"; // plasmic-import: CnJoQKF1JUjMXv/component
 import Section from "../../Section"; // plasmic-import: RN0jn-odTg0QTC/component
@@ -65,6 +66,7 @@ export type PlasmicHomepage__OverridesType = {
   root?: p.Flex<"div">;
   headerHeroSection?: p.Flex<"div">;
   navbar?: p.Flex<typeof Navbar>;
+  httpApiFetcher?: p.Flex<typeof DataFetcher>;
   form?: p.Flex<"form">;
   svg?: p.Flex<"svg">;
   footerSection?: p.Flex<typeof FooterSection>;
@@ -224,68 +226,120 @@ function PlasmicHomepage__RenderFunc(props: {
                       hasGap={true}
                       className={classNames(projectcss.all, sty.freeBox__jouB8)}
                     >
-                      {(
-                        hasVariant(globalVariants, "screen", "mobile")
-                          ? true
-                          : true
-                      ) ? (
-                        <form
-                          data-plasmic-name={"form"}
-                          data-plasmic-override={overrides.form}
-                          action={
-                            "https://hook.us1.make.com/6qf8ii7ozfbui45pc1a0hp2ypwbret9o" as const
-                          }
-                          className={classNames(projectcss.all, sty.form)}
-                          method={"post" as const}
-                        >
-                          <TextInput
-                            className={classNames(
-                              "__wab_instance",
-                              sty.textInput__o6AXp
-                            )}
-                            required={true}
-                          />
-
-                          <Button
-                            className={classNames(
-                              "__wab_instance",
-                              sty.button__rbLrl
-                            )}
-                            color={"blue" as const}
-                            endIcon={
-                              <ChevronRightIcon
-                                data-plasmic-name={"svg"}
-                                data-plasmic-override={overrides.svg}
-                                className={classNames(projectcss.all, sty.svg)}
-                                role={"img"}
-                              />
-                            }
-                            link={`/generator`}
-                            showEndIcon={
+                      <DataFetcher
+                        data-plasmic-name={"httpApiFetcher"}
+                        data-plasmic-override={overrides.httpApiFetcher}
+                        className={classNames(
+                          "__wab_instance",
+                          sty.httpApiFetcher
+                        )}
+                        dataName={"fetchedData" as const}
+                        errorDisplay={
+                          <ph.DataCtxReader>
+                            {$ctx => "Error fetching data"}
+                          </ph.DataCtxReader>
+                        }
+                        headers={{
+                          "Content-Type": "application/json",
+                          Accept: "application/json",
+                          Authorization: "Bearer keyVDvhyVSx5Ntbl3"
+                        }}
+                        loadingDisplay={
+                          <ph.DataCtxReader>
+                            {$ctx => "Loading..."}
+                          </ph.DataCtxReader>
+                        }
+                        method={"GET" as const}
+                        noLayout={false}
+                        url={
+                          "https://api.airtable.com/v0/appmM1mMqcDvugXhY/tbld1vm9CKxhyVeVk" as const
+                        }
+                      >
+                        <ph.DataCtxReader>
+                          {$ctx =>
+                            (
                               hasVariant(globalVariants, "screen", "mobile")
                                 ? true
                                 : true
-                            }
-                            showStartIcon={
-                              hasVariant(globalVariants, "screen", "mobile")
-                                ? true
-                                : undefined
-                            }
-                          >
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text___6PBza
-                              )}
-                            >
-                              {hasVariant(globalVariants, "screen", "mobile")
-                                ? "Generate"
-                                : "Generate"}
-                            </div>
-                          </Button>
-                        </form>
-                      ) : null}
+                            ) ? (
+                              <form
+                                data-plasmic-name={"form"}
+                                data-plasmic-override={overrides.form}
+                                action={
+                                  "https://hook.us1.make.com/mgj37jat9g7qtdnql6l0tbmw6gy0psoe" as const
+                                }
+                                className={classNames(projectcss.all, sty.form)}
+                                method={"post" as const}
+                              >
+                                <TextInput
+                                  aria-label={"url" as const}
+                                  className={classNames(
+                                    "__wab_instance",
+                                    sty.textInput__o6AXp
+                                  )}
+                                  defaultValue={undefined}
+                                  name={"url" as const}
+                                  required={true}
+                                />
+
+                                <Button
+                                  className={classNames(
+                                    "__wab_instance",
+                                    sty.button__rbLrl
+                                  )}
+                                  color={"blue" as const}
+                                  endIcon={
+                                    <ChevronRightIcon
+                                      data-plasmic-name={"svg"}
+                                      data-plasmic-override={overrides.svg}
+                                      className={classNames(
+                                        projectcss.all,
+                                        sty.svg
+                                      )}
+                                      role={"img"}
+                                    />
+                                  }
+                                  link={`/generator`}
+                                  showEndIcon={
+                                    hasVariant(
+                                      globalVariants,
+                                      "screen",
+                                      "mobile"
+                                    )
+                                      ? true
+                                      : true
+                                  }
+                                  showStartIcon={
+                                    hasVariant(
+                                      globalVariants,
+                                      "screen",
+                                      "mobile"
+                                    )
+                                      ? true
+                                      : undefined
+                                  }
+                                >
+                                  <div
+                                    className={classNames(
+                                      projectcss.all,
+                                      projectcss.__wab_text,
+                                      sty.text___6PBza
+                                    )}
+                                  >
+                                    {hasVariant(
+                                      globalVariants,
+                                      "screen",
+                                      "mobile"
+                                    )
+                                      ? "Generate"
+                                      : "Generate"}
+                                  </div>
+                                </Button>
+                              </form>
+                            ) : null
+                          }
+                        </ph.DataCtxReader>
+                      </DataFetcher>
                     </p.Stack>
                   </div>
                 </div>
@@ -2850,9 +2904,24 @@ function PlasmicHomepage__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "headerHeroSection", "navbar", "form", "svg", "footerSection"],
-  headerHeroSection: ["headerHeroSection", "navbar", "form", "svg"],
+  root: [
+    "root",
+    "headerHeroSection",
+    "navbar",
+    "httpApiFetcher",
+    "form",
+    "svg",
+    "footerSection"
+  ],
+  headerHeroSection: [
+    "headerHeroSection",
+    "navbar",
+    "httpApiFetcher",
+    "form",
+    "svg"
+  ],
   navbar: ["navbar"],
+  httpApiFetcher: ["httpApiFetcher", "form", "svg"],
   form: ["form", "svg"],
   svg: ["svg"],
   footerSection: ["footerSection"]
@@ -2864,6 +2933,7 @@ type NodeDefaultElementType = {
   root: "div";
   headerHeroSection: "div";
   navbar: typeof Navbar;
+  httpApiFetcher: typeof DataFetcher;
   form: "form";
   svg: "svg";
   footerSection: typeof FooterSection;
@@ -2932,6 +3002,7 @@ export const PlasmicHomepage = Object.assign(
     // Helper components rendering sub-elements
     headerHeroSection: makeNodeComponent("headerHeroSection"),
     navbar: makeNodeComponent("navbar"),
+    httpApiFetcher: makeNodeComponent("httpApiFetcher"),
     form: makeNodeComponent("form"),
     svg: makeNodeComponent("svg"),
     footerSection: makeNodeComponent("footerSection"),
