@@ -197,6 +197,11 @@
   margin-bottom: 20px;
   min-width: 0;
 }
+@media (max-width: 1152px) {
+  .text__d0MXe {
+    font-size: 30px;
+  }
+}
 .text__fJkb1 {
   position: relative;
   width: 100%;
@@ -318,6 +323,7 @@
   .text__utCdD {
     padding-top: 10px;
     text-align: center;
+    font-size: 20px;
   }
 }
 .text__ylWhw {
@@ -334,6 +340,7 @@
 @media (max-width: 1152px) {
   .text__ylWhw {
     padding-top: 10px;
+    font-size: 18px;
   }
 }
 .link {
@@ -350,6 +357,7 @@
   .link {
     padding-top: 10px;
     margin-top: 10px;
+    font-size: 18px;
   }
 }
 .freeBox___6Ymyn {
