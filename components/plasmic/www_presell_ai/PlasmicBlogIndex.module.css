@@ -119,7 +119,7 @@
   position: relative;
   object-fit: cover;
   max-width: 100%;
-  width: 950px;
+  width: 830px;
   height: 475.28px;
   margin-left: 0px;
   flex-shrink: 0;
@@ -198,10 +198,10 @@
   grid-template-columns: repeat(4, minmax(0, 1fr));
   width: 100%;
   height: auto;
-  max-width: 100%;
+  max-width: 86%;
   align-self: center;
   min-width: 0;
-  padding: 0px 20px 20px 32px;
+  padding: 0px 0px 20px;
 }
 @media (max-width: 1152px) {
   .freeBox__zk3QC {

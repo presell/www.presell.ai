@@ -218,7 +218,7 @@ function PlasmicBlogIndex__RenderFunc(props: {
                             displayWidth={
                               hasVariant(globalVariants, "screen", "footer")
                                 ? ("330px" as const)
-                                : ("950px" as const)
+                                : ("830px" as const)
                             }
                             loading={"lazy" as const}
                             src={(() => {
