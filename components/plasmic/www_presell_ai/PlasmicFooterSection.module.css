@@ -5,8 +5,9 @@
   position: relative;
   background: #000000;
   width: 100%;
+  height: auto;
   min-width: 0;
-  padding: 64px 64px 14px;
+  padding: 64px 0px 0px;
 }
 .freeBox__oo29Y {
   flex-direction: row;

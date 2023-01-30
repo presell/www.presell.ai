@@ -203,7 +203,7 @@ function PlasmicFooterSection__RenderFunc(props: {
                 sty.h5
               )}
             >
-              {"Programmatic Funnels & Ads"}
+              {"Creators of Programmatic Marketing"}
             </h5>
 
             <div

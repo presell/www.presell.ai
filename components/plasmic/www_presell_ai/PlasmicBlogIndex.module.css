@@ -7,7 +7,7 @@
   background: none;
   min-width: 0;
   min-height: 0;
-  padding: 52px 6px 6px;
+  padding: 0px;
 }
 .root > :global(.__wab_flex-container) {
   flex-direction: column;
@@ -335,7 +335,7 @@
   align-self: center;
   background: #ffffff;
   min-width: 0;
-  padding: 8px;
+  padding: 8px 8px 0px 0px;
 }
 .footerSection:global(.__wab_instance) {
   max-width: 100%;
