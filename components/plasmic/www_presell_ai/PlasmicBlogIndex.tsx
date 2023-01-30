@@ -208,7 +208,7 @@ function PlasmicBlogIndex__RenderFunc(props: {
                             className={classNames(sty.img__blnJ)}
                             displayHeight={
                               hasVariant(globalVariants, "screen", "footer")
-                                ? ("185.39px" as const)
+                                ? ("250px" as const)
                                 : ("475.28px" as const)
                             }
                             displayMaxHeight={"none" as const}
@@ -216,8 +216,10 @@ function PlasmicBlogIndex__RenderFunc(props: {
                             displayMinHeight={"0" as const}
                             displayMinWidth={"0" as const}
                             displayWidth={
-                              hasVariant(globalVariants, "screen", "footer")
-                                ? ("330px" as const)
+                              hasVariant(globalVariants, "screen", "mobile")
+                                ? ("700px" as const)
+                                : hasVariant(globalVariants, "screen", "footer")
+                                ? ("550px" as const)
                                 : ("830px" as const)
                             }
                             loading={"lazy" as const}
@@ -338,7 +340,15 @@ function PlasmicBlogIndex__RenderFunc(props: {
                                   displayMaxWidth={"100%" as const}
                                   displayMinHeight={"0" as const}
                                   displayMinWidth={"0" as const}
-                                  displayWidth={"auto" as const}
+                                  displayWidth={
+                                    hasVariant(
+                                      globalVariants,
+                                      "screen",
+                                      "mobile"
+                                    )
+                                      ? ("400px" as const)
+                                      : ("auto" as const)
+                                  }
                                   loading={"lazy" as const}
                                   src={(() => {
                                     try {
