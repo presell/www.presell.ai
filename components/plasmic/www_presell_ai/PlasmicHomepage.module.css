@@ -209,14 +209,7 @@
     margin-top: 16px;
   }
 }
-.httpApiFetcher:global(.__wab_instance) {
-  width: 100%;
-  max-width: 100%;
-  object-fit: cover;
-  position: relative;
-  min-width: 0;
-}
-.form {
+.urlForm {
   display: flex;
   position: relative;
   flex-direction: row;
@@ -229,7 +222,7 @@
   padding: 8px;
 }
 @media (max-width: 1152px) {
-  .form {
+  .urlForm {
     align-items: center;
     justify-content: center;
     width: 100%;
