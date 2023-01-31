@@ -175,19 +175,9 @@ function PlasmicSignUp__RenderFunc(props: {
               }
               method={"GET" as const}
               noLayout={false}
-              url={(() => {
-                try {
-                  return (
-                    "https://api.airtable.com/v0/appmM1mMqcDvugXhY/Requests/" +
-                    $ctx.params.slug
-                  );
-                } catch (e) {
-                  if (e instanceof TypeError) {
-                    return "https://api.airtable.com/v0/appmM1mMqcDvugXhY/Requests?slug";
-                  }
-                  throw e;
-                }
-              })()}
+              url={
+                "https://api.airtable.com/v0/appmM1mMqcDvugXhY/Requests?slug" as const
+              }
             >
               <ph.DataCtxReader>
                 {$ctx => (
@@ -234,7 +224,8 @@ function PlasmicSignUp__RenderFunc(props: {
                         type={"text" as const}
                         value={(() => {
                           try {
-                            return $ctx.fetchedData.fields.Submitted_URL;
+                            return $ctx.fetchedData.records[0].fields
+                              .Submitted_URL;
                           } catch (e) {
                             if (e instanceof TypeError) {
                               return undefined;
