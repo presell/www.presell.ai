@@ -36,12 +36,16 @@ import {
 } from "@plasmicapp/react-web";
 import Navbar from "../../Navbar"; // plasmic-import: 1Ua3Zd0YazUX91/component
 import { DataFetcher } from "@plasmicpkgs/plasmic-query"; // plasmic-import: ae7V86eNoXA/codeComponent
+import TextInput from "../../TextInput"; // plasmic-import: whnP1U9nG_tYGg/component
 import FooterSection from "../../FooterSection"; // plasmic-import: RmQnVGl7OA9pJb/component
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
 import projectcss from "./plasmic_www_presell_ai.module.css"; // plasmic-import: hgYa2chxELsjCrsDiarb3T/projectcss
 import sty from "./PlasmicSignUp.module.css"; // plasmic-import: QCEWr9pYu1/css
+
+import Searchsvg2Icon from "./icons/PlasmicIcon__Searchsvg2"; // plasmic-import: GqlQDoqakuGAAn/icon
+import ChecksvgIcon from "./icons/PlasmicIcon__Checksvg"; // plasmic-import: q1JO1GFRPkcbBU/icon
 
 export type PlasmicSignUp__VariantMembers = {};
 export type PlasmicSignUp__VariantsArgs = {};
@@ -57,11 +61,9 @@ export type PlasmicSignUp__OverridesType = {
   navbar?: p.Flex<typeof Navbar>;
   httpApiFetcher?: p.Flex<typeof DataFetcher>;
   form?: p.Flex<"form">;
-  textInput?: p.Flex<"input">;
   emailInput?: p.Flex<"input">;
   button?: p.Flex<"button">;
   footerSection?: p.Flex<typeof FooterSection>;
-  textbox?: p.Flex<"input">;
 };
 
 export interface DefaultSignUpProps {}
@@ -166,7 +168,7 @@ function PlasmicSignUp__RenderFunc(props: {
               method={"GET" as const}
               noLayout={false}
               url={
-                "https://api.airtable.com/v0/appmM1mMqcDvugXhY/Requests?id" as const
+                "https://api.airtable.com/v0/appmM1mMqcDvugXhY/Requests" as const
               }
             >
               <ph.DataCtxReader>
@@ -204,28 +206,22 @@ function PlasmicSignUp__RenderFunc(props: {
                       </div>
 
                       <input
-                        data-plasmic-name={"textInput"}
-                        data-plasmic-override={
-                          overrides.textInput ?? overrides.textbox
-                        }
                         className={classNames(
                           projectcss.all,
                           projectcss.input,
-                          sty.textInput
+                          sty.textInput__shVgl
                         )}
                         placeholder={"Your Product Page URL" as const}
                         size={1 as const}
                         type={"text" as const}
-                        value={(() => {
-                          try {
-                            return $ctx.fetchedData.fields.Submitted_URL;
-                          } catch (e) {
-                            if (e instanceof TypeError) {
-                              return undefined;
-                            }
-                            throw e;
-                          }
-                        })()}
+                        value={undefined}
+                      />
+
+                      <TextInput
+                        className={classNames(
+                          "__wab_instance",
+                          sty.textInput__otR9H
+                        )}
                       />
 
                       <input
@@ -278,23 +274,13 @@ const PlasmicDescendants = {
     "navbar",
     "httpApiFetcher",
     "form",
-    "textInput",
-    "textbox",
     "emailInput",
     "button",
     "footerSection"
   ],
   navbar: ["navbar"],
-  httpApiFetcher: [
-    "httpApiFetcher",
-    "form",
-    "textInput",
-    "textbox",
-    "emailInput",
-    "button"
-  ],
-  form: ["form", "textInput", "textbox", "emailInput", "button"],
-  textInput: ["textInput", "textbox"],
+  httpApiFetcher: ["httpApiFetcher", "form", "emailInput", "button"],
+  form: ["form", "emailInput", "button"],
   emailInput: ["emailInput"],
   button: ["button"],
   footerSection: ["footerSection"]
@@ -307,7 +293,6 @@ type NodeDefaultElementType = {
   navbar: typeof Navbar;
   httpApiFetcher: typeof DataFetcher;
   form: "form";
-  textInput: "input";
   emailInput: "input";
   button: "button";
   footerSection: typeof FooterSection;
@@ -377,7 +362,6 @@ export const PlasmicSignUp = Object.assign(
     navbar: makeNodeComponent("navbar"),
     httpApiFetcher: makeNodeComponent("httpApiFetcher"),
     form: makeNodeComponent("form"),
-    textInput: makeNodeComponent("textInput"),
     emailInput: makeNodeComponent("emailInput"),
     button: makeNodeComponent("button"),
     footerSection: makeNodeComponent("footerSection"),
