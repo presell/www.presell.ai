@@ -165,19 +165,9 @@ function PlasmicSignUp__RenderFunc(props: {
               }
               method={"GET" as const}
               noLayout={false}
-              url={(() => {
-                try {
-                  return (
-                    "https://api.airtable.com/v0/appmM1mMqcDvugXhY/Requests/" +
-                    $ctx.params.id
-                  );
-                } catch (e) {
-                  if (e instanceof TypeError) {
-                    return "https://api.airtable.com/v0/appmM1mMqcDvugXhY/Requests?id";
-                  }
-                  throw e;
-                }
-              })()}
+              url={
+                "https://api.airtable.com/v0/appmM1mMqcDvugXhY/Requests?id" as const
+              }
             >
               <ph.DataCtxReader>
                 {$ctx => (
@@ -187,7 +177,11 @@ function PlasmicSignUp__RenderFunc(props: {
                     <form
                       data-plasmic-name={"form"}
                       data-plasmic-override={overrides.form}
+                      action={
+                        "https://hook.us1.make.com/ew5qeooxawx6nmu4619qxk1lg7b3xvq7" as const
+                      }
                       className={classNames(projectcss.all, sty.form)}
+                      method={"post" as const}
                     >
                       <div
                         className={classNames(
