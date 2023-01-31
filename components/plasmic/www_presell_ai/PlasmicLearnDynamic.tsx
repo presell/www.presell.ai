@@ -166,14 +166,27 @@ function PlasmicLearnDynamic__RenderFunc(props: {
               }
               headers={{
                 "Content-Type": "application/json",
-                Accept: "application/json"
+                Accept: "application/json",
+                Authorization: "Bearer keyVDvhyVSx5Ntbl3"
               }}
               loadingDisplay={
                 <ph.DataCtxReader>{$ctx => "Loading..."}</ph.DataCtxReader>
               }
               method={"GET" as const}
               noLayout={false}
-              url={"https://api.github.com/users/plasmicapp/repos" as const}
+              url={(() => {
+                try {
+                  return (
+                    "https://api.airtable.com/v0/appmM1mMqcDvugXhY/learn/" +
+                    $ctx.params.slug
+                  );
+                } catch (e) {
+                  if (e instanceof TypeError) {
+                    return "https://api.airtable.com/v0/appmM1mMqcDvugXhY/learn?slug";
+                  }
+                  throw e;
+                }
+              })()}
             >
               <ph.DataCtxReader>
                 {$ctx =>
@@ -220,9 +233,16 @@ function PlasmicLearnDynamic__RenderFunc(props: {
                                   sty.heroH1
                                 )}
                               >
-                                {
-                                  "How to drive more website conversions with Clearbit and Mutiny"
-                                }
+                                {(() => {
+                                  try {
+                                    return $ctx.fetchedData.fields["Hero H1"];
+                                  } catch (e) {
+                                    if (e instanceof TypeError) {
+                                      return "How to drive more website conversions with Clearbit and Mutiny";
+                                    }
+                                    throw e;
+                                  }
+                                })()}
                               </div>
 
                               <div
@@ -234,9 +254,18 @@ function PlasmicLearnDynamic__RenderFunc(props: {
                                   sty.heroP
                                 )}
                               >
-                                {
-                                  "To help buyers find the perfect fit and capture demand at scale, marketers must create personalized website experiences. Learn how to build and implement a website personalization strategy from the ground up with Clearbit and Mutiny."
-                                }
+                                {(() => {
+                                  try {
+                                    return $ctx.fetchedData.fields[
+                                      "Hero Paragraph"
+                                    ];
+                                  } catch (e) {
+                                    if (e instanceof TypeError) {
+                                      return "To help buyers find the perfect fit and capture demand at scale, marketers must create personalized website experiences. Learn how to build and implement a website personalization strategy from the ground up with Clearbit and Mutiny.";
+                                    }
+                                    throw e;
+                                  }
+                                })()}
                               </div>
 
                               <Form
