@@ -61,7 +61,6 @@ export type PlasmicSignUp__OverridesType = {
   navbar?: p.Flex<typeof Navbar>;
   httpApiFetcher?: p.Flex<typeof DataFetcher>;
   form?: p.Flex<"form">;
-  emailInput?: p.Flex<"input">;
   button?: p.Flex<"button">;
   footerSection?: p.Flex<typeof FooterSection>;
 };
@@ -224,20 +223,6 @@ function PlasmicSignUp__RenderFunc(props: {
                         )}
                       />
 
-                      <input
-                        data-plasmic-name={"emailInput"}
-                        data-plasmic-override={overrides.emailInput}
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.input,
-                          sty.emailInput
-                        )}
-                        placeholder={"Your Email Address" as const}
-                        size={1 as const}
-                        type={"email" as const}
-                        value={"" as const}
-                      />
-
                       <button
                         data-plasmic-name={"button"}
                         data-plasmic-override={overrides.button}
@@ -269,19 +254,10 @@ function PlasmicSignUp__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: [
-    "root",
-    "navbar",
-    "httpApiFetcher",
-    "form",
-    "emailInput",
-    "button",
-    "footerSection"
-  ],
+  root: ["root", "navbar", "httpApiFetcher", "form", "button", "footerSection"],
   navbar: ["navbar"],
-  httpApiFetcher: ["httpApiFetcher", "form", "emailInput", "button"],
-  form: ["form", "emailInput", "button"],
-  emailInput: ["emailInput"],
+  httpApiFetcher: ["httpApiFetcher", "form", "button"],
+  form: ["form", "button"],
   button: ["button"],
   footerSection: ["footerSection"]
 } as const;
@@ -293,7 +269,6 @@ type NodeDefaultElementType = {
   navbar: typeof Navbar;
   httpApiFetcher: typeof DataFetcher;
   form: "form";
-  emailInput: "input";
   button: "button";
   footerSection: typeof FooterSection;
 };
@@ -362,7 +337,6 @@ export const PlasmicSignUp = Object.assign(
     navbar: makeNodeComponent("navbar"),
     httpApiFetcher: makeNodeComponent("httpApiFetcher"),
     form: makeNodeComponent("form"),
-    emailInput: makeNodeComponent("emailInput"),
     button: makeNodeComponent("button"),
     footerSection: makeNodeComponent("footerSection"),
 
