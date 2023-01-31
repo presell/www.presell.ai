@@ -182,7 +182,7 @@ function PlasmicSignUp__RenderFunc(props: {
                   );
                 } catch (e) {
                   if (e instanceof TypeError) {
-                    return "https://api.airtable.com/v0/appmM1mMqcDvugXhY/Requests";
+                    return "https://api.airtable.com/v0/appmM1mMqcDvugXhY/Requests?slug";
                   }
                   throw e;
                 }
