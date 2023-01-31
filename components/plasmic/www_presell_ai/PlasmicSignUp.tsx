@@ -35,6 +35,7 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import Navbar from "../../Navbar"; // plasmic-import: 1Ua3Zd0YazUX91/component
+import { DataFetcher } from "@plasmicpkgs/plasmic-query"; // plasmic-import: ae7V86eNoXA/codeComponent
 import FooterSection from "../../FooterSection"; // plasmic-import: RmQnVGl7OA9pJb/component
 
 import "@plasmicapp/react-web/lib/plasmic.css";
@@ -54,12 +55,12 @@ export const PlasmicSignUp__ArgProps = new Array<ArgPropType>();
 export type PlasmicSignUp__OverridesType = {
   root?: p.Flex<"div">;
   navbar?: p.Flex<typeof Navbar>;
+  httpApiFetcher?: p.Flex<typeof DataFetcher>;
   form?: p.Flex<"form">;
-  textInput?: p.Flex<"input">;
+  undefinedInput?: p.Flex<"input">;
   emailInput?: p.Flex<"input">;
   button?: p.Flex<"button">;
   footerSection?: p.Flex<typeof FooterSection>;
-  textbox?: p.Flex<"input">;
 };
 
 export interface DefaultSignUpProps {}
@@ -153,76 +154,124 @@ function PlasmicSignUp__RenderFunc(props: {
               className={classNames("__wab_instance", sty.navbar)}
             />
 
-            <div className={classNames(projectcss.all, sty.freeBox___0BmFq)}>
-              <form
-                data-plasmic-name={"form"}
-                data-plasmic-override={overrides.form}
-                className={classNames(projectcss.all, sty.form)}
-              >
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__x8Bi9
-                  )}
-                >
-                  {"Instantly Generate Assets 🪄"}
-                </div>
-
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__hpMju
-                  )}
-                >
-                  {"Multi-Step Funnel & Ads"}
-                </div>
-
-                <input
-                  data-plasmic-name={"textInput"}
-                  data-plasmic-override={
-                    overrides.textInput ?? overrides.textbox
+            <DataFetcher
+              data-plasmic-name={"httpApiFetcher"}
+              data-plasmic-override={overrides.httpApiFetcher}
+              className={classNames("__wab_instance", sty.httpApiFetcher)}
+              dataName={"fetchedData" as const}
+              errorDisplay={
+                <ph.DataCtxReader>
+                  {$ctx => "Error fetching data"}
+                </ph.DataCtxReader>
+              }
+              headers={{
+                "Content-Type": "application/json",
+                Accept: "application/json",
+                Authorization: "Bearer keyVDvhyVSx5Ntbl3"
+              }}
+              loadingDisplay={
+                <ph.DataCtxReader>{$ctx => "Loading..."}</ph.DataCtxReader>
+              }
+              method={"GET" as const}
+              noLayout={false}
+              url={(() => {
+                try {
+                  return (
+                    "https://api.airtable.com/v0/appmM1mMqcDvugXhY/Requests/" +
+                    $ctx.params.slug
+                  );
+                } catch (e) {
+                  if (e instanceof TypeError) {
+                    return "https://api.airtable.com/v0/appmM1mMqcDvugXhY/Requests";
                   }
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.input,
-                    sty.textInput
-                  )}
-                  placeholder={"Your Product Page URL" as const}
-                  size={1 as const}
-                  type={"text" as const}
-                  value={"" as const}
-                />
+                  throw e;
+                }
+              })()}
+            >
+              <ph.DataCtxReader>
+                {$ctx => (
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox___0BmFq)}
+                  >
+                    <form
+                      data-plasmic-name={"form"}
+                      data-plasmic-override={overrides.form}
+                      className={classNames(projectcss.all, sty.form)}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__x8Bi9
+                        )}
+                      >
+                        {"Instantly Generate Assets 🪄"}
+                      </div>
 
-                <input
-                  data-plasmic-name={"emailInput"}
-                  data-plasmic-override={overrides.emailInput}
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.input,
-                    sty.emailInput
-                  )}
-                  placeholder={"Your Email Address" as const}
-                  size={1 as const}
-                  type={"email" as const}
-                  value={"" as const}
-                />
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__hpMju
+                        )}
+                      >
+                        {"Multi-Step Funnel & Ads"}
+                      </div>
 
-                <button
-                  data-plasmic-name={"button"}
-                  data-plasmic-override={overrides.button}
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.button,
-                    projectcss.__wab_text,
-                    sty.button
-                  )}
-                >
-                  {"GENERATE"}
-                </button>
-              </form>
-            </div>
+                      <input
+                        data-plasmic-name={"undefinedInput"}
+                        data-plasmic-override={overrides.undefinedInput}
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.input,
+                          sty.undefinedInput
+                        )}
+                        placeholder={"Your Product Page URL" as const}
+                        size={1 as const}
+                        type={(() => {
+                          try {
+                            return $ctx.fetchedData.fields.Submitted_URL;
+                          } catch (e) {
+                            if (e instanceof TypeError) {
+                              return "text";
+                            }
+                            throw e;
+                          }
+                        })()}
+                        value={"" as const}
+                      />
+
+                      <input
+                        data-plasmic-name={"emailInput"}
+                        data-plasmic-override={overrides.emailInput}
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.input,
+                          sty.emailInput
+                        )}
+                        placeholder={"Your Email Address" as const}
+                        size={1 as const}
+                        type={"email" as const}
+                        value={"" as const}
+                      />
+
+                      <button
+                        data-plasmic-name={"button"}
+                        data-plasmic-override={overrides.button}
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.button,
+                          projectcss.__wab_text,
+                          sty.button
+                        )}
+                      >
+                        {"GENERATE"}
+                      </button>
+                    </form>
+                  </div>
+                )}
+              </ph.DataCtxReader>
+            </DataFetcher>
 
             <FooterSection
               data-plasmic-name={"footerSection"}
@@ -240,16 +289,23 @@ const PlasmicDescendants = {
   root: [
     "root",
     "navbar",
+    "httpApiFetcher",
     "form",
-    "textInput",
-    "textbox",
+    "undefinedInput",
     "emailInput",
     "button",
     "footerSection"
   ],
   navbar: ["navbar"],
-  form: ["form", "textInput", "textbox", "emailInput", "button"],
-  textInput: ["textInput", "textbox"],
+  httpApiFetcher: [
+    "httpApiFetcher",
+    "form",
+    "undefinedInput",
+    "emailInput",
+    "button"
+  ],
+  form: ["form", "undefinedInput", "emailInput", "button"],
+  undefinedInput: ["undefinedInput"],
   emailInput: ["emailInput"],
   button: ["button"],
   footerSection: ["footerSection"]
@@ -260,8 +316,9 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   navbar: typeof Navbar;
+  httpApiFetcher: typeof DataFetcher;
   form: "form";
-  textInput: "input";
+  undefinedInput: "input";
   emailInput: "input";
   button: "button";
   footerSection: typeof FooterSection;
@@ -329,8 +386,9 @@ export const PlasmicSignUp = Object.assign(
   {
     // Helper components rendering sub-elements
     navbar: makeNodeComponent("navbar"),
+    httpApiFetcher: makeNodeComponent("httpApiFetcher"),
     form: makeNodeComponent("form"),
-    textInput: makeNodeComponent("textInput"),
+    undefinedInput: makeNodeComponent("undefinedInput"),
     emailInput: makeNodeComponent("emailInput"),
     button: makeNodeComponent("button"),
     footerSection: makeNodeComponent("footerSection"),
