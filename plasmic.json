@@ -241,7 +241,7 @@
           "projectId": "hgYa2chxELsjCrsDiarb3T",
           "renderModuleFilePath": "plasmic/www_presell_ai/PlasmicSignUp.tsx",
           "importSpec": {
-            "modulePath": "../pages/generator/[id].tsx"
+            "modulePath": "../pages/generator.tsx"
           },
           "cssFilePath": "plasmic/www_presell_ai/PlasmicSignUp.module.css",
           "scheme": "blackbox",
