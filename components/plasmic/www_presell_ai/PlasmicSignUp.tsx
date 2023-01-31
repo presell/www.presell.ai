@@ -99,17 +99,7 @@ function PlasmicSignUp__RenderFunc(props: {
     <React.Fragment>
       <Head>
         <meta name="twitter:card" content="summary" />
-        <title key="title">{PlasmicSignUp.pageMetadata.title}</title>
-        <meta
-          key="og:title"
-          property="og:title"
-          content={PlasmicSignUp.pageMetadata.title}
-        />
-        <meta
-          key="twitter:title"
-          name="twitter:title"
-          content={PlasmicSignUp.pageMetadata.title}
-        />
+
         <meta
           key="description"
           name="description"
@@ -175,9 +165,19 @@ function PlasmicSignUp__RenderFunc(props: {
               }
               method={"GET" as const}
               noLayout={false}
-              url={
-                "https://api.airtable.com/v0/appmM1mMqcDvugXhY/Requests?slug" as const
-              }
+              url={(() => {
+                try {
+                  return (
+                    "https://api.airtable.com/v0/appmM1mMqcDvugXhY/Requests/" +
+                    $ctx.params.id
+                  );
+                } catch (e) {
+                  if (e instanceof TypeError) {
+                    return "https://api.airtable.com/v0/appmM1mMqcDvugXhY/Requests?id";
+                  }
+                  throw e;
+                }
+              })()}
             >
               <ph.DataCtxReader>
                 {$ctx => (
@@ -224,8 +224,7 @@ function PlasmicSignUp__RenderFunc(props: {
                         type={"text" as const}
                         value={(() => {
                           try {
-                            return $ctx.fetchedData.records[0].fields
-                              .Submitted_URL;
+                            return $ctx.fetchedData.fields.Submitted_URL;
                           } catch (e) {
                             if (e instanceof TypeError) {
                               return undefined;
@@ -395,7 +394,7 @@ export const PlasmicSignUp = Object.assign(
 
     // Page metadata
     pageMetadata: {
-      title: "Presell AI - Instantly Generate Funnels & Ads",
+      title: "",
       description:
         "Skip the guesswork. Generate proven to convert marketing campaigns.",
       ogImageSrc: "",
