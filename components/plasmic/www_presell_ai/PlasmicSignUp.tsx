@@ -179,7 +179,7 @@ function PlasmicSignUp__RenderFunc(props: {
                 try {
                   return (
                     "https://api.airtable.com/v0/appmM1mMqcDvugXhY/Requests/" +
-                    $ctx.params.slug
+                    $ctx.params.ID
                   );
                 } catch (e) {
                   if (e instanceof TypeError) {
@@ -232,6 +232,16 @@ function PlasmicSignUp__RenderFunc(props: {
                         placeholder={"Your Product Page URL" as const}
                         size={1 as const}
                         type={"text" as const}
+                        value={(() => {
+                          try {
+                            return $ctx.fetchedData.fields.Submitted_URL;
+                          } catch (e) {
+                            if (e instanceof TypeError) {
+                              return undefined;
+                            }
+                            throw e;
+                          }
+                        })()}
                       />
 
                       <input
