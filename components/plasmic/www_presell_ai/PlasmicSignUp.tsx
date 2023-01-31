@@ -57,10 +57,11 @@ export type PlasmicSignUp__OverridesType = {
   navbar?: p.Flex<typeof Navbar>;
   httpApiFetcher?: p.Flex<typeof DataFetcher>;
   form?: p.Flex<"form">;
-  undefinedInput?: p.Flex<"input">;
+  textInput?: p.Flex<"input">;
   emailInput?: p.Flex<"input">;
   button?: p.Flex<"button">;
   footerSection?: p.Flex<typeof FooterSection>;
+  textbox?: p.Flex<"input">;
 };
 
 export interface DefaultSignUpProps {}
@@ -219,26 +220,28 @@ function PlasmicSignUp__RenderFunc(props: {
                       </div>
 
                       <input
-                        data-plasmic-name={"undefinedInput"}
-                        data-plasmic-override={overrides.undefinedInput}
+                        data-plasmic-name={"textInput"}
+                        data-plasmic-override={
+                          overrides.textInput ?? overrides.textbox
+                        }
                         className={classNames(
                           projectcss.all,
                           projectcss.input,
-                          sty.undefinedInput
+                          sty.textInput
                         )}
                         placeholder={"Your Product Page URL" as const}
                         size={1 as const}
-                        type={(() => {
+                        type={"text" as const}
+                        value={(() => {
                           try {
                             return $ctx.fetchedData.fields.Submitted_URL;
                           } catch (e) {
                             if (e instanceof TypeError) {
-                              return "text";
+                              return "";
                             }
                             throw e;
                           }
                         })()}
-                        value={"" as const}
                       />
 
                       <input
@@ -291,7 +294,8 @@ const PlasmicDescendants = {
     "navbar",
     "httpApiFetcher",
     "form",
-    "undefinedInput",
+    "textInput",
+    "textbox",
     "emailInput",
     "button",
     "footerSection"
@@ -300,12 +304,13 @@ const PlasmicDescendants = {
   httpApiFetcher: [
     "httpApiFetcher",
     "form",
-    "undefinedInput",
+    "textInput",
+    "textbox",
     "emailInput",
     "button"
   ],
-  form: ["form", "undefinedInput", "emailInput", "button"],
-  undefinedInput: ["undefinedInput"],
+  form: ["form", "textInput", "textbox", "emailInput", "button"],
+  textInput: ["textInput", "textbox"],
   emailInput: ["emailInput"],
   button: ["button"],
   footerSection: ["footerSection"]
@@ -318,7 +323,7 @@ type NodeDefaultElementType = {
   navbar: typeof Navbar;
   httpApiFetcher: typeof DataFetcher;
   form: "form";
-  undefinedInput: "input";
+  textInput: "input";
   emailInput: "input";
   button: "button";
   footerSection: typeof FooterSection;
@@ -388,7 +393,7 @@ export const PlasmicSignUp = Object.assign(
     navbar: makeNodeComponent("navbar"),
     httpApiFetcher: makeNodeComponent("httpApiFetcher"),
     form: makeNodeComponent("form"),
-    undefinedInput: makeNodeComponent("undefinedInput"),
+    textInput: makeNodeComponent("textInput"),
     emailInput: makeNodeComponent("emailInput"),
     button: makeNodeComponent("button"),
     footerSection: makeNodeComponent("footerSection"),
