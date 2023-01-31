@@ -217,11 +217,12 @@ function PlasmicSignUp__RenderFunc(props: {
                       />
 
                       <TextInput
+                        aria-label={"Email" as const}
                         className={classNames(
                           "__wab_instance",
                           sty.textInput__otR9H
                         )}
-                        name={"email" as const}
+                        name={"Email" as const}
                         required={true}
                       />
 
