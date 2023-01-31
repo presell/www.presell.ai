@@ -179,11 +179,11 @@ function PlasmicSignUp__RenderFunc(props: {
                 try {
                   return (
                     "https://api.airtable.com/v0/appmM1mMqcDvugXhY/Requests/" +
-                    $ctx.params.ID
+                    $ctx.params.slug
                   );
                 } catch (e) {
                   if (e instanceof TypeError) {
-                    return "https://api.airtable.com/v0/appmM1mMqcDvugXhY/Requests?ID";
+                    return "https://api.airtable.com/v0/appmM1mMqcDvugXhY/Requests?slug";
                   }
                   throw e;
                 }
