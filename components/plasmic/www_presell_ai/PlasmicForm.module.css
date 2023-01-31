@@ -73,7 +73,7 @@
   position: relative;
   object-fit: cover;
 }
-.text {
+.link {
   padding-top: 7px;
   padding-bottom: 7px;
   line-height: 22px;
@@ -87,7 +87,7 @@
   min-width: 0;
 }
 @media (max-width: 1152px) {
-  .text {
+  .link {
     width: 100%;
     left: auto;
     top: auto;

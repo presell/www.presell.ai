@@ -61,7 +61,7 @@ export type PlasmicForm__OverridesType = {
   urlForm?: p.Flex<"form">;
   textInput?: p.Flex<typeof TextInput>;
   button?: p.Flex<typeof Button>;
-  text?: p.Flex<"div">;
+  link?: p.Flex<"a"> & Partial<LinkProps>;
   svg?: p.Flex<"svg">;
   textbox?: p.Flex<typeof TextInput>;
 };
@@ -153,19 +153,22 @@ function PlasmicForm__RenderFunc(props: {
             hasVariant(globalVariants, "screen", "mobile") ? true : undefined
           }
         >
-          <div
-            data-plasmic-name={"text"}
-            data-plasmic-override={overrides.text}
+          <p.PlasmicLink
+            data-plasmic-name={"link"}
+            data-plasmic-override={overrides.link}
             className={classNames(
               projectcss.all,
+              projectcss.a,
               projectcss.__wab_text,
-              sty.text
+              sty.link
             )}
+            component={Link}
+            platform={"nextjs"}
           >
             {hasVariant(globalVariants, "screen", "mobile")
               ? "Generate"
               : "Generate"}
-          </div>
+          </p.PlasmicLink>
         </Button>
       </form>
     ) : null
@@ -173,10 +176,10 @@ function PlasmicForm__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  urlForm: ["urlForm", "textInput", "textbox", "button", "text", "svg"],
+  urlForm: ["urlForm", "textInput", "textbox", "button", "link", "svg"],
   textInput: ["textInput", "textbox"],
-  button: ["button", "text", "svg"],
-  text: ["text"],
+  button: ["button", "link", "svg"],
+  link: ["link"],
   svg: ["svg"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -186,7 +189,7 @@ type NodeDefaultElementType = {
   urlForm: "form";
   textInput: typeof TextInput;
   button: typeof Button;
-  text: "div";
+  link: "a";
   svg: "svg";
 };
 
@@ -253,7 +256,7 @@ export const PlasmicForm = Object.assign(
     // Helper components rendering sub-elements
     textInput: makeNodeComponent("textInput"),
     button: makeNodeComponent("button"),
-    text: makeNodeComponent("text"),
+    link: makeNodeComponent("link"),
     svg: makeNodeComponent("svg"),
 
     // Metadata about props expected for PlasmicForm
