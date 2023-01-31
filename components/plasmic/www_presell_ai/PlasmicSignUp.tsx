@@ -221,6 +221,8 @@ function PlasmicSignUp__RenderFunc(props: {
                           "__wab_instance",
                           sty.textInput__otR9H
                         )}
+                        name={"email" as const}
+                        required={true}
                       />
 
                       <button
