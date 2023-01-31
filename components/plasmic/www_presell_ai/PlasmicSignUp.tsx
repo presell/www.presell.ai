@@ -175,19 +175,9 @@ function PlasmicSignUp__RenderFunc(props: {
               }
               method={"GET" as const}
               noLayout={false}
-              url={(() => {
-                try {
-                  return (
-                    "https://api.airtable.com/v0/appmM1mMqcDvugXhY/Requests/" +
-                    $ctx.params.ID
-                  );
-                } catch (e) {
-                  if (e instanceof TypeError) {
-                    return "https://api.airtable.com/v0/appmM1mMqcDvugXhY/Requests?ID";
-                  }
-                  throw e;
-                }
-              })()}
+              url={
+                "https://api.airtable.com/v0/appmM1mMqcDvugXhY/Requests" as const
+              }
             >
               <ph.DataCtxReader>
                 {$ctx => (
@@ -232,16 +222,7 @@ function PlasmicSignUp__RenderFunc(props: {
                         placeholder={"Your Product Page URL" as const}
                         size={1 as const}
                         type={"text" as const}
-                        value={(() => {
-                          try {
-                            return $ctx.fetchedData.fields.Submitted_URL;
-                          } catch (e) {
-                            if (e instanceof TypeError) {
-                              return undefined;
-                            }
-                            throw e;
-                          }
-                        })()}
+                        value={undefined}
                       />
 
                       <input
