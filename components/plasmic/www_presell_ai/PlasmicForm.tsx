@@ -146,7 +146,6 @@ function PlasmicForm__RenderFunc(props: {
               role={"img"}
             />
           }
-          link={`/generator`}
           showEndIcon={
             hasVariant(globalVariants, "screen", "mobile") ? true : true
           }
