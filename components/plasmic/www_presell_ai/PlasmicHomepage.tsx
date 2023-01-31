@@ -35,10 +35,11 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import Navbar from "../../Navbar"; // plasmic-import: 1Ua3Zd0YazUX91/component
-import TextInput from "../../TextInput"; // plasmic-import: whnP1U9nG_tYGg/component
-import Button from "../../Button"; // plasmic-import: CnJoQKF1JUjMXv/component
+import Form from "../../Form"; // plasmic-import: T6V8rQtdf7/component
 import Section from "../../Section"; // plasmic-import: RN0jn-odTg0QTC/component
+import Button from "../../Button"; // plasmic-import: CnJoQKF1JUjMXv/component
 import Teams from "../../Teams"; // plasmic-import: KB0dgp3eXTnxbA/component
+import TextInput from "../../TextInput"; // plasmic-import: whnP1U9nG_tYGg/component
 import FooterSection from "../../FooterSection"; // plasmic-import: RmQnVGl7OA9pJb/component
 
 import { useScreenVariants as useScreenVariantscvQoPsTOivAmc4 } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: CVQoPsTOivAmc4/globalVariant
@@ -48,9 +49,9 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_www_presell_ai.module.css"; // plasmic-import: hgYa2chxELsjCrsDiarb3T/projectcss
 import sty from "./PlasmicHomepage.module.css"; // plasmic-import: zw1--48eo9zZVQ/css
 
+import ChevronRightIcon from "./icons/PlasmicIcon__ChevronRight"; // plasmic-import: Yq9TX85itfl8Tl/icon
 import Searchsvg2Icon from "./icons/PlasmicIcon__Searchsvg2"; // plasmic-import: GqlQDoqakuGAAn/icon
 import ChecksvgIcon from "./icons/PlasmicIcon__Checksvg"; // plasmic-import: q1JO1GFRPkcbBU/icon
-import ChevronRightIcon from "./icons/PlasmicIcon__ChevronRight"; // plasmic-import: Yq9TX85itfl8Tl/icon
 
 export type PlasmicHomepage__VariantMembers = {};
 export type PlasmicHomepage__VariantsArgs = {};
@@ -65,9 +66,10 @@ export type PlasmicHomepage__OverridesType = {
   root?: p.Flex<"div">;
   headerHeroSection?: p.Flex<"div">;
   navbar?: p.Flex<typeof Navbar>;
-  urlForm?: p.Flex<"form">;
-  svg?: p.Flex<"svg">;
+  form?: p.Flex<typeof Form>;
+  textInput?: p.Flex<typeof TextInput>;
   footerSection?: p.Flex<typeof FooterSection>;
+  textbox?: p.Flex<typeof TextInput>;
 };
 
 export interface DefaultHomepageProps {}
@@ -229,64 +231,11 @@ function PlasmicHomepage__RenderFunc(props: {
                           ? true
                           : true
                       ) ? (
-                        <form
-                          data-plasmic-name={"urlForm"}
-                          data-plasmic-override={overrides.urlForm}
-                          action={
-                            "https://hook.us1.make.com/6qf8ii7ozfbui45pc1a0hp2ypwbret9o" as const
-                          }
-                          className={classNames(projectcss.all, sty.urlForm)}
-                          method={"post" as const}
-                        >
-                          <TextInput
-                            aria-label={"url" as const}
-                            className={classNames(
-                              "__wab_instance",
-                              sty.textInput__o6AXp
-                            )}
-                            defaultValue={undefined}
-                            name={"url" as const}
-                            required={true}
-                          />
-
-                          <Button
-                            className={classNames(
-                              "__wab_instance",
-                              sty.button__rbLrl
-                            )}
-                            color={"blue" as const}
-                            endIcon={
-                              <ChevronRightIcon
-                                data-plasmic-name={"svg"}
-                                data-plasmic-override={overrides.svg}
-                                className={classNames(projectcss.all, sty.svg)}
-                                role={"img"}
-                              />
-                            }
-                            showEndIcon={
-                              hasVariant(globalVariants, "screen", "mobile")
-                                ? true
-                                : true
-                            }
-                            showStartIcon={
-                              hasVariant(globalVariants, "screen", "mobile")
-                                ? true
-                                : undefined
-                            }
-                          >
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text___6PBza
-                              )}
-                            >
-                              {hasVariant(globalVariants, "screen", "mobile")
-                                ? "Generate"
-                                : "Generate"}
-                            </div>
-                          </Button>
-                        </form>
+                        <Form
+                          data-plasmic-name={"form"}
+                          data-plasmic-override={overrides.form}
+                          className={classNames("__wab_instance", sty.form)}
+                        />
                       ) : null}
                     </p.Stack>
                   </div>
@@ -2794,10 +2743,9 @@ function PlasmicHomepage__RenderFunc(props: {
                   className={classNames(projectcss.all, sty.freeBox__ps6KI)}
                 >
                   <TextInput
-                    className={classNames(
-                      "__wab_instance",
-                      sty.textInput__fSydO
-                    )}
+                    data-plasmic-name={"textInput"}
+                    data-plasmic-override={overrides.textInput}
+                    className={classNames("__wab_instance", sty.textInput)}
                   />
 
                   <Button
@@ -2856,14 +2804,15 @@ const PlasmicDescendants = {
     "root",
     "headerHeroSection",
     "navbar",
-    "urlForm",
-    "svg",
+    "form",
+    "textInput",
+    "textbox",
     "footerSection"
   ],
-  headerHeroSection: ["headerHeroSection", "navbar", "urlForm", "svg"],
+  headerHeroSection: ["headerHeroSection", "navbar", "form"],
   navbar: ["navbar"],
-  urlForm: ["urlForm", "svg"],
-  svg: ["svg"],
+  form: ["form"],
+  textInput: ["textInput", "textbox"],
   footerSection: ["footerSection"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -2873,8 +2822,8 @@ type NodeDefaultElementType = {
   root: "div";
   headerHeroSection: "div";
   navbar: typeof Navbar;
-  urlForm: "form";
-  svg: "svg";
+  form: typeof Form;
+  textInput: typeof TextInput;
   footerSection: typeof FooterSection;
 };
 
@@ -2941,8 +2890,8 @@ export const PlasmicHomepage = Object.assign(
     // Helper components rendering sub-elements
     headerHeroSection: makeNodeComponent("headerHeroSection"),
     navbar: makeNodeComponent("navbar"),
-    urlForm: makeNodeComponent("urlForm"),
-    svg: makeNodeComponent("svg"),
+    form: makeNodeComponent("form"),
+    textInput: makeNodeComponent("textInput"),
     footerSection: makeNodeComponent("footerSection"),
 
     // Metadata about props expected for PlasmicHomepage

@@ -246,6 +246,32 @@
           "cssFilePath": "plasmic/www_presell_ai/PlasmicSignUp.module.css",
           "scheme": "blackbox",
           "componentType": "page"
+        },
+        {
+          "id": "YlzU-voekL",
+          "name": "LearnDynamic",
+          "type": "managed",
+          "projectId": "hgYa2chxELsjCrsDiarb3T",
+          "renderModuleFilePath": "plasmic/www_presell_ai/PlasmicLearnDynamic.tsx",
+          "importSpec": {
+            "modulePath": "../pages/learn/[slug].tsx"
+          },
+          "cssFilePath": "plasmic/www_presell_ai/PlasmicLearnDynamic.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "T6V8rQtdf7",
+          "name": "Form",
+          "type": "managed",
+          "projectId": "hgYa2chxELsjCrsDiarb3T",
+          "renderModuleFilePath": "plasmic/www_presell_ai/PlasmicForm.tsx",
+          "importSpec": {
+            "modulePath": "Form.tsx"
+          },
+          "cssFilePath": "plasmic/www_presell_ai/PlasmicForm.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [
@@ -600,6 +626,11 @@
           "id": "aTyGNW60Q",
           "name": "Presell Blog.svg",
           "filePath": "../public/plasmic/www_presell_ai/images/presellBlogsvg.svg"
+        },
+        {
+          "id": "MV-h_PIbD",
+          "name": "Cover.png",
+          "filePath": "../public/plasmic/www_presell_ai/images/coverpng.png"
         }
       ],
       "indirect": false,

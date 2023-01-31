@@ -102,17 +102,13 @@ function PlasmicLogo__RenderFunc(props: {
         path: "_50Opaque",
         type: "private",
         variableType: "variant",
-        initFunc: true ? ($props, $state, $ctx) => $props._50Opaque : undefined,
-
-        variableType: "variant"
+        initFunc: true ? ($props, $state, $ctx) => $props._50Opaque : undefined
       },
       {
         path: "largeLogo",
         type: "private",
         variableType: "variant",
-        initFunc: true ? ($props, $state, $ctx) => $props.largeLogo : undefined,
-
-        variableType: "variant"
+        initFunc: true ? ($props, $state, $ctx) => $props.largeLogo : undefined
       }
     ],
     [$props, $ctx]

@@ -115,9 +115,7 @@ function PlasmicFooterSection__RenderFunc(props: {
         variableType: "variant",
         initFunc: true
           ? ($props, $state, $ctx) => $props.unnamedVariant
-          : undefined,
-
-        variableType: "variant"
+          : undefined
       }
     ],
     [$props, $ctx]

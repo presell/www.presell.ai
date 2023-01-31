@@ -55,7 +55,6 @@ export type PlasmicSignUp__OverridesType = {
   root?: p.Flex<"div">;
   navbar?: p.Flex<typeof Navbar>;
   form?: p.Flex<"form">;
-  text?: p.Flex<"div">;
   textInput?: p.Flex<"input">;
   emailInput?: p.Flex<"input">;
   button?: p.Flex<"button">;
@@ -161,15 +160,23 @@ function PlasmicSignUp__RenderFunc(props: {
                 className={classNames(projectcss.all, sty.form)}
               >
                 <div
-                  data-plasmic-name={"text"}
-                  data-plasmic-override={overrides.text}
                   className={classNames(
                     projectcss.all,
                     projectcss.__wab_text,
-                    sty.text
+                    sty.text__x8Bi9
                   )}
                 >
                   {"Instantly Generate Assets 🪄"}
+                </div>
+
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__hpMju
+                  )}
+                >
+                  {"Multi-Step Funnel & Ads"}
                 </div>
 
                 <input
@@ -234,7 +241,6 @@ const PlasmicDescendants = {
     "root",
     "navbar",
     "form",
-    "text",
     "textInput",
     "textbox",
     "emailInput",
@@ -242,8 +248,7 @@ const PlasmicDescendants = {
     "footerSection"
   ],
   navbar: ["navbar"],
-  form: ["form", "text", "textInput", "textbox", "emailInput", "button"],
-  text: ["text"],
+  form: ["form", "textInput", "textbox", "emailInput", "button"],
   textInput: ["textInput", "textbox"],
   emailInput: ["emailInput"],
   button: ["button"],
@@ -256,7 +261,6 @@ type NodeDefaultElementType = {
   root: "div";
   navbar: typeof Navbar;
   form: "form";
-  text: "div";
   textInput: "input";
   emailInput: "input";
   button: "button";
@@ -326,7 +330,6 @@ export const PlasmicSignUp = Object.assign(
     // Helper components rendering sub-elements
     navbar: makeNodeComponent("navbar"),
     form: makeNodeComponent("form"),
-    text: makeNodeComponent("text"),
     textInput: makeNodeComponent("textInput"),
     emailInput: makeNodeComponent("emailInput"),
     button: makeNodeComponent("button"),
