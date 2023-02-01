@@ -241,7 +241,7 @@
           "projectId": "hgYa2chxELsjCrsDiarb3T",
           "renderModuleFilePath": "plasmic/www_presell_ai/PlasmicSignUp.tsx",
           "importSpec": {
-            "modulePath": "../pages/generator.tsx"
+            "modulePath": "../pages/generator/[id].tsx"
           },
           "cssFilePath": "plasmic/www_presell_ai/PlasmicSignUp.module.css",
           "scheme": "blackbox",
@@ -270,6 +270,32 @@
             "modulePath": "Form.tsx"
           },
           "cssFilePath": "plasmic/www_presell_ai/PlasmicForm.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "fDgvfEDbw_",
+          "name": "Form2",
+          "type": "managed",
+          "projectId": "hgYa2chxELsjCrsDiarb3T",
+          "renderModuleFilePath": "plasmic/www_presell_ai/PlasmicForm2.tsx",
+          "importSpec": {
+            "modulePath": "Form2.tsx"
+          },
+          "cssFilePath": "plasmic/www_presell_ai/PlasmicForm2.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "ckB05VKobE",
+          "name": "OnboardingForm",
+          "type": "managed",
+          "projectId": "hgYa2chxELsjCrsDiarb3T",
+          "renderModuleFilePath": "plasmic/www_presell_ai/PlasmicOnboardingForm.tsx",
+          "importSpec": {
+            "modulePath": "OnboardingForm.tsx"
+          },
+          "cssFilePath": "plasmic/www_presell_ai/PlasmicOnboardingForm.module.css",
           "scheme": "blackbox",
           "componentType": "component"
         }

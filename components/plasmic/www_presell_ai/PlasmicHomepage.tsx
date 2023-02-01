@@ -35,7 +35,7 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import Navbar from "../../Navbar"; // plasmic-import: 1Ua3Zd0YazUX91/component
-import Form from "../../Form"; // plasmic-import: T6V8rQtdf7/component
+import Form2 from "../../Form2"; // plasmic-import: fDgvfEDbw_/component
 import Section from "../../Section"; // plasmic-import: RN0jn-odTg0QTC/component
 import Button from "../../Button"; // plasmic-import: CnJoQKF1JUjMXv/component
 import Teams from "../../Teams"; // plasmic-import: KB0dgp3eXTnxbA/component
@@ -66,7 +66,7 @@ export type PlasmicHomepage__OverridesType = {
   root?: p.Flex<"div">;
   headerHeroSection?: p.Flex<"div">;
   navbar?: p.Flex<typeof Navbar>;
-  form?: p.Flex<typeof Form>;
+  form2?: p.Flex<typeof Form2>;
   textInput?: p.Flex<typeof TextInput>;
   footerSection?: p.Flex<typeof FooterSection>;
   textbox?: p.Flex<typeof TextInput>;
@@ -221,23 +221,11 @@ function PlasmicHomepage__RenderFunc(props: {
                       {"📢  𝗦𝘁𝗲𝗽 𝟯: Plug-and-play in any ad account"}
                     </div>
 
-                    <p.Stack
-                      as={"div"}
-                      hasGap={true}
-                      className={classNames(projectcss.all, sty.freeBox__jouB8)}
-                    >
-                      {(
-                        hasVariant(globalVariants, "screen", "mobile")
-                          ? true
-                          : true
-                      ) ? (
-                        <Form
-                          data-plasmic-name={"form"}
-                          data-plasmic-override={overrides.form}
-                          className={classNames("__wab_instance", sty.form)}
-                        />
-                      ) : null}
-                    </p.Stack>
+                    <Form2
+                      data-plasmic-name={"form2"}
+                      data-plasmic-override={overrides.form2}
+                      className={classNames("__wab_instance", sty.form2)}
+                    />
                   </div>
                 </div>
               ) : null}
@@ -2804,14 +2792,14 @@ const PlasmicDescendants = {
     "root",
     "headerHeroSection",
     "navbar",
-    "form",
+    "form2",
     "textInput",
     "textbox",
     "footerSection"
   ],
-  headerHeroSection: ["headerHeroSection", "navbar", "form"],
+  headerHeroSection: ["headerHeroSection", "navbar", "form2"],
   navbar: ["navbar"],
-  form: ["form"],
+  form2: ["form2"],
   textInput: ["textInput", "textbox"],
   footerSection: ["footerSection"]
 } as const;
@@ -2822,7 +2810,7 @@ type NodeDefaultElementType = {
   root: "div";
   headerHeroSection: "div";
   navbar: typeof Navbar;
-  form: typeof Form;
+  form2: typeof Form2;
   textInput: typeof TextInput;
   footerSection: typeof FooterSection;
 };
@@ -2890,7 +2878,7 @@ export const PlasmicHomepage = Object.assign(
     // Helper components rendering sub-elements
     headerHeroSection: makeNodeComponent("headerHeroSection"),
     navbar: makeNodeComponent("navbar"),
-    form: makeNodeComponent("form"),
+    form2: makeNodeComponent("form2"),
     textInput: makeNodeComponent("textInput"),
     footerSection: makeNodeComponent("footerSection"),
 
