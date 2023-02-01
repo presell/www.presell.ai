@@ -166,19 +166,9 @@ function PlasmicSignUp__RenderFunc(props: {
               }
               method={"GET" as const}
               noLayout={false}
-              url={(() => {
-                try {
-                  return (
-                    "https://api.airtable.com/v0/appmM1mMqcDvugXhY/Requests/" +
-                    $ctx.params.airtableID
-                  );
-                } catch (e) {
-                  if (e instanceof TypeError) {
-                    return "https://api.airtable.com/v0/appmM1mMqcDvugXhY/Requests?airtableID";
-                  }
-                  throw e;
-                }
-              })()}
+              url={
+                "https://api.airtable.com/v0/appmM1mMqcDvugXhY/Requests?airtableID" as const
+              }
             >
               <ph.DataCtxReader>
                 {$ctx => (
