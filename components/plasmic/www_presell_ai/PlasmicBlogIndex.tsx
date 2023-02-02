@@ -404,6 +404,16 @@ function PlasmicBlogIndex__RenderFunc(props: {
                                 <p.PlasmicLink
                                   data-plasmic-name={"link"}
                                   data-plasmic-override={overrides.link}
+                                  aria-hidden={(() => {
+                                    try {
+                                      return currentItem.fields.slug;
+                                    } catch (e) {
+                                      if (e instanceof TypeError) {
+                                        return undefined;
+                                      }
+                                      throw e;
+                                    }
+                                  })()}
                                   className={classNames(
                                     projectcss.all,
                                     projectcss.a,
