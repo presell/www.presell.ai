@@ -411,19 +411,10 @@ function PlasmicBlogIndex__RenderFunc(props: {
                                     sty.link
                                   )}
                                   component={Link}
-                                  hidden={false}
+                                  hidden={true}
                                   href={`/blog/${(() => {
                                     try {
                                       return currentItem.id;
-                                    } catch (e) {
-                                      if (e instanceof TypeError) {
-                                        return undefined;
-                                      }
-                                      throw e;
-                                    }
-                                  })()}/${(() => {
-                                    try {
-                                      return currentItem.fields.slug;
                                     } catch (e) {
                                       if (e instanceof TypeError) {
                                         return undefined;
