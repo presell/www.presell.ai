@@ -406,10 +406,10 @@ function PlasmicBlogIndex__RenderFunc(props: {
                                   data-plasmic-override={overrides.link}
                                   aria-hidden={(() => {
                                     try {
-                                      return currentItem.fields.slug;
+                                      return currentItem.id;
                                     } catch (e) {
                                       if (e instanceof TypeError) {
-                                        return undefined;
+                                        return "true";
                                       }
                                       throw e;
                                     }
@@ -423,7 +423,7 @@ function PlasmicBlogIndex__RenderFunc(props: {
                                   component={Link}
                                   href={`/blog/${(() => {
                                     try {
-                                      return currentItem.id;
+                                      return currentItem.fields.slug;
                                     } catch (e) {
                                       if (e instanceof TypeError) {
                                         return "value";
