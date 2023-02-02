@@ -412,6 +412,7 @@ function PlasmicBlogIndex__RenderFunc(props: {
                                     sty.link
                                   )}
                                   component={Link}
+                                  hidden={true}
                                   href={`/blog/${(() => {
                                     try {
                                       return currentItem.id;
