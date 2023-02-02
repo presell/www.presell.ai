@@ -423,10 +423,10 @@ function PlasmicBlogIndex__RenderFunc(props: {
                                   component={Link}
                                   href={`/blog/${(() => {
                                     try {
-                                      return currentItem.fields.slug;
+                                      return currentItem.id;
                                     } catch (e) {
                                       if (e instanceof TypeError) {
-                                        return "value";
+                                        return undefined;
                                       }
                                       throw e;
                                     }
