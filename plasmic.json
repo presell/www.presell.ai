@@ -188,7 +188,7 @@
           "projectId": "hgYa2chxELsjCrsDiarb3T",
           "renderModuleFilePath": "plasmic/www_presell_ai/PlasmicBlogDynamic.tsx",
           "importSpec": {
-            "modulePath": "../pages/blog/[slug]/[blogs].tsx"
+            "modulePath": "../pages/blog/[slug].tsx"
           },
           "cssFilePath": "plasmic/www_presell_ai/PlasmicBlogDynamic.module.css",
           "scheme": "blackbox",
