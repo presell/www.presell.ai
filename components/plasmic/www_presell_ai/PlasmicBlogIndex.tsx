@@ -404,6 +404,7 @@ function PlasmicBlogIndex__RenderFunc(props: {
                                 <p.PlasmicLink
                                   data-plasmic-name={"link"}
                                   data-plasmic-override={overrides.link}
+                                  aria-hidden={"true" as const}
                                   className={classNames(
                                     projectcss.all,
                                     projectcss.a,
@@ -414,6 +415,16 @@ function PlasmicBlogIndex__RenderFunc(props: {
                                   hidden={true}
                                   href={`/blog/${(() => {
                                     try {
+                                      return currentItem.fields.slug;
+                                    } catch (e) {
+                                      if (e instanceof TypeError) {
+                                        return "value";
+                                      }
+                                      throw e;
+                                    }
+                                  })()}`}
+                                  id={(() => {
+                                    try {
                                       return currentItem.id;
                                     } catch (e) {
                                       if (e instanceof TypeError) {
@@ -421,7 +432,7 @@ function PlasmicBlogIndex__RenderFunc(props: {
                                       }
                                       throw e;
                                     }
-                                  })()}`}
+                                  })()}
                                   platform={"nextjs"}
                                 >
                                   {"Read More"}
