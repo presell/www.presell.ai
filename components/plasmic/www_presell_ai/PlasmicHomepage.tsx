@@ -176,54 +176,49 @@ function PlasmicHomepage__RenderFunc(props: {
                   className={classNames("__wab_instance", sty.navbar)}
                 />
               ) : null}
-              {true ? (
-                <div className={classNames(projectcss.all, sty.freeBox__nVoEl)}>
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__dHj3P)}
-                  >
-                    <h1
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.h1,
-                        projectcss.__wab_text,
-                        sty.h1__hOi6I
-                      )}
-                    >
-                      {"Instantly generate funnels & ads"}
-                    </h1>
 
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text___67RyA
-                      )}
-                    >
-                      {"🖱️ 𝗦𝘁𝗲𝗽 𝟭: Paste ANY web link "}
-                    </div>
+              <div className={classNames(projectcss.all, sty.freeBox__dHj3P)}>
+                <h1
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.h1,
+                    projectcss.__wab_text,
+                    sty.h1__hOi6I
+                  )}
+                >
+                  {"Instantly generate funnels & ads"}
+                </h1>
 
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__o8Uwq
-                      )}
-                    >
-                      {"🪄 𝗦𝘁𝗲𝗽 𝟮: Generate funnel & ads "}
-                    </div>
-
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text___4TFeL
-                      )}
-                    >
-                      {"📢  𝗦𝘁𝗲𝗽 𝟯: Plug-and-play in any ad account"}
-                    </div>
-                  </div>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text___67RyA
+                  )}
+                >
+                  {"🖱️ 𝗦𝘁𝗲𝗽 𝟭: Paste ANY web link "}
                 </div>
-              ) : null}
+
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__o8Uwq
+                  )}
+                >
+                  {"🪄 𝗦𝘁𝗲𝗽 𝟮: Generate funnel & ads "}
+                </div>
+
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text___4TFeL
+                  )}
+                >
+                  {"📢  𝗦𝘁𝗲𝗽 𝟯: Plug-and-play in any ad account"}
+                </div>
+              </div>
             </p.Stack>
           ) : null}
 
