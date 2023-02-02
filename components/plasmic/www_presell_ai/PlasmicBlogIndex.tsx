@@ -422,6 +422,15 @@ function PlasmicBlogIndex__RenderFunc(props: {
                                       }
                                       throw e;
                                     }
+                                  })()}/${(() => {
+                                    try {
+                                      return currentItem.fields.slug;
+                                    } catch (e) {
+                                      if (e instanceof TypeError) {
+                                        return undefined;
+                                      }
+                                      throw e;
+                                    }
                                   })()}`}
                                   id={(() => {
                                     try {

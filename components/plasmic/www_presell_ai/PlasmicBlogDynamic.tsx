@@ -150,11 +150,13 @@ function PlasmicBlogDynamic__RenderFunc(props: {
                 try {
                   return (
                     "https://api.airtable.com/v0/appmM1mMqcDvugXhY/wwwBlog/" +
-                    $ctx.params.slug
+                    $ctx.params.slug +
+                    "?" +
+                    $ctx.params.blogs
                   );
                 } catch (e) {
                   if (e instanceof TypeError) {
-                    return "https://api.airtable.com/v0/appmM1mMqcDvugXhY/wwwBlog?slug";
+                    return "https://api.airtable.com/v0/appmM1mMqcDvugXhY/wwwBlog?slug&blogs";
                   }
                   throw e;
                 }
