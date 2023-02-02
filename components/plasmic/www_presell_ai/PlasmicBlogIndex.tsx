@@ -404,7 +404,6 @@ function PlasmicBlogIndex__RenderFunc(props: {
                                 <p.PlasmicLink
                                   data-plasmic-name={"link"}
                                   data-plasmic-override={overrides.link}
-                                  aria-hidden={"true" as const}
                                   className={classNames(
                                     projectcss.all,
                                     projectcss.a,
@@ -412,7 +411,7 @@ function PlasmicBlogIndex__RenderFunc(props: {
                                     sty.link
                                   )}
                                   component={Link}
-                                  hidden={true}
+                                  hidden={false}
                                   href={`/blog/${(() => {
                                     try {
                                       return currentItem.id;
