@@ -66,6 +66,7 @@ export type PlasmicHomepage__OverridesType = {
   root?: p.Flex<"div">;
   headerHeroSection?: p.Flex<"div">;
   navbar?: p.Flex<typeof Navbar>;
+  form?: p.Flex<"form">;
   form2?: p.Flex<typeof Form2>;
   textInput?: p.Flex<typeof TextInput>;
   footerSection?: p.Flex<typeof FooterSection>;
@@ -220,17 +221,28 @@ function PlasmicHomepage__RenderFunc(props: {
                     >
                       {"📢  𝗦𝘁𝗲𝗽 𝟯: Plug-and-play in any ad account"}
                     </div>
-
-                    <Form2
-                      data-plasmic-name={"form2"}
-                      data-plasmic-override={overrides.form2}
-                      className={classNames("__wab_instance", sty.form2)}
-                    />
                   </div>
                 </div>
               ) : null}
             </p.Stack>
           ) : null}
+
+          <form
+            data-plasmic-name={"form"}
+            data-plasmic-override={overrides.form}
+            action={
+              "https://hook.us1.make.com/6qf8ii7ozfbui45pc1a0hp2ypwbret9o" as const
+            }
+            className={classNames(projectcss.all, sty.form)}
+            method={"post" as const}
+          >
+            <Form2
+              data-plasmic-name={"form2"}
+              data-plasmic-override={overrides.form2}
+              className={classNames("__wab_instance", sty.form2)}
+            />
+          </form>
+
           {true ? (
             <Section
               className={classNames("__wab_instance", sty.section__scyEf)}
@@ -2792,13 +2804,15 @@ const PlasmicDescendants = {
     "root",
     "headerHeroSection",
     "navbar",
+    "form",
     "form2",
     "textInput",
     "textbox",
     "footerSection"
   ],
-  headerHeroSection: ["headerHeroSection", "navbar", "form2"],
+  headerHeroSection: ["headerHeroSection", "navbar"],
   navbar: ["navbar"],
+  form: ["form", "form2"],
   form2: ["form2"],
   textInput: ["textInput", "textbox"],
   footerSection: ["footerSection"]
@@ -2810,6 +2824,7 @@ type NodeDefaultElementType = {
   root: "div";
   headerHeroSection: "div";
   navbar: typeof Navbar;
+  form: "form";
   form2: typeof Form2;
   textInput: typeof TextInput;
   footerSection: typeof FooterSection;
@@ -2878,6 +2893,7 @@ export const PlasmicHomepage = Object.assign(
     // Helper components rendering sub-elements
     headerHeroSection: makeNodeComponent("headerHeroSection"),
     navbar: makeNodeComponent("navbar"),
+    form: makeNodeComponent("form"),
     form2: makeNodeComponent("form2"),
     textInput: makeNodeComponent("textInput"),
     footerSection: makeNodeComponent("footerSection"),

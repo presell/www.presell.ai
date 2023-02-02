@@ -132,7 +132,7 @@ function PlasmicForm2__RenderFunc(props: {
               aria-label={
                 hasVariant(globalVariants, "screen", "footer")
                   ? ("" as const)
-                  : ("url" as const)
+                  : ("life_insurance" as const)
               }
               aria-labelledby={
                 hasVariant(globalVariants, "screen", "footer")
@@ -144,32 +144,31 @@ function PlasmicForm2__RenderFunc(props: {
               name={
                 hasVariant(globalVariants, "screen", "footer")
                   ? ("" as const)
-                  : ("url" as const)
+                  : ("life_insurance" as const)
               }
               placeholder={
                 hasVariant(globalVariants, "screen", "footer")
                   ? ("Enter A Product or Service (Life Insurance)" as const)
-                  : undefined
+                  : ("Enter A Product or Service (Life Insurance)" as const)
               }
               required={true}
-              showStartIcon={
-                hasVariant(globalVariants, "screen", "footer")
-                  ? true
-                  : undefined
-              }
             />
 
             {(hasVariant(globalVariants, "screen", "footer") ? true : true) ? (
               <TextInput
-                aria-label={"url" as const}
+                aria-label={"email" as const}
                 className={classNames("__wab_instance", sty.textInput__rp4T)}
                 defaultValue={undefined}
-                name={"url" as const}
+                name={"email" as const}
                 placeholder={
                   "Enter Your Email Address (Free Instant Access)" as const
                 }
                 required={true}
-                showStartIcon={true}
+                showStartIcon={
+                  hasVariant(globalVariants, "screen", "footer")
+                    ? undefined
+                    : true
+                }
               />
             ) : null}
 

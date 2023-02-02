@@ -298,6 +298,19 @@
           "cssFilePath": "plasmic/www_presell_ai/PlasmicOnboardingForm.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "T64UjHkK2R",
+          "name": "NewPage",
+          "type": "managed",
+          "projectId": "hgYa2chxELsjCrsDiarb3T",
+          "renderModuleFilePath": "plasmic/www_presell_ai/PlasmicNewPage.tsx",
+          "importSpec": {
+            "modulePath": "../pages/new-page.tsx"
+          },
+          "cssFilePath": "plasmic/www_presell_ai/PlasmicNewPage.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
         }
       ],
       "icons": [
@@ -714,6 +727,6 @@
   "nextjsConfig": {
     "pagesDir": "../pages"
   },
-  "cliVersion": "0.1.205",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.205/dist/plasmic.schema.json"
+  "cliVersion": "0.1.206",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.206/dist/plasmic.schema.json"
 }
