@@ -49,12 +49,34 @@
   --plasmic-token-unnamed-style-token-4: var(--token-4lVQ5Rf5x);
   --token-hEcSL1Yiw: #0a84ff;
   --plasmic-token-unnamed-style-token-5: var(--token-hEcSL1Yiw);
+  --token-8oJ3tHthi: #000000;
+  --plasmic-token-unnamed-style-token-6: var(--token-8oJ3tHthi);
+  --token-gLH3k6dyX: #0a84ff;
+  --plasmic-token-unnamed-style-token-7: var(--token-gLH3k6dyX);
+  --token-pm6ftOsOO: #0a84ff;
+  --plasmic-token-unnamed-style-token-8: var(--token-pm6ftOsOO);
+  --token-nYWUUeCaE: #0a84ff;
+  --plasmic-token-unnamed-style-token-9: var(--token-nYWUUeCaE);
+  --token-hckKrxCO-: #00000080;
+  --plasmic-token-unnamed-style-token-10: var(--token-hckKrxCO-);
+  --token-eU1YGvW-N: #4f4a4a;
+  --plasmic-token-unnamed-style-token-11: var(--token-eU1YGvW-N);
 }
 
 @media (max-width: 1152px) {
   .plasmic_tokens {
     --token-hEcSL1Yiw: #0a84ff;
     --plasmic-token-unnamed-style-token-5: var(--token-hEcSL1Yiw);
+    --token-gLH3k6dyX: var(--token-pm6ftOsOO);
+    --plasmic-token-unnamed-style-token-7: var(--token-gLH3k6dyX);
+    --token-pm6ftOsOO: #0a84ff;
+    --plasmic-token-unnamed-style-token-8: var(--token-pm6ftOsOO);
+    --token-nYWUUeCaE: #0a84ff;
+    --plasmic-token-unnamed-style-token-9: var(--token-nYWUUeCaE);
+    --token-hckKrxCO-: #00000080;
+    --plasmic-token-unnamed-style-token-10: var(--token-hckKrxCO-);
+    --token-eU1YGvW-N: #4f4a4a;
+    --plasmic-token-unnamed-style-token-11: var(--token-eU1YGvW-N);
   }
 }
 

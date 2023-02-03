@@ -156,7 +156,7 @@
   justify-content: flex-start;
   align-items: center;
   min-width: 0;
-  padding: 90px 8px 8px 10px;
+  padding: 90px 8px 8px 0px;
 }
 @media (max-width: 1252px) {
   .column__xpani {
@@ -167,6 +167,22 @@
 @media (max-width: 1152px) {
   .column__xpani {
     padding: 0px;
+  }
+}
+.freeBox__igvxr {
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 330px;
+  height: auto;
+  max-width: 100%;
+  display: none;
+  padding: 8px;
+}
+@media (max-width: 1152px) {
+  .freeBox__igvxr {
+    display: flex;
   }
 }
 .text___1XqdD {
@@ -183,10 +199,12 @@
 @media (max-width: 1152px) {
   .text___1XqdD {
     text-align: left;
-    width: 100%;
+    width: 99.7%;
     margin-left: 0px;
     margin-top: 20px;
     padding-right: 0px;
+    padding-left: 0px;
+    font-size: 18px;
   }
 }
 .text__d0MXe {
@@ -205,9 +223,12 @@
 }
 @media (max-width: 1152px) {
   .text__d0MXe {
-    font-size: 30px;
+    font-size: 16px;
     width: 100%;
     margin-left: 0px;
+    text-align: left;
+    color: var(--token-gLH3k6dyX);
+    letter-spacing: 1.6px;
   }
 }
 .text__fJkb1 {
@@ -223,6 +244,11 @@
 @media (max-width: 1152px) {
   .text__fJkb1 {
     width: 100%;
+    align-self: center;
+    padding-left: 0px;
+    text-align: left;
+    font-size: 20px;
+    color: var(--token-hckKrxCO-);
   }
 }
 .freeBox__zk3QC {
@@ -250,8 +276,9 @@
   max-width: 100%;
   justify-content: flex-start;
   align-items: center;
+  margin-bottom: 0px;
   min-width: 0;
-  padding: 8px 8px 8px 4px;
+  padding: 8px 8px 0px 4px;
 }
 .columns___0BVIk {
   display: flex;
@@ -325,6 +352,22 @@
     flex-shrink: 0;
   }
 }
+.freeBox__iEb4M {
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 330px;
+  height: auto;
+  max-width: 100%;
+  display: none;
+  padding: 8px;
+}
+@media (max-width: 1152px) {
+  .freeBox__iEb4M {
+    display: flex;
+  }
+}
 .text__utCdD {
   position: relative;
   width: 100%;
@@ -340,11 +383,14 @@
   .text__utCdD {
     padding-top: 10px;
     text-align: left;
-    font-size: 20px;
+    font-size: 16px;
     padding-right: 0px;
-    color: var(--token-hEcSL1Yiw);
+    color: var(--token-nYWUUeCaE);
     padding-left: 0px;
     align-self: center;
+    width: 100%;
+    margin-left: 0px;
+    letter-spacing: 1.6px;
   }
 }
 .text__ylWhw {
@@ -364,9 +410,11 @@
     font-size: 18px;
     padding-right: 12px;
     margin-right: 0px;
-    max-width: 312px;
+    max-width: 325px;
     width: 100%;
     padding-left: 0px;
+    text-align: left;
+    color: var(--token-eU1YGvW-N);
     min-width: 0;
   }
 }

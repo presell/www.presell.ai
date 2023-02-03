@@ -244,55 +244,68 @@ function PlasmicBlogIndex__RenderFunc(props: {
                             sty.column__xpani
                           )}
                         >
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text___1XqdD
-                            )}
-                          >
-                            {"CATEGORY TITLE"}
-                          </div>
+                          {(
+                            hasVariant(globalVariants, "screen", "mobile")
+                              ? true
+                              : true
+                          ) ? (
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                sty.freeBox__igvxr
+                              )}
+                            >
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.__wab_text,
+                                  sty.text___1XqdD
+                                )}
+                              >
+                                {"CATEGORY TITLE"}
+                              </div>
 
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text__d0MXe
-                            )}
-                          >
-                            {(() => {
-                              try {
-                                return $ctx.fetchedData.records[0].fields
-                                  .heroHeadline;
-                              } catch (e) {
-                                if (e instanceof TypeError) {
-                                  return "Blog Post Title: This Will Usually Take Up A Few Lines Of Text. ";
-                                }
-                                throw e;
-                              }
-                            })()}
-                          </div>
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.__wab_text,
+                                  sty.text__d0MXe
+                                )}
+                              >
+                                {(() => {
+                                  try {
+                                    return $ctx.fetchedData.records[0].fields
+                                      .heroHeadline;
+                                  } catch (e) {
+                                    if (e instanceof TypeError) {
+                                      return "Blog Post Title: This Will Usually Take Up A Few Lines Of Text. ";
+                                    }
+                                    throw e;
+                                  }
+                                })()}
+                              </div>
 
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text__fJkb1
-                            )}
-                          >
-                            {(() => {
-                              try {
-                                return $ctx.fetchedData.records[1].fields
-                                  .heroSubHeadline;
-                              } catch (e) {
-                                if (e instanceof TypeError) {
-                                  return "A Short 1-2 Teaser Sentences. Must compel readers to click-through. ";
-                                }
-                                throw e;
-                              }
-                            })()}
-                          </div>
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.__wab_text,
+                                  sty.text__fJkb1
+                                )}
+                              >
+                                {(() => {
+                                  try {
+                                    return $ctx.fetchedData.records[1].fields
+                                      .heroSubHeadline;
+                                  } catch (e) {
+                                    if (e instanceof TypeError) {
+                                      return "A Short 1-2 Teaser Sentences. Must compel readers to click-through. ";
+                                    }
+                                    throw e;
+                                  }
+                                })()}
+                              </div>
+                            </div>
+                          ) : null}
                         </div>
                       </div>
 
@@ -372,43 +385,58 @@ function PlasmicBlogIndex__RenderFunc(props: {
                                   })()}
                                 />
 
-                                <div
-                                  className={classNames(
-                                    projectcss.all,
-                                    projectcss.__wab_text,
-                                    sty.text__utCdD
-                                  )}
-                                >
-                                  {(() => {
-                                    try {
-                                      return currentItem.fields.heroHeadline;
-                                    } catch (e) {
-                                      if (e instanceof TypeError) {
-                                        return "Enter some text";
-                                      }
-                                      throw e;
-                                    }
-                                  })()}
-                                </div>
+                                {(
+                                  hasVariant(globalVariants, "screen", "mobile")
+                                    ? true
+                                    : true
+                                ) ? (
+                                  <div
+                                    className={classNames(
+                                      projectcss.all,
+                                      sty.freeBox__iEb4M
+                                    )}
+                                  >
+                                    <div
+                                      className={classNames(
+                                        projectcss.all,
+                                        projectcss.__wab_text,
+                                        sty.text__utCdD
+                                      )}
+                                    >
+                                      {(() => {
+                                        try {
+                                          return currentItem.fields
+                                            .heroHeadline;
+                                        } catch (e) {
+                                          if (e instanceof TypeError) {
+                                            return "Enter some text";
+                                          }
+                                          throw e;
+                                        }
+                                      })()}
+                                    </div>
 
-                                <div
-                                  className={classNames(
-                                    projectcss.all,
-                                    projectcss.__wab_text,
-                                    sty.text__ylWhw
-                                  )}
-                                >
-                                  {(() => {
-                                    try {
-                                      return currentItem.fields.heroSubHeadline;
-                                    } catch (e) {
-                                      if (e instanceof TypeError) {
-                                        return "Enter some text";
-                                      }
-                                      throw e;
-                                    }
-                                  })()}
-                                </div>
+                                    <div
+                                      className={classNames(
+                                        projectcss.all,
+                                        projectcss.__wab_text,
+                                        sty.text__ylWhw
+                                      )}
+                                    >
+                                      {(() => {
+                                        try {
+                                          return currentItem.fields
+                                            .heroSubHeadline;
+                                        } catch (e) {
+                                          if (e instanceof TypeError) {
+                                            return "Enter some text";
+                                          }
+                                          throw e;
+                                        }
+                                      })()}
+                                    </div>
+                                  </div>
+                                ) : null}
                               </div>
                             </div>
                           </div>
