@@ -337,10 +337,12 @@
 @media (max-width: 1152px) {
   .text__utCdD {
     padding-top: 10px;
-    text-align: center;
+    text-align: left;
     font-size: 20px;
-    padding-right: 138px;
+    padding-right: 0px;
     color: var(--token-hEcSL1Yiw);
+    padding-left: 36px;
+    align-self: center;
   }
 }
 .text__ylWhw {
@@ -360,9 +362,9 @@
     font-size: 18px;
     padding-right: 12px;
     margin-right: 0px;
-    max-width: 325px;
+    max-width: 312px;
     width: 100%;
-    padding-left: 13px;
+    padding-left: 0px;
     min-width: 0;
   }
 }
