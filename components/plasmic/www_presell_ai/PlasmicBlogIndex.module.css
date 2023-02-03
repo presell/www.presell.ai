@@ -69,7 +69,13 @@
   width: auto;
   height: auto;
   max-width: 100%;
+  background: #ffffff;
   padding: 0px 8px 8px;
+}
+@media (max-width: 1152px) {
+  .freeBox__ahXyg {
+    background: #ffffff;
+  }
 }
 .columns__usu4V {
   display: flex;
@@ -334,6 +340,7 @@
 @media (max-width: 1152px) {
   .freeBox__zk3QC {
     grid-template-columns: repeat(1, minmax(0, 1fr));
+    max-width: 100%;
   }
 }
 .freeBox__jNafO {
@@ -348,6 +355,11 @@
   margin-bottom: 0px;
   min-width: 0;
   padding: 8px 8px 0px 4px;
+}
+@media (max-width: 1152px) {
+  .freeBox__jNafO {
+    width: 100%;
+  }
 }
 .columns___0BVIk {
   display: flex;
