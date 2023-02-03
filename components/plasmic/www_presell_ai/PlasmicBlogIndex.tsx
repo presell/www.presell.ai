@@ -304,6 +304,106 @@ function PlasmicBlogIndex__RenderFunc(props: {
                             </div>
                           </div>
                         ) : null}
+                        {(
+                          hasVariant(globalVariants, "screen", "mobile")
+                            ? true
+                            : hasVariant(globalVariants, "screen", "footer")
+                            ? true
+                            : true
+                        ) ? (
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text___4H3Ep
+                            )}
+                          >
+                            {(() => {
+                              try {
+                                return $ctx.fetchedData.records[0].fields.Type;
+                              } catch (e) {
+                                if (e instanceof TypeError) {
+                                  return "Enter some text";
+                                }
+                                throw e;
+                              }
+                            })()}
+                          </div>
+                        ) : null}
+                        {(
+                          hasVariant(globalVariants, "screen", "mobile")
+                            ? true
+                            : true
+                        ) ? (
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__ufbNb
+                            )}
+                          >
+                            {(() => {
+                              try {
+                                return $ctx.fetchedData.records[0].fields.Type;
+                              } catch (e) {
+                                if (e instanceof TypeError) {
+                                  return "Enter some text";
+                                }
+                                throw e;
+                              }
+                            })()}
+                          </div>
+                        ) : null}
+                        {(
+                          hasVariant(globalVariants, "screen", "mobile")
+                            ? true
+                            : true
+                        ) ? (
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text___5C9XJ
+                            )}
+                          >
+                            {(() => {
+                              try {
+                                return $ctx.fetchedData.records[0].fields
+                                  .heroHeadline;
+                              } catch (e) {
+                                if (e instanceof TypeError) {
+                                  return "Enter some text";
+                                }
+                                throw e;
+                              }
+                            })()}
+                          </div>
+                        ) : null}
+                        {(
+                          hasVariant(globalVariants, "screen", "mobile")
+                            ? true
+                            : true
+                        ) ? (
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__crzb
+                            )}
+                          >
+                            {(() => {
+                              try {
+                                return $ctx.fetchedData.records[0].fields
+                                  .heroSubHeadline;
+                              } catch (e) {
+                                if (e instanceof TypeError) {
+                                  return "Enter some text";
+                                }
+                                throw e;
+                              }
+                            })()}
+                          </div>
+                        ) : null}
                       </div>
                     </div>
 
