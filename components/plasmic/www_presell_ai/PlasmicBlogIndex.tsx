@@ -206,7 +206,9 @@ function PlasmicBlogIndex__RenderFunc(props: {
                             alt={""}
                             className={classNames(sty.img__blnJ)}
                             displayHeight={
-                              hasVariant(globalVariants, "screen", "footer")
+                              hasVariant(globalVariants, "screen", "mobile")
+                                ? ("185.39px" as const)
+                                : hasVariant(globalVariants, "screen", "footer")
                                 ? ("250px" as const)
                                 : ("475.28px" as const)
                             }
@@ -216,7 +218,7 @@ function PlasmicBlogIndex__RenderFunc(props: {
                             displayMinWidth={"0" as const}
                             displayWidth={
                               hasVariant(globalVariants, "screen", "mobile")
-                                ? ("700px" as const)
+                                ? ("330px" as const)
                                 : hasVariant(globalVariants, "screen", "footer")
                                 ? ("550px" as const)
                                 : ("830px" as const)

@@ -47,6 +47,15 @@
   --plasmic-token-unnamed-style-token-3: var(--token-LUzL-ikOZ);
   --token-4lVQ5Rf5x: #4f4a4a;
   --plasmic-token-unnamed-style-token-4: var(--token-4lVQ5Rf5x);
+  --token-hEcSL1Yiw: #0a84ff;
+  --plasmic-token-unnamed-style-token-5: var(--token-hEcSL1Yiw);
+}
+
+@media (max-width: 1152px) {
+  .plasmic_tokens {
+    --token-hEcSL1Yiw: #0a84ff;
+    --plasmic-token-unnamed-style-token-5: var(--token-hEcSL1Yiw);
+  }
 }
 
 .plasmic_default_styles {
