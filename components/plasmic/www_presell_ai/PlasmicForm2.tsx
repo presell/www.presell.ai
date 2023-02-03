@@ -62,7 +62,6 @@ export type PlasmicForm2__OverridesType = {
   freeBox?: p.Flex<"div">;
   button?: p.Flex<typeof Button>;
   link?: p.Flex<"a"> & Partial<LinkProps>;
-  svg?: p.Flex<"svg">;
 };
 
 export interface DefaultForm2Props {
@@ -132,7 +131,7 @@ function PlasmicForm2__RenderFunc(props: {
               aria-label={
                 hasVariant(globalVariants, "screen", "footer")
                   ? ("" as const)
-                  : ("life_insurance" as const)
+                  : ("product" as const)
               }
               aria-labelledby={
                 hasVariant(globalVariants, "screen", "footer")
@@ -144,12 +143,12 @@ function PlasmicForm2__RenderFunc(props: {
               name={
                 hasVariant(globalVariants, "screen", "footer")
                   ? ("" as const)
-                  : ("life_insurance" as const)
+                  : ("product" as const)
               }
               placeholder={
                 hasVariant(globalVariants, "screen", "footer")
                   ? ("Enter A Product or Service (Life Insurance)" as const)
-                  : ("Enter A Product or Service (Life Insurance)" as const)
+                  : ("State Your Product (Life Insurance)" as const)
               }
               required={true}
             />
@@ -160,14 +159,22 @@ function PlasmicForm2__RenderFunc(props: {
                 className={classNames("__wab_instance", sty.textInput__rp4T)}
                 defaultValue={undefined}
                 name={"email" as const}
-                placeholder={
-                  "Enter Your Email Address (Free Instant Access)" as const
-                }
+                placeholder={"Enter Your Email Address" as const}
                 required={true}
                 showStartIcon={
                   hasVariant(globalVariants, "screen", "footer")
                     ? undefined
-                    : true
+                    : undefined
+                }
+                startIcon={
+                  (
+                    hasVariant(globalVariants, "screen", "footer") ? true : true
+                  ) ? (
+                    <Searchsvg2Icon
+                      className={classNames(projectcss.all, sty.svg__yO8Dw)}
+                      role={"img"}
+                    />
+                  ) : null
                 }
               />
             ) : null}
@@ -179,9 +186,7 @@ function PlasmicForm2__RenderFunc(props: {
               color={"blue" as const}
               endIcon={
                 <ChevronRightIcon
-                  data-plasmic-name={"svg"}
-                  data-plasmic-override={overrides.svg}
-                  className={classNames(projectcss.all, sty.svg)}
+                  className={classNames(projectcss.all, sty.svg___2Gif6)}
                   role={"img"}
                 />
               }
@@ -219,11 +224,10 @@ function PlasmicForm2__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  urlForm: ["urlForm", "freeBox", "button", "link", "svg"],
-  freeBox: ["freeBox", "button", "link", "svg"],
-  button: ["button", "link", "svg"],
-  link: ["link"],
-  svg: ["svg"]
+  urlForm: ["urlForm", "freeBox", "button", "link"],
+  freeBox: ["freeBox", "button", "link"],
+  button: ["button", "link"],
+  link: ["link"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -233,7 +237,6 @@ type NodeDefaultElementType = {
   freeBox: "div";
   button: typeof Button;
   link: "a";
-  svg: "svg";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -300,7 +303,6 @@ export const PlasmicForm2 = Object.assign(
     freeBox: makeNodeComponent("freeBox"),
     button: makeNodeComponent("button"),
     link: makeNodeComponent("link"),
-    svg: makeNodeComponent("svg"),
 
     // Metadata about props expected for PlasmicForm2
     internalVariantProps: PlasmicForm2__VariantProps,

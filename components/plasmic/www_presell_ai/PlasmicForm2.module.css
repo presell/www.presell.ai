@@ -103,6 +103,11 @@
   width: 1em;
   height: 1em;
 }
+@media (max-width: 1252px) {
+  .svg__yO8Dw {
+    display: none;
+  }
+}
 .svg__u0Pa {
   position: relative;
   object-fit: cover;
@@ -114,19 +119,19 @@
   position: relative;
   margin-bottom: 0px;
   margin-left: 15px;
-  width: 162px;
+  width: 495px;
   margin-top: 15px;
 }
 @media (max-width: 1252px) {
   .button:global(.__wab_instance) {
     margin-top: 15px;
-    width: 200px;
+    width: 495px;
     align-self: center;
   }
 }
 @media (max-width: 1152px) {
   .button:global(.__wab_instance) {
-    width: 160px;
+    width: 340px;
     margin-left: 0px;
     height: 56px;
     margin-right: 0px;
@@ -147,15 +152,21 @@
   font-weight: 500;
   max-width: 148px;
   width: 100%;
-  padding-left: 0px;
-  margin-left: 6px;
+  padding-left: 70px;
+  margin-left: 80px;
   color: #eeeeee;
-  font-size: 18px;
+  font-size: 20px;
+  text-align: center;
+  left: auto;
+  top: auto;
+  z-index: 1;
+  position: relative;
   min-width: 0;
 }
 @media (max-width: 1252px) {
   .link {
-    margin-left: 0px;
+    margin-left: 80px;
+    padding-left: 80px;
   }
 }
 @media (max-width: 1152px) {
@@ -171,11 +182,11 @@
     text-align: center;
     color: #ffffff;
     min-width: 0;
-    padding: 0px 46px 10px 0px;
-    margin: 0px;
+    padding: 0px 46px 10px;
+    margin: 0px 0px 0px 50px;
   }
 }
-.svg {
+.svg___2Gif6 {
   width: 24px;
   height: 24px;
   position: relative;
@@ -184,11 +195,18 @@
   margin-top: 6px;
   margin-left: 24px;
 }
+@media (max-width: 1252px) {
+  .svg___2Gif6 {
+    margin-left: 30px;
+  }
+}
 @media (max-width: 1152px) {
-  .svg {
+  .svg___2Gif6 {
+    margin-top: 0px;
     height: 25px;
     width: 77px;
+    margin-right: 20px;
+    margin-bottom: 10px;
     color: #ffffff;
-    margin: 0px 20px 10px 10px;
   }
 }

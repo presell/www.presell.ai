@@ -58,7 +58,6 @@ export type PlasmicBlogIndex__OverridesType = {
   root?: p.Flex<"div">;
   httpApiFetcher?: p.Flex<typeof DataFetcher>;
   blogNavbar?: p.Flex<typeof BlogNavbar>;
-  link?: p.Flex<"a"> & Partial<LinkProps>;
   footerSection?: p.Flex<typeof FooterSection>;
 };
 
@@ -335,7 +334,7 @@ function PlasmicBlogIndex__RenderFunc(props: {
                                 <p.PlasmicImg
                                   alt={""}
                                   className={classNames(sty.img___8YyoR)}
-                                  displayHeight={"auto" as const}
+                                  displayHeight={"173.52px" as const}
                                   displayMaxHeight={"none" as const}
                                   displayMaxWidth={"100%" as const}
                                   displayMinHeight={"0" as const}
@@ -346,8 +345,8 @@ function PlasmicBlogIndex__RenderFunc(props: {
                                       "screen",
                                       "mobile"
                                     )
-                                      ? ("400px" as const)
-                                      : ("auto" as const)
+                                      ? ("308.8px" as const)
+                                      : ("308.5px" as const)
                                   }
                                   loading={"lazy" as const}
                                   src={(() => {
@@ -400,33 +399,6 @@ function PlasmicBlogIndex__RenderFunc(props: {
                                     }
                                   })()}
                                 </div>
-
-                                <p.PlasmicLink
-                                  data-plasmic-name={"link"}
-                                  data-plasmic-override={overrides.link}
-                                  aria-hidden={"true" as const}
-                                  className={classNames(
-                                    projectcss.all,
-                                    projectcss.a,
-                                    projectcss.__wab_text,
-                                    sty.link
-                                  )}
-                                  component={Link}
-                                  hidden={false}
-                                  href={`/blog/${(() => {
-                                    try {
-                                      return currentItem.id;
-                                    } catch (e) {
-                                      if (e instanceof TypeError) {
-                                        return "value";
-                                      }
-                                      throw e;
-                                    }
-                                  })()}`}
-                                  platform={"nextjs"}
-                                >
-                                  {"Read More"}
-                                </p.PlasmicLink>
                               </div>
                             </div>
                           </div>
@@ -465,10 +437,9 @@ function PlasmicBlogIndex__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "httpApiFetcher", "blogNavbar", "link", "footerSection"],
-  httpApiFetcher: ["httpApiFetcher", "blogNavbar", "link", "footerSection"],
+  root: ["root", "httpApiFetcher", "blogNavbar", "footerSection"],
+  httpApiFetcher: ["httpApiFetcher", "blogNavbar", "footerSection"],
   blogNavbar: ["blogNavbar"],
-  link: ["link"],
   footerSection: ["footerSection"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -478,7 +449,6 @@ type NodeDefaultElementType = {
   root: "div";
   httpApiFetcher: typeof DataFetcher;
   blogNavbar: typeof BlogNavbar;
-  link: "a";
   footerSection: typeof FooterSection;
 };
 
@@ -545,7 +515,6 @@ export const PlasmicBlogIndex = Object.assign(
     // Helper components rendering sub-elements
     httpApiFetcher: makeNodeComponent("httpApiFetcher"),
     blogNavbar: makeNodeComponent("blogNavbar"),
-    link: makeNodeComponent("link"),
     footerSection: makeNodeComponent("footerSection"),
 
     // Metadata about props expected for PlasmicBlogIndex
