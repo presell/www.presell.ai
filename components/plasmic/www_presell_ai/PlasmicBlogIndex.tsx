@@ -336,7 +336,15 @@ function PlasmicBlogIndex__RenderFunc(props: {
                                 <p.PlasmicImg
                                   alt={""}
                                   className={classNames(sty.img___8YyoR)}
-                                  displayHeight={"173.52px" as const}
+                                  displayHeight={
+                                    hasVariant(
+                                      globalVariants,
+                                      "screen",
+                                      "mobile"
+                                    )
+                                      ? ("185.39px" as const)
+                                      : ("173.52px" as const)
+                                  }
                                   displayMaxHeight={"none" as const}
                                   displayMaxWidth={"100%" as const}
                                   displayMinHeight={"0" as const}
@@ -347,7 +355,7 @@ function PlasmicBlogIndex__RenderFunc(props: {
                                       "screen",
                                       "mobile"
                                     )
-                                      ? ("308.8px" as const)
+                                      ? ("330px" as const)
                                       : ("308.5px" as const)
                                   }
                                   loading={"lazy" as const}

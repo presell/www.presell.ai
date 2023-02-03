@@ -183,7 +183,7 @@
 @media (max-width: 1152px) {
   .text___1XqdD {
     text-align: left;
-    width: 54.8%;
+    width: 100%;
     margin-left: 0px;
     margin-top: 20px;
     padding-right: 0px;
@@ -206,7 +206,7 @@
 @media (max-width: 1152px) {
   .text__d0MXe {
     font-size: 30px;
-    width: 55.16%;
+    width: 100%;
     margin-left: 0px;
   }
 }
@@ -222,7 +222,7 @@
 }
 @media (max-width: 1152px) {
   .text__fJkb1 {
-    width: 54.45%;
+    width: 100%;
   }
 }
 .freeBox__zk3QC {
@@ -320,7 +320,9 @@
 }
 @media (max-width: 1152px) {
   .img___8YyoR {
-    width: 308.8px;
+    width: 330px;
+    height: 185.39px;
+    flex-shrink: 0;
   }
 }
 .text__utCdD {
@@ -341,7 +343,7 @@
     font-size: 20px;
     padding-right: 0px;
     color: var(--token-hEcSL1Yiw);
-    padding-left: 36px;
+    padding-left: 0px;
     align-self: center;
   }
 }
