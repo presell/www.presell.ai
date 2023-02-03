@@ -41,6 +41,46 @@
       }
     },
     {
+      "name": "UnnamedStyleToken 12",
+      "type": "color",
+      "value": "#0A84FF",
+      "category": "color",
+      "meta": {
+        "projectId": "hgYa2chxELsjCrsDiarb3T",
+        "id": "lNn_lRCpw"
+      }
+    },
+    {
+      "name": "UnnamedStyleToken 13",
+      "type": "color",
+      "value": "#0A84FF",
+      "category": "color",
+      "meta": {
+        "projectId": "hgYa2chxELsjCrsDiarb3T",
+        "id": "Jmi3TdZon"
+      }
+    },
+    {
+      "name": "UnnamedStyleToken 14",
+      "type": "color",
+      "value": "#0A84FF",
+      "category": "color",
+      "meta": {
+        "projectId": "hgYa2chxELsjCrsDiarb3T",
+        "id": "kyBbwq5gW"
+      }
+    },
+    {
+      "name": "UnnamedStyleToken 15",
+      "type": "color",
+      "value": "#00000080",
+      "category": "color",
+      "meta": {
+        "projectId": "hgYa2chxELsjCrsDiarb3T",
+        "id": "Yv5kt8xkf"
+      }
+    },
+    {
       "name": "UnnamedStyleToken 2",
       "type": "color",
       "value": "#EEEEEE80",

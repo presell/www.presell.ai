@@ -186,269 +186,301 @@ function PlasmicBlogIndex__RenderFunc(props: {
                       data-plasmic-override={overrides.blogNavbar}
                       className={classNames("__wab_instance", sty.blogNavbar)}
                     />
+                  </div>
 
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__ahXyg)}
+                  >
                     <div
-                      className={classNames(projectcss.all, sty.freeBox__ahXyg)}
+                      className={classNames(projectcss.all, sty.columns__usu4V)}
                     >
                       <div
                         className={classNames(
                           projectcss.all,
-                          sty.columns__usu4V
+                          sty.column__jKfVq
                         )}
                       >
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            sty.column__jKfVq
-                          )}
-                        >
-                          <p.PlasmicImg
-                            alt={""}
-                            className={classNames(sty.img__blnJ)}
-                            displayHeight={
-                              hasVariant(globalVariants, "screen", "mobile")
-                                ? ("185.39px" as const)
-                                : hasVariant(globalVariants, "screen", "footer")
-                                ? ("250px" as const)
-                                : ("475.28px" as const)
-                            }
-                            displayMaxHeight={"none" as const}
-                            displayMaxWidth={"100%" as const}
-                            displayMinHeight={"0" as const}
-                            displayMinWidth={"0" as const}
-                            displayWidth={
-                              hasVariant(globalVariants, "screen", "mobile")
-                                ? ("330px" as const)
-                                : hasVariant(globalVariants, "screen", "footer")
-                                ? ("550px" as const)
-                                : ("830px" as const)
-                            }
-                            loading={"lazy" as const}
-                            src={(() => {
-                              try {
-                                return $ctx.fetchedData.records[0].fields
-                                  .heroImage[0].url;
-                              } catch (e) {
-                                if (e instanceof TypeError) {
-                                  return undefined;
-                                }
-                                throw e;
-                              }
-                            })()}
-                          />
-                        </div>
-
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            sty.column__xpani
-                          )}
-                        >
-                          {(
+                        <p.PlasmicImg
+                          alt={""}
+                          className={classNames(sty.img__blnJ)}
+                          displayHeight={
                             hasVariant(globalVariants, "screen", "mobile")
-                              ? true
-                              : true
-                          ) ? (
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                sty.freeBox__igvxr
-                              )}
-                            >
-                              <div
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.__wab_text,
-                                  sty.text___1XqdD
-                                )}
-                              >
-                                {"CATEGORY TITLE"}
-                              </div>
-
-                              <div
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.__wab_text,
-                                  sty.text__d0MXe
-                                )}
-                              >
-                                {(() => {
-                                  try {
-                                    return $ctx.fetchedData.records[0].fields
-                                      .heroHeadline;
-                                  } catch (e) {
-                                    if (e instanceof TypeError) {
-                                      return "Blog Post Title: This Will Usually Take Up A Few Lines Of Text. ";
-                                    }
-                                    throw e;
-                                  }
-                                })()}
-                              </div>
-
-                              <div
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.__wab_text,
-                                  sty.text__fJkb1
-                                )}
-                              >
-                                {(() => {
-                                  try {
-                                    return $ctx.fetchedData.records[1].fields
-                                      .heroSubHeadline;
-                                  } catch (e) {
-                                    if (e instanceof TypeError) {
-                                      return "A Short 1-2 Teaser Sentences. Must compel readers to click-through. ";
-                                    }
-                                    throw e;
-                                  }
-                                })()}
-                              </div>
-                            </div>
-                          ) : null}
-                        </div>
+                              ? ("185.39px" as const)
+                              : hasVariant(globalVariants, "screen", "footer")
+                              ? ("250px" as const)
+                              : ("475.28px" as const)
+                          }
+                          displayMaxHeight={"none" as const}
+                          displayMaxWidth={"100%" as const}
+                          displayMinHeight={"0" as const}
+                          displayMinWidth={"0" as const}
+                          displayWidth={
+                            hasVariant(globalVariants, "screen", "mobile")
+                              ? ("330px" as const)
+                              : hasVariant(globalVariants, "screen", "footer")
+                              ? ("550px" as const)
+                              : ("830px" as const)
+                          }
+                          loading={"lazy" as const}
+                          src={(() => {
+                            try {
+                              return $ctx.fetchedData.records[0].fields
+                                .heroImage[0].url;
+                            } catch (e) {
+                              if (e instanceof TypeError) {
+                                return undefined;
+                              }
+                              throw e;
+                            }
+                          })()}
+                        />
                       </div>
 
                       <div
                         className={classNames(
                           projectcss.all,
-                          sty.freeBox__zk3QC
+                          sty.column__xpani
                         )}
                       >
                         {(
-                          (() => {
-                            try {
-                              return $ctx.fetchedData.records;
-                            } catch (e) {
-                              if (e instanceof TypeError) {
-                                return [];
-                              }
-                              throw e;
-                            }
-                          })() ?? []
-                        ).map((currentItem, currentIndex) => (
+                          hasVariant(globalVariants, "screen", "mobile")
+                            ? true
+                            : true
+                        ) ? (
                           <div
                             className={classNames(
                               projectcss.all,
-                              sty.freeBox__jNafO
+                              sty.freeBox__igvxr
                             )}
-                            key={currentIndex}
                           >
                             <div
                               className={classNames(
                                 projectcss.all,
-                                sty.columns___0BVIk
+                                projectcss.__wab_text,
+                                sty.text___1XqdD
                               )}
                             >
-                              <div
-                                className={classNames(
-                                  projectcss.all,
-                                  sty.column___1JIqa
-                                )}
-                              >
-                                <p.PlasmicImg
-                                  alt={""}
-                                  className={classNames(sty.img___8YyoR)}
-                                  displayHeight={
-                                    hasVariant(
-                                      globalVariants,
-                                      "screen",
-                                      "mobile"
-                                    )
-                                      ? ("185.39px" as const)
-                                      : ("173.52px" as const)
+                              {"CATEGORY TITLE"}
+                            </div>
+
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text__d0MXe
+                              )}
+                            >
+                              {(() => {
+                                try {
+                                  return $ctx.fetchedData.records[0].fields
+                                    .heroHeadline;
+                                } catch (e) {
+                                  if (e instanceof TypeError) {
+                                    return "Blog Post Title: This Will Usually Take Up A Few Lines Of Text. ";
                                   }
-                                  displayMaxHeight={"none" as const}
-                                  displayMaxWidth={"100%" as const}
-                                  displayMinHeight={"0" as const}
-                                  displayMinWidth={"0" as const}
-                                  displayWidth={
-                                    hasVariant(
-                                      globalVariants,
-                                      "screen",
-                                      "mobile"
-                                    )
-                                      ? ("330px" as const)
-                                      : ("308.5px" as const)
+                                  throw e;
+                                }
+                              })()}
+                            </div>
+
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text__fJkb1
+                              )}
+                            >
+                              {(() => {
+                                try {
+                                  return $ctx.fetchedData.records[1].fields
+                                    .heroSubHeadline;
+                                } catch (e) {
+                                  if (e instanceof TypeError) {
+                                    return "A Short 1-2 Teaser Sentences. Must compel readers to click-through. ";
                                   }
-                                  loading={"lazy" as const}
-                                  src={(() => {
+                                  throw e;
+                                }
+                              })()}
+                            </div>
+                          </div>
+                        ) : null}
+                      </div>
+                    </div>
+
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__zk3QC)}
+                    >
+                      {(
+                        (() => {
+                          try {
+                            return $ctx.fetchedData.records;
+                          } catch (e) {
+                            if (e instanceof TypeError) {
+                              return [];
+                            }
+                            throw e;
+                          }
+                        })() ?? []
+                      ).map((currentItem, currentIndex) => (
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox__jNafO
+                          )}
+                          key={currentIndex}
+                        >
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.columns___0BVIk
+                            )}
+                          >
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                sty.column___1JIqa
+                              )}
+                            >
+                              <p.PlasmicImg
+                                alt={""}
+                                className={classNames(sty.img___8YyoR)}
+                                displayHeight={
+                                  hasVariant(globalVariants, "screen", "mobile")
+                                    ? ("185.39px" as const)
+                                    : ("173.52px" as const)
+                                }
+                                displayMaxHeight={"none" as const}
+                                displayMaxWidth={"100%" as const}
+                                displayMinHeight={"0" as const}
+                                displayMinWidth={"0" as const}
+                                displayWidth={
+                                  hasVariant(globalVariants, "screen", "mobile")
+                                    ? ("330px" as const)
+                                    : ("308.5px" as const)
+                                }
+                                loading={"lazy" as const}
+                                src={(() => {
+                                  try {
+                                    return currentItem.fields.heroImage[0].url;
+                                  } catch (e) {
+                                    if (e instanceof TypeError) {
+                                      return undefined;
+                                    }
+                                    throw e;
+                                  }
+                                })()}
+                              />
+
+                              {(
+                                hasVariant(globalVariants, "screen", "mobile")
+                                  ? true
+                                  : true
+                              ) ? (
+                                <div
+                                  className={classNames(
+                                    projectcss.all,
+                                    sty.freeBox__iEb4M
+                                  )}
+                                >
+                                  <div
+                                    className={classNames(
+                                      projectcss.all,
+                                      projectcss.__wab_text,
+                                      sty.text__utCdD
+                                    )}
+                                  >
+                                    {(() => {
+                                      try {
+                                        return currentItem.fields.heroHeadline;
+                                      } catch (e) {
+                                        if (e instanceof TypeError) {
+                                          return "Enter some text";
+                                        }
+                                        throw e;
+                                      }
+                                    })()}
+                                  </div>
+
+                                  <div
+                                    className={classNames(
+                                      projectcss.all,
+                                      projectcss.__wab_text,
+                                      sty.text__ylWhw
+                                    )}
+                                  >
+                                    {(() => {
+                                      try {
+                                        return currentItem.fields
+                                          .heroSubHeadline;
+                                      } catch (e) {
+                                        if (e instanceof TypeError) {
+                                          return "Enter some text";
+                                        }
+                                        throw e;
+                                      }
+                                    })()}
+                                  </div>
+                                </div>
+                              ) : null}
+                              {(
+                                hasVariant(globalVariants, "screen", "mobile")
+                                  ? true
+                                  : true
+                              ) ? (
+                                <div
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.__wab_text,
+                                    sty.text___8QR
+                                  )}
+                                >
+                                  {(() => {
                                     try {
-                                      return currentItem.fields.heroImage[0]
-                                        .url;
+                                      return currentItem.fields.heroHeadline;
                                     } catch (e) {
                                       if (e instanceof TypeError) {
-                                        return undefined;
+                                        return "Enter some text";
                                       }
                                       throw e;
                                     }
                                   })()}
-                                />
-
-                                {(
-                                  hasVariant(globalVariants, "screen", "mobile")
-                                    ? true
-                                    : true
-                                ) ? (
-                                  <div
-                                    className={classNames(
-                                      projectcss.all,
-                                      sty.freeBox__iEb4M
-                                    )}
-                                  >
-                                    <div
-                                      className={classNames(
-                                        projectcss.all,
-                                        projectcss.__wab_text,
-                                        sty.text__utCdD
-                                      )}
-                                    >
-                                      {(() => {
-                                        try {
-                                          return currentItem.fields
-                                            .heroHeadline;
-                                        } catch (e) {
-                                          if (e instanceof TypeError) {
-                                            return "Enter some text";
-                                          }
-                                          throw e;
-                                        }
-                                      })()}
-                                    </div>
-
-                                    <div
-                                      className={classNames(
-                                        projectcss.all,
-                                        projectcss.__wab_text,
-                                        sty.text__ylWhw
-                                      )}
-                                    >
-                                      {(() => {
-                                        try {
-                                          return currentItem.fields
-                                            .heroSubHeadline;
-                                        } catch (e) {
-                                          if (e instanceof TypeError) {
-                                            return "Enter some text";
-                                          }
-                                          throw e;
-                                        }
-                                      })()}
-                                    </div>
-                                  </div>
-                                ) : null}
-                              </div>
+                                </div>
+                              ) : null}
+                              {(
+                                hasVariant(globalVariants, "screen", "mobile")
+                                  ? true
+                                  : true
+                              ) ? (
+                                <div
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.__wab_text,
+                                    sty.text___27Qi6
+                                  )}
+                                >
+                                  {(() => {
+                                    try {
+                                      return currentItem.fields.heroSubHeadline;
+                                    } catch (e) {
+                                      if (e instanceof TypeError) {
+                                        return "Enter some text";
+                                      }
+                                      throw e;
+                                    }
+                                  })()}
+                                </div>
+                              ) : null}
                             </div>
                           </div>
-                        ))}
+                        </div>
+                      ))}
 
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            sty.freeBox___6Ymyn
-                          )}
-                        />
-                      </div>
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox___6Ymyn
+                        )}
+                      />
                     </div>
                   </div>
 
