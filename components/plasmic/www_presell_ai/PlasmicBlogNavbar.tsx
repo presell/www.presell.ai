@@ -61,7 +61,6 @@ export type PlasmicBlogNavbar__OverridesType = {
   root?: p.Flex<"div">;
   blogLogo?: p.Flex<typeof BlogLogo>;
   form?: p.Flex<"form">;
-  emailInput?: p.Flex<"input">;
   textInput?: p.Flex<typeof TextInput>;
   textbox?: p.Flex<typeof TextInput>;
 };
@@ -243,20 +242,6 @@ function PlasmicBlogNavbar__RenderFunc(props: {
               className={classNames(projectcss.all, sty.form)}
               method={"post" as const}
             >
-              <input
-                data-plasmic-name={"emailInput"}
-                data-plasmic-override={overrides.emailInput}
-                className={classNames(
-                  projectcss.all,
-                  projectcss.input,
-                  sty.emailInput
-                )}
-                placeholder={"📧 Enter Email Address Here" as const}
-                size={undefined}
-                type={"email" as const}
-                value={"" as const}
-              />
-
               <TextInput
                 data-plasmic-name={"textInput"}
                 data-plasmic-override={overrides.textInput}
@@ -331,10 +316,9 @@ function PlasmicBlogNavbar__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "blogLogo", "form", "emailInput", "textInput", "textbox"],
+  root: ["root", "blogLogo", "form", "textInput", "textbox"],
   blogLogo: ["blogLogo"],
-  form: ["form", "emailInput", "textInput", "textbox"],
-  emailInput: ["emailInput"],
+  form: ["form", "textInput", "textbox"],
   textInput: ["textInput", "textbox"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -344,7 +328,6 @@ type NodeDefaultElementType = {
   root: "div";
   blogLogo: typeof BlogLogo;
   form: "form";
-  emailInput: "input";
   textInput: typeof TextInput;
 };
 
@@ -411,7 +394,6 @@ export const PlasmicBlogNavbar = Object.assign(
     // Helper components rendering sub-elements
     blogLogo: makeNodeComponent("blogLogo"),
     form: makeNodeComponent("form"),
-    emailInput: makeNodeComponent("emailInput"),
     textInput: makeNodeComponent("textInput"),
 
     // Metadata about props expected for PlasmicBlogNavbar
