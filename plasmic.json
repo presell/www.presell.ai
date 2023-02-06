@@ -300,19 +300,6 @@
           "componentType": "component"
         },
         {
-          "id": "T64UjHkK2R",
-          "name": "NewPage",
-          "type": "managed",
-          "projectId": "hgYa2chxELsjCrsDiarb3T",
-          "renderModuleFilePath": "plasmic/www_presell_ai/PlasmicNewPage.tsx",
-          "importSpec": {
-            "modulePath": "../pages/new-page.tsx"
-          },
-          "cssFilePath": "plasmic/www_presell_ai/PlasmicNewPage.module.css",
-          "scheme": "blackbox",
-          "componentType": "page"
-        },
-        {
           "id": "bB67aA0az_",
           "name": "Pricing",
           "type": "managed",
@@ -322,6 +309,45 @@
             "modulePath": "../pages/pricing.tsx"
           },
           "cssFilePath": "plasmic/www_presell_ai/PlasmicPricing.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "T64UjHkK2R",
+          "name": "SignUpV2",
+          "type": "managed",
+          "projectId": "hgYa2chxELsjCrsDiarb3T",
+          "renderModuleFilePath": "plasmic/www_presell_ai/PlasmicSignUpV2.tsx",
+          "importSpec": {
+            "modulePath": "../pages/Signup.tsx"
+          },
+          "cssFilePath": "plasmic/www_presell_ai/PlasmicSignUpV2.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "9_IECfX9BI",
+          "name": "SignUpV2FigmaImport",
+          "type": "managed",
+          "projectId": "hgYa2chxELsjCrsDiarb3T",
+          "renderModuleFilePath": "plasmic/www_presell_ai/PlasmicSignUpV2FigmaImport.tsx",
+          "importSpec": {
+            "modulePath": "../pages/new-page-2.tsx"
+          },
+          "cssFilePath": "plasmic/www_presell_ai/PlasmicSignUpV2FigmaImport.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "1_ptl9g1aZ",
+          "name": "BlogTemplate2",
+          "type": "managed",
+          "projectId": "hgYa2chxELsjCrsDiarb3T",
+          "renderModuleFilePath": "plasmic/www_presell_ai/PlasmicBlogTemplate2.tsx",
+          "importSpec": {
+            "modulePath": "../pages/blog-template-2.tsx"
+          },
+          "cssFilePath": "plasmic/www_presell_ai/PlasmicBlogTemplate2.module.css",
           "scheme": "blackbox",
           "componentType": "page"
         }
@@ -391,6 +417,41 @@
           "id": "YniqO4aFUTF3",
           "name": "ArrowRightsvgIcon",
           "moduleFilePath": "plasmic/www_presell_ai/icons/PlasmicIcon__ArrowRightsvg.tsx"
+        },
+        {
+          "id": "Vd2UJLj9_L",
+          "name": "IconLoginee285B38SvgIcon",
+          "moduleFilePath": "plasmic/www_presell_ai/icons/PlasmicIcon__IconLoginee285B38Svg.tsx"
+        },
+        {
+          "id": "mQdnen5etH",
+          "name": "FrameIcon",
+          "moduleFilePath": "plasmic/www_presell_ai/icons/PlasmicIcon__Frame.tsx"
+        },
+        {
+          "id": "Lm4kpSt2fl",
+          "name": "Frame2Icon",
+          "moduleFilePath": "plasmic/www_presell_ai/icons/PlasmicIcon__Frame2.tsx"
+        },
+        {
+          "id": "mC7EQz8zyM",
+          "name": "Frame3Icon",
+          "moduleFilePath": "plasmic/www_presell_ai/icons/PlasmicIcon__Frame3.tsx"
+        },
+        {
+          "id": "38bLqC9JJ8",
+          "name": "Group3Icon",
+          "moduleFilePath": "plasmic/www_presell_ai/icons/PlasmicIcon__Group3.tsx"
+        },
+        {
+          "id": "_-HsDsjJcs",
+          "name": "Icon3Icon",
+          "moduleFilePath": "plasmic/www_presell_ai/icons/PlasmicIcon__Icon3.tsx"
+        },
+        {
+          "id": "fh3MvCs9MXc",
+          "name": "Group4Icon",
+          "moduleFilePath": "plasmic/www_presell_ai/icons/PlasmicIcon__Group4.tsx"
         }
       ],
       "images": [
@@ -683,6 +744,171 @@
           "id": "MV-h_PIbD",
           "name": "Cover.png",
           "filePath": "../public/plasmic/www_presell_ai/images/coverpng.png"
+        },
+        {
+          "id": "n_KOMKWfM",
+          "name": "logo-slider-maid-mentor.png",
+          "filePath": "../public/plasmic/www_presell_ai/images/logoSliderMaidMentorpng.png"
+        },
+        {
+          "id": "ma-yoVmeyT",
+          "name": "logo-slider-lawncarlife.png",
+          "filePath": "../public/plasmic/www_presell_ai/images/logoSliderLawncarlifepng.png"
+        },
+        {
+          "id": "4sklsicTAQ",
+          "name": "logo-slider-dmu.png",
+          "filePath": "../public/plasmic/www_presell_ai/images/logoSliderDmupng.png"
+        },
+        {
+          "id": "k7xb3EL4p8",
+          "name": "logo-slider-brolaws.png",
+          "filePath": "../public/plasmic/www_presell_ai/images/logoSliderBrolawspng.png"
+        },
+        {
+          "id": "6NUPdkXxm4",
+          "name": "Capterra-logo",
+          "filePath": "../public/plasmic/www_presell_ai/images/capterraLogo.svg"
+        },
+        {
+          "id": "kqHp39xK44",
+          "name": "Group",
+          "filePath": "../public/plasmic/www_presell_ai/images/group.svg"
+        },
+        {
+          "id": "eKra94hpyX",
+          "name": "Group 2",
+          "filePath": "../public/plasmic/www_presell_ai/images/group2.svg"
+        },
+        {
+          "id": "PN6h-g6U9",
+          "name": "aframe2.0.jpg",
+          "filePath": "../public/plasmic/www_presell_ai/images/aframe20Jpg.png"
+        },
+        {
+          "id": "F0XPFPT4iX",
+          "name": "span",
+          "filePath": "../public/plasmic/www_presell_ai/images/span.png"
+        },
+        {
+          "id": "OPcO6B_m7T",
+          "name": "aframe3.jpg",
+          "filePath": "../public/plasmic/www_presell_ai/images/aframe3Jpg.png"
+        },
+        {
+          "id": "goa1MoewO1",
+          "name": "aframe2.jpg",
+          "filePath": "../public/plasmic/www_presell_ai/images/aframe2Jpg.png"
+        },
+        {
+          "id": "xmznt31-Wn",
+          "name": "aframe1.jpg",
+          "filePath": "../public/plasmic/www_presell_ai/images/aframe1Jpg.png"
+        },
+        {
+          "id": "Vm4w0lCA-z",
+          "name": "aframe5.jpg",
+          "filePath": "../public/plasmic/www_presell_ai/images/aframe5Jpg.png"
+        },
+        {
+          "id": "Wc1VhO0pkm",
+          "name": "aframe7.jpg",
+          "filePath": "../public/plasmic/www_presell_ai/images/aframe7Jpg.png"
+        },
+        {
+          "id": "GbkdZgDjan",
+          "name": "House_Calls_Brooklyn_Zames_Williams_living_room_2_Matthew_Williams.1519661849.jpg",
+          "filePath": "../public/plasmic/www_presell_ai/images/houseCallsBrooklynZamesWilliamsLivingRoom2MatthewWilliams1519661849Jpg.png"
+        },
+        {
+          "id": "UD6z6xZGc5",
+          "name": "curbed_placeholder.54.0.jpg",
+          "filePath": "../public/plasmic/www_presell_ai/images/curbedPlaceholder540Jpg.png"
+        },
+        {
+          "id": "SUT08OA6P5",
+          "name": "GettyImages_481665239.1490974094.jpg",
+          "filePath": "../public/plasmic/www_presell_ai/images/gettyImages4816652391490974094Jpg.png"
+        },
+        {
+          "id": "V4PZoQSiJC",
+          "name": "154.0.jpg",
+          "filePath": "../public/plasmic/www_presell_ai/images/_1540Jpg.png"
+        },
+        {
+          "id": "ueoC2392Zu",
+          "name": "05_Braddock_Point_6.0.jpg",
+          "filePath": "../public/plasmic/www_presell_ai/images/_05BraddockPoint60Jpg.png"
+        },
+        {
+          "id": "OMZerrVOJF",
+          "name": "eyJpdSI6ImViZDhlNjEyMmRkOWQ1MDMxZDdmOGY4Y2RkOGI0MGE5OWI1OGNkYzdiMDI5NjU5NzlkZTE5NjIxNzk0OGQzNjYiLCJ3IjozNjAsImgiOjQwMCwiZCI6MS41LCJjcyI6MCwiZiI6NH0.webp",
+          "filePath": "../public/plasmic/www_presell_ai/images/eyJpdSi6ImViZDhlNjEyMmRkOwq1MdMxZDdmOgy4Y2RkOgi0Mge5Owi1OgNkYzdiMdi5NjU5NzlkZte5NjIxNzk0OgQzNjYiLcj3IjozNjAsImgiOjQwMCwiZci6Ms41LcJjcyI6MCwiZiI6Nh0Webp.png"
+        },
+        {
+          "id": "7TyWxqKB-e",
+          "name": "eyJpdSI6ImQ4ODA1YzdkZjQ4NDZlZmJjMmYwNTM0NzcxMDQ5YTJmNzhlNjJjMTI4OTk2MThmNmNiOTdmMjUwYzI4ODMxY2UiLCJ3IjozNjAsImgiOjQwMCwiZCI6MS41LCJjcyI6MCwiZiI6NH0.webp",
+          "filePath": "../public/plasmic/www_presell_ai/images/eyJpdSi6ImQ4Oda1YzdkZjQ4NdZlZmJjMmYwNtm0NzcxMdq5YtJmNzhlNjJjMti4OTk2MThmNmNiOTdmMjUwYzI4OdMxY2UiLcj3IjozNjAsImgiOjQwMCwiZci6Ms41LcJjcyI6MCwiZiI6Nh0Webp.png"
+        },
+        {
+          "id": "iQ2b8QNLVb",
+          "name": "eyJpdSI6IjFkNGEwN2RmODQ3YmI5NjA0YzU0YmE4MGJkZWRlMWFlMTg2YzBjNjNhODE3MDQ2NzdhMjFhMzk0Y2ExYmY1NWEiLCJ3IjozNjAsImgiOjQwMCwiZCI6MS41LCJjcyI6MCwiZiI6NH0.webp",
+          "filePath": "../public/plasmic/www_presell_ai/images/eyJpdSi6IjFkNgEwN2RmOdq3YmI5NjA0YzU0YmE4MgJkZwRlMwFlMTg2YzBjNjNhOde3Mdq2NzdhMjFhMzk0Y2ExYmY1NwEiLcj3IjozNjAsImgiOjQwMCwiZci6Ms41LcJjcyI6MCwiZiI6Nh0Webp.png"
+        },
+        {
+          "id": "i0Jb_uxXLV",
+          "name": "eyJpdSI6ImM0NTI3Njg3YzAyZjdkMGY1ZWJjOWJiZTFiZWZiYjY4ZmQwN2MzODhlMWU5Nzk0ZmJhNTIyYTVkMDcxY2UxZTAiLCJ3IjozNjAsImgiOjQwMCwiZCI6MS41LCJjcyI6MCwiZiI6NH0.webp",
+          "filePath": "../public/plasmic/www_presell_ai/images/eyJpdSi6ImM0Nti3Njg3YzAyZjdkMgy1ZwJjOwJiZtFiZwZiYjY4ZmQwN2MzODhlMwu5Nzk0ZmJhNtIyYtVkMDcxY2UxZtAiLcj3IjozNjAsImgiOjQwMCwiZci6Ms41LcJjcyI6MCwiZiI6Nh0Webp.png"
+        },
+        {
+          "id": "-VmVfxR99q5",
+          "name": "eyJpdSI6IjgzYjg2OTYxMTQyMmUwOTczMjg1MGU2MGY2ZTFlNDJlNmY3NGJlNjU3ZjA2NzBjYjRjZGZlMzM0OTU1MDhlYzciLCJ3IjozNjAsImgiOjQwMCwiZCI6MS41LCJjcyI6MCwiZiI6NH0.webp",
+          "filePath": "../public/plasmic/www_presell_ai/images/eyJpdSi6IjgzYjg2OtYxMtQyMmUwOTczMjg1Mgu2Mgy2ZtFlNdJlNmY3NgJlNjU3ZjA2NzBjYjRjZgZlMzM0Otu1MDhlYzciLcj3IjozNjAsImgiOjQwMCwiZci6Ms41LcJjcyI6MCwiZiI6Nh0Webp.png"
+        },
+        {
+          "id": "6MIaFFVkn",
+          "name": "aframe2.0.jpg 2",
+          "filePath": "../public/plasmic/www_presell_ai/images/aframe20Jpg2.png"
+        },
+        {
+          "id": "7vZmBftHO4",
+          "name": "aframe3.jpg 2",
+          "filePath": "../public/plasmic/www_presell_ai/images/aframe3Jpg2.png"
+        },
+        {
+          "id": "lDFwRKicyF",
+          "name": "aframe5.jpg 2",
+          "filePath": "../public/plasmic/www_presell_ai/images/aframe5Jpg2.png"
+        },
+        {
+          "id": "w4ucLYFP7m",
+          "name": "eyJpdSI6IjZhNzcyNzAxNzE3MjAzYmRjNzM1YTg4NzU3ODg4NDA3NTUxZGZjMjkzNTE5OGQzMDBmZDdmOTBiNGJhMzlmOWYiLCJ3IjozNDAsImgiOjM4MCwiZCI6MS41LCJjcyI6MCwiZiI6NH0.webp",
+          "filePath": "../public/plasmic/www_presell_ai/images/eyJpdSi6IjZhNzcyNzAxNzE3MjAzYmRjNzM1YTg4NzU3ODg4Nda3NtUxZgZjMjkzNte5OgQzMdBmZDdmOtBiNgJhMzlmOwYiLcj3IjozNdAsImgiOjM4MCwiZci6Ms41LcJjcyI6MCwiZiI6Nh0Webp.png"
+        },
+        {
+          "id": "DNLHhVtJJS",
+          "name": "eyJpdSI6IjJkOWQxYThkZjUxMjdmNzU4MGYzODFhMTk0NmVkZDU5YjUxMjkwZDkwNzgyMDY2ODA1YmU5YzMxYjM3MzMzZjkiLCJ3IjozNDAsImgiOjM4MCwiZCI6MS41LCJjcyI6MCwiZiI6NH0.webp",
+          "filePath": "../public/plasmic/www_presell_ai/images/eyJpdSi6IjJkOwQxYThkZjUxMjdmNzU4MgYzOdFhMTk0NmVkZdu5YjUxMjkwZDkwNzgyMdy2Oda1YmU5YzMxYjM3MzMzZjkiLcj3IjozNdAsImgiOjM4MCwiZci6Ms41LcJjcyI6MCwiZiI6Nh0Webp.png"
+        },
+        {
+          "id": "riaOyxBKkm",
+          "name": "eyJpdSI6IjAwMmNmY2MxYmM5MmEzNGMxZjQyODE1YjRiZjRlZWZiYTkwYTQwOWVmMWI1Yzg2NGY4ZWZiYjU2MDI0MjQwMTgiLCJ3IjozNDAsImgiOjM4MCwiZCI6MS41LCJjcyI6MCwiZiI6NH0.webp",
+          "filePath": "../public/plasmic/www_presell_ai/images/eyJpdSi6IjAwMmNmY2MxYmM5MmEzNgMxZjQyOde1YjRiZjRlZwZiYTkwYtQwOwVmMwi1Yzg2Ngy4ZwZiYjU2Mdi0MjQwMTgiLcj3IjozNdAsImgiOjM4MCwiZci6Ms41LcJjcyI6MCwiZiI6Nh0Webp.png"
+        },
+        {
+          "id": "QWBdpi4ENs",
+          "name": "eyJpdSI6IjllYzMwZTYxNmJlNWYzOWE2NzY3NWFkYWI0M2I1NmNiNDg4YTFkMjE5ODNkOWUzYWRjYjRiMTYwZTIyZDdkODIiLCJ3IjozNDAsImgiOjM4MCwiZCI6MS41LCJjcyI6MCwiZiI6NH0.webp",
+          "filePath": "../public/plasmic/www_presell_ai/images/eyJpdSi6IjllYzMwZtYxNmJlNwYzOwe2NzY3NwFkYwi0M2I1NmNiNDg4YtFkMjE5OdNkOwUzYwRjYjRiMtYwZtIyZDdkOdIiLcj3IjozNdAsImgiOjM4MCwiZci6Ms41LcJjcyI6MCwiZiI6Nh0Webp.png"
+        },
+        {
+          "id": "p3g-oMN7Ot",
+          "name": "eyJpdSI6ImM2ZDI5NTNkYzQ1YmUyN2E2OTQ3OTJhYjhhMDRhODNhNDA1YjMwMDk5MDM2MDAwYzFiYjMxMGMwNTUwYjZlZjgiLCJ3IjozNDAsImgiOjM4MCwiZCI6MS41LCJjcyI6MCwiZiI6NH0.webp",
+          "filePath": "../public/plasmic/www_presell_ai/images/eyJpdSi6ImM2Zdi5NtNkYzQ1YmUyN2E2Otq3OtJhYjhhMdRhOdNhNda1YjMwMDk5Mdm2MdAwYzFiYjMxMgMwNtUwYjZlZjgiLcj3IjozNdAsImgiOjM4MCwiZci6Ms41LcJjcyI6MCwiZiI6Nh0Webp.png"
+        },
+        {
+          "id": "GZvTOp8-1H",
+          "name": "eyJpdSI6IjI0MDBhYWQ2MDQ2YzQzMDYyMmRkMGIzMzk3ZWRkZGVjNjc1N2E2ZDFiYjNmZjMxZjY5NjU3MTU2YTA0MTM5NDciLCJ3IjozNDAsImgiOjM4MCwiZCI6MS41LCJjcyI6MCwiZiI6NH0.webp",
+          "filePath": "../public/plasmic/www_presell_ai/images/eyJpdSi6IjI0MdBhYwq2Mdq2YzQzMdYyMmRkMgIzMzk3ZwRkZgVjNjc1N2E2ZdFiYjNmZjMxZjY5NjU3Mtu2Yta0Mtm5NDciLcj3IjozNdAsImgiOjM4MCwiZci6Ms41LcJjcyI6MCwiZiI6Nh0Webp.png"
         }
       ],
       "indirect": false,
@@ -740,6 +966,6 @@
   "nextjsConfig": {
     "pagesDir": "../pages"
   },
-  "cliVersion": "0.1.206",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.206/dist/plasmic.schema.json"
+  "cliVersion": "0.1.208",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.208/dist/plasmic.schema.json"
 }

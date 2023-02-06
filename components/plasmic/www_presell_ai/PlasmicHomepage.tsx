@@ -221,23 +221,23 @@ function PlasmicHomepage__RenderFunc(props: {
               </div>
             </p.Stack>
           ) : null}
-
-          <form
-            data-plasmic-name={"form"}
-            data-plasmic-override={overrides.form}
-            action={
-              "https://hook.us1.make.com/6qf8ii7ozfbui45pc1a0hp2ypwbret9o" as const
-            }
-            className={classNames(projectcss.all, sty.form)}
-            method={"post" as const}
-          >
-            <Form2
-              data-plasmic-name={"form2"}
-              data-plasmic-override={overrides.form2}
-              className={classNames("__wab_instance", sty.form2)}
-            />
-          </form>
-
+          {true ? (
+            <form
+              data-plasmic-name={"form"}
+              data-plasmic-override={overrides.form}
+              action={
+                "https://hook.us1.make.com/6qf8ii7ozfbui45pc1a0hp2ypwbret9o" as const
+              }
+              className={classNames(projectcss.all, sty.form)}
+              method={"post" as const}
+            >
+              <Form2
+                data-plasmic-name={"form2"}
+                data-plasmic-override={overrides.form2}
+                className={classNames("__wab_instance", sty.form2)}
+              />
+            </form>
+          ) : null}
           {true ? (
             <Section
               className={classNames("__wab_instance", sty.section__scyEf)}
