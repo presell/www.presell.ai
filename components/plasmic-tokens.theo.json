@@ -1,6 +1,16 @@
 {
   "props": [
     {
+      "name": "#F3F3F3",
+      "type": "color",
+      "value": "#E5E5EA",
+      "category": "color",
+      "meta": {
+        "projectId": "hgYa2chxELsjCrsDiarb3T",
+        "id": "mz2wrosK-"
+      }
+    },
+    {
       "name": "Content max width",
       "type": "spacing",
       "value": "1140px",
@@ -141,6 +151,96 @@
       }
     },
     {
+      "name": "UnnamedStyleToken 21",
+      "type": "color",
+      "value": "#000000",
+      "category": "color",
+      "meta": {
+        "projectId": "hgYa2chxELsjCrsDiarb3T",
+        "id": "yVhCEUIOp"
+      }
+    },
+    {
+      "name": "UnnamedStyleToken 22",
+      "type": "color",
+      "value": "#000000",
+      "category": "color",
+      "meta": {
+        "projectId": "hgYa2chxELsjCrsDiarb3T",
+        "id": "u-6GEvb1G"
+      }
+    },
+    {
+      "name": "UnnamedStyleToken 23",
+      "type": "color",
+      "value": "#92959BD9",
+      "category": "color",
+      "meta": {
+        "projectId": "hgYa2chxELsjCrsDiarb3T",
+        "id": "9sC8iLCor"
+      }
+    },
+    {
+      "name": "UnnamedStyleToken 24",
+      "type": "color",
+      "value": "#000000",
+      "category": "color",
+      "meta": {
+        "projectId": "hgYa2chxELsjCrsDiarb3T",
+        "id": "KtLSLsCvb"
+      }
+    },
+    {
+      "name": "UnnamedStyleToken 25",
+      "type": "color",
+      "value": "#0A84FF",
+      "category": "color",
+      "meta": {
+        "projectId": "hgYa2chxELsjCrsDiarb3T",
+        "id": "QaVcST1gY"
+      }
+    },
+    {
+      "name": "UnnamedStyleToken 26",
+      "type": "color",
+      "value": "#05050599",
+      "category": "color",
+      "meta": {
+        "projectId": "hgYa2chxELsjCrsDiarb3T",
+        "id": "rOLNmIU5ut"
+      }
+    },
+    {
+      "name": "UnnamedStyleToken 27",
+      "type": "color",
+      "value": "#05050599",
+      "category": "color",
+      "meta": {
+        "projectId": "hgYa2chxELsjCrsDiarb3T",
+        "id": "iJxZVtnoG"
+      }
+    },
+    {
+      "name": "UnnamedStyleToken 28",
+      "type": "color",
+      "value": "#14C72F",
+      "category": "color",
+      "meta": {
+        "projectId": "hgYa2chxELsjCrsDiarb3T",
+        "id": "x21NZIG1X"
+      }
+    },
+    {
+      "name": "UnnamedStyleToken 29",
+      "type": "color",
+      "value": "#14C72F",
+      "category": "color",
+      "meta": {
+        "projectId": "hgYa2chxELsjCrsDiarb3T",
+        "id": "zj1wzxG80"
+      }
+    },
+    {
       "name": "UnnamedStyleToken 3",
       "type": "color",
       "value": "#0A84FF",
@@ -148,6 +248,56 @@
       "meta": {
         "projectId": "hgYa2chxELsjCrsDiarb3T",
         "id": "LUzL-ikOZ"
+      }
+    },
+    {
+      "name": "UnnamedStyleToken 30",
+      "type": "color",
+      "value": "#14C72F",
+      "category": "color",
+      "meta": {
+        "projectId": "hgYa2chxELsjCrsDiarb3T",
+        "id": "ZK_rbOson"
+      }
+    },
+    {
+      "name": "UnnamedStyleToken 31",
+      "type": "color",
+      "value": "#14C72F",
+      "category": "color",
+      "meta": {
+        "projectId": "hgYa2chxELsjCrsDiarb3T",
+        "id": "3UuYO1yC3"
+      }
+    },
+    {
+      "name": "UnnamedStyleToken 32",
+      "type": "color",
+      "value": "#FFFFFFD9",
+      "category": "color",
+      "meta": {
+        "projectId": "hgYa2chxELsjCrsDiarb3T",
+        "id": "0lUnRTZQZ"
+      }
+    },
+    {
+      "name": "UnnamedStyleToken 33",
+      "type": "color",
+      "value": "#000000",
+      "category": "color",
+      "meta": {
+        "projectId": "hgYa2chxELsjCrsDiarb3T",
+        "id": "IdEab-76o"
+      }
+    },
+    {
+      "name": "UnnamedStyleToken 34",
+      "type": "color",
+      "value": "#000000",
+      "category": "color",
+      "meta": {
+        "projectId": "hgYa2chxELsjCrsDiarb3T",
+        "id": "qK5W7txIQ"
       }
     },
     {
@@ -223,7 +373,7 @@
     {
       "name": "dark/gray/06",
       "type": "color",
-      "value": "#1C1C1E",
+      "value": "#000000",
       "category": "color",
       "meta": {
         "projectId": "hgYa2chxELsjCrsDiarb3T",

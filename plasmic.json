@@ -350,6 +350,19 @@
           "cssFilePath": "plasmic/www_presell_ai/PlasmicBlogTemplate2.module.css",
           "scheme": "blackbox",
           "componentType": "page"
+        },
+        {
+          "id": "pskrL9-ucL",
+          "name": "NewPage",
+          "type": "managed",
+          "projectId": "hgYa2chxELsjCrsDiarb3T",
+          "renderModuleFilePath": "plasmic/www_presell_ai/PlasmicNewPage.tsx",
+          "importSpec": {
+            "modulePath": "../pages/new-page.tsx"
+          },
+          "cssFilePath": "plasmic/www_presell_ai/PlasmicNewPage.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
         }
       ],
       "icons": [
@@ -909,6 +922,41 @@
           "id": "GZvTOp8-1H",
           "name": "eyJpdSI6IjI0MDBhYWQ2MDQ2YzQzMDYyMmRkMGIzMzk3ZWRkZGVjNjc1N2E2ZDFiYjNmZjMxZjY5NjU3MTU2YTA0MTM5NDciLCJ3IjozNDAsImgiOjM4MCwiZCI6MS41LCJjcyI6MCwiZiI6NH0.webp",
           "filePath": "../public/plasmic/www_presell_ai/images/eyJpdSi6IjI0MdBhYwq2Mdq2YzQzMdYyMmRkMgIzMzk3ZwRkZgVjNjc1N2E2ZdFiYjNmZjMxZjY5NjU3Mtu2Yta0Mtm5NDciLcj3IjozNdAsImgiOjM4MCwiZci6Ms41LcJjcyI6MCwiZiI6Nh0Webp.png"
+        },
+        {
+          "id": "ebV2SPuSv",
+          "name": "logo-slider-maid-mentor.png.png",
+          "filePath": "../public/plasmic/www_presell_ai/images/logoSliderMaidMentorpngpng.png"
+        },
+        {
+          "id": "aNSMyHkBG",
+          "name": "logo-slider-lawncarlife.png.png",
+          "filePath": "../public/plasmic/www_presell_ai/images/logoSliderLawncarlifepngpng.png"
+        },
+        {
+          "id": "115adIrBH",
+          "name": "logo-slider-dmu.png.png",
+          "filePath": "../public/plasmic/www_presell_ai/images/logoSliderDmupngpng.png"
+        },
+        {
+          "id": "64tI23KU6",
+          "name": "logo-slider-brolaws.png.png",
+          "filePath": "../public/plasmic/www_presell_ai/images/logoSliderBrolawspngpng.png"
+        },
+        {
+          "id": "Lzkfyoyci",
+          "name": "4e8df833-5-star-reviews_107a01g000000000000028.png",
+          "filePath": "../public/plasmic/www_presell_ai/images/_4E8Df8335StarReviews107A01G000000000000028Png.png"
+        },
+        {
+          "id": "KYhku1kMP",
+          "name": "div.png",
+          "filePath": "../public/plasmic/www_presell_ai/images/divpng.png"
+        },
+        {
+          "id": "lF2kSZtAo",
+          "name": "Vector.png",
+          "filePath": "../public/plasmic/www_presell_ai/images/vectorpng.png"
         }
       ],
       "indirect": false,

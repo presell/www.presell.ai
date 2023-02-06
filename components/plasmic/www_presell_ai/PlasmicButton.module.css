@@ -1,5 +1,6 @@
 .root {
   position: relative;
+  background: var(--token-ZK_rbOson);
   border-radius: 6px;
   padding: 16px 32px;
   border-width: 2px;
