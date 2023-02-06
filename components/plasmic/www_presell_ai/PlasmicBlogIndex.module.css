@@ -343,6 +343,12 @@
     width: 87%;
   }
 }
+@media (max-width: 1152px) {
+  .freeBox__h2Ka {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+}
 .freeBox__zk3QC {
   display: grid;
   position: relative;
@@ -422,7 +428,7 @@
 }
 @media (max-width: 1152px) {
   .column___1JIqa {
-    padding: 30px;
+    padding: 0px;
   }
 }
 .img___8YyoR {

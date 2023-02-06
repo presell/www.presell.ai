@@ -441,11 +441,15 @@ function PlasmicBlogIndex__RenderFunc(props: {
                                 sty.columns___0BVIk
                               )}
                             >
-                              <div
+                              <p.PlasmicLink
                                 className={classNames(
                                   projectcss.all,
+                                  projectcss.a,
                                   sty.column___1JIqa
                                 )}
+                                component={Link}
+                                href={`/blog/${"rec7nH6d1NViLoASm"}`}
+                                platform={"nextjs"}
                               >
                                 <p.PlasmicImg
                                   alt={""}
@@ -587,7 +591,7 @@ function PlasmicBlogIndex__RenderFunc(props: {
                                     })()}
                                   </div>
                                 ) : null}
-                              </div>
+                              </p.PlasmicLink>
                             </div>
                           </div>
                         ))}
