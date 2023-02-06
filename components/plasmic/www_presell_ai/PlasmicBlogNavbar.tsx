@@ -36,6 +36,7 @@ import {
 } from "@plasmicapp/react-web";
 import BlogLogo from "../../BlogLogo"; // plasmic-import: IYhoFvuKHi/component
 import Button from "../../Button"; // plasmic-import: CnJoQKF1JUjMXv/component
+import TextInput from "../../TextInput"; // plasmic-import: whnP1U9nG_tYGg/component
 
 import { useScreenVariants as useScreenVariantscvQoPsTOivAmc4 } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: CVQoPsTOivAmc4/globalVariant
 
@@ -43,6 +44,9 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 
 import projectcss from "./plasmic_www_presell_ai.module.css"; // plasmic-import: hgYa2chxELsjCrsDiarb3T/projectcss
 import sty from "./PlasmicBlogNavbar.module.css"; // plasmic-import: heif9h_Z_o/css
+
+import Searchsvg2Icon from "./icons/PlasmicIcon__Searchsvg2"; // plasmic-import: GqlQDoqakuGAAn/icon
+import ChecksvgIcon from "./icons/PlasmicIcon__Checksvg"; // plasmic-import: q1JO1GFRPkcbBU/icon
 
 export type PlasmicBlogNavbar__VariantMembers = {};
 export type PlasmicBlogNavbar__VariantsArgs = {};
@@ -58,6 +62,8 @@ export type PlasmicBlogNavbar__OverridesType = {
   blogLogo?: p.Flex<typeof BlogLogo>;
   form?: p.Flex<"form">;
   emailInput?: p.Flex<"input">;
+  textInput?: p.Flex<typeof TextInput>;
+  textbox?: p.Flex<typeof TextInput>;
 };
 
 export interface DefaultBlogNavbarProps {
@@ -251,6 +257,14 @@ function PlasmicBlogNavbar__RenderFunc(props: {
                 value={"" as const}
               />
 
+              <TextInput
+                data-plasmic-name={"textInput"}
+                data-plasmic-override={overrides.textInput}
+                className={classNames("__wab_instance", sty.textInput)}
+                name={"Email" as const}
+                placeholder={"📧 Enter Email Address Here" as const}
+              />
+
               {(
                 hasVariant(globalVariants, "screen", "mobile") ? true : true
               ) ? (
@@ -317,10 +331,11 @@ function PlasmicBlogNavbar__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "blogLogo", "form", "emailInput"],
+  root: ["root", "blogLogo", "form", "emailInput", "textInput", "textbox"],
   blogLogo: ["blogLogo"],
-  form: ["form", "emailInput"],
-  emailInput: ["emailInput"]
+  form: ["form", "emailInput", "textInput", "textbox"],
+  emailInput: ["emailInput"],
+  textInput: ["textInput", "textbox"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -330,6 +345,7 @@ type NodeDefaultElementType = {
   blogLogo: typeof BlogLogo;
   form: "form";
   emailInput: "input";
+  textInput: typeof TextInput;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -396,6 +412,7 @@ export const PlasmicBlogNavbar = Object.assign(
     blogLogo: makeNodeComponent("blogLogo"),
     form: makeNodeComponent("form"),
     emailInput: makeNodeComponent("emailInput"),
+    textInput: makeNodeComponent("textInput"),
 
     // Metadata about props expected for PlasmicBlogNavbar
     internalVariantProps: PlasmicBlogNavbar__VariantProps,

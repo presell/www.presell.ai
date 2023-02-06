@@ -270,6 +270,25 @@
   flex-shrink: 0;
   border-radius: 10px;
 }
+.textInput:global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+  width: 300px;
+  flex-shrink: 0;
+  margin: 2px 20px;
+}
+.svg__wSnEu {
+  position: relative;
+  object-fit: cover;
+  width: 1em;
+  height: 1em;
+}
+.svg__zgzKq {
+  position: relative;
+  object-fit: cover;
+  width: 1em;
+  height: 1em;
+}
 .button__h9Qvo:global(.__wab_instance) {
   position: relative;
   display: none;
