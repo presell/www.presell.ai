@@ -438,7 +438,16 @@ function PlasmicBlogIndex__RenderFunc(props: {
                               sty.link
                             )}
                             component={Link}
-                            href={`/blog/${"rec7nH6d1NViLoASm"}`}
+                            href={`/blog/${(() => {
+                              try {
+                                return currentItem.id;
+                              } catch (e) {
+                                if (e instanceof TypeError) {
+                                  return "rec7nH6d1NViLoASm";
+                                }
+                                throw e;
+                              }
+                            })()}`}
                             key={currentIndex}
                             platform={"nextjs"}
                           >
