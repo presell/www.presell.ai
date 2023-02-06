@@ -365,7 +365,7 @@
     max-width: 100%;
   }
 }
-.freeBox__jNafO {
+.link {
   display: flex;
   position: relative;
   flex-direction: column;
@@ -379,7 +379,7 @@
   padding: 8px 8px 0px 4px;
 }
 @media (max-width: 1152px) {
-  .freeBox__jNafO {
+  .link {
     width: 100%;
   }
 }

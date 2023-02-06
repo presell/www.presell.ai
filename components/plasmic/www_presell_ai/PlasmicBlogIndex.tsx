@@ -58,6 +58,7 @@ export type PlasmicBlogIndex__OverridesType = {
   root?: p.Flex<"div">;
   httpApiFetcher?: p.Flex<typeof DataFetcher>;
   blogNavbar?: p.Flex<typeof BlogNavbar>;
+  link?: p.Flex<"a"> & Partial<LinkProps>;
   footerSection?: p.Flex<typeof FooterSection>;
 };
 
@@ -428,12 +429,18 @@ function PlasmicBlogIndex__RenderFunc(props: {
                             }
                           })() ?? []
                         ).map((currentItem, currentIndex) => (
-                          <div
+                          <p.PlasmicLink
+                            data-plasmic-name={"link"}
+                            data-plasmic-override={overrides.link}
                             className={classNames(
                               projectcss.all,
-                              sty.freeBox__jNafO
+                              projectcss.a,
+                              sty.link
                             )}
+                            component={Link}
+                            href={`/blog/${"rec7nH6d1NViLoASm"}`}
                             key={currentIndex}
+                            platform={"nextjs"}
                           >
                             <div
                               className={classNames(
@@ -448,7 +455,6 @@ function PlasmicBlogIndex__RenderFunc(props: {
                                   sty.column___1JIqa
                                 )}
                                 component={Link}
-                                href={`/blog/${"rec7nH6d1NViLoASm"}`}
                                 platform={"nextjs"}
                               >
                                 <p.PlasmicImg
@@ -593,7 +599,7 @@ function PlasmicBlogIndex__RenderFunc(props: {
                                 ) : null}
                               </p.PlasmicLink>
                             </div>
-                          </div>
+                          </p.PlasmicLink>
                         ))}
 
                         <div
@@ -629,9 +635,10 @@ function PlasmicBlogIndex__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "httpApiFetcher", "blogNavbar", "footerSection"],
-  httpApiFetcher: ["httpApiFetcher", "blogNavbar", "footerSection"],
+  root: ["root", "httpApiFetcher", "blogNavbar", "link", "footerSection"],
+  httpApiFetcher: ["httpApiFetcher", "blogNavbar", "link", "footerSection"],
   blogNavbar: ["blogNavbar"],
+  link: ["link"],
   footerSection: ["footerSection"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -641,6 +648,7 @@ type NodeDefaultElementType = {
   root: "div";
   httpApiFetcher: typeof DataFetcher;
   blogNavbar: typeof BlogNavbar;
+  link: "a";
   footerSection: typeof FooterSection;
 };
 
@@ -707,6 +715,7 @@ export const PlasmicBlogIndex = Object.assign(
     // Helper components rendering sub-elements
     httpApiFetcher: makeNodeComponent("httpApiFetcher"),
     blogNavbar: makeNodeComponent("blogNavbar"),
+    link: makeNodeComponent("link"),
     footerSection: makeNodeComponent("footerSection"),
 
     // Metadata about props expected for PlasmicBlogIndex
