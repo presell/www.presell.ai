@@ -395,7 +395,13 @@ function PlasmicFooterSection__RenderFunc(props: {
 
             {true ? (
               <Button
-                className={classNames("__wab_instance", sty.button__qocX)}
+                className={classNames("__wab_instance", sty.button__qocX, {
+                  [sty.buttonunnamedVariant__qocXoxEvg]: hasVariant(
+                    $state,
+                    "unnamedVariant",
+                    "unnamedVariant"
+                  )
+                })}
                 color={"footerButton" as const}
                 endIcon={
                   <svg
@@ -415,7 +421,14 @@ function PlasmicFooterSection__RenderFunc(props: {
                   className={classNames(
                     projectcss.all,
                     projectcss.__wab_text,
-                    sty.text__aRIx
+                    sty.text__aRIx,
+                    {
+                      [sty.textunnamedVariant__aRIxoxEvg]: hasVariant(
+                        $state,
+                        "unnamedVariant",
+                        "unnamedVariant"
+                      )
+                    }
                   )}
                 >
                   {"Advertorials"}
