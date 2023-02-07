@@ -133,7 +133,7 @@ function PlasmicNavbar__RenderFunc(props: {
             hasGap={true}
             className={classNames(projectcss.all, sty.freeBox__yOcQg)}
           >
-            {true ? (
+            {(hasVariant(globalVariants, "screen", "mobile") ? true : true) ? (
               <Button
                 className={classNames("__wab_instance", sty.button__yUwwv)}
                 color={"navLink" as const}
@@ -162,7 +162,7 @@ function PlasmicNavbar__RenderFunc(props: {
                 </div>
               </Button>
             ) : null}
-            {true ? (
+            {(hasVariant(globalVariants, "screen", "mobile") ? true : true) ? (
               <Button
                 className={classNames("__wab_instance", sty.button__pe0)}
                 color={"navLink" as const}
@@ -231,7 +231,11 @@ function PlasmicNavbar__RenderFunc(props: {
             {(hasVariant(globalVariants, "screen", "mobile") ? true : true) ? (
               <Button
                 className={classNames("__wab_instance", sty.button__y9Zcu)}
-                color={"navLink" as const}
+                color={
+                  hasVariant(globalVariants, "screen", "footer")
+                    ? ("navLinkBlue" as const)
+                    : ("navLinkBlue" as const)
+                }
                 endIcon={
                   <svg
                     className={classNames(projectcss.all, sty.svg__d6W1E)}
@@ -278,10 +282,40 @@ function PlasmicNavbar__RenderFunc(props: {
               >
                 {hasVariant(globalVariants, "screen", "mobile")
                   ? "Watch Demo"
+                  : hasVariant(globalVariants, "screen", "footer")
+                  ? "Get Started"
                   : "Get Started"}
               </Button>
             ) : null}
           </p.Stack>
+        ) : null}
+        {(hasVariant(globalVariants, "screen", "mobile") ? true : true) ? (
+          <div className={classNames(projectcss.all, sty.freeBox__h5RcR)}>
+            {(hasVariant(globalVariants, "screen", "mobile") ? true : true) ? (
+              <button
+                className={classNames(
+                  projectcss.all,
+                  projectcss.button,
+                  projectcss.__wab_text,
+                  sty.button__gtKkH
+                )}
+              >
+                {"Log in"}
+              </button>
+            ) : null}
+            {(hasVariant(globalVariants, "screen", "mobile") ? true : true) ? (
+              <button
+                className={classNames(
+                  projectcss.all,
+                  projectcss.button,
+                  projectcss.__wab_text,
+                  sty.button__kzbYy
+                )}
+              >
+                {"Get Started"}
+              </button>
+            ) : null}
+          </div>
         ) : null}
       </p.Stack>
     </p.Stack>

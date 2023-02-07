@@ -45,6 +45,9 @@
   .freeBox__tAxQg {
     height: 100px;
     padding-bottom: 0px;
+    align-self: center;
+    padding-right: 16px;
+    padding-left: 20px;
     flex-shrink: 0;
     display: flex;
   }
@@ -254,6 +257,7 @@
     flex-direction: row;
     width: 100%;
     margin-top: 18px;
+    align-self: center;
     min-width: 0;
   }
 }
@@ -297,9 +301,11 @@
 }
 @media (max-width: 1152px) {
   .textInput:global(.__wab_instance) {
-    height: 60px;
+    height: 50px;
+    width: 225px;
     margin-left: calc(20px + 8px) !important;
     margin-top: calc(2px + 0px) !important;
+    flex-shrink: 0;
   }
 }
 .svg__wSnEu {
@@ -339,6 +345,11 @@
   position: relative;
   object-fit: cover;
 }
+@media (max-width: 1152px) {
+  .svg__g2Oqo {
+    display: block;
+  }
+}
 .button__rEaM:global(.__wab_instance) {
   max-width: 100%;
   position: relative;
@@ -359,6 +370,11 @@
   text-align: center;
   padding-right: 2px;
   padding-top: 2px;
+}
+@media (max-width: 1152px) {
+  .text__vBGyi {
+    font-size: 12px;
+  }
 }
 .svg__fStLn {
   width: 24px;

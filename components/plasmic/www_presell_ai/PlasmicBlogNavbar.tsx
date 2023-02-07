@@ -277,10 +277,19 @@ function PlasmicBlogNavbar__RenderFunc(props: {
                       )}
                       color={"navLink" as const}
                       endIcon={
-                        <svg
-                          className={classNames(projectcss.all, sty.svg__g2Oqo)}
-                          role={"img"}
-                        />
+                        (
+                          hasVariant(globalVariants, "screen", "mobile")
+                            ? true
+                            : true
+                        ) ? (
+                          <svg
+                            className={classNames(
+                              projectcss.all,
+                              sty.svg__g2Oqo
+                            )}
+                            role={"img"}
+                          />
+                        ) : null
                       }
                       link={"#" as const}
                       startIcon={
@@ -330,7 +339,7 @@ function PlasmicBlogNavbar__RenderFunc(props: {
                         )}
                       >
                         {hasVariant(globalVariants, "screen", "mobile")
-                          ? "Watch Demo"
+                          ? "Join Newsletter"
                           : hasVariant(globalVariants, "screen", "footer")
                           ? "Join Newsletter"
                           : "Join Newsletter"}
