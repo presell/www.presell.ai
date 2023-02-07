@@ -131,7 +131,7 @@ function PlasmicForm2__RenderFunc(props: {
               aria-label={
                 hasVariant(globalVariants, "screen", "footer")
                   ? ("life_insurance" as const)
-                  : ("product" as const)
+                  : ("life_insurance" as const)
               }
               aria-labelledby={
                 hasVariant(globalVariants, "screen", "footer")
@@ -143,7 +143,7 @@ function PlasmicForm2__RenderFunc(props: {
               name={
                 hasVariant(globalVariants, "screen", "footer")
                   ? ("life_insurance" as const)
-                  : ("product" as const)
+                  : ("life_insurance" as const)
               }
               placeholder={
                 hasVariant(globalVariants, "screen", "footer")
