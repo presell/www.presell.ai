@@ -58,6 +58,7 @@ export type PlasmicBlogIndex__OverridesType = {
   root?: p.Flex<"div">;
   httpApiFetcher?: p.Flex<typeof DataFetcher>;
   blogNavbar?: p.Flex<typeof BlogNavbar>;
+  button?: p.Flex<"button">;
   link?: p.Flex<"a"> & Partial<LinkProps>;
   footerSection?: p.Flex<typeof FooterSection>;
 };
@@ -187,6 +188,25 @@ function PlasmicBlogIndex__RenderFunc(props: {
                       data-plasmic-override={overrides.blogNavbar}
                       className={classNames("__wab_instance", sty.blogNavbar)}
                     />
+
+                    {(
+                      hasVariant(globalVariants, "screen", "mobile")
+                        ? true
+                        : true
+                    ) ? (
+                      <button
+                        data-plasmic-name={"button"}
+                        data-plasmic-override={overrides.button}
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.button,
+                          projectcss.__wab_text,
+                          sty.button
+                        )}
+                      >
+                        {"Join Newsletter"}
+                      </button>
+                    ) : null}
                   </div>
 
                   <div
@@ -644,9 +664,23 @@ function PlasmicBlogIndex__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "httpApiFetcher", "blogNavbar", "link", "footerSection"],
-  httpApiFetcher: ["httpApiFetcher", "blogNavbar", "link", "footerSection"],
+  root: [
+    "root",
+    "httpApiFetcher",
+    "blogNavbar",
+    "button",
+    "link",
+    "footerSection"
+  ],
+  httpApiFetcher: [
+    "httpApiFetcher",
+    "blogNavbar",
+    "button",
+    "link",
+    "footerSection"
+  ],
   blogNavbar: ["blogNavbar"],
+  button: ["button"],
   link: ["link"],
   footerSection: ["footerSection"]
 } as const;
@@ -657,6 +691,7 @@ type NodeDefaultElementType = {
   root: "div";
   httpApiFetcher: typeof DataFetcher;
   blogNavbar: typeof BlogNavbar;
+  button: "button";
   link: "a";
   footerSection: typeof FooterSection;
 };
@@ -724,6 +759,7 @@ export const PlasmicBlogIndex = Object.assign(
     // Helper components rendering sub-elements
     httpApiFetcher: makeNodeComponent("httpApiFetcher"),
     blogNavbar: makeNodeComponent("blogNavbar"),
+    button: makeNodeComponent("button"),
     link: makeNodeComponent("link"),
     footerSection: makeNodeComponent("footerSection"),
 

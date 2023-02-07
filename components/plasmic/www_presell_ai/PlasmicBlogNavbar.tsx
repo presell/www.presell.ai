@@ -302,9 +302,19 @@ function PlasmicBlogNavbar__RenderFunc(props: {
                     />
                   }
                 >
-                  {hasVariant(globalVariants, "screen", "mobile")
-                    ? "Watch Demo"
-                    : "Join Newsletter"}
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__vBGyi
+                    )}
+                  >
+                    {hasVariant(globalVariants, "screen", "mobile")
+                      ? "Watch Demo"
+                      : hasVariant(globalVariants, "screen", "footer")
+                      ? "Join Newsletter"
+                      : "Join Newsletter"}
+                  </div>
                 </Button>
               ) : null}
             </p.Stack>

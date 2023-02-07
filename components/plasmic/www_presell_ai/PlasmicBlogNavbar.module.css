@@ -317,6 +317,11 @@
   position: relative;
   object-fit: cover;
 }
+.text__vBGyi {
+  text-align: center;
+  padding-right: 2px;
+  padding-top: 2px;
+}
 .svg__fStLn {
   width: 24px;
   height: 24px;
