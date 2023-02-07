@@ -301,7 +301,7 @@
 }
 @media (max-width: 1152px) {
   .textInput:global(.__wab_instance) {
-    height: 50px;
+    height: 55px;
     width: 225px;
     margin-left: calc(20px + 8px) !important;
     margin-top: calc(2px + 0px) !important;

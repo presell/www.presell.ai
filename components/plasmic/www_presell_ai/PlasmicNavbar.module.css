@@ -351,6 +351,7 @@
   margin-left: 20px;
   text-align: right;
   display: none;
+  border-radius: 5px;
   padding: 7px 10px;
 }
 @media (max-width: 1152px) {
