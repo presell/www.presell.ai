@@ -650,6 +650,8 @@
 .text__iBrZe {
   color: var(--token-Dow1vpW5h4qT5G);
   background: #000000;
+  text-decoration-line: none !important;
+  border: 0px solid #000000;
 }
 @media (max-width: 1152px) {
   .text__iBrZe {
@@ -745,7 +747,7 @@
 }
 .text__pxGgV {
   color: var(--token-Dow1vpW5h4qT5G);
-  background: #1e1b1b;
+  background: #000000;
 }
 @media (max-width: 1152px) {
   .text__pxGgV {
@@ -778,6 +780,8 @@
 .text__u5FFa {
   color: var(--token-Dow1vpW5h4qT5G);
   background: #000000;
+  border-width: 1px;
+  border-style: none;
 }
 @media (max-width: 1152px) {
   .text__u5FFa {

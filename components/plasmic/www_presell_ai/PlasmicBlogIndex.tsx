@@ -215,11 +215,24 @@ function PlasmicBlogIndex__RenderFunc(props: {
                     <div
                       className={classNames(projectcss.all, sty.columns__usu4V)}
                     >
-                      <div
+                      <p.PlasmicLink
                         className={classNames(
                           projectcss.all,
+                          projectcss.a,
                           sty.column__jKfVq
                         )}
+                        component={Link}
+                        href={`/blog/${(() => {
+                          try {
+                            return $ctx.fetchedData.records[0].id;
+                          } catch (e) {
+                            if (e instanceof TypeError) {
+                              return "recBzumnjgu27hfFR";
+                            }
+                            throw e;
+                          }
+                        })()}`}
+                        platform={"nextjs"}
                       >
                         <p.PlasmicImg
                           alt={""}
@@ -255,7 +268,7 @@ function PlasmicBlogIndex__RenderFunc(props: {
                             }
                           })()}
                         />
-                      </div>
+                      </p.PlasmicLink>
 
                       <div
                         className={classNames(
