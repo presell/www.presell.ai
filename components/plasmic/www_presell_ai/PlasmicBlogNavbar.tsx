@@ -117,210 +117,232 @@ function PlasmicBlogNavbar__RenderFunc(props: {
         sty.root
       )}
     >
-      <p.Stack
-        as={"div"}
-        hasGap={true}
-        className={classNames(projectcss.all, sty.freeBox__tAxQg)}
-      >
+      {(
+        hasVariant(globalVariants, "screen", "mobile")
+          ? true
+          : hasVariant(globalVariants, "screen", "footer")
+          ? true
+          : true
+      ) ? (
         <p.Stack
           as={"div"}
           hasGap={true}
-          className={classNames(projectcss.all, sty.freeBox__lKuz5)}
+          className={classNames(projectcss.all, sty.freeBox__tAxQg)}
         >
-          <BlogLogo
-            data-plasmic-name={"blogLogo"}
-            data-plasmic-override={overrides.blogLogo}
-            className={classNames("__wab_instance", sty.blogLogo)}
-          />
-
-          {true ? (
+          {(hasVariant(globalVariants, "screen", "mobile") ? true : true) ? (
             <p.Stack
               as={"div"}
               hasGap={true}
-              className={classNames(projectcss.all, sty.freeBox___4Q05U)}
+              className={classNames(projectcss.all, sty.freeBox__lKuz5)}
             >
-              {true ? (
-                <Button
-                  className={classNames("__wab_instance", sty.button__urkEr)}
-                  color={"navLink" as const}
-                  endIcon={
-                    <svg
-                      className={classNames(projectcss.all, sty.svg__pKh5R)}
-                      role={"img"}
-                    />
-                  }
-                  link={"#" as const}
-                  startIcon={
-                    <svg
-                      className={classNames(projectcss.all, sty.svg__x031H)}
-                      role={"img"}
-                    />
-                  }
-                >
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__qgKrQ
-                    )}
-                  >
-                    {"How it Work"}
-                  </div>
-                </Button>
-              ) : null}
-              {true ? (
-                <Button
-                  className={classNames("__wab_instance", sty.button__eqLfb)}
-                  color={"navLink" as const}
-                  endIcon={
-                    <svg
-                      className={classNames(projectcss.all, sty.svg__juC7G)}
-                      role={"img"}
-                    />
-                  }
-                  link={"#" as const}
-                  startIcon={
-                    <svg
-                      className={classNames(projectcss.all, sty.svg__jhdqb)}
-                      role={"img"}
-                    />
-                  }
-                >
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__tb8Ot
-                    )}
-                  >
-                    {"Pricing"}
-                  </div>
-                </Button>
-              ) : null}
-              {(
-                hasVariant(globalVariants, "screen", "mobile") ? true : true
-              ) ? (
-                <Button
-                  className={classNames("__wab_instance", sty.button__bjBaF)}
-                  color={"navLink" as const}
-                  endIcon={
-                    <svg
-                      className={classNames(projectcss.all, sty.svg__c7Hi4)}
-                      role={"img"}
-                    />
-                  }
-                  link={"#" as const}
-                  startIcon={
-                    <svg
-                      className={classNames(projectcss.all, sty.svg__vnFuv)}
-                      role={"img"}
-                    />
-                  }
-                >
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text___3LAw2
-                    )}
-                  >
-                    {"FAQs"}
-                  </div>
-                </Button>
-              ) : null}
-            </p.Stack>
-          ) : null}
-          {true ? (
-            <p.Stack
-              as={"form"}
-              data-plasmic-name={"form"}
-              data-plasmic-override={overrides.form}
-              hasGap={true}
-              action={
-                "https://hook.us1.make.com/7rngccg63x48p7pfdbvoub43nkrpfvdt" as const
-              }
-              className={classNames(projectcss.all, sty.form)}
-              method={"post" as const}
-            >
-              <TextInput
-                data-plasmic-name={"textInput"}
-                data-plasmic-override={overrides.textInput}
-                className={classNames("__wab_instance", sty.textInput)}
-                name={"Email" as const}
-                placeholder={"📧 Enter Email Address Here" as const}
+              <BlogLogo
+                data-plasmic-name={"blogLogo"}
+                data-plasmic-override={overrides.blogLogo}
+                className={classNames("__wab_instance", sty.blogLogo)}
               />
 
-              {(
-                hasVariant(globalVariants, "screen", "mobile") ? true : true
-              ) ? (
-                <Button
-                  className={classNames("__wab_instance", sty.button__h9Qvo)}
-                  color={"navLink" as const}
-                  endIcon={
-                    <svg
-                      className={classNames(projectcss.all, sty.svg__g2Oqo)}
-                      role={"img"}
-                    />
-                  }
-                  link={"#" as const}
-                  startIcon={
-                    <svg
-                      className={classNames(projectcss.all, sty.svg__cdFjL)}
-                      role={"img"}
-                    />
-                  }
+              {true ? (
+                <p.Stack
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox___4Q05U)}
                 >
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__tAtVv
-                    )}
-                    link={"https://app.presell.ai/" as const}
-                  >
-                    {"Log in"}
-                  </div>
-                </Button>
+                  {true ? (
+                    <Button
+                      className={classNames(
+                        "__wab_instance",
+                        sty.button__urkEr
+                      )}
+                      color={"navLink" as const}
+                      endIcon={
+                        <svg
+                          className={classNames(projectcss.all, sty.svg__pKh5R)}
+                          role={"img"}
+                        />
+                      }
+                      link={"#" as const}
+                      startIcon={
+                        <svg
+                          className={classNames(projectcss.all, sty.svg__x031H)}
+                          role={"img"}
+                        />
+                      }
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__qgKrQ
+                        )}
+                      >
+                        {"How it Work"}
+                      </div>
+                    </Button>
+                  ) : null}
+                  {true ? (
+                    <Button
+                      className={classNames(
+                        "__wab_instance",
+                        sty.button__eqLfb
+                      )}
+                      color={"navLink" as const}
+                      endIcon={
+                        <svg
+                          className={classNames(projectcss.all, sty.svg__juC7G)}
+                          role={"img"}
+                        />
+                      }
+                      link={"#" as const}
+                      startIcon={
+                        <svg
+                          className={classNames(projectcss.all, sty.svg__jhdqb)}
+                          role={"img"}
+                        />
+                      }
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__tb8Ot
+                        )}
+                      >
+                        {"Pricing"}
+                      </div>
+                    </Button>
+                  ) : null}
+                  {(
+                    hasVariant(globalVariants, "screen", "mobile") ? true : true
+                  ) ? (
+                    <Button
+                      className={classNames(
+                        "__wab_instance",
+                        sty.button__bjBaF
+                      )}
+                      color={"navLink" as const}
+                      endIcon={
+                        <svg
+                          className={classNames(projectcss.all, sty.svg__c7Hi4)}
+                          role={"img"}
+                        />
+                      }
+                      link={"#" as const}
+                      startIcon={
+                        <svg
+                          className={classNames(projectcss.all, sty.svg__vnFuv)}
+                          role={"img"}
+                        />
+                      }
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text___3LAw2
+                        )}
+                      >
+                        {"FAQs"}
+                      </div>
+                    </Button>
+                  ) : null}
+                </p.Stack>
               ) : null}
-              {(
-                hasVariant(globalVariants, "screen", "mobile") ? true : true
-              ) ? (
-                <Button
-                  className={classNames("__wab_instance", sty.button__rEaM)}
-                  color={"navLinkBlue" as const}
-                  endIcon={
-                    <svg
-                      className={classNames(projectcss.all, sty.svg__fStLn)}
-                      role={"img"}
-                    />
+              {true ? (
+                <p.Stack
+                  as={"form"}
+                  data-plasmic-name={"form"}
+                  data-plasmic-override={overrides.form}
+                  hasGap={true}
+                  action={
+                    "https://hook.us1.make.com/7rngccg63x48p7pfdbvoub43nkrpfvdt" as const
                   }
-                  link={"https://app.presell.ai/" as const}
-                  startIcon={
-                    <svg
-                      className={classNames(projectcss.all, sty.svg__q7IUm)}
-                      role={"img"}
-                    />
-                  }
+                  className={classNames(projectcss.all, sty.form)}
+                  method={"post" as const}
                 >
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__vBGyi
-                    )}
-                  >
-                    {hasVariant(globalVariants, "screen", "mobile")
-                      ? "Watch Demo"
-                      : hasVariant(globalVariants, "screen", "footer")
-                      ? "Join Newsletter"
-                      : "Join Newsletter"}
-                  </div>
-                </Button>
+                  <TextInput
+                    data-plasmic-name={"textInput"}
+                    data-plasmic-override={overrides.textInput}
+                    className={classNames("__wab_instance", sty.textInput)}
+                    name={"Email" as const}
+                    placeholder={"📧 Enter Email Address Here" as const}
+                  />
+
+                  {(
+                    hasVariant(globalVariants, "screen", "mobile") ? true : true
+                  ) ? (
+                    <Button
+                      className={classNames(
+                        "__wab_instance",
+                        sty.button__h9Qvo
+                      )}
+                      color={"navLink" as const}
+                      endIcon={
+                        <svg
+                          className={classNames(projectcss.all, sty.svg__g2Oqo)}
+                          role={"img"}
+                        />
+                      }
+                      link={"#" as const}
+                      startIcon={
+                        <svg
+                          className={classNames(projectcss.all, sty.svg__cdFjL)}
+                          role={"img"}
+                        />
+                      }
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__tAtVv
+                        )}
+                        link={"https://app.presell.ai/" as const}
+                      >
+                        {"Log in"}
+                      </div>
+                    </Button>
+                  ) : null}
+                  {(
+                    hasVariant(globalVariants, "screen", "mobile") ? true : true
+                  ) ? (
+                    <Button
+                      className={classNames("__wab_instance", sty.button__rEaM)}
+                      color={"navLinkBlue" as const}
+                      endIcon={
+                        <svg
+                          className={classNames(projectcss.all, sty.svg__fStLn)}
+                          role={"img"}
+                        />
+                      }
+                      link={"https://app.presell.ai/" as const}
+                      startIcon={
+                        <svg
+                          className={classNames(projectcss.all, sty.svg__q7IUm)}
+                          role={"img"}
+                        />
+                      }
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__vBGyi
+                        )}
+                      >
+                        {hasVariant(globalVariants, "screen", "mobile")
+                          ? "Watch Demo"
+                          : hasVariant(globalVariants, "screen", "footer")
+                          ? "Join Newsletter"
+                          : "Join Newsletter"}
+                      </div>
+                    </Button>
+                  ) : null}
+                </p.Stack>
               ) : null}
             </p.Stack>
           ) : null}
         </p.Stack>
-      </p.Stack>
+      ) : null}
     </div>
   ) as React.ReactElement | null;
 }
