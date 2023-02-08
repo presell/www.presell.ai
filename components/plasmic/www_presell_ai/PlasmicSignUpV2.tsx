@@ -670,7 +670,11 @@ function PlasmicSignUpV2__RenderFunc(props: {
               displayMaxWidth={"100%" as const}
               displayMinHeight={"0" as const}
               displayMinWidth={"0" as const}
-              displayWidth={"592px" as const}
+              displayWidth={
+                hasVariant(globalVariants, "screen", "mobile")
+                  ? ("540px" as const)
+                  : ("592px" as const)
+              }
               loading={"lazy" as const}
               src={{
                 src: "/plasmic/www_presell_ai/images/divpng.png",
