@@ -139,7 +139,13 @@ function PlasmicSignUpV2__RenderFunc(props: {
         >
           <div className={classNames(projectcss.all, sty.freeBox__kwat2)}>
             <div className={classNames(projectcss.all, sty.columns__enP5J)}>
-              <div className={classNames(projectcss.all, sty.column__tu8Ue)} />
+              {(
+                hasVariant(globalVariants, "screen", "mobile") ? true : true
+              ) ? (
+                <div
+                  className={classNames(projectcss.all, sty.column__tu8Ue)}
+                />
+              ) : null}
 
               <div className={classNames(projectcss.all, sty.column__oqBot)}>
                 {true ? (
