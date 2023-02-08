@@ -957,6 +957,11 @@
           "id": "lF2kSZtAo",
           "name": "Vector.png",
           "filePath": "../public/plasmic/www_presell_ai/images/vectorpng.png"
+        },
+        {
+          "id": "DLEkOFHdl",
+          "name": "Telugu_India_New-Delhi_julian-yu-640806-unsplash.jpg",
+          "filePath": "../public/plasmic/www_presell_ai/images/teluguIndiaNewDelhiJulianYu640806Unsplashjpg.jpeg"
         }
       ],
       "indirect": false,
@@ -1014,6 +1019,6 @@
   "nextjsConfig": {
     "pagesDir": "../pages"
   },
-  "cliVersion": "0.1.208",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.208/dist/plasmic.schema.json"
+  "cliVersion": "0.1.210",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.210/dist/plasmic.schema.json"
 }

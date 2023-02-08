@@ -263,7 +263,7 @@
     {
       "name": "UnnamedStyleToken 31",
       "type": "color",
-      "value": "#14C72F",
+      "value": "#49B459",
       "category": "color",
       "meta": {
         "projectId": "hgYa2chxELsjCrsDiarb3T",
@@ -298,6 +298,36 @@
       "meta": {
         "projectId": "hgYa2chxELsjCrsDiarb3T",
         "id": "qK5W7txIQ"
+      }
+    },
+    {
+      "name": "UnnamedStyleToken 35",
+      "type": "color",
+      "value": "#E5E5EA",
+      "category": "color",
+      "meta": {
+        "projectId": "hgYa2chxELsjCrsDiarb3T",
+        "id": "dXb-vwv9N"
+      }
+    },
+    {
+      "name": "UnnamedStyleToken 36",
+      "type": "color",
+      "value": "#E5E5EA",
+      "category": "color",
+      "meta": {
+        "projectId": "hgYa2chxELsjCrsDiarb3T",
+        "id": "oZVegeNiO"
+      }
+    },
+    {
+      "name": "UnnamedStyleToken 37",
+      "type": "color",
+      "value": "#000000",
+      "category": "color",
+      "meta": {
+        "projectId": "hgYa2chxELsjCrsDiarb3T",
+        "id": "tlaSOFzbF"
       }
     },
     {
