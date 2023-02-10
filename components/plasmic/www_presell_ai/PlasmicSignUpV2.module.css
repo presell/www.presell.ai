@@ -307,6 +307,7 @@
 }
 @media (max-width: 1152px) {
   .text__wD9Au {
+    font-size: 14px;
     padding: 15px;
   }
 }
@@ -326,6 +327,7 @@
     padding-bottom: 0px;
     line-height: 37px;
     width: 400px;
+    font-size: 28px;
   }
 }
 .freeBox__k6Ti7 {
@@ -438,6 +440,9 @@
 @media (max-width: 1152px) {
   .button__pJtrq {
     width: 340px;
+    font-size: 15px;
+    align-self: center;
+    padding: 0px;
   }
 }
 .text__fv07C {
@@ -480,7 +485,7 @@
   .text__kkZdX {
     padding-bottom: 20px;
     width: 550px;
-    font-size: 18px;
+    font-size: 15px;
     padding-right: 90px;
     padding-left: 91px;
   }
