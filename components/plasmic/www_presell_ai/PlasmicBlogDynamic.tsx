@@ -151,12 +151,14 @@ function PlasmicBlogDynamic__RenderFunc(props: {
               url={(() => {
                 try {
                   return (
-                    "https://api.airtable.com/v0/appmM1mMqcDvugXhY/wwwBlog/" +
-                    $ctx.params.slug
+                    "https://api.airtable.com/v0/appmM1mMqcDvugXhY/wwwBlog?filterByFormula=slug=" +
+                    "'" +
+                    $ctx.params.slug +
+                    "'"
                   );
                 } catch (e) {
                   if (e instanceof TypeError) {
-                    return "https://api.airtable.com/v0/appmM1mMqcDvugXhY/wwwBlog?slug";
+                    return "https://api.airtable.com/v0/appmM1mMqcDvugXhY/wwwBlog?filterByFormula=slug=";
                   }
                   throw e;
                 }
@@ -192,7 +194,8 @@ function PlasmicBlogDynamic__RenderFunc(props: {
                         >
                           {(() => {
                             try {
-                              return $ctx.fetchedData.fields.heroHeadline;
+                              return $ctx.fetchedData.records[0].fields
+                                .heroHeadline;
                             } catch (e) {
                               if (e instanceof TypeError) {
                                 return "heroHeadline";
@@ -211,7 +214,8 @@ function PlasmicBlogDynamic__RenderFunc(props: {
                         >
                           {(() => {
                             try {
-                              return $ctx.fetchedData.fields.heroSubHeadline;
+                              return $ctx.fetchedData.records[0].fields
+                                .heroSubHeadline;
                             } catch (e) {
                               if (e instanceof TypeError) {
                                 return "heroSubHeadline";
@@ -235,7 +239,8 @@ function PlasmicBlogDynamic__RenderFunc(props: {
                           loading={"lazy" as const}
                           src={(() => {
                             try {
-                              return $ctx.fetchedData.fields.image1[0].url;
+                              return $ctx.fetchedData.records[0].fields
+                                .heroImage[0].url;
                             } catch (e) {
                               if (e instanceof TypeError) {
                                 return undefined;
@@ -256,7 +261,8 @@ function PlasmicBlogDynamic__RenderFunc(props: {
                         >
                           {(() => {
                             try {
-                              return $ctx.fetchedData.fields.paragraph1;
+                              return $ctx.fetchedData.records[0].fields
+                                .paragraph1;
                             } catch (e) {
                               if (e instanceof TypeError) {
                                 return "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
@@ -280,7 +286,8 @@ function PlasmicBlogDynamic__RenderFunc(props: {
                           loading={"lazy" as const}
                           src={(() => {
                             try {
-                              return $ctx.fetchedData.fields.image2[0].url;
+                              return $ctx.fetchedData.records[0].fields
+                                .image1[0].url;
                             } catch (e) {
                               if (e instanceof TypeError) {
                                 return undefined;
@@ -301,7 +308,8 @@ function PlasmicBlogDynamic__RenderFunc(props: {
                         >
                           {(() => {
                             try {
-                              return $ctx.fetchedData.fields.paragraph2;
+                              return $ctx.fetchedData.records[0].fields
+                                .paragraph2;
                             } catch (e) {
                               if (e instanceof TypeError) {
                                 return "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
@@ -325,7 +333,8 @@ function PlasmicBlogDynamic__RenderFunc(props: {
                           loading={"lazy" as const}
                           src={(() => {
                             try {
-                              return $ctx.fetchedData.fields.image3[0].url;
+                              return $ctx.fetchedData.records[0].fields
+                                .image2[0].url;
                             } catch (e) {
                               if (e instanceof TypeError) {
                                 return undefined;
@@ -346,7 +355,8 @@ function PlasmicBlogDynamic__RenderFunc(props: {
                         >
                           {(() => {
                             try {
-                              return $ctx.fetchedData.fields.paragraph3;
+                              return $ctx.fetchedData.records[0].fields
+                                .paragraph3;
                             } catch (e) {
                               if (e instanceof TypeError) {
                                 return "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
@@ -370,7 +380,8 @@ function PlasmicBlogDynamic__RenderFunc(props: {
                           loading={"lazy" as const}
                           src={(() => {
                             try {
-                              return $ctx.fetchedData.fields.image4[0].url;
+                              return $ctx.fetchedData.records[0].fields
+                                .image3[0].url;
                             } catch (e) {
                               if (e instanceof TypeError) {
                                 return undefined;
@@ -391,7 +402,8 @@ function PlasmicBlogDynamic__RenderFunc(props: {
                         >
                           {(() => {
                             try {
-                              return $ctx.fetchedData.fields.paragraph4;
+                              return $ctx.fetchedData.records[0].fields
+                                .paragraph4;
                             } catch (e) {
                               if (e instanceof TypeError) {
                                 return "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
@@ -415,7 +427,8 @@ function PlasmicBlogDynamic__RenderFunc(props: {
                           loading={"lazy" as const}
                           src={(() => {
                             try {
-                              return $ctx.fetchedData.fields.image5[0].url;
+                              return $ctx.fetchedData.records[0].fields
+                                .image4[0].url;
                             } catch (e) {
                               if (e instanceof TypeError) {
                                 return undefined;
@@ -436,7 +449,8 @@ function PlasmicBlogDynamic__RenderFunc(props: {
                         >
                           {(() => {
                             try {
-                              return $ctx.fetchedData.fields.paragraph5;
+                              return $ctx.fetchedData.records[0].fields
+                                .paragraph5;
                             } catch (e) {
                               if (e instanceof TypeError) {
                                 return "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
