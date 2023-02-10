@@ -47,8 +47,9 @@
   height: auto;
   max-width: 100%;
   background: #ffffff;
+  margin-right: 0px;
   min-width: 0;
-  padding: 8px;
+  padding: 8px 0px;
 }
 .freeBox__e2Hh {
   display: flex;
@@ -59,8 +60,8 @@
   width: 750px;
   height: auto;
   max-width: 100%;
-  padding-left: 0px;
-  padding-right: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
   padding-bottom: 8px;
   background: #ffffff;
 }
@@ -98,7 +99,6 @@
   max-height: 400px;
   margin-top: 10px;
   margin-bottom: 10px;
-  min-width: 0;
 }
 .heroImage > picture > img {
   object-fit: cover;
@@ -229,7 +229,19 @@
   color: #000000;
   min-width: 0;
 }
+.freeBox__dWDeW {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  background: #000000;
+  min-width: 0;
+  padding: 8px 0px;
+}
 .footerSection:global(.__wab_instance) {
   max-width: 100%;
-  position: relative;
 }

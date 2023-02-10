@@ -460,14 +460,23 @@ function PlasmicBlogDynamic__RenderFunc(props: {
                         </div>
                       </div>
 
-                      <FooterSection
-                        data-plasmic-name={"footerSection"}
-                        data-plasmic-override={overrides.footerSection}
-                        className={classNames(
-                          "__wab_instance",
-                          sty.footerSection
-                        )}
-                      />
+                      {true ? (
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox__dWDeW
+                          )}
+                        >
+                          <FooterSection
+                            data-plasmic-name={"footerSection"}
+                            data-plasmic-override={overrides.footerSection}
+                            className={classNames(
+                              "__wab_instance",
+                              sty.footerSection
+                            )}
+                          />
+                        </div>
+                      ) : null}
                     </div>
                   </React.Fragment>
                 )}
