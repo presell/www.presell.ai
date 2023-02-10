@@ -226,10 +226,10 @@ function PlasmicBlogIndex__RenderFunc(props: {
                         component={Link}
                         href={`/blog/${(() => {
                           try {
-                            return $ctx.fetchedData.records[0].id;
+                            return $ctx.fetchedData.records[0].fields.slug;
                           } catch (e) {
                             if (e instanceof TypeError) {
-                              return "recBzumnjgu27hfFR";
+                              return "";
                             }
                             throw e;
                           }
@@ -475,10 +475,10 @@ function PlasmicBlogIndex__RenderFunc(props: {
                             component={Link}
                             href={`/blog/${(() => {
                               try {
-                                return currentItem.id;
+                                return currentItem.fields.slug;
                               } catch (e) {
                                 if (e instanceof TypeError) {
-                                  return "rec7nH6d1NViLoASm";
+                                  return "";
                                 }
                                 throw e;
                               }

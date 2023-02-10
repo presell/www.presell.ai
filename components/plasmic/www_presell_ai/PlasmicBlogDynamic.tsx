@@ -194,8 +194,7 @@ function PlasmicBlogDynamic__RenderFunc(props: {
                         >
                           {(() => {
                             try {
-                              return $ctx.fetchedData.records[0].fields
-                                .heroHeadline;
+                              return undefined;
                             } catch (e) {
                               if (e instanceof TypeError) {
                                 return "heroHeadline";

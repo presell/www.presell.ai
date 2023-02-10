@@ -56,7 +56,9 @@
   width: 750px;
   height: auto;
   max-width: 100%;
-  padding: 8px 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 8px;
 }
 .text__tfiyH {
   position: relative;
