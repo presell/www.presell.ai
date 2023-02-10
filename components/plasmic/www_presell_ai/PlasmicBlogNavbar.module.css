@@ -255,10 +255,11 @@
   .form {
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: 50%;
     margin-top: 18px;
     align-self: center;
-    min-width: 0;
+    padding-right: 70px;
+    padding-left: 15px;
   }
 }
 @media (max-width: 1152px) {
@@ -266,7 +267,6 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    min-width: 0;
     margin-left: calc(0px - 8px);
     width: calc(100% + 8px);
     margin-top: calc(0px - 0px);
@@ -302,7 +302,7 @@
 @media (max-width: 1152px) {
   .textInput:global(.__wab_instance) {
     height: 55px;
-    width: 225px;
+    width: 200px;
     margin-left: calc(20px + 8px) !important;
     margin-top: calc(2px + 0px) !important;
     flex-shrink: 0;
@@ -357,6 +357,9 @@
 }
 @media (max-width: 1152px) {
   .button__rEaM:global(.__wab_instance) {
+    width: 100px;
+    height: 50px;
+    flex-shrink: 0;
     display: block;
   }
 }
@@ -373,7 +376,10 @@
 }
 @media (max-width: 1152px) {
   .text__vBGyi {
-    font-size: 12px;
+    font-size: 10px;
+    text-align: center;
+    padding-right: 3px;
+    padding-left: 0px;
   }
 }
 .svg__fStLn {
