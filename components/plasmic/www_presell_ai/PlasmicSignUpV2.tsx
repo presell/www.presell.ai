@@ -550,7 +550,7 @@ function PlasmicSignUpV2__RenderFunc(props: {
                       displayMaxWidth={"100%" as const}
                       displayMinHeight={"0" as const}
                       displayMinWidth={"0" as const}
-                      displayWidth={"200px" as const}
+                      displayWidth={"180px" as const}
                       loading={"lazy" as const}
                       src={{
                         src: "/plasmic/www_presell_ai/images/logoSliderMaidMentorpngpng.png",
@@ -575,7 +575,7 @@ function PlasmicSignUpV2__RenderFunc(props: {
                       displayMaxWidth={"100%" as const}
                       displayMinHeight={"0" as const}
                       displayMinWidth={"0" as const}
-                      displayWidth={"200px" as const}
+                      displayWidth={"180px" as const}
                       loading={"lazy" as const}
                       src={{
                         src: "/plasmic/www_presell_ai/images/logoSliderLawncarlifepngpng.png",
@@ -614,7 +614,7 @@ function PlasmicSignUpV2__RenderFunc(props: {
                           displayMaxWidth={"100%" as const}
                           displayMinHeight={"0" as const}
                           displayMinWidth={"0" as const}
-                          displayWidth={"200px" as const}
+                          displayWidth={"180px" as const}
                           loading={"lazy" as const}
                           src={{
                             src: "/plasmic/www_presell_ai/images/logoSliderDmupngpng.png",
@@ -644,7 +644,7 @@ function PlasmicSignUpV2__RenderFunc(props: {
                           displayMaxWidth={"100%" as const}
                           displayMinHeight={"0" as const}
                           displayMinWidth={"0" as const}
-                          displayWidth={"200px" as const}
+                          displayWidth={"199px" as const}
                           loading={"lazy" as const}
                           src={{
                             src: "/plasmic/www_presell_ai/images/logoSliderBrolawspngpng.png",
@@ -672,7 +672,7 @@ function PlasmicSignUpV2__RenderFunc(props: {
               displayMinWidth={"0" as const}
               displayWidth={
                 hasVariant(globalVariants, "screen", "mobile")
-                  ? ("540px" as const)
+                  ? ("600px" as const)
                   : ("592px" as const)
               }
               loading={"lazy" as const}

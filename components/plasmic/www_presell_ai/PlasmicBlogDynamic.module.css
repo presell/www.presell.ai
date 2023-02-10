@@ -46,10 +46,12 @@
   width: 100%;
   height: auto;
   max-width: 100%;
+  padding-left: 0px;
+  padding-bottom: 0px;
+  padding-top: 8px;
   background: #ffffff;
   margin-right: 0px;
   min-width: 0;
-  padding: 8px 0px 0px;
 }
 .freeBox__e2Hh {
   display: flex;
