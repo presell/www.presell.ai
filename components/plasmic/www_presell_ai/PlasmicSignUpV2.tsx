@@ -190,13 +190,18 @@ function PlasmicSignUpV2__RenderFunc(props: {
                         </button>
                       </div>
                     ) : null}
-
-                    <ChevronRightIcon
-                      data-plasmic-name={"svg"}
-                      data-plasmic-override={overrides.svg}
-                      className={classNames(projectcss.all, sty.svg)}
-                      role={"img"}
-                    />
+                    {(
+                      hasVariant(globalVariants, "screen", "mobile")
+                        ? true
+                        : true
+                    ) ? (
+                      <ChevronRightIcon
+                        data-plasmic-name={"svg"}
+                        data-plasmic-override={overrides.svg}
+                        className={classNames(projectcss.all, sty.svg)}
+                        role={"img"}
+                      />
+                    ) : null}
                   </div>
                 ) : null}
               </div>
@@ -644,7 +649,7 @@ function PlasmicSignUpV2__RenderFunc(props: {
                           displayMaxWidth={"100%" as const}
                           displayMinHeight={"0" as const}
                           displayMinWidth={"0" as const}
-                          displayWidth={"199px" as const}
+                          displayWidth={"200px" as const}
                           loading={"lazy" as const}
                           src={{
                             src: "/plasmic/www_presell_ai/images/logoSliderBrolawspngpng.png",
@@ -672,8 +677,8 @@ function PlasmicSignUpV2__RenderFunc(props: {
               displayMinWidth={"0" as const}
               displayWidth={
                 hasVariant(globalVariants, "screen", "mobile")
-                  ? ("600px" as const)
-                  : ("592px" as const)
+                  ? ("650px" as const)
+                  : ("600px" as const)
               }
               loading={"lazy" as const}
               src={{
@@ -789,7 +794,11 @@ function PlasmicSignUpV2__RenderFunc(props: {
             <p.PlasmicImg
               alt={""}
               className={classNames(sty.img__x5NQq)}
-              displayHeight={"auto" as const}
+              displayHeight={
+                hasVariant(globalVariants, "screen", "mobile")
+                  ? ("29px" as const)
+                  : ("auto" as const)
+              }
               displayMaxHeight={"none" as const}
               displayMaxWidth={"100%" as const}
               displayMinHeight={"0" as const}
@@ -920,9 +929,36 @@ function PlasmicSignUpV2__RenderFunc(props: {
               sty.text__g9Yvy
             )}
           >
-            {
-              "“Field service software allows you to focus on running the business, so the\n workweek isn’t running you.”"
-            }
+            {hasVariant(globalVariants, "screen", "mobile") ? (
+              <React.Fragment>
+                <span
+                  className={"plasmic_default__all plasmic_default__span"}
+                  style={{ fontStyle: "italic" }}
+                >
+                  {
+                    "“Field service software allows you to focus on running the business, so the workweek isn’t running you.”"
+                  }
+                </span>
+              </React.Fragment>
+            ) : (
+              <React.Fragment>
+                <span
+                  className={"plasmic_default__all plasmic_default__span"}
+                  style={{ fontStyle: "italic" }}
+                >
+                  {
+                    "“Field service software allows you to focus on running the business, so the"
+                  }
+                </span>
+                <React.Fragment>{"\n"}</React.Fragment>
+                <span
+                  className={"plasmic_default__all plasmic_default__span"}
+                  style={{ fontStyle: "italic" }}
+                >
+                  {" workweek isn’t running you.”"}
+                </span>
+              </React.Fragment>
+            )}
           </div>
 
           <div
