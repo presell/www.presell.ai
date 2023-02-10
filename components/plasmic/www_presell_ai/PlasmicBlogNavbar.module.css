@@ -255,7 +255,7 @@
   .form {
     display: flex;
     flex-direction: row;
-    width: 50%;
+    width: 75%;
     margin-top: 18px;
     align-self: center;
     padding-right: 70px;
