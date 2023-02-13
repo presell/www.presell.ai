@@ -271,6 +271,24 @@ function PlasmicBlogNavbar__RenderFunc(props: {
                   />
 
                   {(
+                    hasVariant(globalVariants, "screen", "mobile")
+                      ? true
+                      : hasVariant(globalVariants, "screen", "footer")
+                      ? true
+                      : true
+                  ) ? (
+                    <button
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.button,
+                        projectcss.__wab_text,
+                        sty.button__bMzU
+                      )}
+                    >
+                      {"Join Newsletter"}
+                    </button>
+                  ) : null}
+                  {(
                     hasVariant(globalVariants, "screen", "mobile") ? true : true
                   ) ? (
                     <Button
@@ -321,34 +339,23 @@ function PlasmicBlogNavbar__RenderFunc(props: {
                       className={classNames(
                         projectcss.all,
                         projectcss.button,
-                        projectcss.__wab_text,
                         sty.button__sBf2I
                       )}
                     >
-                      {"Join Newsletter"}
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text___291P5
+                        )}
+                      >
+                        {"Join Newsletter"}
+                      </div>
                     </button>
                   ) : null}
                 </p.Stack>
               ) : null}
             </p.Stack>
-          ) : null}
-          {(
-            hasVariant(globalVariants, "screen", "mobile")
-              ? true
-              : hasVariant(globalVariants, "screen", "footer")
-              ? true
-              : true
-          ) ? (
-            <button
-              className={classNames(
-                projectcss.all,
-                projectcss.button,
-                projectcss.__wab_text,
-                sty.button__bMzU
-              )}
-            >
-              {"Join Newsletter"}
-            </button>
           ) : null}
         </p.Stack>
       ) : null}
