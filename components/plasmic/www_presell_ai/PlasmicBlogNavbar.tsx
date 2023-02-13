@@ -326,7 +326,11 @@ function PlasmicBlogNavbar__RenderFunc(props: {
                           role={"img"}
                         />
                       }
-                      link={"https://app.presell.ai/" as const}
+                      link={
+                        hasVariant(globalVariants, "screen", "footer")
+                          ? ("" as const)
+                          : ("https://app.presell.ai/" as const)
+                      }
                       startIcon={
                         <svg
                           className={classNames(projectcss.all, sty.svg__q7IUm)}

@@ -173,7 +173,7 @@ function PlasmicBlogDynamic__RenderFunc(props: {
                         data-plasmic-name={"form"}
                         data-plasmic-override={overrides.form}
                         action={
-                          "https://hook.us1.make.com/7rngccg63x48p7pfdbvoub43nkrpfvdt" as const
+                          "https://hook.us1.make.com/https://hook.us1.make.com/7rngccg63x48p7pfdbvoub43nkrpfvdt" as const
                         }
                         className={classNames(projectcss.all, sty.form)}
                         method={"post" as const}
