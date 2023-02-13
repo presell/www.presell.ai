@@ -315,47 +315,40 @@ function PlasmicBlogNavbar__RenderFunc(props: {
                     </Button>
                   ) : null}
                   {(
-                    hasVariant(globalVariants, "screen", "mobile") ? true : true
+                    hasVariant(globalVariants, "screen", "footer") ? true : true
                   ) ? (
-                    <Button
-                      className={classNames("__wab_instance", sty.button__rEaM)}
-                      color={"navLinkBlue" as const}
-                      endIcon={
-                        <svg
-                          className={classNames(projectcss.all, sty.svg__fStLn)}
-                          role={"img"}
-                        />
-                      }
-                      link={
-                        hasVariant(globalVariants, "screen", "footer")
-                          ? ("" as const)
-                          : ("https://app.presell.ai/" as const)
-                      }
-                      startIcon={
-                        <svg
-                          className={classNames(projectcss.all, sty.svg__q7IUm)}
-                          role={"img"}
-                        />
-                      }
+                    <button
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.button,
+                        projectcss.__wab_text,
+                        sty.button__sBf2I
+                      )}
                     >
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__vBGyi
-                        )}
-                      >
-                        {hasVariant(globalVariants, "screen", "mobile")
-                          ? "Join Newsletter"
-                          : hasVariant(globalVariants, "screen", "footer")
-                          ? "Join Newsletter"
-                          : "Join Newsletter"}
-                      </div>
-                    </Button>
+                      {"Join Newsletter"}
+                    </button>
                   ) : null}
                 </p.Stack>
               ) : null}
             </p.Stack>
+          ) : null}
+          {(
+            hasVariant(globalVariants, "screen", "mobile")
+              ? true
+              : hasVariant(globalVariants, "screen", "footer")
+              ? true
+              : true
+          ) ? (
+            <button
+              className={classNames(
+                projectcss.all,
+                projectcss.button,
+                projectcss.__wab_text,
+                sty.button__bMzU
+              )}
+            >
+              {"Join Newsletter"}
+            </button>
           ) : null}
         </p.Stack>
       ) : null}
