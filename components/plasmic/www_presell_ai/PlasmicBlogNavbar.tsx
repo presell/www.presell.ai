@@ -264,8 +264,9 @@ function PlasmicBlogNavbar__RenderFunc(props: {
                   <TextInput
                     data-plasmic-name={"textInput"}
                     data-plasmic-override={overrides.textInput}
+                    aria-label={"email" as const}
                     className={classNames("__wab_instance", sty.textInput)}
-                    name={"Email" as const}
+                    name={"email" as const}
                     placeholder={"📧 Enter Email Address Here" as const}
                   />
 
