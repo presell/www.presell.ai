@@ -696,7 +696,7 @@ function PlasmicPricing__RenderFunc(props: {
                                 sty.text___6E8Jz
                               )}
                             >
-                              {"Up to 3 editors per project"}
+                              {"Unlimited Brands"}
                             </div>
                           </div>
                         </div>
@@ -739,7 +739,7 @@ function PlasmicPricing__RenderFunc(props: {
                                 sty.text__ul2Pt
                               )}
                             >
-                              {"Up to 3 collaborators per team"}
+                              {"Unlimited Products"}
                             </div>
                           </div>
                         </div>
@@ -782,7 +782,7 @@ function PlasmicPricing__RenderFunc(props: {
                                 sty.text__jvzp4
                               )}
                             >
-                              {"10K monthly page views"}
+                              {"Unlimited Offers"}
                             </div>
                           </div>
                         </div>
@@ -825,7 +825,7 @@ function PlasmicPricing__RenderFunc(props: {
                                 sty.text__mSmNb
                               )}
                             >
-                              {"7-day version history"}
+                              {"Unlimited Avatars"}
                             </div>
                           </div>
                         </div>
@@ -866,7 +866,7 @@ function PlasmicPricing__RenderFunc(props: {
                                 sty.text__wIEx2
                               )}
                             >
-                              {"Visual editor"}
+                              {"Unlimited Funnels"}
                             </div>
                           </div>
                         </div>
@@ -907,7 +907,7 @@ function PlasmicPricing__RenderFunc(props: {
                                 sty.text__ouy1K
                               )}
                             >
-                              {"Template library"}
+                              {"Unlimited Ad Copy"}
                             </div>
                           </div>
                         </div>
@@ -948,7 +948,7 @@ function PlasmicPricing__RenderFunc(props: {
                                 sty.text__szsLx
                               )}
                             >
-                              {"Figma import"}
+                              {"Unlimited Ad Creative"}
                             </div>
                           </div>
                         </div>
@@ -989,7 +989,7 @@ function PlasmicPricing__RenderFunc(props: {
                                 sty.text__ji8ZO
                               )}
                             >
-                              {"Headless CMS"}
+                              {"Unlimited "}
                             </div>
                           </div>
                         </div>
@@ -1126,7 +1126,7 @@ function PlasmicPricing__RenderFunc(props: {
                                 sty.text__o0B1L
                               )}
                             >
-                              {"Unlimited workspaces (workspace per client)"}
+                              {"Unlimited workspaces"}
                             </div>
                           </div>
                         </div>
@@ -1509,7 +1509,7 @@ function PlasmicPricing__RenderFunc(props: {
                               sty.text__ywEPr
                             )}
                           >
-                            {"$80"}
+                            {"$79"}
                           </div>
 
                           <div
