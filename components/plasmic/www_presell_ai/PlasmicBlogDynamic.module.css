@@ -47,7 +47,8 @@
 }
 @media (max-width: 1152px) {
   .freeBox__tZuPz {
-    margin-top: 70px;
+    margin-top: 90px;
+    margin-bottom: 50px;
   }
 }
 .blogNavbar:global(.__wab_instance) {
