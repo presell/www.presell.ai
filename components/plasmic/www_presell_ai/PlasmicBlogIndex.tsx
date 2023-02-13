@@ -57,7 +57,6 @@ export const PlasmicBlogIndex__ArgProps = new Array<ArgPropType>();
 export type PlasmicBlogIndex__OverridesType = {
   root?: p.Flex<"div">;
   httpApiFetcher?: p.Flex<typeof DataFetcher>;
-  form?: p.Flex<"form">;
   blogNavbar?: p.Flex<typeof BlogNavbar>;
   button?: p.Flex<"button">;
   link?: p.Flex<"a"> & Partial<LinkProps>;
@@ -183,14 +182,8 @@ function PlasmicBlogIndex__RenderFunc(props: {
             <ph.DataCtxReader>
               {$ctx => (
                 <React.Fragment>
-                  <form
-                    data-plasmic-name={"form"}
-                    data-plasmic-override={overrides.form}
-                    action={
-                      "https://hook.us1.make.com/7rngccg63x48p7pfdbvoub43nkrpfvdt" as const
-                    }
-                    className={classNames(projectcss.all, sty.form)}
-                    method={"post" as const}
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__abTAm)}
                   >
                     <BlogNavbar
                       data-plasmic-name={"blogNavbar"}
@@ -216,7 +209,7 @@ function PlasmicBlogIndex__RenderFunc(props: {
                         {"Join Newsletter"}
                       </button>
                     ) : null}
-                  </form>
+                  </div>
 
                   <div
                     className={classNames(projectcss.all, sty.freeBox__ahXyg)}
@@ -689,7 +682,6 @@ const PlasmicDescendants = {
   root: [
     "root",
     "httpApiFetcher",
-    "form",
     "blogNavbar",
     "button",
     "link",
@@ -697,13 +689,11 @@ const PlasmicDescendants = {
   ],
   httpApiFetcher: [
     "httpApiFetcher",
-    "form",
     "blogNavbar",
     "button",
     "link",
     "footerSection"
   ],
-  form: ["form", "blogNavbar", "button"],
   blogNavbar: ["blogNavbar"],
   button: ["button"],
   link: ["link"],
@@ -715,7 +705,6 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   httpApiFetcher: typeof DataFetcher;
-  form: "form";
   blogNavbar: typeof BlogNavbar;
   button: "button";
   link: "a";
@@ -784,7 +773,6 @@ export const PlasmicBlogIndex = Object.assign(
   {
     // Helper components rendering sub-elements
     httpApiFetcher: makeNodeComponent("httpApiFetcher"),
-    form: makeNodeComponent("form"),
     blogNavbar: makeNodeComponent("blogNavbar"),
     button: makeNodeComponent("button"),
     link: makeNodeComponent("link"),

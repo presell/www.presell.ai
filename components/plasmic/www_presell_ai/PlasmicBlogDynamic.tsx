@@ -55,7 +55,6 @@ export const PlasmicBlogDynamic__ArgProps = new Array<ArgPropType>();
 export type PlasmicBlogDynamic__OverridesType = {
   root?: p.Flex<"div">;
   httpApiFetcher?: p.Flex<typeof DataFetcher>;
-  form?: p.Flex<"form">;
   blogNavbar?: p.Flex<typeof BlogNavbar>;
   heroImage?: p.Flex<typeof p.PlasmicImg>;
   paragraph1?: p.Flex<"div">;
@@ -169,14 +168,11 @@ function PlasmicBlogDynamic__RenderFunc(props: {
                 {$ctx => (
                   <React.Fragment>
                     {true ? (
-                      <form
-                        data-plasmic-name={"form"}
-                        data-plasmic-override={overrides.form}
-                        action={
-                          "https://hook.us1.make.com/https://hook.us1.make.com/7rngccg63x48p7pfdbvoub43nkrpfvdt" as const
-                        }
-                        className={classNames(projectcss.all, sty.form)}
-                        method={"post" as const}
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__tZuPz
+                        )}
                       >
                         <BlogNavbar
                           data-plasmic-name={"blogNavbar"}
@@ -186,7 +182,7 @@ function PlasmicBlogDynamic__RenderFunc(props: {
                             sty.blogNavbar
                           )}
                         />
-                      </form>
+                      </div>
                     ) : null}
 
                     <div
@@ -509,7 +505,6 @@ const PlasmicDescendants = {
   root: [
     "root",
     "httpApiFetcher",
-    "form",
     "blogNavbar",
     "heroImage",
     "paragraph1",
@@ -525,7 +520,6 @@ const PlasmicDescendants = {
   ],
   httpApiFetcher: [
     "httpApiFetcher",
-    "form",
     "blogNavbar",
     "heroImage",
     "paragraph1",
@@ -539,7 +533,6 @@ const PlasmicDescendants = {
     "paragraph5",
     "footerSection"
   ],
-  form: ["form", "blogNavbar"],
   blogNavbar: ["blogNavbar"],
   heroImage: ["heroImage"],
   paragraph1: ["paragraph1"],
@@ -559,7 +552,6 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   httpApiFetcher: typeof DataFetcher;
-  form: "form";
   blogNavbar: typeof BlogNavbar;
   heroImage: typeof p.PlasmicImg;
   paragraph1: "div";
@@ -636,7 +628,6 @@ export const PlasmicBlogDynamic = Object.assign(
   {
     // Helper components rendering sub-elements
     httpApiFetcher: makeNodeComponent("httpApiFetcher"),
-    form: makeNodeComponent("form"),
     blogNavbar: makeNodeComponent("blogNavbar"),
     heroImage: makeNodeComponent("heroImage"),
     paragraph1: makeNodeComponent("paragraph1"),
