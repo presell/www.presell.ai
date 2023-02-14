@@ -60,16 +60,15 @@
   background: rgba(255, 255, 255, 1);
   filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.07));
   transform: translate(0px, -0.09399999999999409px);
-  width: 992px;
+  width: 700px;
   height: 400px;
   display: block;
   position: absolute;
-  top: 156px;
-  left: 224px;
+  top: 162px;
+  left: 398px;
   border-radius: 16px;
 }
 .div4 {
-  width: 960px;
   height: 312px;
   display: block;
   position: absolute;
@@ -88,7 +87,6 @@
   position: absolute;
   top: 3px;
   left: 0px;
-  width: 69px;
   height: 24px;
   display: flex;
   flex-direction: column;
@@ -127,7 +125,6 @@
   position: absolute;
   top: 111px;
   left: 0px;
-  width: 58px;
   height: 20px;
   transform: translate(0px, 0.1869999999999976px);
   display: flex;
@@ -165,7 +162,7 @@
   text-align: left;
 }
 .a {
-  background: rgba(109, 85, 206, 1);
+  background: #ff2e2e;
   transform: translate(0px, 0.18700000000001182px);
   width: auto;
   height: auto;
@@ -543,9 +540,9 @@
 .div14 {
   width: 300px;
   height: 24px;
-  display: block;
   position: relative;
   flex-shrink: 0;
+  display: none;
 }
 ._8 {
   position: absolute;
@@ -590,9 +587,9 @@
 .div15 {
   width: 300px;
   height: 24px;
-  display: block;
   position: relative;
   flex-shrink: 0;
+  display: none;
 }
 ._9 {
   position: absolute;
@@ -636,9 +633,9 @@
 .div16 {
   width: 300px;
   height: 24px;
-  display: block;
   position: relative;
   flex-shrink: 0;
+  display: none;
 }
 ._10 {
   position: absolute;
@@ -683,11 +680,11 @@
   flex-direction: column;
   width: auto;
   height: auto;
-  display: flex;
   position: absolute;
   top: -8px;
   left: 660px;
   padding-top: 8px;
+  display: none;
 }
 .div17 > :global(.__wab_flex-container) {
   flex-direction: column;
@@ -1165,7 +1162,7 @@
   color: rgba(244, 82, 60, 1);
   position: absolute;
   top: 1px;
-  left: 76px;
+  left: 19px;
   transform: translate(0.2960000000000065px, 0px);
 }
 .text__ywEPr {
@@ -1214,7 +1211,7 @@
   color: rgba(244, 82, 60, 1);
   position: absolute;
   top: 24px;
-  left: 22px;
+  left: 24px;
   transform: translate(-0.4540000000000006px, 0px);
 }
 .text__hvbXf {
@@ -1503,8 +1500,8 @@
   line-height: 25px;
   color: rgba(68, 188, 97, 1);
   position: absolute;
-  top: 1px;
-  left: 67px;
+  top: 0px;
+  left: 21px;
   transform: translate(0.17100000000000648px, 0px);
 }
 .text__c3QOe {
@@ -1567,7 +1564,7 @@
   color: rgba(121, 124, 129, 1);
   position: absolute;
   top: 44px;
-  left: 4px;
+  left: 51px;
 }
 .a3 {
   background: rgba(69, 166, 87, 1);
@@ -3451,16 +3448,17 @@
   width: auto;
   align-items: flex-start;
   justify-content: flex-start;
-  padding-right: 32px;
   padding-top: 36px;
   padding-bottom: 44px;
+  padding-left: 83px;
   border-radius: 16px;
 }
 .div85 {
-  width: 530px;
+  width: 467px;
   height: 841px;
   display: block;
   position: relative;
+  padding-right: 54px;
   flex-shrink: 0;
 }
 .div86 {
@@ -3548,6 +3546,7 @@
   letter-spacing: 0em;
   line-height: 24px;
   color: rgba(26, 26, 23, 1);
+  padding-right: 89px;
 }
 .a5 {
   background: rgba(109, 85, 206, 1);
@@ -4537,7 +4536,7 @@
   align-items: flex-start;
   justify-content: flex-start;
   border-radius: 16px;
-  padding: 20px 148.484px 36px 148.468px;
+  padding: 20px 148.484px 36px 113px;
 }
 .div110 {
   width: 266px;
@@ -4868,15 +4867,17 @@
 .div118 {
   background: rgba(255, 255, 255, 1);
   filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.07));
-  width: auto;
+  width: 100%;
   height: auto;
   display: flex;
   position: relative;
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
+  max-width: 525px;
+  min-width: 0;
   border-radius: 16px;
-  padding: 20px 24px 36px;
+  padding: 20px 0px 36px 116px;
 }
 .div119 {
   width: 514px;
@@ -4887,12 +4888,13 @@
 }
 .div120 {
   transform: translate(-0.18799999999998818px, 0px);
-  width: 211px;
+  width: 226px;
   height: 131px;
   display: block;
   position: absolute;
   top: 16px;
-  left: 152px;
+  left: 27px;
+  margin-left: 0px;
 }
 .text__eFnyP {
   display: block;
@@ -4982,7 +4984,7 @@
   align-items: flex-start;
   justify-content: flex-start;
   border-radius: 6px;
-  padding: 10px 228.671px 10px 227.328px;
+  padding: 10px 104.203px 10px 102.843px;
 }
 .text__c0Thy {
   display: block;
@@ -5295,6 +5297,9 @@
   font-weight: 400;
   letter-spacing: 0em;
   line-height: 24px;
+  max-width: 319px;
+  width: 100%;
+  min-width: 0;
 }
 .div129 {
   width: 526px;
@@ -5627,21 +5632,24 @@
 .div136 {
   background: rgba(255, 255, 255, 1);
   filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.07));
-  width: auto;
+  width: 100%;
   height: auto;
   display: flex;
   position: relative;
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
+  max-width: 525px;
+  min-width: 0;
   border-radius: 16px;
-  padding: 20px 24px 36px;
+  padding: 20px 0px 36px 32px;
 }
 .div137 {
-  width: 514px;
+  width: 567px;
   height: 818px;
   display: block;
   position: relative;
+  padding-right: 0px;
   flex-shrink: 0;
 }
 .div138 {
@@ -5693,19 +5701,19 @@
   transform: translate(0.2959999999999994px, 0.125px);
 }
 .a8 {
-  background: rgba(4, 161, 193, 1);
+  background: #04a1c1;
   transform: translate(0px, 0.125px);
   width: auto;
   height: auto;
   display: flex;
   position: absolute;
   top: 161px;
-  left: 0px;
+  left: 79px;
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
   border-radius: 6px;
-  padding: 10px 215.687px 10px 214.312px;
+  padding: 10px 104.203px 10px 102.843px;
 }
 .text__h9E0O {
   display: block;
@@ -5720,12 +5728,14 @@
 }
 .div139 {
   transform: translate(0px, 0.125px);
-  width: 514px;
+  width: 374px;
   height: 608px;
   display: block;
   position: absolute;
   top: 209px;
-  left: 0px;
+  left: 83px;
+  margin-right: 0px;
+  padding-right: 0px;
 }
 .text__t1Zpe {
   display: block;
@@ -5976,7 +5986,7 @@
 }
 .div145 {
   width: 526px;
-  height: 24px;
+  height: 26px;
   display: block;
   position: absolute;
   top: 208px;
@@ -6022,12 +6032,13 @@
   color: rgba(26, 26, 23, 1);
 }
 .div146 {
-  width: 526px;
+  width: 372px;
   height: 24px;
   display: block;
   position: absolute;
   top: 240px;
   left: -12px;
+  margin-right: 0px;
 }
 ._96 {
   position: absolute;
@@ -6067,6 +6078,10 @@
   letter-spacing: 0em;
   line-height: 24px;
   color: rgba(26, 26, 23, 1);
+  margin-right: 0px;
+  max-width: 273px;
+  width: 100%;
+  min-width: 0;
 }
 .div147 {
   width: 526px;
@@ -6537,14 +6552,17 @@
   letter-spacing: 0em;
   line-height: 24px;
   color: rgba(26, 26, 23, 1);
+  padding-right: 0px;
 }
 .div157 {
-  width: 594px;
+  width: 446px;
   height: 867px;
   display: block;
   position: absolute;
   top: 3350px;
-  left: 0px;
+  left: 101px;
+  padding-left: 0px;
+  margin-right: 0px;
 }
 .text__xVmPm {
   display: block;
