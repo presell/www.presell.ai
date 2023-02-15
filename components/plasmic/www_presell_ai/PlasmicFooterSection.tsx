@@ -204,7 +204,7 @@ function PlasmicFooterSection__RenderFunc(props: {
                 sty.h5
               )}
             >
-              {"Creators of Programmatic Marketing"}
+              {"Programmatic AI Marketing"}
             </h5>
 
             <div
@@ -215,7 +215,7 @@ function PlasmicFooterSection__RenderFunc(props: {
               )}
             >
               {
-                "Skip the guesswork. Generate proven to convert marketing campaigns."
+                "Skip the guesswork. Instantly generate and deploy structured campaigns."
               }
             </div>
 
@@ -631,7 +631,7 @@ function PlasmicFooterSection__RenderFunc(props: {
                   sty.text__iBrZe
                 )}
               >
-                {"Lead Generation"}
+                {"Growth Marketing"}
               </div>
             </Button>
 
@@ -659,7 +659,7 @@ function PlasmicFooterSection__RenderFunc(props: {
                   sty.text__l4ISu
                 )}
               >
-                {"DTC eCommerce"}
+                {"Lead Generation"}
               </div>
             </Button>
 
@@ -687,7 +687,7 @@ function PlasmicFooterSection__RenderFunc(props: {
                   sty.text__ouHUb
                 )}
               >
-                {"Go-To-Market"}
+                {"DTC eCommerce"}
               </div>
             </Button>
 
@@ -715,7 +715,7 @@ function PlasmicFooterSection__RenderFunc(props: {
                   sty.text__pxGgV
                 )}
               >
-                {"Ad Agencies"}
+                {"Go-To-Market"}
               </div>
             </Button>
 
@@ -749,7 +749,7 @@ function PlasmicFooterSection__RenderFunc(props: {
                   sty.text__u5FFa
                 )}
               >
-                {"Insurance Agents"}
+                {"Ad Agencies"}
               </div>
             </Button>
 
@@ -777,7 +777,7 @@ function PlasmicFooterSection__RenderFunc(props: {
                   sty.text__nW7Rr
                 )}
               >
-                {"Medical Practices"}
+                {"Affiliate Marketing"}
               </div>
             </Button>
           </div>

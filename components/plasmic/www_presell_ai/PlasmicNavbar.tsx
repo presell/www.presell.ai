@@ -233,11 +233,6 @@ function PlasmicNavbar__RenderFunc(props: {
             {(hasVariant(globalVariants, "screen", "mobile") ? true : true) ? (
               <Button
                 className={classNames("__wab_instance", sty.button__y9Zcu)}
-                color={
-                  hasVariant(globalVariants, "screen", "footer")
-                    ? ("navLinkBlue" as const)
-                    : ("navLinkBlue" as const)
-                }
                 endIcon={
                   <svg
                     className={classNames(projectcss.all, sty.svg__d6W1E)}
@@ -260,7 +255,18 @@ function PlasmicNavbar__RenderFunc(props: {
                   )}
                   link={"https://app.presell.ai/" as const}
                 >
-                  {"Log in"}
+                  {hasVariant(globalVariants, "screen", "footer") ? (
+                    <React.Fragment>
+                      <span
+                        className={"plasmic_default__all plasmic_default__span"}
+                        style={{ color: "#000000" }}
+                      >
+                        {"Log in"}
+                      </span>
+                    </React.Fragment>
+                  ) : (
+                    "Log in"
+                  )}
                 </div>
               </Button>
             ) : null}

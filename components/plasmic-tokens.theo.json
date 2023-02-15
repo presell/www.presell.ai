@@ -561,6 +561,16 @@
       }
     },
     {
+      "name": "transparent",
+      "type": "color",
+      "value": "#FFFFFF00",
+      "category": "color",
+      "meta": {
+        "projectId": "hgYa2chxELsjCrsDiarb3T",
+        "id": "ALOFbXahO"
+      }
+    },
+    {
       "name": "white",
       "type": "color",
       "value": "#FFFFFF",

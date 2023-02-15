@@ -115,6 +115,8 @@
   --plasmic-token-unnamed-style-token-36: var(--token-oZVegeNiO);
   --token-tlaSOFzbF: #000000;
   --plasmic-token-unnamed-style-token-37: var(--token-tlaSOFzbF);
+  --token-ALOFbXahO: #ffffff00;
+  --plasmic-token-transparent: var(--token-ALOFbXahO);
 }
 
 @media (max-width: 1252px) {

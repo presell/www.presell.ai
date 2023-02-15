@@ -276,7 +276,7 @@
   object-fit: cover;
 }
 .text__krBvg {
-  color: var(--token-c8INgJzL6YO8CI);
+  color: var(--token-8oJ3tHthi);
   padding-right: 20px;
 }
 @media (max-width: 1252px) {
@@ -327,7 +327,7 @@
 }
 @media (max-width: 1152px) {
   .freeBox__h5RcR {
-    display: flex;
+    display: none;
   }
 }
 .button__gtKkH {

@@ -5406,775 +5406,786 @@ function PlasmicPricing__RenderFunc(props: {
                         </div>
 
                         <div
-                          data-plasmic-name={"div139"}
-                          data-plasmic-override={overrides.div139}
-                          className={classNames(projectcss.all, sty.div139)}
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox__ay2YV
+                          )}
                         >
                           <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text__t1Zpe
-                            )}
-                          >
-                            {"Everything in Growth, plus…"}
-                          </div>
-
-                          <div
-                            data-plasmic-name={"div140"}
-                            data-plasmic-override={overrides.div140}
-                            className={classNames(projectcss.all, sty.div140)}
+                            data-plasmic-name={"div139"}
+                            data-plasmic-override={overrides.div139}
+                            className={classNames(projectcss.all, sty.div139)}
                           >
                             <div
-                              data-plasmic-name={"_90"}
-                              data-plasmic-override={overrides._90}
-                              className={classNames(projectcss.all, sty._90)}
-                            >
-                              <div
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.__wab_text,
-                                  sty.text__hdis0
-                                )}
-                              >
-                                {"✓"}
-                              </div>
-                            </div>
-
-                            <div
-                              data-plasmic-name={"over30CollaboratorsPerTeam2"}
-                              data-plasmic-override={
-                                overrides.over30CollaboratorsPerTeam2
-                              }
                               className={classNames(
                                 projectcss.all,
-                                sty.over30CollaboratorsPerTeam2
+                                projectcss.__wab_text,
+                                sty.text__t1Zpe
                               )}
                             >
-                              <div
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.__wab_text,
-                                  sty.text__p49Z
-                                )}
-                              >
-                                {"Over 30 collaborators per team"}
-                              </div>
-                            </div>
-                          </div>
-
-                          <div
-                            data-plasmic-name={"div141"}
-                            data-plasmic-override={overrides.div141}
-                            className={classNames(projectcss.all, sty.div141)}
-                          >
-                            <div
-                              data-plasmic-name={"_91"}
-                              data-plasmic-override={overrides._91}
-                              className={classNames(projectcss.all, sty._91)}
-                            >
-                              <div
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.__wab_text,
-                                  sty.text__uNro7
-                                )}
-                              >
-                                {"✓"}
-                              </div>
+                              {"Everything in Growth, plus…"}
                             </div>
 
                             <div
-                              data-plasmic-name={"_1MPageViews2"}
-                              data-plasmic-override={overrides._1MPageViews2}
-                              className={classNames(
-                                projectcss.all,
-                                sty._1MPageViews2
-                              )}
+                              data-plasmic-name={"div140"}
+                              data-plasmic-override={overrides.div140}
+                              className={classNames(projectcss.all, sty.div140)}
                             >
                               <div
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.__wab_text,
-                                  sty.text__ioh6U
-                                )}
+                                data-plasmic-name={"_90"}
+                                data-plasmic-override={overrides._90}
+                                className={classNames(projectcss.all, sty._90)}
                               >
-                                {"1M+ page views"}
+                                <div
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.__wab_text,
+                                    sty.text__hdis0
+                                  )}
+                                >
+                                  {"✓"}
+                                </div>
                               </div>
-                            </div>
-                          </div>
 
-                          <div
-                            data-plasmic-name={"div142"}
-                            data-plasmic-override={overrides.div142}
-                            className={classNames(projectcss.all, sty.div142)}
-                          >
-                            <div
-                              data-plasmic-name={"_92"}
-                              data-plasmic-override={overrides._92}
-                              className={classNames(projectcss.all, sty._92)}
-                            >
                               <div
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.__wab_text,
-                                  sty.text___3C8Tx
-                                )}
-                              >
-                                {"✓"}
-                              </div>
-                            </div>
-
-                            <div
-                              data-plasmic-name={"_180DayVersionHistory2"}
-                              data-plasmic-override={
-                                overrides._180DayVersionHistory2
-                              }
-                              className={classNames(
-                                projectcss.all,
-                                sty._180DayVersionHistory2
-                              )}
-                            >
-                              <div
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.__wab_text,
-                                  sty.text___5Edam
-                                )}
-                              >
-                                {"180-day version history"}
-                              </div>
-                            </div>
-                          </div>
-
-                          <div
-                            data-plasmic-name={"div143"}
-                            data-plasmic-override={overrides.div143}
-                            className={classNames(projectcss.all, sty.div143)}
-                          >
-                            <div
-                              data-plasmic-name={"_93"}
-                              data-plasmic-override={overrides._93}
-                              className={classNames(projectcss.all, sty._93)}
-                            >
-                              <div
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.__wab_text,
-                                  sty.text__rkQsT
-                                )}
-                              >
-                                {"✓"}
-                              </div>
-                            </div>
-
-                            <div
-                              data-plasmic-name={
-                                "supportSlaWithResponseTimeGuarantee2"
-                              }
-                              data-plasmic-override={
-                                overrides.supportSlaWithResponseTimeGuarantee2
-                              }
-                              className={classNames(
-                                projectcss.all,
-                                sty.supportSlaWithResponseTimeGuarantee2
-                              )}
-                            >
-                              <div
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.__wab_text,
-                                  sty.text___9ZofO
-                                )}
-                              >
-                                {"Support SLA with response time guarantee"}
-                              </div>
-                            </div>
-                          </div>
-
-                          <div
-                            data-plasmic-name={"div144"}
-                            data-plasmic-override={overrides.div144}
-                            className={classNames(projectcss.all, sty.div144)}
-                          >
-                            <div
-                              data-plasmic-name={"_94"}
-                              data-plasmic-override={overrides._94}
-                              className={classNames(projectcss.all, sty._94)}
-                            >
-                              <div
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.__wab_text,
-                                  sty.text__b8FKt
-                                )}
-                              >
-                                {"✓"}
-                              </div>
-                            </div>
-
-                            <div
-                              data-plasmic-name={
-                                "onboardingAndCustomerSuccess2"
-                              }
-                              data-plasmic-override={
-                                overrides.onboardingAndCustomerSuccess2
-                              }
-                              className={classNames(
-                                projectcss.all,
-                                sty.onboardingAndCustomerSuccess2
-                              )}
-                            >
-                              <div
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.__wab_text,
-                                  sty.text__uVhwN
-                                )}
-                              >
-                                {"Onboarding and customer success"}
-                              </div>
-                            </div>
-                          </div>
-
-                          <div
-                            data-plasmic-name={"div145"}
-                            data-plasmic-override={overrides.div145}
-                            className={classNames(projectcss.all, sty.div145)}
-                          >
-                            <div
-                              data-plasmic-name={"_95"}
-                              data-plasmic-override={overrides._95}
-                              className={classNames(projectcss.all, sty._95)}
-                            >
-                              <div
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.__wab_text,
-                                  sty.text__lYlCy
-                                )}
-                              >
-                                {"✓"}
-                              </div>
-                            </div>
-
-                            <div
-                              data-plasmic-name={"privateSharedSlackChannel2"}
-                              data-plasmic-override={
-                                overrides.privateSharedSlackChannel2
-                              }
-                              className={classNames(
-                                projectcss.all,
-                                sty.privateSharedSlackChannel2
-                              )}
-                            >
-                              <div
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.__wab_text,
-                                  sty.text__s7Nqf
-                                )}
-                              >
-                                {"Private shared Slack channel"}
-                              </div>
-                            </div>
-                          </div>
-
-                          <div
-                            data-plasmic-name={"div146"}
-                            data-plasmic-override={overrides.div146}
-                            className={classNames(projectcss.all, sty.div146)}
-                          >
-                            <div
-                              data-plasmic-name={"_96"}
-                              data-plasmic-override={overrides._96}
-                              className={classNames(projectcss.all, sty._96)}
-                            >
-                              <div
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.__wab_text,
-                                  sty.text__hvabX
-                                )}
-                              >
-                                {"✓"}
-                              </div>
-                            </div>
-
-                            <div
-                              data-plasmic-name={
-                                "singleSignOnAndDomainCaptureCustomPackage2"
-                              }
-                              data-plasmic-override={
-                                overrides.singleSignOnAndDomainCaptureCustomPackage2
-                              }
-                              className={classNames(
-                                projectcss.all,
-                                sty.singleSignOnAndDomainCaptureCustomPackage2
-                              )}
-                            >
-                              <div
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.__wab_text,
-                                  sty.text__pU3Zy
-                                )}
-                              >
-                                {
-                                  "Single sign-on and domain capture\n (custom package)"
+                                data-plasmic-name={
+                                  "over30CollaboratorsPerTeam2"
                                 }
-                              </div>
-                            </div>
-                          </div>
-
-                          <div
-                            data-plasmic-name={"div147"}
-                            data-plasmic-override={overrides.div147}
-                            className={classNames(projectcss.all, sty.div147)}
-                          >
-                            <div
-                              data-plasmic-name={"_97"}
-                              data-plasmic-override={overrides._97}
-                              className={classNames(projectcss.all, sty._97)}
-                            >
-                              <div
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.__wab_text,
-                                  sty.text__cRkqc
-                                )}
-                              >
-                                {"✓"}
-                              </div>
-                            </div>
-
-                            <div
-                              data-plasmic-name={
-                                "customizableContentCreatorModeCustomPackage2"
-                              }
-                              data-plasmic-override={
-                                overrides.customizableContentCreatorModeCustomPackage2
-                              }
-                              className={classNames(
-                                projectcss.all,
-                                sty.customizableContentCreatorModeCustomPackage2
-                              )}
-                            >
-                              <div
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.__wab_text,
-                                  sty.text___8V5Vz
-                                )}
-                              >
-                                {
-                                  "Customizable content creator mode (custom package)"
+                                data-plasmic-override={
+                                  overrides.over30CollaboratorsPerTeam2
                                 }
-                              </div>
-                            </div>
-                          </div>
-
-                          <div
-                            data-plasmic-name={"div148"}
-                            data-plasmic-override={overrides.div148}
-                            className={classNames(projectcss.all, sty.div148)}
-                          >
-                            <div
-                              data-plasmic-name={"_98"}
-                              data-plasmic-override={overrides._98}
-                              className={classNames(projectcss.all, sty._98)}
-                            >
-                              <div
                                 className={classNames(
                                   projectcss.all,
-                                  projectcss.__wab_text,
-                                  sty.text__twh3L
+                                  sty.over30CollaboratorsPerTeam2
                                 )}
                               >
-                                {"✓"}
+                                <div
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.__wab_text,
+                                    sty.text__p49Z
+                                  )}
+                                >
+                                  {"Over 30 collaborators per team"}
+                                </div>
                               </div>
                             </div>
 
                             <div
-                              data-plasmic-name={
-                                "customRolesAndPermissionsCustomPackage2"
-                              }
-                              data-plasmic-override={
-                                overrides.customRolesAndPermissionsCustomPackage2
-                              }
-                              className={classNames(
-                                projectcss.all,
-                                sty.customRolesAndPermissionsCustomPackage2
-                              )}
+                              data-plasmic-name={"div141"}
+                              data-plasmic-override={overrides.div141}
+                              className={classNames(projectcss.all, sty.div141)}
                             >
                               <div
+                                data-plasmic-name={"_91"}
+                                data-plasmic-override={overrides._91}
+                                className={classNames(projectcss.all, sty._91)}
+                              >
+                                <div
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.__wab_text,
+                                    sty.text__uNro7
+                                  )}
+                                >
+                                  {"✓"}
+                                </div>
+                              </div>
+
+                              <div
+                                data-plasmic-name={"_1MPageViews2"}
+                                data-plasmic-override={overrides._1MPageViews2}
                                 className={classNames(
                                   projectcss.all,
-                                  projectcss.__wab_text,
-                                  sty.text___1652X
+                                  sty._1MPageViews2
                                 )}
                               >
-                                {
-                                  "Custom roles and permissions (custom package)"
+                                <div
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.__wab_text,
+                                    sty.text__ioh6U
+                                  )}
+                                >
+                                  {"1M+ page views"}
+                                </div>
+                              </div>
+                            </div>
+
+                            <div
+                              data-plasmic-name={"div142"}
+                              data-plasmic-override={overrides.div142}
+                              className={classNames(projectcss.all, sty.div142)}
+                            >
+                              <div
+                                data-plasmic-name={"_92"}
+                                data-plasmic-override={overrides._92}
+                                className={classNames(projectcss.all, sty._92)}
+                              >
+                                <div
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.__wab_text,
+                                    sty.text___3C8Tx
+                                  )}
+                                >
+                                  {"✓"}
+                                </div>
+                              </div>
+
+                              <div
+                                data-plasmic-name={"_180DayVersionHistory2"}
+                                data-plasmic-override={
+                                  overrides._180DayVersionHistory2
                                 }
-                              </div>
-                            </div>
-                          </div>
-
-                          <div
-                            data-plasmic-name={"div149"}
-                            data-plasmic-override={overrides.div149}
-                            className={classNames(projectcss.all, sty.div149)}
-                          >
-                            <div
-                              data-plasmic-name={"_99"}
-                              data-plasmic-override={overrides._99}
-                              className={classNames(projectcss.all, sty._99)}
-                            >
-                              <div
                                 className={classNames(
                                   projectcss.all,
-                                  projectcss.__wab_text,
-                                  sty.text__gix57
+                                  sty._180DayVersionHistory2
                                 )}
                               >
-                                {"✓"}
+                                <div
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.__wab_text,
+                                    sty.text___5Edam
+                                  )}
+                                >
+                                  {"180-day version history"}
+                                </div>
                               </div>
                             </div>
 
                             <div
-                              data-plasmic-name={"uptimeSlaCustomPackage2"}
-                              data-plasmic-override={
-                                overrides.uptimeSlaCustomPackage2
-                              }
-                              className={classNames(
-                                projectcss.all,
-                                sty.uptimeSlaCustomPackage2
-                              )}
+                              data-plasmic-name={"div143"}
+                              data-plasmic-override={overrides.div143}
+                              className={classNames(projectcss.all, sty.div143)}
                             >
                               <div
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.__wab_text,
-                                  sty.text___96GMs
-                                )}
+                                data-plasmic-name={"_93"}
+                                data-plasmic-override={overrides._93}
+                                className={classNames(projectcss.all, sty._93)}
                               >
-                                {"Uptime SLA (custom package)"}
+                                <div
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.__wab_text,
+                                    sty.text__rkQsT
+                                  )}
+                                >
+                                  {"✓"}
+                                </div>
                               </div>
-                            </div>
-                          </div>
 
-                          <div
-                            data-plasmic-name={"div150"}
-                            data-plasmic-override={overrides.div150}
-                            className={classNames(projectcss.all, sty.div150)}
-                          >
-                            <div
-                              data-plasmic-name={"_100"}
-                              data-plasmic-override={overrides._100}
-                              className={classNames(projectcss.all, sty._100)}
-                            >
                               <div
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.__wab_text,
-                                  sty.text__z9Aep
-                                )}
-                              >
-                                {"✓"}
-                              </div>
-                            </div>
-
-                            <div
-                              data-plasmic-name={
-                                "analyticsApiAndCustomDashboardsCustomPackage2"
-                              }
-                              data-plasmic-override={
-                                overrides.analyticsApiAndCustomDashboardsCustomPackage2
-                              }
-                              className={classNames(
-                                projectcss.all,
-                                sty.analyticsApiAndCustomDashboardsCustomPackage2
-                              )}
-                            >
-                              <div
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.__wab_text,
-                                  sty.text___8JG3K
-                                )}
-                              >
-                                {
-                                  "Analytics API and custom dashboards (custom package)"
+                                data-plasmic-name={
+                                  "supportSlaWithResponseTimeGuarantee2"
                                 }
-                              </div>
-                            </div>
-                          </div>
-
-                          <div
-                            data-plasmic-name={"div151"}
-                            data-plasmic-override={overrides.div151}
-                            className={classNames(projectcss.all, sty.div151)}
-                          >
-                            <div
-                              data-plasmic-name={"_101"}
-                              data-plasmic-override={overrides._101}
-                              className={classNames(projectcss.all, sty._101)}
-                            >
-                              <div
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.__wab_text,
-                                  sty.text__xeMou
-                                )}
-                              >
-                                {"✓"}
-                              </div>
-                            </div>
-
-                            <div
-                              data-plasmic-name={
-                                "extendedPlatformApIsForAdvancedIntegrationsCustomPackage2"
-                              }
-                              data-plasmic-override={
-                                overrides.extendedPlatformApIsForAdvancedIntegrationsCustomPackage2
-                              }
-                              className={classNames(
-                                projectcss.all,
-                                sty.extendedPlatformApIsForAdvancedIntegrationsCustomPackage2
-                              )}
-                            >
-                              <div
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.__wab_text,
-                                  sty.text__xEy4X
-                                )}
-                              >
-                                {
-                                  "Extended platform APIs for advanced integrations (custom package)"
+                                data-plasmic-override={
+                                  overrides.supportSlaWithResponseTimeGuarantee2
                                 }
-                              </div>
-                            </div>
-                          </div>
-
-                          <div
-                            data-plasmic-name={"div152"}
-                            data-plasmic-override={overrides.div152}
-                            className={classNames(projectcss.all, sty.div152)}
-                          >
-                            <div
-                              data-plasmic-name={"_102"}
-                              data-plasmic-override={overrides._102}
-                              className={classNames(projectcss.all, sty._102)}
-                            >
-                              <div
                                 className={classNames(
                                   projectcss.all,
-                                  projectcss.__wab_text,
-                                  sty.text__jzlIb
+                                  sty.supportSlaWithResponseTimeGuarantee2
                                 )}
                               >
-                                {"✓"}
+                                <div
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.__wab_text,
+                                    sty.text___9ZofO
+                                  )}
+                                >
+                                  {"Support SLA with response time guarantee"}
+                                </div>
                               </div>
                             </div>
 
                             <div
-                              data-plasmic-name={"embeddedAppCustomPackage2"}
-                              data-plasmic-override={
-                                overrides.embeddedAppCustomPackage2
-                              }
-                              className={classNames(
-                                projectcss.all,
-                                sty.embeddedAppCustomPackage2
-                              )}
+                              data-plasmic-name={"div144"}
+                              data-plasmic-override={overrides.div144}
+                              className={classNames(projectcss.all, sty.div144)}
                             >
                               <div
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.__wab_text,
-                                  sty.text__ggZVn
-                                )}
+                                data-plasmic-name={"_94"}
+                                data-plasmic-override={overrides._94}
+                                className={classNames(projectcss.all, sty._94)}
                               >
-                                {"Embedded app (custom package)"}
+                                <div
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.__wab_text,
+                                    sty.text__b8FKt
+                                  )}
+                                >
+                                  {"✓"}
+                                </div>
                               </div>
-                            </div>
-                          </div>
 
-                          <div
-                            data-plasmic-name={"div153"}
-                            data-plasmic-override={overrides.div153}
-                            className={classNames(projectcss.all, sty.div153)}
-                          >
-                            <div
-                              data-plasmic-name={"_103"}
-                              data-plasmic-override={overrides._103}
-                              className={classNames(projectcss.all, sty._103)}
-                            >
                               <div
+                                data-plasmic-name={
+                                  "onboardingAndCustomerSuccess2"
+                                }
+                                data-plasmic-override={
+                                  overrides.onboardingAndCustomerSuccess2
+                                }
                                 className={classNames(
                                   projectcss.all,
-                                  projectcss.__wab_text,
-                                  sty.text__qmq3W
+                                  sty.onboardingAndCustomerSuccess2
                                 )}
                               >
-                                {"✓"}
-                              </div>
-                            </div>
-
-                            <div
-                              data-plasmic-name={"whiteLabelingCustomPackage2"}
-                              data-plasmic-override={
-                                overrides.whiteLabelingCustomPackage2
-                              }
-                              className={classNames(
-                                projectcss.all,
-                                sty.whiteLabelingCustomPackage2
-                              )}
-                            >
-                              <div
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.__wab_text,
-                                  sty.text__spIsH
-                                )}
-                              >
-                                {"White labeling (custom package)"}
-                              </div>
-                            </div>
-                          </div>
-
-                          <div
-                            data-plasmic-name={"div154"}
-                            data-plasmic-override={overrides.div154}
-                            className={classNames(projectcss.all, sty.div154)}
-                          >
-                            <div
-                              data-plasmic-name={"_104"}
-                              data-plasmic-override={overrides._104}
-                              className={classNames(projectcss.all, sty._104)}
-                            >
-                              <div
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.__wab_text,
-                                  sty.text__z2Juw
-                                )}
-                              >
-                                {"✓"}
+                                <div
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.__wab_text,
+                                    sty.text__uVhwN
+                                  )}
+                                >
+                                  {"Onboarding and customer success"}
+                                </div>
                               </div>
                             </div>
 
                             <div
-                              data-plasmic-name={
-                                "onPremiseDeploymentCustomPackage2"
-                              }
-                              data-plasmic-override={
-                                overrides.onPremiseDeploymentCustomPackage2
-                              }
-                              className={classNames(
-                                projectcss.all,
-                                sty.onPremiseDeploymentCustomPackage2
-                              )}
+                              data-plasmic-name={"div145"}
+                              data-plasmic-override={overrides.div145}
+                              className={classNames(projectcss.all, sty.div145)}
                             >
                               <div
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.__wab_text,
-                                  sty.text__p9FAy
-                                )}
+                                data-plasmic-name={"_95"}
+                                data-plasmic-override={overrides._95}
+                                className={classNames(projectcss.all, sty._95)}
                               >
-                                {"On-premise deployment (custom package)"}
+                                <div
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.__wab_text,
+                                    sty.text__lYlCy
+                                  )}
+                                >
+                                  {"✓"}
+                                </div>
                               </div>
-                            </div>
-                          </div>
 
-                          <div
-                            data-plasmic-name={"div155"}
-                            data-plasmic-override={overrides.div155}
-                            className={classNames(projectcss.all, sty.div155)}
-                          >
-                            <div
-                              data-plasmic-name={"_105"}
-                              data-plasmic-override={overrides._105}
-                              className={classNames(projectcss.all, sty._105)}
-                            >
                               <div
+                                data-plasmic-name={"privateSharedSlackChannel2"}
+                                data-plasmic-override={
+                                  overrides.privateSharedSlackChannel2
+                                }
                                 className={classNames(
                                   projectcss.all,
-                                  projectcss.__wab_text,
-                                  sty.text__o2NeT
+                                  sty.privateSharedSlackChannel2
                                 )}
                               >
-                                {"✓"}
-                              </div>
-                            </div>
-
-                            <div
-                              data-plasmic-name={
-                                "customFeaturePriorityCustomPackage2"
-                              }
-                              data-plasmic-override={
-                                overrides.customFeaturePriorityCustomPackage2
-                              }
-                              className={classNames(
-                                projectcss.all,
-                                sty.customFeaturePriorityCustomPackage2
-                              )}
-                            >
-                              <div
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.__wab_text,
-                                  sty.text__jhiaa
-                                )}
-                              >
-                                {"Custom feature priority (custom package)"}
-                              </div>
-                            </div>
-                          </div>
-
-                          <div
-                            data-plasmic-name={"div156"}
-                            data-plasmic-override={overrides.div156}
-                            className={classNames(projectcss.all, sty.div156)}
-                          >
-                            <div
-                              data-plasmic-name={"_106"}
-                              data-plasmic-override={overrides._106}
-                              className={classNames(projectcss.all, sty._106)}
-                            >
-                              <div
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.__wab_text,
-                                  sty.text__i3Ea2
-                                )}
-                              >
-                                {"✓"}
+                                <div
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.__wab_text,
+                                    sty.text__s7Nqf
+                                  )}
+                                >
+                                  {"Private shared Slack channel"}
+                                </div>
                               </div>
                             </div>
 
                             <div
-                              data-plasmic-name={
-                                "customIntegrationsCustomPackage2"
-                              }
-                              data-plasmic-override={
-                                overrides.customIntegrationsCustomPackage2
-                              }
-                              className={classNames(
-                                projectcss.all,
-                                sty.customIntegrationsCustomPackage2
-                              )}
+                              data-plasmic-name={"div146"}
+                              data-plasmic-override={overrides.div146}
+                              className={classNames(projectcss.all, sty.div146)}
                             >
                               <div
+                                data-plasmic-name={"_96"}
+                                data-plasmic-override={overrides._96}
+                                className={classNames(projectcss.all, sty._96)}
+                              >
+                                <div
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.__wab_text,
+                                    sty.text__hvabX
+                                  )}
+                                >
+                                  {"✓"}
+                                </div>
+                              </div>
+
+                              <div
+                                data-plasmic-name={
+                                  "singleSignOnAndDomainCaptureCustomPackage2"
+                                }
+                                data-plasmic-override={
+                                  overrides.singleSignOnAndDomainCaptureCustomPackage2
+                                }
                                 className={classNames(
                                   projectcss.all,
-                                  projectcss.__wab_text,
-                                  sty.text__hf53X
+                                  sty.singleSignOnAndDomainCaptureCustomPackage2
                                 )}
                               >
-                                {"Custom integrations (custom package)"}
+                                <div
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.__wab_text,
+                                    sty.text__pU3Zy
+                                  )}
+                                >
+                                  {
+                                    "Single sign-on and domain capture\n (custom package)"
+                                  }
+                                </div>
+                              </div>
+                            </div>
+
+                            <div
+                              data-plasmic-name={"div147"}
+                              data-plasmic-override={overrides.div147}
+                              className={classNames(projectcss.all, sty.div147)}
+                            >
+                              <div
+                                data-plasmic-name={"_97"}
+                                data-plasmic-override={overrides._97}
+                                className={classNames(projectcss.all, sty._97)}
+                              >
+                                <div
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.__wab_text,
+                                    sty.text__cRkqc
+                                  )}
+                                >
+                                  {"✓"}
+                                </div>
+                              </div>
+
+                              <div
+                                data-plasmic-name={
+                                  "customizableContentCreatorModeCustomPackage2"
+                                }
+                                data-plasmic-override={
+                                  overrides.customizableContentCreatorModeCustomPackage2
+                                }
+                                className={classNames(
+                                  projectcss.all,
+                                  sty.customizableContentCreatorModeCustomPackage2
+                                )}
+                              >
+                                <div
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.__wab_text,
+                                    sty.text___8V5Vz
+                                  )}
+                                >
+                                  {
+                                    "Customizable content creator mode (custom package)"
+                                  }
+                                </div>
+                              </div>
+                            </div>
+
+                            <div
+                              data-plasmic-name={"div148"}
+                              data-plasmic-override={overrides.div148}
+                              className={classNames(projectcss.all, sty.div148)}
+                            >
+                              <div
+                                data-plasmic-name={"_98"}
+                                data-plasmic-override={overrides._98}
+                                className={classNames(projectcss.all, sty._98)}
+                              >
+                                <div
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.__wab_text,
+                                    sty.text__twh3L
+                                  )}
+                                >
+                                  {"✓"}
+                                </div>
+                              </div>
+
+                              <div
+                                data-plasmic-name={
+                                  "customRolesAndPermissionsCustomPackage2"
+                                }
+                                data-plasmic-override={
+                                  overrides.customRolesAndPermissionsCustomPackage2
+                                }
+                                className={classNames(
+                                  projectcss.all,
+                                  sty.customRolesAndPermissionsCustomPackage2
+                                )}
+                              >
+                                <div
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.__wab_text,
+                                    sty.text___1652X
+                                  )}
+                                >
+                                  {
+                                    "Custom roles and permissions (custom package)"
+                                  }
+                                </div>
+                              </div>
+                            </div>
+
+                            <div
+                              data-plasmic-name={"div149"}
+                              data-plasmic-override={overrides.div149}
+                              className={classNames(projectcss.all, sty.div149)}
+                            >
+                              <div
+                                data-plasmic-name={"_99"}
+                                data-plasmic-override={overrides._99}
+                                className={classNames(projectcss.all, sty._99)}
+                              >
+                                <div
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.__wab_text,
+                                    sty.text__gix57
+                                  )}
+                                >
+                                  {"✓"}
+                                </div>
+                              </div>
+
+                              <div
+                                data-plasmic-name={"uptimeSlaCustomPackage2"}
+                                data-plasmic-override={
+                                  overrides.uptimeSlaCustomPackage2
+                                }
+                                className={classNames(
+                                  projectcss.all,
+                                  sty.uptimeSlaCustomPackage2
+                                )}
+                              >
+                                <div
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.__wab_text,
+                                    sty.text___96GMs
+                                  )}
+                                >
+                                  {"Uptime SLA (custom package)"}
+                                </div>
+                              </div>
+                            </div>
+
+                            <div
+                              data-plasmic-name={"div150"}
+                              data-plasmic-override={overrides.div150}
+                              className={classNames(projectcss.all, sty.div150)}
+                            >
+                              <div
+                                data-plasmic-name={"_100"}
+                                data-plasmic-override={overrides._100}
+                                className={classNames(projectcss.all, sty._100)}
+                              >
+                                <div
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.__wab_text,
+                                    sty.text__z9Aep
+                                  )}
+                                >
+                                  {"✓"}
+                                </div>
+                              </div>
+
+                              <div
+                                data-plasmic-name={
+                                  "analyticsApiAndCustomDashboardsCustomPackage2"
+                                }
+                                data-plasmic-override={
+                                  overrides.analyticsApiAndCustomDashboardsCustomPackage2
+                                }
+                                className={classNames(
+                                  projectcss.all,
+                                  sty.analyticsApiAndCustomDashboardsCustomPackage2
+                                )}
+                              >
+                                <div
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.__wab_text,
+                                    sty.text___8JG3K
+                                  )}
+                                >
+                                  {
+                                    "Analytics API and custom dashboards (custom package)"
+                                  }
+                                </div>
+                              </div>
+                            </div>
+
+                            <div
+                              data-plasmic-name={"div151"}
+                              data-plasmic-override={overrides.div151}
+                              className={classNames(projectcss.all, sty.div151)}
+                            >
+                              <div
+                                data-plasmic-name={"_101"}
+                                data-plasmic-override={overrides._101}
+                                className={classNames(projectcss.all, sty._101)}
+                              >
+                                <div
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.__wab_text,
+                                    sty.text__xeMou
+                                  )}
+                                >
+                                  {"✓"}
+                                </div>
+                              </div>
+
+                              <div
+                                data-plasmic-name={
+                                  "extendedPlatformApIsForAdvancedIntegrationsCustomPackage2"
+                                }
+                                data-plasmic-override={
+                                  overrides.extendedPlatformApIsForAdvancedIntegrationsCustomPackage2
+                                }
+                                className={classNames(
+                                  projectcss.all,
+                                  sty.extendedPlatformApIsForAdvancedIntegrationsCustomPackage2
+                                )}
+                              >
+                                <div
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.__wab_text,
+                                    sty.text__xEy4X
+                                  )}
+                                >
+                                  {
+                                    "Extended platform APIs for advanced integrations (custom package)"
+                                  }
+                                </div>
+                              </div>
+                            </div>
+
+                            <div
+                              data-plasmic-name={"div152"}
+                              data-plasmic-override={overrides.div152}
+                              className={classNames(projectcss.all, sty.div152)}
+                            >
+                              <div
+                                data-plasmic-name={"_102"}
+                                data-plasmic-override={overrides._102}
+                                className={classNames(projectcss.all, sty._102)}
+                              >
+                                <div
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.__wab_text,
+                                    sty.text__jzlIb
+                                  )}
+                                >
+                                  {"✓"}
+                                </div>
+                              </div>
+
+                              <div
+                                data-plasmic-name={"embeddedAppCustomPackage2"}
+                                data-plasmic-override={
+                                  overrides.embeddedAppCustomPackage2
+                                }
+                                className={classNames(
+                                  projectcss.all,
+                                  sty.embeddedAppCustomPackage2
+                                )}
+                              >
+                                <div
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.__wab_text,
+                                    sty.text__ggZVn
+                                  )}
+                                >
+                                  {"Embedded app (custom package)"}
+                                </div>
+                              </div>
+                            </div>
+
+                            <div
+                              data-plasmic-name={"div153"}
+                              data-plasmic-override={overrides.div153}
+                              className={classNames(projectcss.all, sty.div153)}
+                            >
+                              <div
+                                data-plasmic-name={"_103"}
+                                data-plasmic-override={overrides._103}
+                                className={classNames(projectcss.all, sty._103)}
+                              >
+                                <div
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.__wab_text,
+                                    sty.text__qmq3W
+                                  )}
+                                >
+                                  {"✓"}
+                                </div>
+                              </div>
+
+                              <div
+                                data-plasmic-name={
+                                  "whiteLabelingCustomPackage2"
+                                }
+                                data-plasmic-override={
+                                  overrides.whiteLabelingCustomPackage2
+                                }
+                                className={classNames(
+                                  projectcss.all,
+                                  sty.whiteLabelingCustomPackage2
+                                )}
+                              >
+                                <div
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.__wab_text,
+                                    sty.text__spIsH
+                                  )}
+                                >
+                                  {"White labeling (custom package)"}
+                                </div>
+                              </div>
+                            </div>
+
+                            <div
+                              data-plasmic-name={"div154"}
+                              data-plasmic-override={overrides.div154}
+                              className={classNames(projectcss.all, sty.div154)}
+                            >
+                              <div
+                                data-plasmic-name={"_104"}
+                                data-plasmic-override={overrides._104}
+                                className={classNames(projectcss.all, sty._104)}
+                              >
+                                <div
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.__wab_text,
+                                    sty.text__z2Juw
+                                  )}
+                                >
+                                  {"✓"}
+                                </div>
+                              </div>
+
+                              <div
+                                data-plasmic-name={
+                                  "onPremiseDeploymentCustomPackage2"
+                                }
+                                data-plasmic-override={
+                                  overrides.onPremiseDeploymentCustomPackage2
+                                }
+                                className={classNames(
+                                  projectcss.all,
+                                  sty.onPremiseDeploymentCustomPackage2
+                                )}
+                              >
+                                <div
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.__wab_text,
+                                    sty.text__p9FAy
+                                  )}
+                                >
+                                  {"On-premise deployment (custom package)"}
+                                </div>
+                              </div>
+                            </div>
+
+                            <div
+                              data-plasmic-name={"div155"}
+                              data-plasmic-override={overrides.div155}
+                              className={classNames(projectcss.all, sty.div155)}
+                            >
+                              <div
+                                data-plasmic-name={"_105"}
+                                data-plasmic-override={overrides._105}
+                                className={classNames(projectcss.all, sty._105)}
+                              >
+                                <div
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.__wab_text,
+                                    sty.text__o2NeT
+                                  )}
+                                >
+                                  {"✓"}
+                                </div>
+                              </div>
+
+                              <div
+                                data-plasmic-name={
+                                  "customFeaturePriorityCustomPackage2"
+                                }
+                                data-plasmic-override={
+                                  overrides.customFeaturePriorityCustomPackage2
+                                }
+                                className={classNames(
+                                  projectcss.all,
+                                  sty.customFeaturePriorityCustomPackage2
+                                )}
+                              >
+                                <div
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.__wab_text,
+                                    sty.text__jhiaa
+                                  )}
+                                >
+                                  {"Custom feature priority (custom package)"}
+                                </div>
+                              </div>
+                            </div>
+
+                            <div
+                              data-plasmic-name={"div156"}
+                              data-plasmic-override={overrides.div156}
+                              className={classNames(projectcss.all, sty.div156)}
+                            >
+                              <div
+                                data-plasmic-name={"_106"}
+                                data-plasmic-override={overrides._106}
+                                className={classNames(projectcss.all, sty._106)}
+                              >
+                                <div
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.__wab_text,
+                                    sty.text__i3Ea2
+                                  )}
+                                >
+                                  {"✓"}
+                                </div>
+                              </div>
+
+                              <div
+                                data-plasmic-name={
+                                  "customIntegrationsCustomPackage2"
+                                }
+                                data-plasmic-override={
+                                  overrides.customIntegrationsCustomPackage2
+                                }
+                                className={classNames(
+                                  projectcss.all,
+                                  sty.customIntegrationsCustomPackage2
+                                )}
+                              >
+                                <div
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.__wab_text,
+                                    sty.text__hf53X
+                                  )}
+                                >
+                                  {"Custom integrations (custom package)"}
+                                </div>
                               </div>
                             </div>
                           </div>
@@ -6352,6 +6363,14 @@ function PlasmicPricing__RenderFunc(props: {
                   </div>
                 </div>
               </div>
+
+              {(
+                hasVariant(globalVariants, "screen", "mobile") ? true : true
+              ) ? (
+                <div
+                  className={classNames(projectcss.all, sty.freeBox__tmOd)}
+                />
+              ) : null}
             </div>
           ) : null}
         </div>
