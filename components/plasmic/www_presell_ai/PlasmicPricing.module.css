@@ -3395,11 +3395,12 @@
 }
 .wwwplasmicappByHtmltodesignFreeVersion0302202304039Gmt5 {
   width: auto;
-  height: 4616px;
+  height: 4300px;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
+  margin-bottom: 0px;
   flex-shrink: 0;
 }
 @media (max-width: 1152px) {
@@ -3409,18 +3410,19 @@
 }
 .div82 {
   width: 594px;
-  height: 4616px;
+  height: 4498px;
   display: block;
   position: relative;
   flex-shrink: 0;
 }
 .div83 {
   width: 594px;
-  height: 6482px;
+  height: 4345px;
   display: block;
   position: absolute;
-  top: 197px;
+  top: -37px;
   left: 0px;
+  margin-bottom: 0px;
 }
 .text__vEiI {
   display: block;
@@ -5655,12 +5657,13 @@
 }
 .div138 {
   transform: translate(-0.48500000000001364px, 0px);
-  width: 203px;
+  width: 194px;
   height: 120px;
   display: block;
   position: absolute;
   top: 16px;
-  left: 133px;
+  left: 115px;
+  margin-right: 0px;
 }
 .text__n6WX {
   display: block;
@@ -5704,12 +5707,12 @@
 .a8 {
   background: #04a1c1;
   transform: translate(0px, 0.125px);
-  width: auto;
+  width: 294px;
   height: auto;
   display: flex;
   position: absolute;
   top: 161px;
-  left: 88px;
+  left: 59px;
   flex-direction: row;
   align-items: center;
   justify-content: center;
