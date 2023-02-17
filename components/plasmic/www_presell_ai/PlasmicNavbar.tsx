@@ -280,7 +280,7 @@ function PlasmicNavbar__RenderFunc(props: {
                     role={"img"}
                   />
                 }
-                link={"https://app.presell.ai/signup" as const}
+                link={"https://www.presell.ai/signup" as const}
                 startIcon={
                   <svg
                     className={classNames(projectcss.all, sty.svg__bnl)}
