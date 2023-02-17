@@ -71,7 +71,6 @@ export type PlasmicFooterSection__OverridesType = {
   root?: p.Flex<"div">;
   img?: p.Flex<typeof p.PlasmicImg>;
   h5?: p.Flex<"h5">;
-  link?: p.Flex<"a"> & Partial<LinkProps>;
   textInput?: p.Flex<typeof TextInput>;
   textbox?: p.Flex<typeof TextInput>;
 };
@@ -289,22 +288,26 @@ function PlasmicFooterSection__RenderFunc(props: {
               {"Company"}
             </h4>
 
-            <div
+            <p.PlasmicLink
               className={classNames(
                 projectcss.all,
+                projectcss.a,
                 projectcss.__wab_text,
-                sty.text__heFnr,
+                sty.link__heFnr,
                 {
-                  [sty.textunnamedVariant__heFnroxEvg]: hasVariant(
+                  [sty.linkunnamedVariant__heFnroxEvg]: hasVariant(
                     $state,
                     "unnamedVariant",
                     "unnamedVariant"
                   )
                 }
               )}
+              component={Link}
+              href={`/vision`}
+              platform={"nextjs"}
             >
               {"Presell Vision"}
-            </div>
+            </p.PlasmicLink>
 
             <div
               className={classNames(
@@ -317,13 +320,11 @@ function PlasmicFooterSection__RenderFunc(props: {
             </div>
 
             <p.PlasmicLink
-              data-plasmic-name={"link"}
-              data-plasmic-override={overrides.link}
               className={classNames(
                 projectcss.all,
                 projectcss.a,
                 projectcss.__wab_text,
-                sty.link
+                sty.link__ev7Pp
               )}
               component={Link}
               href={"http://www.presell.ai/pricing" as const}
@@ -800,10 +801,9 @@ function PlasmicFooterSection__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "img", "h5", "link", "textInput", "textbox"],
+  root: ["root", "img", "h5", "textInput", "textbox"],
   img: ["img"],
   h5: ["h5"],
-  link: ["link"],
   textInput: ["textInput", "textbox"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -813,7 +813,6 @@ type NodeDefaultElementType = {
   root: "div";
   img: typeof p.PlasmicImg;
   h5: "h5";
-  link: "a";
   textInput: typeof TextInput;
 };
 
@@ -880,7 +879,6 @@ export const PlasmicFooterSection = Object.assign(
     // Helper components rendering sub-elements
     img: makeNodeComponent("img"),
     h5: makeNodeComponent("h5"),
-    link: makeNodeComponent("link"),
     textInput: makeNodeComponent("textInput"),
 
     // Metadata about props expected for PlasmicFooterSection

@@ -288,11 +288,19 @@ function PlasmicNavbar__RenderFunc(props: {
                   />
                 }
               >
-                {hasVariant(globalVariants, "screen", "mobile")
-                  ? "Watch Demo"
-                  : hasVariant(globalVariants, "screen", "footer")
-                  ? "Get Started"
-                  : "Get Started"}
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__zdyyv
+                  )}
+                >
+                  {hasVariant(globalVariants, "screen", "mobile")
+                    ? "Watch Demo"
+                    : hasVariant(globalVariants, "screen", "footer")
+                    ? "Get Started"
+                    : "Get Started"}
+                </div>
               </Button>
             ) : null}
           </p.Stack>

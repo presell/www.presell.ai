@@ -164,7 +164,26 @@ function PlasmicSignUpV2__RenderFunc(props: {
                           sty.text___8O3I
                         )}
                       >
-                        {"Log In"}
+                        <React.Fragment>
+                          <React.Fragment>{""}</React.Fragment>
+                          {
+                            <p.PlasmicLink
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.a,
+                                projectcss.__wab_text,
+                                projectcss.plasmic_default__inline,
+                                sty.link__oMXdK
+                              )}
+                              component={Link}
+                              href={"https://app.presell.ai/" as const}
+                              platform={"nextjs"}
+                            >
+                              {"Log In"}
+                            </p.PlasmicLink>
+                          }
+                          <React.Fragment>{""}</React.Fragment>
+                        </React.Fragment>
                       </div>
                     ) : null}
                     {(
@@ -178,16 +197,22 @@ function PlasmicSignUpV2__RenderFunc(props: {
                           sty.freeBox__xsUFj
                         )}
                       >
-                        <button
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.button,
-                            projectcss.__wab_text,
-                            sty.button__pfqJi
-                          )}
-                        >
-                          {"Start Free Trial"}
-                        </button>
+                        {(
+                          hasVariant(globalVariants, "screen", "mobile")
+                            ? true
+                            : true
+                        ) ? (
+                          <button
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.button,
+                              projectcss.__wab_text,
+                              sty.button__pfqJi
+                            )}
+                          >
+                            {"Start Free Trial"}
+                          </button>
+                        ) : null}
                       </div>
                     ) : null}
                     {(
@@ -195,12 +220,29 @@ function PlasmicSignUpV2__RenderFunc(props: {
                         ? true
                         : true
                     ) ? (
-                      <ChevronRightIcon
-                        data-plasmic-name={"svg"}
-                        data-plasmic-override={overrides.svg}
-                        className={classNames(projectcss.all, sty.svg)}
-                        role={"img"}
-                      />
+                      <p.PlasmicLink
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.a,
+                          sty.link__eVkJn
+                        )}
+                        component={Link}
+                        href={"https://app.presell.ai/" as const}
+                        platform={"nextjs"}
+                      >
+                        {(
+                          hasVariant(globalVariants, "screen", "mobile")
+                            ? true
+                            : true
+                        ) ? (
+                          <ChevronRightIcon
+                            data-plasmic-name={"svg"}
+                            data-plasmic-override={overrides.svg}
+                            className={classNames(projectcss.all, sty.svg)}
+                            role={"img"}
+                          />
+                        ) : null}
+                      </p.PlasmicLink>
                     ) : null}
                   </div>
                 ) : null}
@@ -211,23 +253,34 @@ function PlasmicSignUpV2__RenderFunc(props: {
               <div className={classNames(projectcss.all, sty.freeBox__tgOne)}>
                 <div className={classNames(projectcss.all, sty.columns__lFpEn)}>
                   <div className={classNames(projectcss.all, sty.column__lHAm)}>
-                    <p.PlasmicImg
-                      alt={""}
-                      className={classNames(sty.img__tQxJv)}
-                      displayHeight={"80px" as const}
-                      displayMaxHeight={"none" as const}
-                      displayMaxWidth={"100%" as const}
-                      displayMinHeight={"0" as const}
-                      displayMinWidth={"0" as const}
-                      displayWidth={"144px" as const}
-                      loading={"lazy" as const}
-                      src={{
-                        src: "/plasmic/www_presell_ai/images/teluguIndiaNewDelhiJulianYu640806Unsplashjpg.jpeg",
-                        fullWidth: 1960,
-                        fullHeight: 1306,
-                        aspectRatio: undefined
-                      }}
-                    />
+                    <p.PlasmicLink
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        sty.link__mLnji
+                      )}
+                      component={Link}
+                      href={"https://www.presell.ai/" as const}
+                      platform={"nextjs"}
+                    >
+                      <p.PlasmicImg
+                        alt={""}
+                        className={classNames(sty.img__tQxJv)}
+                        displayHeight={"80px" as const}
+                        displayMaxHeight={"none" as const}
+                        displayMaxWidth={"100%" as const}
+                        displayMinHeight={"0" as const}
+                        displayMinWidth={"0" as const}
+                        displayWidth={"144px" as const}
+                        loading={"lazy" as const}
+                        src={{
+                          src: "/plasmic/www_presell_ai/images/presellAiDrarkGraphTextpng.png",
+                          fullWidth: 306,
+                          fullHeight: 55,
+                          aspectRatio: undefined
+                        }}
+                      />
+                    </p.PlasmicLink>
                   </div>
 
                   <div
@@ -240,7 +293,7 @@ function PlasmicSignUpV2__RenderFunc(props: {
                         sty.text__gbqOb
                       )}
                     >
-                      {"1-888-475-4473"}
+                      {""}
                     </div>
                   </div>
                 </div>
@@ -259,7 +312,7 @@ function PlasmicSignUpV2__RenderFunc(props: {
               >
                 {hasVariant(globalVariants, "screen", "mobile")
                   ? "FIELD SERVICE MANAGEMENT SOFTWARE"
-                  : "FIELD SERVICE MANAGEMENT SOFTWARE"}
+                  : "AI Growth Marketing"}
               </div>
 
               <div
@@ -269,24 +322,24 @@ function PlasmicSignUpV2__RenderFunc(props: {
                   sty.text___4TDc4
                 )}
               >
-                <React.Fragment>
-                  <span
-                    className={"plasmic_default__all plasmic_default__span"}
-                    style={{ color: "#75D718" }}
-                  >
-                    {"ORGANIZE "}
-                  </span>
-                  <React.Fragment>
-                    {"YOUR FIELD\n SERVICE BUSINESS"}
-                  </React.Fragment>
-                </React.Fragment>
+                {"Instantly Generate\nConversion-Assets"}
               </div>
 
               <div className={classNames(projectcss.all, sty.freeBox__k6Ti7)}>
                 <form
                   data-plasmic-name={"form"}
                   data-plasmic-override={overrides.form}
+                  action={
+                    hasVariant(globalVariants, "screen", "mobile")
+                      ? ("https://hook.us1.make.com/6qf8ii7ozfbui45pc1a0hp2ypwbret9o" as const)
+                      : undefined
+                  }
                   className={classNames(projectcss.all, sty.form)}
+                  method={
+                    hasVariant(globalVariants, "screen", "mobile")
+                      ? ("post" as const)
+                      : undefined
+                  }
                 >
                   <div
                     className={classNames(
@@ -295,7 +348,7 @@ function PlasmicSignUpV2__RenderFunc(props: {
                       sty.text__kLvcv
                     )}
                   >
-                    {"TRY JOBBER FREE"}
+                    {"Try Presell AI"}
                   </div>
 
                   <TextInput
@@ -303,7 +356,7 @@ function PlasmicSignUpV2__RenderFunc(props: {
                       "__wab_instance",
                       sty.textInput__jaPvp
                     )}
-                    placeholder={"Work Email" as const}
+                    placeholder={"State Your Product (Life Insurance)" as const}
                   />
 
                   <TextInput
@@ -311,7 +364,7 @@ function PlasmicSignUpV2__RenderFunc(props: {
                       "__wab_instance",
                       sty.textInput__oDgFb
                     )}
-                    placeholder={"Add a Password" as const}
+                    placeholder={"Enter Your Email Address" as const}
                   />
 
                   <button
@@ -322,7 +375,7 @@ function PlasmicSignUpV2__RenderFunc(props: {
                       sty.button__pJtrq
                     )}
                   >
-                    {"START FREE TRIAL"}
+                    {"GENERATE ASSETS"}
                   </button>
                 </form>
 
@@ -333,73 +386,76 @@ function PlasmicSignUpV2__RenderFunc(props: {
                     sty.text__fv07C
                   )}
                 >
-                  {"Access all features. No credit card required"}
+                  {"Unlimited AI Generations. No Card Required."}
                 </div>
 
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__dcJxs
-                  )}
-                >
-                  <React.Fragment>
+                {true ? (
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__dcJxs
+                    )}
+                  >
                     <React.Fragment>
-                      {
-                        "By clicking “Start Free Trial” you agree to receive information from Jobber about our services, plus news and offers.\n You can unsubscribe at any time. You also agree to our "
-                      }
+                      <React.Fragment>
+                        {
+                          "By clicking “Start Free Trial” you agree to receive information from Jobber about our services, plus news and offers.\n You can unsubscribe at any time. You also agree to our "
+                        }
+                      </React.Fragment>
+                      <span
+                        className={"plasmic_default__all plasmic_default__span"}
+                        style={{
+                          color: "#4178DF",
+                          textDecorationLine: "underline"
+                        }}
+                      >
+                        {"Terms of Service"}
+                      </span>
+                      <React.Fragment>{""}</React.Fragment>
+                      <span
+                        className={"plasmic_default__all plasmic_default__span"}
+                        style={{ color: "#92B0EE" }}
+                      >
+                        {" "}
+                      </span>
+                      <React.Fragment>{"and "}</React.Fragment>
+                      <span
+                        className={"plasmic_default__all plasmic_default__span"}
+                        style={{
+                          color: "#4C8FDE",
+                          textDecorationLine: "underline"
+                        }}
+                      >
+                        {"Privacy Policy"}
+                      </span>
+                      <React.Fragment>{""}</React.Fragment>
+                      <span
+                        className={"plasmic_default__all plasmic_default__span"}
+                        style={{ color: "#4C8FDE" }}
+                      >
+                        {"."}
+                      </span>
                     </React.Fragment>
-                    <span
-                      className={"plasmic_default__all plasmic_default__span"}
-                      style={{
-                        color: "#4178DF",
-                        textDecorationLine: "underline"
-                      }}
-                    >
-                      {"Terms of Service"}
-                    </span>
-                    <React.Fragment>{""}</React.Fragment>
-                    <span
-                      className={"plasmic_default__all plasmic_default__span"}
-                      style={{ color: "#92B0EE" }}
-                    >
-                      {" "}
-                    </span>
-                    <React.Fragment>{"and "}</React.Fragment>
-                    <span
-                      className={"plasmic_default__all plasmic_default__span"}
-                      style={{
-                        color: "#4C8FDE",
-                        textDecorationLine: "underline"
-                      }}
-                    >
-                      {"Privacy Policy"}
-                    </span>
-                    <React.Fragment>{""}</React.Fragment>
-                    <span
-                      className={"plasmic_default__all plasmic_default__span"}
-                      style={{ color: "#4C8FDE" }}
-                    >
-                      {"."}
-                    </span>
-                  </React.Fragment>
-                </div>
+                  </div>
+                ) : null}
               </div>
             </div>
           </div>
 
-          <div
-            className={classNames(
-              projectcss.all,
-              projectcss.__wab_text,
-              sty.text__kkZdX
-            )}
-          >
-            {
-              "Rated #1 most affordable and popular by thousands of service pros"
-            }
-          </div>
-
+          {true ? (
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text__kkZdX
+              )}
+            >
+              {
+                "Rated #1 most affordable and popular by thousands of service pros"
+              }
+            </div>
+          ) : null}
           {(hasVariant(globalVariants, "screen", "mobile") ? true : true) ? (
             <div className={classNames(projectcss.all, sty.freeBox__bEQzM)}>
               {(
@@ -665,313 +721,323 @@ function PlasmicSignUpV2__RenderFunc(props: {
               ) : null}
             </div>
           ) : null}
-
-          <div className={classNames(projectcss.all, sty.freeBox__ciooW)}>
-            <p.PlasmicImg
-              alt={""}
-              className={classNames(sty.img___1WkYk)}
-              displayHeight={"61px" as const}
-              displayMaxHeight={"none" as const}
-              displayMaxWidth={"100%" as const}
-              displayMinHeight={"0" as const}
-              displayMinWidth={"0" as const}
-              displayWidth={
-                hasVariant(globalVariants, "screen", "mobile")
-                  ? ("650px" as const)
-                  : ("600px" as const)
+          {true ? (
+            <div className={classNames(projectcss.all, sty.freeBox__ciooW)}>
+              <p.PlasmicImg
+                alt={""}
+                className={classNames(sty.img___1WkYk)}
+                displayHeight={"61px" as const}
+                displayMaxHeight={"none" as const}
+                displayMaxWidth={"100%" as const}
+                displayMinHeight={"0" as const}
+                displayMinWidth={"0" as const}
+                displayWidth={
+                  hasVariant(globalVariants, "screen", "mobile")
+                    ? ("650px" as const)
+                    : ("600px" as const)
+                }
+                loading={"lazy" as const}
+                src={{
+                  src: "/plasmic/www_presell_ai/images/divpng.png",
+                  fullWidth: 593,
+                  fullHeight: 62,
+                  aspectRatio: undefined
+                }}
+              />
+            </div>
+          ) : null}
+          {true ? (
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text__ydyWw
+              )}
+            >
+              {
+                "Our features help you organize, manage, and grow your business:\n"
               }
-              loading={"lazy" as const}
-              src={{
-                src: "/plasmic/www_presell_ai/images/divpng.png",
-                fullWidth: 593,
-                fullHeight: 62,
-                aspectRatio: undefined
-              }}
-            />
-          </div>
-
-          <div
-            className={classNames(
-              projectcss.all,
-              projectcss.__wab_text,
-              sty.text__ydyWw
-            )}
-          >
-            {
-              "Our features help you organize, manage, and grow your business:\n"
-            }
-          </div>
-
+            </div>
+          ) : null}
           {(hasVariant(globalVariants, "screen", "mobile") ? true : true) ? (
             <div className={classNames(projectcss.all, sty.freeBox__jr5Td)} />
           ) : null}
+          {true ? (
+            <div className={classNames(projectcss.all, sty.freeBox__xwIrV)}>
+              {true ? (
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__iO4De)}
+                  displayHeight={"auto" as const}
+                  displayMaxHeight={"none" as const}
+                  displayMaxWidth={"100%" as const}
+                  displayMinHeight={"0" as const}
+                  displayMinWidth={"0" as const}
+                  displayWidth={"20px" as const}
+                  loading={"lazy" as const}
+                  src={{
+                    src: "/plasmic/www_presell_ai/images/vectorpng.png",
+                    fullWidth: 16,
+                    fullHeight: 13,
+                    aspectRatio: undefined
+                  }}
+                />
+              ) : null}
 
-          <div className={classNames(projectcss.all, sty.freeBox__xwIrV)}>
-            <p.PlasmicImg
-              alt={""}
-              className={classNames(sty.img__iO4De)}
-              displayHeight={"auto" as const}
-              displayMaxHeight={"none" as const}
-              displayMaxWidth={"100%" as const}
-              displayMinHeight={"0" as const}
-              displayMinWidth={"0" as const}
-              displayWidth={"20px" as const}
-              loading={"lazy" as const}
-              src={{
-                src: "/plasmic/www_presell_ai/images/vectorpng.png",
-                fullWidth: 16,
-                fullHeight: 13,
-                aspectRatio: undefined
-              }}
-            />
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__n4SDo
+                )}
+              >
+                <React.Fragment>
+                  <span
+                    className={"plasmic_default__all plasmic_default__span"}
+                    style={{ fontWeight: 700 }}
+                  >
+                    {"Deliver a great customer experience"}
+                  </span>
+                  <React.Fragment>
+                    {
+                      " with Jobber’s client hub, branded customer communications, customized and automated emails and/or text messages, and custom checklists."
+                    }
+                  </React.Fragment>
+                </React.Fragment>
+              </div>
+            </div>
+          ) : null}
+          {true ? (
+            <div className={classNames(projectcss.all, sty.freeBox__tho2F)}>
+              <p.PlasmicImg
+                alt={""}
+                className={classNames(sty.img__hbgmm)}
+                displayHeight={"auto" as const}
+                displayMaxHeight={"none" as const}
+                displayMaxWidth={"100%" as const}
+                displayMinHeight={"0" as const}
+                displayMinWidth={"0" as const}
+                displayWidth={"20px" as const}
+                loading={"lazy" as const}
+                src={{
+                  src: "/plasmic/www_presell_ai/images/vectorpng.png",
+                  fullWidth: 16,
+                  fullHeight: 13,
+                  aspectRatio: undefined
+                }}
+              />
 
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text___1HUvf
+                )}
+              >
+                <React.Fragment>
+                  <span
+                    className={"plasmic_default__all plasmic_default__span"}
+                    style={{ color: "#000000", fontWeight: 700 }}
+                  >
+                    {"Attract new customers"}
+                  </span>
+                  <React.Fragment>
+                    {
+                      " by allowing new leads to book through your website or Facebook page."
+                    }
+                  </React.Fragment>
+                </React.Fragment>
+              </div>
+            </div>
+          ) : null}
+          {true ? (
+            <div className={classNames(projectcss.all, sty.freeBox___8Dxx3)}>
+              <p.PlasmicImg
+                alt={""}
+                className={classNames(sty.img__x5NQq)}
+                displayHeight={
+                  hasVariant(globalVariants, "screen", "mobile")
+                    ? ("29px" as const)
+                    : ("auto" as const)
+                }
+                displayMaxHeight={"none" as const}
+                displayMaxWidth={"100%" as const}
+                displayMinHeight={"0" as const}
+                displayMinWidth={"0" as const}
+                displayWidth={"20px" as const}
+                loading={"lazy" as const}
+                src={{
+                  src: "/plasmic/www_presell_ai/images/vectorpng.png",
+                  fullWidth: 16,
+                  fullHeight: 13,
+                  aspectRatio: undefined
+                }}
+              />
+
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__oRvVd
+                )}
+              >
+                <React.Fragment>
+                  <span
+                    className={"plasmic_default__all plasmic_default__span"}
+                    style={{ fontWeight: 700 }}
+                  >
+                    {"Send professional looking invoices"}
+                  </span>
+                  <React.Fragment>
+                    {
+                      " right from the mobile app. Customize your invoices by adding your branding and send with one-click when the job is done."
+                    }
+                  </React.Fragment>
+                </React.Fragment>
+              </div>
+            </div>
+          ) : null}
+          {true ? (
+            <div className={classNames(projectcss.all, sty.freeBox__uUM2)}>
+              <p.PlasmicImg
+                alt={""}
+                className={classNames(sty.img__zBk2Q)}
+                displayHeight={"auto" as const}
+                displayMaxHeight={"none" as const}
+                displayMaxWidth={"100%" as const}
+                displayMinHeight={"0" as const}
+                displayMinWidth={"0" as const}
+                displayWidth={"20px" as const}
+                loading={"lazy" as const}
+                src={{
+                  src: "/plasmic/www_presell_ai/images/vectorpng.png",
+                  fullWidth: 16,
+                  fullHeight: 13,
+                  aspectRatio: undefined
+                }}
+              />
+
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__ioEbm
+                )}
+              >
+                <React.Fragment>
+                  <span
+                    className={"plasmic_default__all plasmic_default__span"}
+                    style={{ fontWeight: 700 }}
+                  >
+                    {"Manage cash flow and get paid faster"}
+                  </span>
+                  <React.Fragment>
+                    {
+                      " with our invoicing and payment features. Batch invoicing, automated follow-ups that remind clients their invoice is due, and an easy, one-click option to pay by credit card online. Jobber also syncs with QuickBooks Online."
+                    }
+                  </React.Fragment>
+                </React.Fragment>
+              </div>
+            </div>
+          ) : null}
+          {true ? (
+            <div className={classNames(projectcss.all, sty.freeBox__gAIb6)}>
+              <p.PlasmicImg
+                alt={""}
+                className={classNames(sty.img__fryIu)}
+                displayHeight={"auto" as const}
+                displayMaxHeight={"none" as const}
+                displayMaxWidth={"100%" as const}
+                displayMinHeight={"0" as const}
+                displayMinWidth={"0" as const}
+                displayWidth={"20px" as const}
+                loading={"lazy" as const}
+                src={{
+                  src: "/plasmic/www_presell_ai/images/vectorpng.png",
+                  fullWidth: 16,
+                  fullHeight: 13,
+                  aspectRatio: undefined
+                }}
+              />
+
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__mPyhZ
+                )}
+              >
+                <React.Fragment>
+                  <span
+                    className={"plasmic_default__all plasmic_default__span"}
+                    style={{ fontWeight: 700 }}
+                  >
+                    {
+                      "Capture all client information in one place while on the go"
+                    }
+                  </span>
+                  <React.Fragment>
+                    {
+                      ", with full client history, job and customer information, job details, checklists, notes, time tracking, and GPS directions."
+                    }
+                  </React.Fragment>
+                </React.Fragment>
+              </div>
+            </div>
+          ) : null}
+          {true ? (
             <div
               className={classNames(
                 projectcss.all,
                 projectcss.__wab_text,
-                sty.text__n4SDo
+                sty.text__g9Yvy
               )}
             >
-              <React.Fragment>
-                <span
-                  className={"plasmic_default__all plasmic_default__span"}
-                  style={{ fontWeight: 700 }}
-                >
-                  {"Deliver a great customer experience"}
-                </span>
+              {hasVariant(globalVariants, "screen", "mobile") ? (
                 <React.Fragment>
-                  {
-                    " with Jobber’s client hub, branded customer communications, customized and automated emails and/or text messages, and custom checklists."
-                  }
+                  <span
+                    className={"plasmic_default__all plasmic_default__span"}
+                    style={{ fontStyle: "italic" }}
+                  >
+                    {
+                      "“Field service software allows you to focus on running the business, so the workweek isn’t running you.”"
+                    }
+                  </span>
                 </React.Fragment>
-              </React.Fragment>
+              ) : (
+                <React.Fragment>
+                  <span
+                    className={"plasmic_default__all plasmic_default__span"}
+                    style={{ fontStyle: "italic" }}
+                  >
+                    {
+                      "“Field service software allows you to focus on running the business, so the"
+                    }
+                  </span>
+                  <React.Fragment>{"\n"}</React.Fragment>
+                  <span
+                    className={"plasmic_default__all plasmic_default__span"}
+                    style={{ fontStyle: "italic" }}
+                  >
+                    {" workweek isn’t running you.”"}
+                  </span>
+                </React.Fragment>
+              )}
             </div>
-          </div>
-
-          <div className={classNames(projectcss.all, sty.freeBox__tho2F)}>
-            <p.PlasmicImg
-              alt={""}
-              className={classNames(sty.img__hbgmm)}
-              displayHeight={"auto" as const}
-              displayMaxHeight={"none" as const}
-              displayMaxWidth={"100%" as const}
-              displayMinHeight={"0" as const}
-              displayMinWidth={"0" as const}
-              displayWidth={"20px" as const}
-              loading={"lazy" as const}
-              src={{
-                src: "/plasmic/www_presell_ai/images/vectorpng.png",
-                fullWidth: 16,
-                fullHeight: 13,
-                aspectRatio: undefined
-              }}
-            />
-
+          ) : null}
+          {true ? (
             <div
               className={classNames(
                 projectcss.all,
                 projectcss.__wab_text,
-                sty.text___1HUvf
+                sty.text__zHIr
               )}
             >
-              <React.Fragment>
-                <span
-                  className={"plasmic_default__all plasmic_default__span"}
-                  style={{ color: "#000000", fontWeight: 700 }}
-                >
-                  {"Attract new customers"}
-                </span>
-                <React.Fragment>
-                  {
-                    " by allowing new leads to book through your website or Facebook page."
-                  }
-                </React.Fragment>
-              </React.Fragment>
+              {hasVariant(globalVariants, "screen", "mobile")
+                ? "-Ryaan Tuttle, Best Handyman Boston"
+                : "-Ryaan Tuttle, Best Handyman Boston"}
             </div>
-          </div>
-
-          <div className={classNames(projectcss.all, sty.freeBox___8Dxx3)}>
-            <p.PlasmicImg
-              alt={""}
-              className={classNames(sty.img__x5NQq)}
-              displayHeight={
-                hasVariant(globalVariants, "screen", "mobile")
-                  ? ("29px" as const)
-                  : ("auto" as const)
-              }
-              displayMaxHeight={"none" as const}
-              displayMaxWidth={"100%" as const}
-              displayMinHeight={"0" as const}
-              displayMinWidth={"0" as const}
-              displayWidth={"20px" as const}
-              loading={"lazy" as const}
-              src={{
-                src: "/plasmic/www_presell_ai/images/vectorpng.png",
-                fullWidth: 16,
-                fullHeight: 13,
-                aspectRatio: undefined
-              }}
-            />
-
-            <div
-              className={classNames(
-                projectcss.all,
-                projectcss.__wab_text,
-                sty.text__oRvVd
-              )}
-            >
-              <React.Fragment>
-                <span
-                  className={"plasmic_default__all plasmic_default__span"}
-                  style={{ fontWeight: 700 }}
-                >
-                  {"Send professional looking invoices"}
-                </span>
-                <React.Fragment>
-                  {
-                    " right from the mobile app. Customize your invoices by adding your branding and send with one-click when the job is done."
-                  }
-                </React.Fragment>
-              </React.Fragment>
-            </div>
-          </div>
-
-          <div className={classNames(projectcss.all, sty.freeBox__uUM2)}>
-            <p.PlasmicImg
-              alt={""}
-              className={classNames(sty.img__zBk2Q)}
-              displayHeight={"auto" as const}
-              displayMaxHeight={"none" as const}
-              displayMaxWidth={"100%" as const}
-              displayMinHeight={"0" as const}
-              displayMinWidth={"0" as const}
-              displayWidth={"20px" as const}
-              loading={"lazy" as const}
-              src={{
-                src: "/plasmic/www_presell_ai/images/vectorpng.png",
-                fullWidth: 16,
-                fullHeight: 13,
-                aspectRatio: undefined
-              }}
-            />
-
-            <div
-              className={classNames(
-                projectcss.all,
-                projectcss.__wab_text,
-                sty.text__ioEbm
-              )}
-            >
-              <React.Fragment>
-                <span
-                  className={"plasmic_default__all plasmic_default__span"}
-                  style={{ fontWeight: 700 }}
-                >
-                  {"Manage cash flow and get paid faster"}
-                </span>
-                <React.Fragment>
-                  {
-                    " with our invoicing and payment features. Batch invoicing, automated follow-ups that remind clients their invoice is due, and an easy, one-click option to pay by credit card online. Jobber also syncs with QuickBooks Online."
-                  }
-                </React.Fragment>
-              </React.Fragment>
-            </div>
-          </div>
-
-          <div className={classNames(projectcss.all, sty.freeBox__gAIb6)}>
-            <p.PlasmicImg
-              alt={""}
-              className={classNames(sty.img__fryIu)}
-              displayHeight={"auto" as const}
-              displayMaxHeight={"none" as const}
-              displayMaxWidth={"100%" as const}
-              displayMinHeight={"0" as const}
-              displayMinWidth={"0" as const}
-              displayWidth={"20px" as const}
-              loading={"lazy" as const}
-              src={{
-                src: "/plasmic/www_presell_ai/images/vectorpng.png",
-                fullWidth: 16,
-                fullHeight: 13,
-                aspectRatio: undefined
-              }}
-            />
-
-            <div
-              className={classNames(
-                projectcss.all,
-                projectcss.__wab_text,
-                sty.text__mPyhZ
-              )}
-            >
-              <React.Fragment>
-                <span
-                  className={"plasmic_default__all plasmic_default__span"}
-                  style={{ fontWeight: 700 }}
-                >
-                  {
-                    "Capture all client information in one place while on the go"
-                  }
-                </span>
-                <React.Fragment>
-                  {
-                    ", with full client history, job and customer information, job details, checklists, notes, time tracking, and GPS directions."
-                  }
-                </React.Fragment>
-              </React.Fragment>
-            </div>
-          </div>
-
-          <div
-            className={classNames(
-              projectcss.all,
-              projectcss.__wab_text,
-              sty.text__g9Yvy
-            )}
-          >
-            {hasVariant(globalVariants, "screen", "mobile") ? (
-              <React.Fragment>
-                <span
-                  className={"plasmic_default__all plasmic_default__span"}
-                  style={{ fontStyle: "italic" }}
-                >
-                  {
-                    "“Field service software allows you to focus on running the business, so the workweek isn’t running you.”"
-                  }
-                </span>
-              </React.Fragment>
-            ) : (
-              <React.Fragment>
-                <span
-                  className={"plasmic_default__all plasmic_default__span"}
-                  style={{ fontStyle: "italic" }}
-                >
-                  {
-                    "“Field service software allows you to focus on running the business, so the"
-                  }
-                </span>
-                <React.Fragment>{"\n"}</React.Fragment>
-                <span
-                  className={"plasmic_default__all plasmic_default__span"}
-                  style={{ fontStyle: "italic" }}
-                >
-                  {" workweek isn’t running you.”"}
-                </span>
-              </React.Fragment>
-            )}
-          </div>
-
-          <div
-            className={classNames(
-              projectcss.all,
-              projectcss.__wab_text,
-              sty.text__zHIr
-            )}
-          >
-            {hasVariant(globalVariants, "screen", "mobile")
-              ? "-Ryaan Tuttle, Best Handyman Boston"
-              : "-Ryaan Tuttle, Best Handyman Boston"}
-          </div>
+          ) : null}
         </div>
       </div>
     </React.Fragment>

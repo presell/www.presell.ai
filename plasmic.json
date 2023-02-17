@@ -319,7 +319,7 @@
           "projectId": "hgYa2chxELsjCrsDiarb3T",
           "renderModuleFilePath": "plasmic/www_presell_ai/PlasmicSignUpV2.tsx",
           "importSpec": {
-            "modulePath": "../pages/Signup.tsx"
+            "modulePath": "../pages/signup.tsx"
           },
           "cssFilePath": "plasmic/www_presell_ai/PlasmicSignUpV2.module.css",
           "scheme": "blackbox",
@@ -361,6 +361,32 @@
             "modulePath": "../pages/new-page.tsx"
           },
           "cssFilePath": "plasmic/www_presell_ai/PlasmicNewPage.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "ln45Q3LMau",
+          "name": "Vision",
+          "type": "managed",
+          "projectId": "hgYa2chxELsjCrsDiarb3T",
+          "renderModuleFilePath": "plasmic/www_presell_ai/PlasmicVision.tsx",
+          "importSpec": {
+            "modulePath": "../pages/vision.tsx"
+          },
+          "cssFilePath": "plasmic/www_presell_ai/PlasmicVision.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "5emHCvwhclA",
+          "name": "SignUpV22",
+          "type": "managed",
+          "projectId": "hgYa2chxELsjCrsDiarb3T",
+          "renderModuleFilePath": "plasmic/www_presell_ai/PlasmicSignUpV22.tsx",
+          "importSpec": {
+            "modulePath": "../pages/Signup-2.tsx"
+          },
+          "cssFilePath": "plasmic/www_presell_ai/PlasmicSignUpV22.module.css",
           "scheme": "blackbox",
           "componentType": "page"
         }
@@ -1019,6 +1045,6 @@
   "nextjsConfig": {
     "pagesDir": "../pages"
   },
-  "cliVersion": "0.1.211",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.211/dist/plasmic.schema.json"
+  "cliVersion": "0.1.212",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.212/dist/plasmic.schema.json"
 }

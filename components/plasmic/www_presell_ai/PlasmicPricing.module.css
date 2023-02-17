@@ -538,6 +538,51 @@
   line-height: 24px;
   color: rgba(26, 26, 23, 1);
 }
+.div163 {
+  width: 300px;
+  height: 24px;
+  display: block;
+  position: relative;
+  flex-shrink: 0;
+}
+._107 {
+  position: absolute;
+  top: 2px;
+  left: 12px;
+  width: 15px;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.text__f66Ta {
+  display: block;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 24px;
+  color: rgba(26, 26, 23, 1);
+}
+.figmaImport3 {
+  position: absolute;
+  top: 2px;
+  left: 38px;
+  height: 20px;
+  transform: translate(0.09300000000000352px, 0px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.text__i5JfA {
+  display: block;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 24px;
+  color: rgba(26, 26, 23, 1);
+}
 .div14 {
   width: 300px;
   height: 24px;
@@ -1138,11 +1183,12 @@
 .div29 {
   transform: translate(0.14000000000000057px, 0px);
   width: 266px;
-  height: 379px;
   display: block;
   position: absolute;
   top: 20px;
   left: 70px;
+  height: 100%;
+  min-height: 0;
 }
 .div30 {
   transform: translate(0.25px, 0px);
@@ -1257,7 +1303,6 @@
 .div32 {
   transform: translate(0px, 0.125px);
   width: 266px;
-  height: 168px;
   display: block;
   position: absolute;
   top: 210px;
@@ -1321,6 +1366,7 @@
   letter-spacing: 0em;
   line-height: 24px;
   color: rgba(26, 26, 23, 1);
+  text-align: left;
 }
 .div34 {
   width: 278px;
@@ -1368,6 +1414,7 @@
   letter-spacing: 0em;
   line-height: 24px;
   color: rgba(26, 26, 23, 1);
+  text-align: left;
 }
 .div35 {
   width: 278px;
@@ -1415,6 +1462,7 @@
   letter-spacing: 0em;
   line-height: 24px;
   color: rgba(26, 26, 23, 1);
+  text-align: left;
 }
 .div36 {
   width: 278px;
@@ -1447,7 +1495,6 @@
   position: absolute;
   top: 2px;
   left: 38px;
-  width: 133px;
   height: 20px;
   transform: translate(0.09300000000000352px, 0px);
   display: flex;
@@ -1462,6 +1509,9 @@
   letter-spacing: 0em;
   line-height: 24px;
   color: rgba(26, 26, 23, 1);
+  text-align: left;
+  width: 100%;
+  min-width: 0;
 }
 .div37 {
   background: rgba(255, 255, 255, 1);
@@ -1615,7 +1665,6 @@
   left: 0px;
 }
 .div42 {
-  width: 370px;
   height: 24px;
   display: block;
   position: absolute;
@@ -1660,14 +1709,16 @@
   letter-spacing: 0em;
   line-height: 24px;
   color: rgba(26, 26, 23, 1);
+  margin-bottom: 0px;
+  text-align: left;
 }
 .div43 {
   width: 370px;
   height: 24px;
-  display: block;
   position: absolute;
   top: 80px;
   left: -12px;
+  display: none;
 }
 ._25 {
   position: absolute;
@@ -1711,10 +1762,10 @@
 .div44 {
   width: 370px;
   height: 24px;
-  display: block;
   position: absolute;
   top: 112px;
   left: -12px;
+  display: none;
 }
 ._26 {
   position: absolute;
@@ -1758,10 +1809,10 @@
 .div45 {
   width: 370px;
   height: 24px;
-  display: block;
   position: absolute;
   top: 144px;
   left: -12px;
+  display: none;
 }
 ._27 {
   position: absolute;
@@ -1804,10 +1855,10 @@
 .div46 {
   width: 370px;
   height: 24px;
-  display: block;
   position: absolute;
   top: 176px;
   left: -12px;
+  display: none;
 }
 ._28 {
   position: absolute;
@@ -1851,10 +1902,10 @@
 .div47 {
   width: 370px;
   height: 48px;
-  display: block;
   position: absolute;
   top: 208px;
   left: -12px;
+  display: none;
 }
 ._29 {
   position: absolute;
@@ -1897,10 +1948,10 @@
 .div48 {
   width: 370px;
   height: 24px;
-  display: block;
   position: absolute;
   top: 264px;
   left: -12px;
+  display: none;
 }
 ._30 {
   position: absolute;
@@ -1944,10 +1995,10 @@
 .div49 {
   width: 370px;
   height: 24px;
-  display: block;
   position: absolute;
   top: 296px;
   left: -12px;
+  display: none;
 }
 ._31 {
   position: absolute;
@@ -1991,10 +2042,10 @@
 .div50 {
   width: 370px;
   height: 24px;
-  display: block;
   position: absolute;
   top: 328px;
   left: -12px;
+  display: none;
 }
 ._32 {
   position: absolute;
@@ -2038,10 +2089,10 @@
 .div51 {
   width: 370px;
   height: 24px;
-  display: block;
   position: absolute;
   top: 360px;
   left: -12px;
+  display: none;
 }
 ._33 {
   position: absolute;
@@ -2085,10 +2136,10 @@
 .div52 {
   width: 370px;
   height: 24px;
-  display: block;
   position: absolute;
   top: 392px;
   left: -12px;
+  display: none;
 }
 ._34 {
   position: absolute;
@@ -2132,10 +2183,10 @@
 .div53 {
   width: 370px;
   height: 24px;
-  display: block;
   position: absolute;
   top: 424px;
   left: -12px;
+  display: none;
 }
 ._35 {
   position: absolute;
@@ -2179,10 +2230,10 @@
 .div54 {
   width: 370px;
   height: 24px;
-  display: block;
   position: absolute;
   top: 456px;
   left: -12px;
+  display: none;
 }
 ._36 {
   position: absolute;
@@ -2278,7 +2329,6 @@
   transform: translate(0px, -0.03200000000000003px);
 }
 .text__fkl3R {
-  display: block;
   font-size: 12px;
   font-family: "Inter", sans-serif;
   font-weight: 400;
@@ -2289,6 +2339,7 @@
   top: 89px;
   left: 38px;
   transform: translate(0.2959999999999994px, 0.125px);
+  display: none;
 }
 .a4 {
   background: rgba(4, 161, 193, 1);
@@ -2383,14 +2434,15 @@
   letter-spacing: 0em;
   line-height: 24px;
   color: rgba(26, 26, 23, 1);
+  text-align: left;
 }
 .div60 {
   width: 370px;
   height: 24px;
-  display: block;
   position: absolute;
   top: 80px;
   left: -12px;
+  display: none;
 }
 ._38 {
   position: absolute;
@@ -2434,10 +2486,10 @@
 .div61 {
   width: 370px;
   height: 24px;
-  display: block;
   position: absolute;
   top: 112px;
   left: -12px;
+  display: none;
 }
 ._39 {
   position: absolute;
@@ -2481,10 +2533,10 @@
 .div62 {
   width: 370px;
   height: 24px;
-  display: block;
   position: absolute;
   top: 144px;
   left: -12px;
+  display: none;
 }
 ._40 {
   position: absolute;
@@ -2528,10 +2580,10 @@
 .div63 {
   width: 370px;
   height: 24px;
-  display: block;
   position: absolute;
   top: 176px;
   left: -12px;
+  display: none;
 }
 ._41 {
   position: absolute;
@@ -2575,10 +2627,10 @@
 .div64 {
   width: 370px;
   height: 24px;
-  display: block;
   position: absolute;
   top: 208px;
   left: -12px;
+  display: none;
 }
 ._42 {
   position: absolute;
@@ -2622,10 +2674,10 @@
 .div65 {
   width: 370px;
   height: 48px;
-  display: block;
   position: absolute;
   top: 240px;
   left: -12px;
+  display: none;
 }
 ._43 {
   position: absolute;
@@ -2669,10 +2721,10 @@
 .div66 {
   width: 370px;
   height: 48px;
-  display: block;
   position: absolute;
   top: 296px;
   left: -12px;
+  display: none;
 }
 ._44 {
   position: absolute;
@@ -2716,10 +2768,10 @@
 .div67 {
   width: 370px;
   height: 48px;
-  display: block;
   position: absolute;
   top: 352px;
   left: -12px;
+  display: none;
 }
 ._45 {
   position: absolute;
@@ -2763,10 +2815,10 @@
 .div68 {
   width: 370px;
   height: 24px;
-  display: block;
   position: absolute;
   top: 408px;
   left: -12px;
+  display: none;
 }
 ._46 {
   position: absolute;
@@ -2810,10 +2862,10 @@
 .div69 {
   width: 370px;
   height: 48px;
-  display: block;
   position: absolute;
   top: 440px;
   left: -12px;
+  display: none;
 }
 ._47 {
   position: absolute;
@@ -2857,10 +2909,10 @@
 .div70 {
   width: 370px;
   height: 48px;
-  display: block;
   position: absolute;
   top: 496px;
   left: -12px;
+  display: none;
 }
 ._48 {
   position: absolute;
@@ -2904,10 +2956,10 @@
 .div71 {
   width: 370px;
   height: 24px;
-  display: block;
   position: absolute;
   top: 552px;
   left: -12px;
+  display: none;
 }
 ._49 {
   position: absolute;
@@ -2951,10 +3003,10 @@
 .div72 {
   width: 370px;
   height: 24px;
-  display: block;
   position: absolute;
   top: 584px;
   left: -12px;
+  display: none;
 }
 ._50 {
   position: absolute;
@@ -2998,10 +3050,10 @@
 .div73 {
   width: 370px;
   height: 24px;
-  display: block;
   position: absolute;
   top: 616px;
   left: -12px;
+  display: none;
 }
 ._51 {
   position: absolute;
@@ -3045,10 +3097,10 @@
 .div74 {
   width: 370px;
   height: 24px;
-  display: block;
   position: absolute;
   top: 648px;
   left: -12px;
+  display: none;
 }
 ._52 {
   position: absolute;
@@ -3092,10 +3144,10 @@
 .div75 {
   width: 370px;
   height: 24px;
-  display: block;
   position: absolute;
   top: 680px;
   left: -12px;
+  display: none;
 }
 ._53 {
   position: absolute;
@@ -3140,10 +3192,10 @@
   transform: translate(0.203px, 0.4639999999999418px);
   width: 1440px;
   height: 741px;
-  display: block;
   position: absolute;
   top: 1725px;
   left: 0px;
+  display: none;
 }
 .text__cHw3U {
   display: block;

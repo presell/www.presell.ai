@@ -253,7 +253,7 @@
     margin-top: 46px;
   }
 }
-.text__heFnr {
+.link__heFnr {
   position: relative;
   width: 100%;
   height: auto;
@@ -267,7 +267,7 @@
   min-width: 0;
 }
 @media (max-width: 1152px) {
-  .text__heFnr {
+  .link__heFnr {
     text-align: center;
     align-self: center;
   }
@@ -291,7 +291,7 @@
     align-self: center;
   }
 }
-.link {
+.link__ev7Pp {
   position: relative;
   width: 100%;
   height: auto;
@@ -304,7 +304,7 @@
   min-width: 0;
 }
 @media (max-width: 1152px) {
-  .link {
+  .link__ev7Pp {
     text-align: center;
     align-self: center;
   }
