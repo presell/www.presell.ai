@@ -372,6 +372,6 @@
 }
 @media (max-width: 1152px) {
   .button__kzbYy {
-    display: none;
+    display: block;
   }
 }
