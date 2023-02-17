@@ -69,6 +69,7 @@
     max-height: 300px;
     height: auto;
     align-self: center;
+    background: #ffffff;
   }
 }
 @media (max-width: 1152px) {
