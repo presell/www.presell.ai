@@ -69,7 +69,7 @@
     max-height: 300px;
     height: auto;
     align-self: center;
-    background: #dee2e3;
+    background: none;
   }
 }
 @media (max-width: 1152px) {
@@ -295,7 +295,7 @@
   max-width: 100%;
   position: relative;
   margin-top: 0px;
-  margin-bottom: 5px;
+  margin-bottom: 0px;
   display: block;
 }
 @media (max-width: 1252px) {
@@ -349,12 +349,13 @@
 }
 .button__gtKkH {
   position: relative;
-  color: var(--token-Dow1vpW5h4qT5G);
-  background: #000000;
+  color: #000000;
+  background: none;
   text-align: center;
   display: none;
   border-radius: 5px;
   padding: 7px 10px;
+  border-width: 0px;
 }
 @media (max-width: 1152px) {
   .button__gtKkH {

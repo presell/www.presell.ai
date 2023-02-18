@@ -34,6 +34,7 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
+import Logo from "../../Logo"; // plasmic-import: UygEFWd5l1hs69/component
 import TextInput from "../../TextInput"; // plasmic-import: whnP1U9nG_tYGg/component
 
 import { useScreenVariants as useScreenVariantscvQoPsTOivAmc4 } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: CVQoPsTOivAmc4/globalVariant
@@ -59,6 +60,7 @@ export const PlasmicSignUpV2__ArgProps = new Array<ArgPropType>();
 export type PlasmicSignUpV2__OverridesType = {
   root?: p.Flex<"div">;
   svg?: p.Flex<"svg">;
+  logo?: p.Flex<typeof Logo>;
   form?: p.Flex<"form">;
 };
 
@@ -263,22 +265,10 @@ function PlasmicSignUpV2__RenderFunc(props: {
                       href={"https://www.presell.ai/" as const}
                       platform={"nextjs"}
                     >
-                      <p.PlasmicImg
-                        alt={""}
-                        className={classNames(sty.img__tQxJv)}
-                        displayHeight={"80px" as const}
-                        displayMaxHeight={"none" as const}
-                        displayMaxWidth={"100%" as const}
-                        displayMinHeight={"0" as const}
-                        displayMinWidth={"0" as const}
-                        displayWidth={"144px" as const}
-                        loading={"lazy" as const}
-                        src={{
-                          src: "/plasmic/www_presell_ai/images/presellAiDrarkGraphTextpng.png",
-                          fullWidth: 306,
-                          fullHeight: 55,
-                          aspectRatio: undefined
-                        }}
+                      <Logo
+                        data-plasmic-name={"logo"}
+                        data-plasmic-override={overrides.logo}
+                        className={classNames("__wab_instance", sty.logo)}
                       />
                     </p.PlasmicLink>
                   </div>
@@ -1045,8 +1035,9 @@ function PlasmicSignUpV2__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "svg", "form"],
+  root: ["root", "svg", "logo", "form"],
   svg: ["svg"],
+  logo: ["logo"],
   form: ["form"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -1055,6 +1046,7 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   svg: "svg";
+  logo: typeof Logo;
   form: "form";
 };
 
@@ -1120,6 +1112,7 @@ export const PlasmicSignUpV2 = Object.assign(
   {
     // Helper components rendering sub-elements
     svg: makeNodeComponent("svg"),
+    logo: makeNodeComponent("logo"),
     form: makeNodeComponent("form"),
 
     // Metadata about props expected for PlasmicSignUpV2

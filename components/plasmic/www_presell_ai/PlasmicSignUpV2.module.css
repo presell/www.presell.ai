@@ -252,18 +252,9 @@
   align-self: flex-start;
   display: flex;
 }
-.img__tQxJv {
-  object-fit: contain;
-  max-width: 100%;
-  width: 144px;
-  height: 80px;
-  flex-shrink: 0;
-}
-.img__tQxJv > picture > img {
-  object-fit: contain;
-}
-.img__tQxJv > :global(.__wab_img-spacer) > img {
-  object-fit: contain;
+.logo:global(.__wab_instance) {
+  max-width: 246px;
+  position: relative;
 }
 .column__jVcz6 {
   display: flex;
@@ -363,6 +354,7 @@
   max-width: 100%;
   margin-top: 48px;
   background: var(--token-mz2wrosK-);
+  border-radius: 5px;
   padding: 8px;
 }
 @media (max-width: 1152px) {

@@ -316,7 +316,14 @@ function PlasmicNavbar__RenderFunc(props: {
                   sty.button__gtKkH
                 )}
               >
-                {"Log in"}
+                <React.Fragment>
+                  <span
+                    className={"plasmic_default__all plasmic_default__span"}
+                    style={{ color: "#000000" }}
+                  >
+                    {"Log in"}
+                  </span>
+                </React.Fragment>
               </button>
             ) : null}
             {(hasVariant(globalVariants, "screen", "mobile") ? true : true) ? (
