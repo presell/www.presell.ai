@@ -887,6 +887,26 @@
           "assetId": "hgYa2chxELsjCrsDiarb3T",
           "type": "projectCss",
           "checksum": "038c09584ac18471a6591d91fcec7502"
+        },
+        {
+          "type": "renderModule",
+          "assetId": "HWv9N8v_UP",
+          "checksum": "b57bdb0708b0591cab93a425732b51f2"
+        },
+        {
+          "type": "cssRules",
+          "assetId": "HWv9N8v_UP",
+          "checksum": "b57bdb0708b0591cab93a425732b51f2"
+        },
+        {
+          "type": "icon",
+          "assetId": "OBeYGW_nLM",
+          "checksum": "e41771139fcb36ba18d7fe6a1e76a7c6"
+        },
+        {
+          "type": "image",
+          "assetId": "UXW-V-Bao",
+          "checksum": "d2c79e13e7c3f2490ab3bdbb2cffe714"
         }
       ],
       "codegenVersion": "0.0.1"

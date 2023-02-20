@@ -389,6 +389,19 @@
           "cssFilePath": "plasmic/www_presell_ai/PlasmicSignUpV22.module.css",
           "scheme": "blackbox",
           "componentType": "page"
+        },
+        {
+          "id": "HWv9N8v_UP",
+          "name": "Docs",
+          "type": "managed",
+          "projectId": "hgYa2chxELsjCrsDiarb3T",
+          "renderModuleFilePath": "plasmic/www_presell_ai/PlasmicDocs.tsx",
+          "importSpec": {
+            "modulePath": "../pages/docs.tsx"
+          },
+          "cssFilePath": "plasmic/www_presell_ai/PlasmicDocs.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
         }
       ],
       "icons": [
@@ -491,6 +504,11 @@
           "id": "fh3MvCs9MXc",
           "name": "Group4Icon",
           "moduleFilePath": "plasmic/www_presell_ai/icons/PlasmicIcon__Group4.tsx"
+        },
+        {
+          "id": "OBeYGW_nLM",
+          "name": "Frame4Icon",
+          "moduleFilePath": "plasmic/www_presell_ai/icons/PlasmicIcon__Frame4.tsx"
         }
       ],
       "images": [
@@ -988,6 +1006,11 @@
           "id": "DLEkOFHdl",
           "name": "Telugu_India_New-Delhi_julian-yu-640806-unsplash.jpg",
           "filePath": "../public/plasmic/www_presell_ai/images/teluguIndiaNewDelhiJulianYu640806Unsplashjpg.jpeg"
+        },
+        {
+          "id": "UXW-V-Bao",
+          "name": "icon_bg_blue.svg",
+          "filePath": "../public/plasmic/www_presell_ai/images/iconBgBluesvg.bin"
         }
       ],
       "indirect": false,
