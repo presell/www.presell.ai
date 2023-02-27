@@ -14,6 +14,7 @@ import * as React from "react";
 
 import Head from "next/head";
 import Link, { LinkProps } from "next/link";
+import { useRouter } from "next/router";
 
 import * as p from "@plasmicapp/react-web";
 import * as ph from "@plasmicapp/host";
@@ -36,6 +37,7 @@ import {
 } from "@plasmicapp/react-web";
 import TextInput from "../../TextInput"; // plasmic-import: whnP1U9nG_tYGg/component
 import Button from "../../Button"; // plasmic-import: CnJoQKF1JUjMXv/component
+import { Embed } from "@plasmicpkgs/plasmic-basic-components"; // plasmic-import: PKldDYkH42/codeComponent
 
 import { useScreenVariants as useScreenVariantscvQoPsTOivAmc4 } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: CVQoPsTOivAmc4/globalVariant
 
@@ -53,9 +55,11 @@ export type PlasmicForm2__VariantsArgs = {};
 type VariantPropType = keyof PlasmicForm2__VariantsArgs;
 export const PlasmicForm2__VariantProps = new Array<VariantPropType>();
 
-export type PlasmicForm2__ArgsType = {};
+export type PlasmicForm2__ArgsType = {
+  id?: string;
+};
 type ArgPropType = keyof PlasmicForm2__ArgsType;
-export const PlasmicForm2__ArgProps = new Array<ArgPropType>();
+export const PlasmicForm2__ArgProps = new Array<ArgPropType>("id");
 
 export type PlasmicForm2__OverridesType = {
   urlForm?: p.Flex<"form">;
@@ -65,6 +69,7 @@ export type PlasmicForm2__OverridesType = {
 };
 
 export interface DefaultForm2Props {
+  id?: string;
   className?: string;
 }
 
@@ -84,6 +89,7 @@ function PlasmicForm2__RenderFunc(props: {
   forNode?: string;
 }) {
   const { variants, overrides, forNode } = props;
+  const __nextRouter = useRouter();
 
   const $ctx = ph.useDataEnv?.() || {};
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
@@ -211,13 +217,29 @@ function PlasmicForm2__RenderFunc(props: {
                   sty.link
                 )}
                 component={Link}
+                id={"generate_submit" as const}
                 platform={"nextjs"}
               >
                 {hasVariant(globalVariants, "screen", "mobile")
                   ? "Generate"
                   : "Generate"}
               </p.PlasmicLink>
+
+              <Embed
+                className={classNames("__wab_instance", sty.embedHtml__kOWvh)}
+                code={
+                  hasVariant(globalVariants, "screen", "footer")
+                    ? ("<script>\r\nconst myButton = document.getElementById('generate_submit'); \r\nlet clicked = false; // Initialize the clicked state to false\r\n\r\nmyButton.addEventListener('click', () => {\r\n  if (!clicked) {\r\n    clicked = true; // Set clicked state to true\r\n    myButton.disabled = true; // Disable the button\r\n    // Handle button click action here\r\n  }\r\n});\r\n</script>" as const)
+                    : ("<script>\r\nconst myButton = document.getElementById('generate_submit'); \r\nlet clicked = false; // Initialize the clicked state to false\r\n\r\nmyButton.addEventListener('click', () => {\r\n  if (!clicked) {\r\n    clicked = true; // Set clicked state to true\r\n    myButton.disabled = true; // Disable the button\r\n    // Handle button click action here\r\n  }\r\n});\r\n</script>" as const)
+                }
+              />
             </Button>
+
+            {(hasVariant(globalVariants, "screen", "footer") ? true : true) ? (
+              <Embed
+                className={classNames("__wab_instance", sty.embedHtml__oXiCf)}
+              />
+            ) : null}
           </div>
         ) : null}
       </form>
