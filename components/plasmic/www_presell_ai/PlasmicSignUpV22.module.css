@@ -375,7 +375,7 @@
   font-family: "Inter", sans-serif;
   min-width: 0;
 }
-.textInput__bd4G:global(.__wab_instance) {
+.textInput:global(.__wab_instance) {
   max-width: 100%;
   position: relative;
   width: 409.59px;
@@ -384,7 +384,7 @@
   flex-shrink: 0;
 }
 @media (max-width: 1152px) {
-  .textInput__bd4G:global(.__wab_instance) {
+  .textInput:global(.__wab_instance) {
     width: 340px;
   }
 }
@@ -400,7 +400,7 @@
   width: 1em;
   height: 1em;
 }
-.textInput__db2Xo:global(.__wab_instance) {
+.textInput2:global(.__wab_instance) {
   max-width: 100%;
   position: relative;
   width: 409.59px;
@@ -409,7 +409,7 @@
   flex-shrink: 0;
 }
 @media (max-width: 1152px) {
-  .textInput__db2Xo:global(.__wab_instance) {
+  .textInput2:global(.__wab_instance) {
     width: 340px;
   }
 }

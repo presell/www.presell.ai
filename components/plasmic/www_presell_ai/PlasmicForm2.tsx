@@ -64,6 +64,8 @@ export const PlasmicForm2__ArgProps = new Array<ArgPropType>("id");
 export type PlasmicForm2__OverridesType = {
   urlForm?: p.Flex<"form">;
   freeBox?: p.Flex<"div">;
+  textInput?: p.Flex<typeof TextInput>;
+  textInput2?: p.Flex<typeof TextInput>;
   button?: p.Flex<typeof Button>;
   link?: p.Flex<"a"> & Partial<LinkProps>;
 };
@@ -81,6 +83,13 @@ const __wrapUserPromise =
     return await promise;
   });
 
+function useNextRouter() {
+  try {
+    return useRouter();
+  } catch {}
+  return undefined;
+}
+
 function PlasmicForm2__RenderFunc(props: {
   variants: PlasmicForm2__VariantsArgs;
   args: PlasmicForm2__ArgsType;
@@ -89,7 +98,7 @@ function PlasmicForm2__RenderFunc(props: {
   forNode?: string;
 }) {
   const { variants, overrides, forNode } = props;
-  const __nextRouter = useRouter();
+  const __nextRouter = useNextRouter();
 
   const $ctx = ph.useDataEnv?.() || {};
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
@@ -102,8 +111,29 @@ function PlasmicForm2__RenderFunc(props: {
   const $refs = refsRef.current;
 
   const currentUser = p.useCurrentUser?.() || {};
-
   const [$queries, setDollarQueries] = React.useState({});
+  const stateSpecs = React.useMemo(
+    () => [
+      {
+        path: "textInput.value",
+        type: "private",
+        variableType: "text",
+        initFunc: true
+          ? ({ $props, $state, $queries, $ctx }) => undefined
+          : undefined
+      },
+      {
+        path: "textInput2.value",
+        type: "private",
+        variableType: "text",
+        initFunc: true
+          ? ({ $props, $state, $queries, $ctx }) => undefined
+          : undefined
+      }
+    ],
+    [$props, $ctx]
+  );
+  const $state = p.useDollarState(stateSpecs, { $props, $ctx, $queries });
 
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantscvQoPsTOivAmc4()
@@ -136,6 +166,8 @@ function PlasmicForm2__RenderFunc(props: {
             className={classNames(projectcss.all, sty.freeBox)}
           >
             <TextInput
+              data-plasmic-name={"textInput"}
+              data-plasmic-override={overrides.textInput}
               aria-label={
                 hasVariant(globalVariants, "screen", "footer")
                   ? ("life_insurance" as const)
@@ -146,27 +178,38 @@ function PlasmicForm2__RenderFunc(props: {
                   ? ("" as const)
                   : undefined
               }
-              className={classNames("__wab_instance", sty.textInput__ssr6)}
-              defaultValue={undefined}
+              className={classNames("__wab_instance", sty.textInput)}
               name={
                 hasVariant(globalVariants, "screen", "footer")
                   ? ("life_insurance" as const)
                   : ("life_insurance" as const)
               }
+              onChange={(...args) => {
+                p.generateStateOnChangeProp($state, ["textInput", "value"])(
+                  (e => e.target?.value).apply(null, args)
+                );
+              }}
               placeholder={
                 hasVariant(globalVariants, "screen", "footer")
                   ? ("Enter A Product or Service (Life Insurance)" as const)
                   : ("State Your Product (Life Insurance)" as const)
               }
               required={true}
+              value={p.generateStateValueProp($state, ["textInput", "value"])}
             />
 
             {(hasVariant(globalVariants, "screen", "footer") ? true : true) ? (
               <TextInput
+                data-plasmic-name={"textInput2"}
+                data-plasmic-override={overrides.textInput2}
                 aria-label={"email" as const}
-                className={classNames("__wab_instance", sty.textInput__rp4T)}
-                defaultValue={undefined}
+                className={classNames("__wab_instance", sty.textInput2)}
                 name={"email" as const}
+                onChange={(...args) => {
+                  p.generateStateOnChangeProp($state, ["textInput2", "value"])(
+                    (e => e.target?.value).apply(null, args)
+                  );
+                }}
                 placeholder={"Enter Your Email Address" as const}
                 required={true}
                 showStartIcon={
@@ -184,6 +227,11 @@ function PlasmicForm2__RenderFunc(props: {
                     />
                   ) : null
                 }
+                value={p.generateStateValueProp($state, [
+                  "textInput2",
+
+                  "value"
+                ])}
               />
             ) : null}
 
@@ -248,8 +296,10 @@ function PlasmicForm2__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  urlForm: ["urlForm", "freeBox", "button", "link"],
-  freeBox: ["freeBox", "button", "link"],
+  urlForm: ["urlForm", "freeBox", "textInput", "textInput2", "button", "link"],
+  freeBox: ["freeBox", "textInput", "textInput2", "button", "link"],
+  textInput: ["textInput"],
+  textInput2: ["textInput2"],
   button: ["button", "link"],
   link: ["link"]
 } as const;
@@ -259,6 +309,8 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   urlForm: "form";
   freeBox: "div";
+  textInput: typeof TextInput;
+  textInput2: typeof TextInput;
   button: typeof Button;
   link: "a";
 };
@@ -325,6 +377,8 @@ export const PlasmicForm2 = Object.assign(
   {
     // Helper components rendering sub-elements
     freeBox: makeNodeComponent("freeBox"),
+    textInput: makeNodeComponent("textInput"),
+    textInput2: makeNodeComponent("textInput2"),
     button: makeNodeComponent("button"),
     link: makeNodeComponent("link"),
 

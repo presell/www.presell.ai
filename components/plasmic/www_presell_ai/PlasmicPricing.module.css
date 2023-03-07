@@ -189,19 +189,19 @@
   position: relative;
 }
 .div6 {
-  flex-direction: column;
   width: auto;
   height: auto;
   display: flex;
   position: absolute;
   top: -8px;
   left: 340px;
+  flex-direction: column;
   padding-top: 8px;
 }
 .div6 > :global(.__wab_flex-container) {
   flex-direction: column;
-  justify-content: flex-start;
   align-items: flex-start;
+  justify-content: flex-start;
   margin-top: calc(0px - 8px);
   height: calc(100% + 8px);
 }
@@ -723,19 +723,19 @@
   color: rgba(26, 26, 23, 1);
 }
 .div17 {
-  flex-direction: column;
   width: auto;
   height: auto;
   position: absolute;
   top: -8px;
   left: 660px;
+  flex-direction: column;
   padding-top: 8px;
   display: none;
 }
 .div17 > :global(.__wab_flex-container) {
   flex-direction: column;
-  justify-content: flex-start;
   align-items: flex-start;
+  justify-content: flex-start;
   margin-top: calc(0px - 8px);
   height: calc(100% + 8px);
 }
@@ -3210,7 +3210,6 @@
   left: 320px;
 }
 .div77 {
-  flex-direction: column;
   transform: translate(0px, 0.39000000000000057px);
   width: auto;
   height: auto;
@@ -3218,14 +3217,15 @@
   position: absolute;
   top: 54px;
   left: 16px;
+  flex-direction: column;
   padding-left: 304px;
   padding-right: 308.503px;
   padding-top: 11px;
 }
 .div77 > :global(.__wab_flex-container) {
   flex-direction: column;
-  justify-content: flex-start;
   align-items: flex-start;
+  justify-content: flex-start;
   margin-top: calc(0px - 11px);
   height: calc(100% + 11px);
 }
@@ -3258,7 +3258,6 @@
   text-align: left;
 }
 .div78 {
-  flex-direction: column;
   transform: translate(0px, 0.38999999999998636px);
   width: auto;
   height: auto;
@@ -3266,14 +3265,15 @@
   position: absolute;
   top: 268px;
   left: 16px;
+  flex-direction: column;
   padding-left: 304px;
   padding-right: 300.393px;
   padding-top: 11px;
 }
 .div78 > :global(.__wab_flex-container) {
   flex-direction: column;
-  justify-content: flex-start;
   align-items: flex-start;
+  justify-content: flex-start;
   margin-top: calc(0px - 11px);
   height: calc(100% + 11px);
 }
@@ -3306,7 +3306,6 @@
   text-align: left;
 }
 .div79 {
-  flex-direction: column;
   transform: translate(0px, 0.38999999999998636px);
   width: auto;
   height: auto;
@@ -3314,14 +3313,15 @@
   position: absolute;
   top: 410px;
   left: 16px;
+  flex-direction: column;
   padding-left: 304px;
   padding-right: 355.206px;
   padding-top: 11px;
 }
 .div79 > :global(.__wab_flex-container) {
   flex-direction: column;
-  justify-content: flex-start;
   align-items: flex-start;
+  justify-content: flex-start;
   margin-top: calc(0px - 11px);
   height: calc(100% + 11px);
 }
@@ -3354,7 +3354,6 @@
   text-align: left;
 }
 .div80 {
-  flex-direction: column;
   transform: translate(0px, 0.38999999999998636px);
   width: auto;
   height: auto;
@@ -3362,14 +3361,15 @@
   position: absolute;
   top: 528px;
   left: 16px;
+  flex-direction: column;
   padding-left: 304px;
   padding-right: 341.706px;
   padding-top: 11px;
 }
 .div80 > :global(.__wab_flex-container) {
   flex-direction: column;
-  justify-content: flex-start;
   align-items: flex-start;
+  justify-content: flex-start;
   margin-top: calc(0px - 11px);
   height: calc(100% + 11px);
 }
@@ -3402,7 +3402,6 @@
   text-align: left;
 }
 .div81 {
-  flex-direction: column;
   transform: translate(0px, 0.38999999999998636px);
   width: auto;
   height: auto;
@@ -3410,12 +3409,13 @@
   position: absolute;
   top: 646px;
   left: 16px;
+  flex-direction: column;
   padding: 11px 355px 2px 304px;
 }
 .div81 > :global(.__wab_flex-container) {
   flex-direction: column;
-  justify-content: flex-start;
   align-items: flex-start;
+  justify-content: flex-start;
   margin-top: calc(0px - 13px);
   height: calc(100% + 13px);
 }
@@ -3631,7 +3631,6 @@
   position: relative;
 }
 .div87 {
-  flex-direction: column;
   transform: translate(0px, -0.4070000000000107px);
   width: auto;
   height: auto;
@@ -3639,12 +3638,13 @@
   position: absolute;
   top: 233px;
   left: 20px;
+  flex-direction: column;
   padding-top: 8px;
 }
 .div87 > :global(.__wab_flex-container) {
   flex-direction: column;
-  justify-content: flex-start;
   align-items: flex-start;
+  justify-content: flex-start;
   margin-top: calc(0px - 8px);
   height: calc(100% + 8px);
 }
@@ -4115,7 +4115,6 @@
   color: rgba(26, 26, 23, 1);
 }
 .div98 {
-  flex-direction: column;
   transform: translate(0px, -0.4070000000000391px);
   width: auto;
   height: auto;
@@ -4123,12 +4122,13 @@
   position: absolute;
   top: 553px;
   left: 20px;
+  flex-direction: column;
   padding-top: 8px;
 }
 .div98 > :global(.__wab_flex-container) {
   flex-direction: column;
-  justify-content: flex-start;
   align-items: flex-start;
+  justify-content: flex-start;
   margin-top: calc(0px - 8px);
   height: calc(100% + 8px);
 }
@@ -4553,7 +4553,6 @@
   color: rgba(26, 26, 23, 1);
 }
 .div108 {
-  flex-direction: column;
   transform: translate(0px, -0.5px);
   height: auto;
   display: flex;
@@ -4561,13 +4560,14 @@
   top: 1157px;
   left: 16px;
   right: 16px;
+  flex-direction: column;
   width: auto;
   padding-top: 20px;
 }
 .div108 > :global(.__wab_flex-container) {
   flex-direction: column;
-  justify-content: flex-start;
   align-items: flex-start;
+  justify-content: flex-start;
   margin-top: calc(0px - 20px);
   height: calc(100% + 20px);
 }
@@ -6680,7 +6680,6 @@
   left: 8px;
 }
 .div158 {
-  flex-direction: column;
   transform: translate(0px, 0.39000000000000057px);
   width: auto;
   height: auto;
@@ -6688,13 +6687,14 @@
   position: absolute;
   top: 54px;
   left: 16px;
+  flex-direction: column;
   padding-right: 0px;
   padding-top: 11px;
 }
 .div158 > :global(.__wab_flex-container) {
   flex-direction: column;
-  justify-content: flex-start;
   align-items: flex-start;
+  justify-content: flex-start;
   margin-top: calc(0px - 11px);
   height: calc(100% + 11px);
 }
@@ -6732,7 +6732,6 @@
   padding-bottom: 0px;
 }
 .div159 {
-  flex-direction: column;
   transform: translate(0px, 0.38999999999998636px);
   width: auto;
   height: 138px;
@@ -6740,13 +6739,14 @@
   position: absolute;
   top: 368px;
   left: 16px;
+  flex-direction: column;
   padding-top: 11px;
   padding-right: 0px;
 }
 .div159 > :global(.__wab_flex-container) {
   flex-direction: column;
-  justify-content: flex-start;
   align-items: flex-start;
+  justify-content: flex-start;
   margin-top: calc(0px - 11px);
   height: calc(100% + 11px);
 }
@@ -6783,7 +6783,6 @@
   text-align: left;
 }
 .div160 {
-  flex-direction: column;
   transform: translate(0px, 0.38999999999998636px);
   width: 568px;
   height: auto;
@@ -6791,13 +6790,14 @@
   position: absolute;
   top: 482px;
   left: 16px;
+  flex-direction: column;
   padding-right: 5.221px;
   padding-top: 80px;
 }
 .div160 > :global(.__wab_flex-container) {
   flex-direction: column;
-  justify-content: flex-start;
   align-items: flex-start;
+  justify-content: flex-start;
   margin-top: calc(0px - 8px);
   height: calc(100% + 8px);
 }
@@ -6835,7 +6835,6 @@
   text-align: left;
 }
 .div161 {
-  flex-direction: column;
   transform: translate(0px, 0.38999999999998636px);
   width: 408px;
   height: auto;
@@ -6843,13 +6842,14 @@
   position: absolute;
   top: 630px;
   left: 16px;
+  flex-direction: column;
   padding-right: 2.612px;
   padding-top: 101px;
 }
 .div161 > :global(.__wab_flex-container) {
   flex-direction: column;
-  justify-content: flex-start;
   align-items: flex-start;
+  justify-content: flex-start;
   margin-top: calc(0px - 11px);
   height: calc(100% + 11px);
 }
@@ -6886,7 +6886,6 @@
   text-align: left;
 }
 .div162 {
-  flex-direction: column;
   transform: translate(0px, 0.38999999999998636px);
   width: auto;
   height: 36px;
@@ -6894,13 +6893,14 @@
   position: absolute;
   top: 806px;
   left: 16px;
+  flex-direction: column;
   padding-right: 29.221px;
   padding-top: 55px;
 }
 .div162 > :global(.__wab_flex-container) {
   flex-direction: column;
-  justify-content: flex-start;
   align-items: flex-start;
+  justify-content: flex-start;
   margin-top: calc(0px - 11px);
   height: calc(100% + 11px);
 }

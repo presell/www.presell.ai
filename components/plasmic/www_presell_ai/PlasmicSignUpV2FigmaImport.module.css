@@ -102,17 +102,17 @@
   padding-right: 168px;
 }
 .call {
-  flex-direction: row;
   width: auto;
   height: auto;
   display: flex;
   position: relative;
+  flex-direction: row;
   padding: 16px 36px;
 }
 .call > :global(.__wab_flex-container) {
   flex-direction: row;
-  justify-content: flex-start;
   align-items: center;
+  justify-content: flex-start;
   margin-left: calc(0px - 745.296px);
   width: calc(100% + 745.296px);
 }
@@ -235,18 +235,18 @@
   margin-left: 769px;
 }
 .section {
-  flex-direction: column;
   width: auto;
   height: auto;
   display: flex;
   position: relative;
+  flex-direction: column;
   padding-top: 48px;
   padding-bottom: 96px;
 }
 .section > :global(.__wab_flex-container) {
   flex-direction: column;
-  justify-content: flex-start;
   align-items: center;
+  justify-content: flex-start;
   margin-top: calc(0px - 48px);
   height: calc(100% + 48px);
 }
@@ -329,7 +329,6 @@
   transform: translate(0.1869999999999976px, 0px);
 }
 .ul {
-  flex-direction: column;
   transform: translate(0px, -0.25px);
   width: auto;
   height: auto;
@@ -337,11 +336,12 @@
   position: absolute;
   top: 88px;
   left: 32px;
+  flex-direction: column;
 }
 .ul > :global(.__wab_flex-container) {
   flex-direction: column;
-  justify-content: flex-start;
   align-items: flex-start;
+  justify-content: flex-start;
   margin-top: calc(0px - 8px);
   height: calc(100% + 8px);
 }
@@ -426,7 +426,6 @@
   color: rgba(119, 119, 119, 1);
 }
 .div7 {
-  flex-direction: column;
   transform: translate(0px, -0.25px);
   width: auto;
   height: auto;
@@ -434,11 +433,12 @@
   position: absolute;
   top: 248px;
   left: 32px;
+  flex-direction: column;
 }
 .div7 > :global(.__wab_flex-container) {
   flex-direction: column;
-  justify-content: flex-start;
   align-items: flex-start;
+  justify-content: flex-start;
   margin-top: calc(0px - 12px);
   height: calc(100% + 12px);
 }
@@ -491,17 +491,17 @@
   top: 0px;
 }
 .div8 {
-  flex-direction: column;
   width: auto;
   height: auto;
   display: flex;
   position: relative;
+  flex-direction: column;
   padding-top: 2px;
 }
 .div8 > :global(.__wab_flex-container) {
   flex-direction: column;
-  justify-content: flex-start;
   align-items: center;
+  justify-content: flex-start;
   margin-top: calc(0px - 3px);
   height: calc(100% + 3px);
 }
@@ -624,17 +624,17 @@
   justify-content: flex-start;
 }
 .div12 {
-  flex-direction: column;
   width: auto;
   height: auto;
   display: flex;
   position: relative;
+  flex-direction: column;
   padding: 12px 6px 2.578px;
 }
 .div12 > :global(.__wab_flex-container) {
   flex-direction: column;
-  justify-content: flex-start;
   align-items: center;
+  justify-content: flex-start;
   margin-top: calc(0px - 13.421px);
   height: calc(100% + 13.421px);
 }
@@ -829,17 +829,17 @@
   object-fit: cover;
 }
 .div13 {
-  flex-direction: column;
   width: auto;
   height: auto;
   display: flex;
   position: relative;
+  flex-direction: column;
   padding: 12px 6px 2.578px;
 }
 .div13 > :global(.__wab_flex-container) {
   flex-direction: column;
-  justify-content: flex-start;
   align-items: center;
+  justify-content: flex-start;
   margin-top: calc(0px - 13.421px);
   height: calc(100% + 13.421px);
 }
@@ -1010,17 +1010,17 @@
   object-fit: cover;
 }
 .div14 {
-  flex-direction: column;
   width: auto;
   height: auto;
   display: flex;
   position: relative;
+  flex-direction: column;
   padding: 12px 6px 2.578px;
 }
 .div14 > :global(.__wab_flex-container) {
   flex-direction: column;
-  justify-content: flex-start;
   align-items: center;
+  justify-content: flex-start;
   margin-top: calc(0px - 13.421px);
   height: calc(100% + 13.421px);
 }
@@ -1190,17 +1190,17 @@
   object-fit: cover;
 }
 .div15 {
-  flex-direction: column;
   width: auto;
   height: auto;
   display: flex;
   position: relative;
+  flex-direction: column;
   padding: 12px 6px 2.578px;
 }
 .div15 > :global(.__wab_flex-container) {
   flex-direction: column;
-  justify-content: flex-start;
   align-items: center;
+  justify-content: flex-start;
   margin-top: calc(0px - 13.421px);
   height: calc(100% + 13.421px);
 }

@@ -63,6 +63,8 @@ export type PlasmicSignUpV2__OverridesType = {
   svg?: p.Flex<"svg">;
   logo?: p.Flex<typeof Logo>;
   form?: p.Flex<"form">;
+  textInput?: p.Flex<typeof TextInput>;
+  textInput2?: p.Flex<typeof TextInput>;
 };
 
 export interface DefaultSignUpV2Props {}
@@ -75,6 +77,13 @@ const __wrapUserPromise =
     return await promise;
   });
 
+function useNextRouter() {
+  try {
+    return useRouter();
+  } catch {}
+  return undefined;
+}
+
 function PlasmicSignUpV2__RenderFunc(props: {
   variants: PlasmicSignUpV2__VariantsArgs;
   args: PlasmicSignUpV2__ArgsType;
@@ -83,7 +92,7 @@ function PlasmicSignUpV2__RenderFunc(props: {
   forNode?: string;
 }) {
   const { variants, overrides, forNode } = props;
-  const __nextRouter = useRouter();
+  const __nextRouter = useNextRouter();
 
   const $ctx = ph.useDataEnv?.() || {};
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
@@ -96,8 +105,29 @@ function PlasmicSignUpV2__RenderFunc(props: {
   const $refs = refsRef.current;
 
   const currentUser = p.useCurrentUser?.() || {};
-
   const [$queries, setDollarQueries] = React.useState({});
+  const stateSpecs = React.useMemo(
+    () => [
+      {
+        path: "textInput.value",
+        type: "private",
+        variableType: "text",
+        initFunc: true
+          ? ({ $props, $state, $queries, $ctx }) => undefined
+          : undefined
+      },
+      {
+        path: "textInput2.value",
+        type: "private",
+        variableType: "text",
+        initFunc: true
+          ? ({ $props, $state, $queries, $ctx }) => undefined
+          : undefined
+      }
+    ],
+    [$props, $ctx]
+  );
+  const $state = p.useDollarState(stateSpecs, { $props, $ctx, $queries });
 
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantscvQoPsTOivAmc4()
@@ -344,19 +374,41 @@ function PlasmicSignUpV2__RenderFunc(props: {
                   </div>
 
                   <TextInput
-                    className={classNames(
-                      "__wab_instance",
-                      sty.textInput__jaPvp
-                    )}
+                    data-plasmic-name={"textInput"}
+                    data-plasmic-override={overrides.textInput}
+                    className={classNames("__wab_instance", sty.textInput)}
+                    onChange={(...args) => {
+                      p.generateStateOnChangeProp($state, [
+                        "textInput",
+
+                        "value"
+                      ])((e => e.target?.value).apply(null, args));
+                    }}
                     placeholder={"State Your Product (Life Insurance)" as const}
+                    value={p.generateStateValueProp($state, [
+                      "textInput",
+
+                      "value"
+                    ])}
                   />
 
                   <TextInput
-                    className={classNames(
-                      "__wab_instance",
-                      sty.textInput__oDgFb
-                    )}
+                    data-plasmic-name={"textInput2"}
+                    data-plasmic-override={overrides.textInput2}
+                    className={classNames("__wab_instance", sty.textInput2)}
+                    onChange={(...args) => {
+                      p.generateStateOnChangeProp($state, [
+                        "textInput2",
+
+                        "value"
+                      ])((e => e.target?.value).apply(null, args));
+                    }}
                     placeholder={"Enter Your Email Address" as const}
+                    value={p.generateStateValueProp($state, [
+                      "textInput2",
+
+                      "value"
+                    ])}
                   />
 
                   <button
@@ -1037,10 +1089,12 @@ function PlasmicSignUpV2__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "svg", "logo", "form"],
+  root: ["root", "svg", "logo", "form", "textInput", "textInput2"],
   svg: ["svg"],
   logo: ["logo"],
-  form: ["form"]
+  form: ["form", "textInput", "textInput2"],
+  textInput: ["textInput"],
+  textInput2: ["textInput2"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -1050,6 +1104,8 @@ type NodeDefaultElementType = {
   svg: "svg";
   logo: typeof Logo;
   form: "form";
+  textInput: typeof TextInput;
+  textInput2: typeof TextInput;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -1116,6 +1172,8 @@ export const PlasmicSignUpV2 = Object.assign(
     svg: makeNodeComponent("svg"),
     logo: makeNodeComponent("logo"),
     form: makeNodeComponent("form"),
+    textInput: makeNodeComponent("textInput"),
+    textInput2: makeNodeComponent("textInput2"),
 
     // Metadata about props expected for PlasmicSignUpV2
     internalVariantProps: PlasmicSignUpV2__VariantProps,

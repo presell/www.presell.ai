@@ -76,17 +76,17 @@
   padding-top: 52px;
 }
 .div2 {
-  flex-direction: row;
   width: auto;
   height: auto;
   display: flex;
   position: relative;
+  flex-direction: row;
   padding: 32px 44px 128px;
 }
 .div2 > :global(.__wab_flex-container) {
   flex-direction: row;
-  justify-content: flex-start;
   align-items: center;
+  justify-content: flex-start;
   margin-left: calc(0px - 192px);
   width: calc(100% + 192px);
 }
@@ -184,17 +184,17 @@
   padding-top: 52px;
 }
 .div5 {
-  flex-direction: row;
   width: auto;
   height: auto;
   display: flex;
   position: relative;
+  flex-direction: row;
   padding: 32px 44.015px 128px 44px;
 }
 .div5 > :global(.__wab_flex-container) {
   flex-direction: row;
-  justify-content: flex-start;
   align-items: center;
+  justify-content: flex-start;
   margin-left: calc(0px - 145.593px);
   width: calc(100% + 145.593px);
 }
@@ -287,17 +287,17 @@
   padding-top: 0px;
 }
 .div8 {
-  flex-direction: column;
   width: auto;
   height: auto;
   display: flex;
   position: relative;
+  flex-direction: column;
   padding: 24px 15px 64px;
 }
 .div8 > :global(.__wab_flex-container) {
   flex-direction: column;
-  justify-content: flex-start;
   align-items: flex-start;
+  justify-content: flex-start;
   margin-top: calc(0px - 32px);
   height: calc(100% + 32px);
 }

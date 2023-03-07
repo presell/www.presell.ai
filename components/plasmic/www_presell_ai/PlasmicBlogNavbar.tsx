@@ -63,7 +63,6 @@ export type PlasmicBlogNavbar__OverridesType = {
   blogLogo?: p.Flex<typeof BlogLogo>;
   form?: p.Flex<"form">;
   textInput?: p.Flex<typeof TextInput>;
-  textbox?: p.Flex<typeof TextInput>;
 };
 
 export interface DefaultBlogNavbarProps {
@@ -78,6 +77,13 @@ const __wrapUserPromise =
     return await promise;
   });
 
+function useNextRouter() {
+  try {
+    return useRouter();
+  } catch {}
+  return undefined;
+}
+
 function PlasmicBlogNavbar__RenderFunc(props: {
   variants: PlasmicBlogNavbar__VariantsArgs;
   args: PlasmicBlogNavbar__ArgsType;
@@ -86,7 +92,7 @@ function PlasmicBlogNavbar__RenderFunc(props: {
   forNode?: string;
 }) {
   const { variants, overrides, forNode } = props;
-  const __nextRouter = useRouter();
+  const __nextRouter = useNextRouter();
 
   const $ctx = ph.useDataEnv?.() || {};
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
@@ -99,8 +105,21 @@ function PlasmicBlogNavbar__RenderFunc(props: {
   const $refs = refsRef.current;
 
   const currentUser = p.useCurrentUser?.() || {};
-
   const [$queries, setDollarQueries] = React.useState({});
+  const stateSpecs = React.useMemo(
+    () => [
+      {
+        path: "textInput.value",
+        type: "private",
+        variableType: "text",
+        initFunc: true
+          ? ({ $props, $state, $queries, $ctx }) => undefined
+          : undefined
+      }
+    ],
+    [$props, $ctx]
+  );
+  const $state = p.useDollarState(stateSpecs, { $props, $ctx, $queries });
 
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantscvQoPsTOivAmc4()
@@ -269,7 +288,19 @@ function PlasmicBlogNavbar__RenderFunc(props: {
                     aria-label={"email" as const}
                     className={classNames("__wab_instance", sty.textInput)}
                     name={"email" as const}
+                    onChange={(...args) => {
+                      p.generateStateOnChangeProp($state, [
+                        "textInput",
+
+                        "value"
+                      ])((e => e.target?.value).apply(null, args));
+                    }}
                     placeholder={"📧 Enter Email Address Here" as const}
+                    value={p.generateStateValueProp($state, [
+                      "textInput",
+
+                      "value"
+                    ])}
                   />
 
                   {(
@@ -366,10 +397,10 @@ function PlasmicBlogNavbar__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "blogLogo", "form", "textInput", "textbox"],
+  root: ["root", "blogLogo", "form", "textInput"],
   blogLogo: ["blogLogo"],
-  form: ["form", "textInput", "textbox"],
-  textInput: ["textInput", "textbox"]
+  form: ["form", "textInput"],
+  textInput: ["textInput"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =

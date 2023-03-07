@@ -73,7 +73,6 @@ export type PlasmicFooterSection__OverridesType = {
   img?: p.Flex<typeof p.PlasmicImg>;
   h5?: p.Flex<"h5">;
   textInput?: p.Flex<typeof TextInput>;
-  textbox?: p.Flex<typeof TextInput>;
 };
 
 export interface DefaultFooterSectionProps {
@@ -89,6 +88,13 @@ const __wrapUserPromise =
     return await promise;
   });
 
+function useNextRouter() {
+  try {
+    return useRouter();
+  } catch {}
+  return undefined;
+}
+
 function PlasmicFooterSection__RenderFunc(props: {
   variants: PlasmicFooterSection__VariantsArgs;
   args: PlasmicFooterSection__ArgsType;
@@ -97,7 +103,7 @@ function PlasmicFooterSection__RenderFunc(props: {
   forNode?: string;
 }) {
   const { variants, overrides, forNode } = props;
-  const __nextRouter = useRouter();
+  const __nextRouter = useNextRouter();
 
   const $ctx = ph.useDataEnv?.() || {};
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
@@ -110,7 +116,7 @@ function PlasmicFooterSection__RenderFunc(props: {
   const $refs = refsRef.current;
 
   const currentUser = p.useCurrentUser?.() || {};
-
+  const [$queries, setDollarQueries] = React.useState({});
   const stateSpecs = React.useMemo(
     () => [
       {
@@ -118,15 +124,21 @@ function PlasmicFooterSection__RenderFunc(props: {
         type: "private",
         variableType: "variant",
         initFunc: true
-          ? ($props, $state, $ctx) => $props.unnamedVariant
+          ? ({ $props, $state, $queries, $ctx }) => $props.unnamedVariant
+          : undefined
+      },
+      {
+        path: "textInput.value",
+        type: "private",
+        variableType: "text",
+        initFunc: true
+          ? ({ $props, $state, $queries, $ctx }) => undefined
           : undefined
       }
     ],
     [$props, $ctx]
   );
-  const $state = p.useDollarState(stateSpecs, $props, $ctx);
-
-  const [$queries, setDollarQueries] = React.useState({});
+  const $state = p.useDollarState(stateSpecs, { $props, $ctx, $queries });
 
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantscvQoPsTOivAmc4()
@@ -357,6 +369,12 @@ function PlasmicFooterSection__RenderFunc(props: {
                 data-plasmic-name={"textInput"}
                 data-plasmic-override={overrides.textInput}
                 className={classNames("__wab_instance", sty.textInput)}
+                onChange={(...args) => {
+                  p.generateStateOnChangeProp($state, ["textInput", "value"])(
+                    (e => e.target?.value).apply(null, args)
+                  );
+                }}
+                value={p.generateStateValueProp($state, ["textInput", "value"])}
               />
             ) : null}
             {true ? (
@@ -803,10 +821,10 @@ function PlasmicFooterSection__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "img", "h5", "textInput", "textbox"],
+  root: ["root", "img", "h5", "textInput"],
   img: ["img"],
   h5: ["h5"],
-  textInput: ["textInput", "textbox"]
+  textInput: ["textInput"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =

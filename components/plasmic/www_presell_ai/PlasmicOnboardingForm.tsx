@@ -57,7 +57,6 @@ export const PlasmicOnboardingForm__ArgProps = new Array<ArgPropType>();
 export type PlasmicOnboardingForm__OverridesType = {
   root?: p.Flex<"form">;
   textInput?: p.Flex<typeof TextInput>;
-  textbox?: p.Flex<typeof TextInput>;
 };
 
 export interface DefaultOnboardingFormProps {
@@ -72,6 +71,13 @@ const __wrapUserPromise =
     return await promise;
   });
 
+function useNextRouter() {
+  try {
+    return useRouter();
+  } catch {}
+  return undefined;
+}
+
 function PlasmicOnboardingForm__RenderFunc(props: {
   variants: PlasmicOnboardingForm__VariantsArgs;
   args: PlasmicOnboardingForm__ArgsType;
@@ -80,7 +86,7 @@ function PlasmicOnboardingForm__RenderFunc(props: {
   forNode?: string;
 }) {
   const { variants, overrides, forNode } = props;
-  const __nextRouter = useRouter();
+  const __nextRouter = useNextRouter();
 
   const $ctx = ph.useDataEnv?.() || {};
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
@@ -93,8 +99,21 @@ function PlasmicOnboardingForm__RenderFunc(props: {
   const $refs = refsRef.current;
 
   const currentUser = p.useCurrentUser?.() || {};
-
   const [$queries, setDollarQueries] = React.useState({});
+  const stateSpecs = React.useMemo(
+    () => [
+      {
+        path: "textInput.value",
+        type: "private",
+        variableType: "text",
+        initFunc: true
+          ? ({ $props, $state, $queries, $ctx }) => undefined
+          : undefined
+      }
+    ],
+    [$props, $ctx]
+  );
+  const $state = p.useDollarState(stateSpecs, { $props, $ctx, $queries });
 
   return (
     <form
@@ -115,15 +134,21 @@ function PlasmicOnboardingForm__RenderFunc(props: {
         data-plasmic-name={"textInput"}
         data-plasmic-override={overrides.textInput}
         className={classNames("__wab_instance", sty.textInput)}
+        onChange={(...args) => {
+          p.generateStateOnChangeProp($state, ["textInput", "value"])(
+            (e => e.target?.value).apply(null, args)
+          );
+        }}
         placeholder={"Test" as const}
+        value={p.generateStateValueProp($state, ["textInput", "value"])}
       />
     </form>
   ) as React.ReactElement | null;
 }
 
 const PlasmicDescendants = {
-  root: ["root", "textInput", "textbox"],
-  textInput: ["textInput", "textbox"]
+  root: ["root", "textInput"],
+  textInput: ["textInput"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =

@@ -64,7 +64,6 @@ export type PlasmicForm__OverridesType = {
   button?: p.Flex<typeof Button>;
   link?: p.Flex<"a"> & Partial<LinkProps>;
   svg?: p.Flex<"svg">;
-  textbox?: p.Flex<typeof TextInput>;
 };
 
 export interface DefaultFormProps {
@@ -79,6 +78,13 @@ const __wrapUserPromise =
     return await promise;
   });
 
+function useNextRouter() {
+  try {
+    return useRouter();
+  } catch {}
+  return undefined;
+}
+
 function PlasmicForm__RenderFunc(props: {
   variants: PlasmicForm__VariantsArgs;
   args: PlasmicForm__ArgsType;
@@ -87,7 +93,7 @@ function PlasmicForm__RenderFunc(props: {
   forNode?: string;
 }) {
   const { variants, overrides, forNode } = props;
-  const __nextRouter = useRouter();
+  const __nextRouter = useNextRouter();
 
   const $ctx = ph.useDataEnv?.() || {};
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
@@ -100,8 +106,21 @@ function PlasmicForm__RenderFunc(props: {
   const $refs = refsRef.current;
 
   const currentUser = p.useCurrentUser?.() || {};
-
   const [$queries, setDollarQueries] = React.useState({});
+  const stateSpecs = React.useMemo(
+    () => [
+      {
+        path: "textInput.value",
+        type: "private",
+        variableType: "text",
+        initFunc: true
+          ? ({ $props, $state, $queries, $ctx }) => undefined
+          : undefined
+      }
+    ],
+    [$props, $ctx]
+  );
+  const $state = p.useDollarState(stateSpecs, { $props, $ctx, $queries });
 
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantscvQoPsTOivAmc4()
@@ -132,9 +151,14 @@ function PlasmicForm__RenderFunc(props: {
           data-plasmic-override={overrides.textInput}
           aria-label={"url" as const}
           className={classNames("__wab_instance", sty.textInput)}
-          defaultValue={undefined}
           name={"url" as const}
+          onChange={(...args) => {
+            p.generateStateOnChangeProp($state, ["textInput", "value"])(
+              (e => e.target?.value).apply(null, args)
+            );
+          }}
           required={true}
+          value={p.generateStateValueProp($state, ["textInput", "value"])}
         />
 
         <Button
@@ -180,8 +204,8 @@ function PlasmicForm__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  urlForm: ["urlForm", "textInput", "textbox", "button", "link", "svg"],
-  textInput: ["textInput", "textbox"],
+  urlForm: ["urlForm", "textInput", "button", "link", "svg"],
+  textInput: ["textInput"],
   button: ["button", "link", "svg"],
   link: ["link"],
   svg: ["svg"]

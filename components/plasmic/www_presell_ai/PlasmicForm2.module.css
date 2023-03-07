@@ -46,19 +46,19 @@
     margin-right: 0px;
   }
 }
-.textInput__ssr6:global(.__wab_instance) {
+.textInput:global(.__wab_instance) {
   max-width: 100%;
   width: 500px;
   height: 70px;
   flex-shrink: 0;
 }
 @media (max-width: 1252px) {
-  .textInput__ssr6:global(.__wab_instance) {
+  .textInput:global(.__wab_instance) {
     width: 495px;
   }
 }
 @media (max-width: 1152px) {
-  .textInput__ssr6:global(.__wab_instance) {
+  .textInput:global(.__wab_instance) {
     width: 340px;
     height: 70px;
     flex-shrink: 0;
@@ -76,7 +76,7 @@
   width: 1em;
   height: 1em;
 }
-.textInput__rp4T:global(.__wab_instance) {
+.textInput2:global(.__wab_instance) {
   max-width: 100%;
   width: 495px;
   height: 70px;
@@ -87,7 +87,7 @@
   display: flex;
 }
 @media (max-width: 1152px) {
-  .textInput__rp4T:global(.__wab_instance) {
+  .textInput2:global(.__wab_instance) {
     margin-right: 0px;
     width: 340px;
     margin-left: 0px;

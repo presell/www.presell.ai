@@ -179,6 +179,13 @@ const __wrapUserPromise =
     return await promise;
   });
 
+function useNextRouter() {
+  try {
+    return useRouter();
+  } catch {}
+  return undefined;
+}
+
 function PlasmicSignUpV2FigmaImport__RenderFunc(props: {
   variants: PlasmicSignUpV2FigmaImport__VariantsArgs;
   args: PlasmicSignUpV2FigmaImport__ArgsType;
@@ -187,7 +194,7 @@ function PlasmicSignUpV2FigmaImport__RenderFunc(props: {
   forNode?: string;
 }) {
   const { variants, overrides, forNode } = props;
-  const __nextRouter = useRouter();
+  const __nextRouter = useNextRouter();
 
   const $ctx = ph.useDataEnv?.() || {};
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
@@ -200,7 +207,6 @@ function PlasmicSignUpV2FigmaImport__RenderFunc(props: {
   const $refs = refsRef.current;
 
   const currentUser = p.useCurrentUser?.() || {};
-
   const [$queries, setDollarQueries] = React.useState({});
 
   return (

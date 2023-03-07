@@ -76,6 +76,13 @@ const __wrapUserPromise =
     return await promise;
   });
 
+function useNextRouter() {
+  try {
+    return useRouter();
+  } catch {}
+  return undefined;
+}
+
 function PlasmicSignUp__RenderFunc(props: {
   variants: PlasmicSignUp__VariantsArgs;
   args: PlasmicSignUp__ArgsType;
@@ -84,7 +91,7 @@ function PlasmicSignUp__RenderFunc(props: {
   forNode?: string;
 }) {
   const { variants, overrides, forNode } = props;
-  const __nextRouter = useRouter();
+  const __nextRouter = useNextRouter();
 
   const $ctx = ph.useDataEnv?.() || {};
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
@@ -97,8 +104,21 @@ function PlasmicSignUp__RenderFunc(props: {
   const $refs = refsRef.current;
 
   const currentUser = p.useCurrentUser?.() || {};
-
   const [$queries, setDollarQueries] = React.useState({});
+  const stateSpecs = React.useMemo(
+    () => [
+      {
+        path: "textInput.value",
+        type: "private",
+        variableType: "text",
+        initFunc: true
+          ? ({ $props, $state, $queries, $ctx }) => undefined
+          : undefined
+      }
+    ],
+    [$props, $ctx]
+  );
+  const $state = p.useDollarState(stateSpecs, { $props, $ctx, $queries });
 
   return (
     <React.Fragment>
@@ -236,7 +256,19 @@ function PlasmicSignUp__RenderFunc(props: {
                           sty.textInput__otR9H
                         )}
                         name={"email" as const}
+                        onChange={(...args) => {
+                          p.generateStateOnChangeProp($state, [
+                            "textInput",
+
+                            "value"
+                          ])((e => e.target?.value).apply(null, args));
+                        }}
                         required={true}
+                        value={p.generateStateValueProp($state, [
+                          "textInput",
+
+                          "value"
+                        ])}
                       />
 
                       <button
