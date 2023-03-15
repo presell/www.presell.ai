@@ -37,6 +37,7 @@ import {
 } from "@plasmicapp/react-web";
 import Navbar from "../../Navbar"; // plasmic-import: 1Ua3Zd0YazUX91/component
 import Button2 from "../../Button2"; // plasmic-import: eMJ9owakU9i/component
+import FooterSection from "../../FooterSection"; // plasmic-import: RmQnVGl7OA9pJb/component
 
 import { useScreenVariants as useScreenVariantscvQoPsTOivAmc4 } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: CVQoPsTOivAmc4/globalVariant
 
@@ -68,6 +69,7 @@ export type PlasmicVision__OverridesType = {
   div5?: p.Flex<"div">;
   div6?: p.Flex<"div">;
   div7?: p.Flex<"div">;
+  footerSection?: p.Flex<typeof FooterSection>;
   workingstudioByHtmltodesignFreeVersion16022023204558Gmt5?: p.Flex<"div">;
   div8?: p.Flex<"div">;
   div9?: p.Flex<"div">;
@@ -323,6 +325,13 @@ function PlasmicVision__RenderFunc(props: {
               </div>
             </div>
           ) : null}
+          {true ? (
+            <FooterSection
+              data-plasmic-name={"footerSection"}
+              data-plasmic-override={overrides.footerSection}
+              className={classNames("__wab_instance", sty.footerSection)}
+            />
+          ) : null}
           {(hasVariant(globalVariants, "screen", "mobile") ? true : false) ? (
             <div
               data-plasmic-name={
@@ -513,6 +522,7 @@ const PlasmicDescendants = {
     "div5",
     "div6",
     "div7",
+    "footerSection",
     "workingstudioByHtmltodesignFreeVersion16022023204558Gmt5",
     "div8",
     "div9",
@@ -543,6 +553,7 @@ const PlasmicDescendants = {
   div5: ["div5", "div6", "div7"],
   div6: ["div6"],
   div7: ["div7"],
+  footerSection: ["footerSection"],
   workingstudioByHtmltodesignFreeVersion16022023204558Gmt5: [
     "workingstudioByHtmltodesignFreeVersion16022023204558Gmt5",
     "div8",
@@ -587,6 +598,7 @@ type NodeDefaultElementType = {
   div5: "div";
   div6: "div";
   div7: "div";
+  footerSection: typeof FooterSection;
   workingstudioByHtmltodesignFreeVersion16022023204558Gmt5: "div";
   div8: "div";
   div9: "div";
@@ -669,6 +681,7 @@ export const PlasmicVision = Object.assign(
     div5: makeNodeComponent("div5"),
     div6: makeNodeComponent("div6"),
     div7: makeNodeComponent("div7"),
+    footerSection: makeNodeComponent("footerSection"),
     workingstudioByHtmltodesignFreeVersion16022023204558Gmt5: makeNodeComponent(
       "workingstudioByHtmltodesignFreeVersion16022023204558Gmt5"
     ),

@@ -251,6 +251,13 @@
   width: 1em;
   height: 1em;
 }
+.footerSection:global(.__wab_instance) {
+  max-width: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  display: none;
+}
 .workingstudioByHtmltodesignFreeVersion16022023204558Gmt5 {
   width: 414px;
   height: 1315px;
