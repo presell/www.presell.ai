@@ -17,7 +17,7 @@ import Link, { LinkProps } from "next/link";
 import { useRouter } from "next/router";
 
 import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/host";
+import * as ph from "@plasmicapp/react-web/lib/host";
 
 import {
   hasVariant,
@@ -159,7 +159,7 @@ function PlasmicForm2__RenderFunc(props: {
         )}
         method={"post" as const}
       >
-        {(hasVariant(globalVariants, "screen", "footer") ? true : true) ? (
+        {true ? (
           <div
             data-plasmic-name={"freeBox"}
             data-plasmic-override={overrides.freeBox}
@@ -168,64 +168,44 @@ function PlasmicForm2__RenderFunc(props: {
             <TextInput
               data-plasmic-name={"textInput"}
               data-plasmic-override={overrides.textInput}
-              aria-label={
-                hasVariant(globalVariants, "screen", "footer")
-                  ? ("life_insurance" as const)
-                  : ("life_insurance" as const)
-              }
-              aria-labelledby={
-                hasVariant(globalVariants, "screen", "footer")
-                  ? ("" as const)
-                  : undefined
-              }
+              aria-label={"life_insurance" as const}
               className={classNames("__wab_instance", sty.textInput)}
-              name={
-                hasVariant(globalVariants, "screen", "footer")
-                  ? ("life_insurance" as const)
-                  : ("life_insurance" as const)
-              }
-              onChange={(...args) => {
+              name={"life_insurance" as const}
+              onChange={(...eventArgs) => {
                 p.generateStateOnChangeProp($state, ["textInput", "value"])(
-                  (e => e.target?.value).apply(null, args)
+                  (e => e.target?.value).apply(null, eventArgs)
                 );
               }}
-              placeholder={
-                hasVariant(globalVariants, "screen", "footer")
-                  ? ("Enter A Product or Service (Life Insurance)" as const)
-                  : ("State Your Product (Life Insurance)" as const)
-              }
+              placeholder={"State Your Product (Life Insurance)" as const}
               required={true}
+              startIcon={
+                <Searchsvg2Icon
+                  className={classNames(projectcss.all, sty.svg___7QPqJ)}
+                  role={"img"}
+                />
+              }
               value={p.generateStateValueProp($state, ["textInput", "value"])}
             />
 
-            {(hasVariant(globalVariants, "screen", "footer") ? true : true) ? (
+            {true ? (
               <TextInput
                 data-plasmic-name={"textInput2"}
                 data-plasmic-override={overrides.textInput2}
                 aria-label={"email" as const}
                 className={classNames("__wab_instance", sty.textInput2)}
                 name={"email" as const}
-                onChange={(...args) => {
+                onChange={(...eventArgs) => {
                   p.generateStateOnChangeProp($state, ["textInput2", "value"])(
-                    (e => e.target?.value).apply(null, args)
+                    (e => e.target?.value).apply(null, eventArgs)
                   );
                 }}
                 placeholder={"Enter Your Email Address" as const}
                 required={true}
-                showStartIcon={
-                  hasVariant(globalVariants, "screen", "footer")
-                    ? undefined
-                    : undefined
-                }
                 startIcon={
-                  (
-                    hasVariant(globalVariants, "screen", "footer") ? true : true
-                  ) ? (
-                    <Searchsvg2Icon
-                      className={classNames(projectcss.all, sty.svg__yO8Dw)}
-                      role={"img"}
-                    />
-                  ) : null
+                  <Searchsvg2Icon
+                    className={classNames(projectcss.all, sty.svg__yO8Dw)}
+                    role={"img"}
+                  />
                 }
                 value={p.generateStateValueProp($state, [
                   "textInput2",
@@ -276,14 +256,12 @@ function PlasmicForm2__RenderFunc(props: {
               <Embed
                 className={classNames("__wab_instance", sty.embedHtml__kOWvh)}
                 code={
-                  hasVariant(globalVariants, "screen", "footer")
-                    ? ("<script>\r\nconst myButton = document.getElementById('generate_submit'); \r\nlet clicked = false; // Initialize the clicked state to false\r\n\r\nmyButton.addEventListener('click', () => {\r\n  if (!clicked) {\r\n    clicked = true; // Set clicked state to true\r\n    myButton.disabled = true; // Disable the button\r\n    // Handle button click action here\r\n  }\r\n});\r\n</script>" as const)
-                    : ("<script>\r\nconst myButton = document.getElementById('generate_submit'); \r\nlet clicked = false; // Initialize the clicked state to false\r\n\r\nmyButton.addEventListener('click', () => {\r\n  if (!clicked) {\r\n    clicked = true; // Set clicked state to true\r\n    myButton.disabled = true; // Disable the button\r\n    // Handle button click action here\r\n  }\r\n});\r\n</script>" as const)
+                  "<script>\r\nconst myButton = document.getElementById('generate_submit'); \r\nlet clicked = false; // Initialize the clicked state to false\r\n\r\nmyButton.addEventListener('click', () => {\r\n  if (!clicked) {\r\n    clicked = true; // Set clicked state to true\r\n    myButton.disabled = true; // Disable the button\r\n    // Handle button click action here\r\n  }\r\n});\r\n</script>" as const
                 }
               />
             </Button>
 
-            {(hasVariant(globalVariants, "screen", "footer") ? true : true) ? (
+            {true ? (
               <Embed
                 className={classNames("__wab_instance", sty.embedHtml__oXiCf)}
               />

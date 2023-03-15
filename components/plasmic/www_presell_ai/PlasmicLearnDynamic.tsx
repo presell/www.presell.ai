@@ -17,7 +17,7 @@ import Link, { LinkProps } from "next/link";
 import { useRouter } from "next/router";
 
 import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/host";
+import * as ph from "@plasmicapp/react-web/lib/host";
 
 import {
   hasVariant,
@@ -201,11 +201,7 @@ function PlasmicLearnDynamic__RenderFunc(props: {
               <ph.DataCtxReader>
                 {$ctx =>
                   (
-                    hasVariant(globalVariants, "screen", "mobile")
-                      ? true
-                      : hasVariant(globalVariants, "screen", "footer")
-                      ? true
-                      : true
+                    hasVariant(globalVariants, "screen", "mobile") ? true : true
                   ) ? (
                     <div
                       data-plasmic-name={"_1512Px"}
@@ -304,13 +300,7 @@ function PlasmicLearnDynamic__RenderFunc(props: {
             </DataFetcher>
           </div>
 
-          {(
-            hasVariant(globalVariants, "screen", "mobile")
-              ? true
-              : hasVariant(globalVariants, "screen", "footer")
-              ? true
-              : false
-          ) ? (
+          {(hasVariant(globalVariants, "screen", "mobile") ? true : false) ? (
             <div
               data-plasmic-name={"_1252Px"}
               data-plasmic-override={overrides._1252Px}

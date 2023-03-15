@@ -17,7 +17,7 @@ import Link, { LinkProps } from "next/link";
 import { useRouter } from "next/router";
 
 import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/host";
+import * as ph from "@plasmicapp/react-web/lib/host";
 
 import {
   hasVariant,
@@ -35,6 +35,10 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
+import Navbar from "../../Navbar"; // plasmic-import: 1Ua3Zd0YazUX91/component
+import FooterSection from "../../FooterSection"; // plasmic-import: RmQnVGl7OA9pJb/component
+
+import { useScreenVariants as useScreenVariantscvQoPsTOivAmc4 } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: CVQoPsTOivAmc4/globalVariant
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
@@ -54,6 +58,8 @@ export const PlasmicDocs__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicDocs__OverridesType = {
   root?: p.Flex<"div">;
+  navbar?: p.Flex<typeof Navbar>;
+  footerSection?: p.Flex<typeof FooterSection>;
   platformopenaicomByHtmltodesignFreeVersion19022023235909Gmt5?: p.Flex<"div">;
   div?: p.Flex<"div">;
   div2?: p.Flex<"div">;
@@ -94,7 +100,6 @@ export type PlasmicDocs__OverridesType = {
   weRecommendCompletingOurQuickstartTutorialToGetAcquaintedWithKeyConceptsThroughAHandsOnInteractiveExample?: p.Flex<"div">;
   div9?: p.Flex<"div">;
   div10?: p.Flex<"div">;
-  img?: p.Flex<typeof p.PlasmicImg>;
   div11?: p.Flex<"div">;
   div12?: p.Flex<"div">;
   promptsAndCompletions?: p.Flex<"div">;
@@ -142,6 +147,10 @@ function PlasmicDocs__RenderFunc(props: {
   const currentUser = p.useCurrentUser?.() || {};
   const [$queries, setDollarQueries] = React.useState({});
 
+  const globalVariants = ensureGlobalVariants({
+    screen: useScreenVariantscvQoPsTOivAmc4()
+  });
+
   return (
     <React.Fragment>
       <Head></Head>
@@ -167,461 +176,36 @@ function PlasmicDocs__RenderFunc(props: {
             sty.root
           )}
         >
-          <div
-            data-plasmic-name={
-              "platformopenaicomByHtmltodesignFreeVersion19022023235909Gmt5"
-            }
-            data-plasmic-override={
-              overrides.platformopenaicomByHtmltodesignFreeVersion19022023235909Gmt5
-            }
-            className={classNames(
-              projectcss.all,
-              sty.platformopenaicomByHtmltodesignFreeVersion19022023235909Gmt5
-            )}
-          >
-            <div
-              data-plasmic-name={"div"}
-              data-plasmic-override={overrides.div}
-              className={classNames(projectcss.all, sty.div)}
-            >
-              <div
-                data-plasmic-name={"div2"}
-                data-plasmic-override={overrides.div2}
-                className={classNames(projectcss.all, sty.div2)}
-              >
-                <div
-                  data-plasmic-name={"div3"}
-                  data-plasmic-override={overrides.div3}
-                  className={classNames(projectcss.all, sty.div3)}
-                >
+          <Navbar
+            data-plasmic-name={"navbar"}
+            data-plasmic-override={overrides.navbar}
+            className={classNames("__wab_instance", sty.navbar)}
+          />
+
+          <div className={classNames(projectcss.all, sty.freeBox___2NRd)}>
+            <div className={classNames(projectcss.all, sty.columns__qMxX)}>
+              {(
+                hasVariant(globalVariants, "screen", "mobile") ? true : true
+              ) ? (
+                <div className={classNames(projectcss.all, sty.column__dy44N)}>
                   <div
-                    data-plasmic-name={"div4"}
-                    data-plasmic-override={overrides.div4}
-                    className={classNames(projectcss.all, sty.div4)}
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__y7FAg
+                    )}
                   >
-                    <div
-                      data-plasmic-name={"getStarted"}
-                      data-plasmic-override={overrides.getStarted}
-                      className={classNames(projectcss.all, sty.getStarted)}
-                    >
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text___88OqP
-                        )}
-                      >
-                        {"Get started"}
-                      </div>
-                    </div>
-
-                    <div
-                      data-plasmic-name={"a"}
-                      data-plasmic-override={overrides.a}
-                      className={classNames(projectcss.all, sty.a)}
-                    >
-                      <div
-                        data-plasmic-name={"introduction"}
-                        data-plasmic-override={overrides.introduction}
-                        className={classNames(projectcss.all, sty.introduction)}
-                      >
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__ocoDy
-                          )}
-                        >
-                          {"Introduction"}
-                        </div>
-                      </div>
-                    </div>
-
-                    <div
-                      data-plasmic-name={"overview"}
-                      data-plasmic-override={overrides.overview}
-                      className={classNames(projectcss.all, sty.overview)}
-                    >
-                      {true ? (
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text___5AC0I
-                          )}
-                        >
-                          {"Overview"}
-                        </div>
-                      ) : null}
-                    </div>
-
-                    {true ? (
-                      <div
-                        data-plasmic-name={"keyConcepts"}
-                        data-plasmic-override={overrides.keyConcepts}
-                        className={classNames(projectcss.all, sty.keyConcepts)}
-                      >
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__lyyqD
-                          )}
-                        >
-                          {"Key concepts"}
-                        </div>
-                      </div>
-                    ) : null}
-                    {true ? (
-                      <div
-                        data-plasmic-name={"nextSteps"}
-                        data-plasmic-override={overrides.nextSteps}
-                        className={classNames(projectcss.all, sty.nextSteps)}
-                      >
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__yc9Z
-                          )}
-                        >
-                          {"Next steps"}
-                        </div>
-                      </div>
-                    ) : null}
-
-                    <div
-                      data-plasmic-name={"quickstart"}
-                      data-plasmic-override={overrides.quickstart}
-                      className={classNames(projectcss.all, sty.quickstart)}
-                    >
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__oEXo
-                        )}
-                      >
-                        {"Quickstart"}
-                      </div>
-                    </div>
-
-                    <div
-                      data-plasmic-name={"libraries"}
-                      data-plasmic-override={overrides.libraries}
-                      className={classNames(projectcss.all, sty.libraries)}
-                    >
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__hjMPo
-                        )}
-                      >
-                        {"Libraries"}
-                      </div>
-                    </div>
-
-                    <div
-                      data-plasmic-name={"models"}
-                      data-plasmic-override={overrides.models}
-                      className={classNames(projectcss.all, sty.models)}
-                    >
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__dSpSg
-                        )}
-                      >
-                        {"Models"}
-                      </div>
-                    </div>
-
-                    <div
-                      data-plasmic-name={"tutorials"}
-                      data-plasmic-override={overrides.tutorials}
-                      className={classNames(projectcss.all, sty.tutorials)}
-                    >
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__gPeOl
-                        )}
-                      >
-                        {"Tutorials"}
-                      </div>
-                    </div>
-
-                    <div
-                      data-plasmic-name={"usagePolicies"}
-                      data-plasmic-override={overrides.usagePolicies}
-                      className={classNames(projectcss.all, sty.usagePolicies)}
-                    >
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__qR97W
-                        )}
-                      >
-                        {"Usage policies"}
-                      </div>
-                    </div>
+                    {"Documentation"}
                   </div>
 
                   <div
-                    data-plasmic-name={"div5"}
-                    data-plasmic-override={overrides.div5}
-                    className={classNames(projectcss.all, sty.div5)}
-                  >
-                    <div
-                      data-plasmic-name={"guides"}
-                      data-plasmic-override={overrides.guides}
-                      className={classNames(projectcss.all, sty.guides)}
-                    >
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__ujgst
-                        )}
-                      >
-                        {"Guides"}
-                      </div>
-                    </div>
-
-                    <div
-                      data-plasmic-name={"textCompletion"}
-                      data-plasmic-override={overrides.textCompletion}
-                      className={classNames(projectcss.all, sty.textCompletion)}
-                    >
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__g6QNr
-                        )}
-                      >
-                        {"Text completion"}
-                      </div>
-                    </div>
-
-                    <div
-                      data-plasmic-name={"codeCompletion"}
-                      data-plasmic-override={overrides.codeCompletion}
-                      className={classNames(projectcss.all, sty.codeCompletion)}
-                    >
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__mKdt4
-                        )}
-                      >
-                        {"Code completion"}
-                      </div>
-                    </div>
-
-                    <div
-                      data-plasmic-name={"imageGeneration"}
-                      data-plasmic-override={overrides.imageGeneration}
-                      className={classNames(
-                        projectcss.all,
-                        sty.imageGeneration
-                      )}
-                    >
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__sGji
-                        )}
-                      >
-                        {"Image generation"}
-                      </div>
-                    </div>
-
-                    <div
-                      data-plasmic-name={"fineTuning"}
-                      data-plasmic-override={overrides.fineTuning}
-                      className={classNames(projectcss.all, sty.fineTuning)}
-                    >
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__c1T3C
-                        )}
-                      >
-                        {"Fine-tuning"}
-                      </div>
-                    </div>
-
-                    <div
-                      data-plasmic-name={"embeddings"}
-                      data-plasmic-override={overrides.embeddings}
-                      className={classNames(projectcss.all, sty.embeddings)}
-                    >
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__nDplM
-                        )}
-                      >
-                        {"Embeddings"}
-                      </div>
-                    </div>
-
-                    <div
-                      data-plasmic-name={"moderation"}
-                      data-plasmic-override={overrides.moderation}
-                      className={classNames(projectcss.all, sty.moderation)}
-                    >
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__lkqjv
-                        )}
-                      >
-                        {"Moderation"}
-                      </div>
-                    </div>
-
-                    <div
-                      data-plasmic-name={"rateLimits"}
-                      data-plasmic-override={overrides.rateLimits}
-                      className={classNames(projectcss.all, sty.rateLimits)}
-                    >
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__u8Bo7
-                        )}
-                      >
-                        {"Rate limits"}
-                      </div>
-                    </div>
-
-                    <div
-                      data-plasmic-name={"errorCodes"}
-                      data-plasmic-override={overrides.errorCodes}
-                      className={classNames(projectcss.all, sty.errorCodes)}
-                    >
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__iXxVh
-                        )}
-                      >
-                        {"Error codes"}
-                      </div>
-                    </div>
-
-                    <div
-                      data-plasmic-name={"safetyBestPractices"}
-                      data-plasmic-override={overrides.safetyBestPractices}
-                      className={classNames(
-                        projectcss.all,
-                        sty.safetyBestPractices
-                      )}
-                    >
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__rFl0
-                        )}
-                      >
-                        {"Safety best practices"}
-                      </div>
-                    </div>
-
-                    <div
-                      data-plasmic-name={"productionBestPractices"}
-                      data-plasmic-override={overrides.productionBestPractices}
-                      className={classNames(
-                        projectcss.all,
-                        sty.productionBestPractices
-                      )}
-                    >
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__fmsgj
-                        )}
-                      >
-                        {"Production best practices"}
-                      </div>
-                    </div>
-                  </div>
-
-                  <div
-                    data-plasmic-name={"div6"}
-                    data-plasmic-override={overrides.div6}
-                    className={classNames(projectcss.all, sty.div6)}
-                  >
-                    <div
-                      data-plasmic-name={"apiReference"}
-                      data-plasmic-override={overrides.apiReference}
-                      className={classNames(projectcss.all, sty.apiReference)}
-                    >
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text___8Xh9K
-                        )}
-                      >
-                        {"API Reference"}
-                      </div>
-                    </div>
-
-                    <div
-                      data-plasmic-name={"introduction2"}
-                      data-plasmic-override={overrides.introduction2}
-                      className={classNames(projectcss.all, sty.introduction2)}
-                    >
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__jy7Ww
-                        )}
-                      >
-                        {"Introduction"}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div
-                data-plasmic-name={"div7"}
-                data-plasmic-override={overrides.div7}
-                className={classNames(projectcss.all, sty.div7)}
-              >
-                <div
-                  data-plasmic-name={"div8"}
-                  data-plasmic-override={overrides.div8}
-                  className={classNames(projectcss.all, sty.div8)}
-                >
-                  <div
-                    data-plasmic-name={"introduction3"}
-                    data-plasmic-override={overrides.introduction3}
-                    className={classNames(projectcss.all, sty.introduction3)}
+                    className={classNames(projectcss.all, sty.freeBox__cdcRf)}
                   >
                     <div
                       className={classNames(
                         projectcss.all,
                         projectcss.__wab_text,
-                        sty.text__x8Od2
+                        sty.text__afOgu
                       )}
                     >
                       {"Introduction"}
@@ -629,237 +213,1005 @@ function PlasmicDocs__RenderFunc(props: {
                   </div>
 
                   <div
-                    data-plasmic-name={"overview2"}
-                    data-plasmic-override={overrides.overview2}
-                    className={classNames(projectcss.all, sty.overview2)}
+                    className={classNames(projectcss.all, sty.freeBox___6UBvl)}
                   >
                     <div
                       className={classNames(
                         projectcss.all,
                         projectcss.__wab_text,
-                        sty.text__hsUe2
+                        sty.text__d2Dc4
                       )}
                     >
-                      {"Overview"}
+                      {"Campaigns "}
+                    </div>
+
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__zlhf
+                      )}
+                    >
+                      {"Products"}
+                    </div>
+
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text___8Tn9O
+                      )}
+                    >
+                      {"Funnels"}
+                    </div>
+
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__rDppO
+                      )}
+                    >
+                      {"Traffic"}
+                    </div>
+
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__dCjHl
+                      )}
+                    >
+                      {"Followup"}
                     </div>
                   </div>
+                </div>
+              ) : null}
 
+              <div className={classNames(projectcss.all, sty.column__uvFsg)}>
+                <div className={classNames(projectcss.all, sty.freeBox__wg8EH)}>
                   <div
-                    data-plasmic-name={
-                      "theOpenAiApiCanBeAppliedToVirtuallyAnyTaskThatInvolvesUnderstandingOrGeneratingNaturalLanguageOrCodeWeOfferASpectrumOfModelsWithDifferentLevelsOfPowerSuitableForDifferentTasksAsWellAsTheAbilityToFineTuneYourOwnCustomModelsTheseModelsCanBeUsedForEverythingFromContentGenerationToSemanticSearchAndClassification"
-                    }
-                    data-plasmic-override={
-                      overrides.theOpenAiApiCanBeAppliedToVirtuallyAnyTaskThatInvolvesUnderstandingOrGeneratingNaturalLanguageOrCodeWeOfferASpectrumOfModelsWithDifferentLevelsOfPowerSuitableForDifferentTasksAsWellAsTheAbilityToFineTuneYourOwnCustomModelsTheseModelsCanBeUsedForEverythingFromContentGenerationToSemanticSearchAndClassification
-                    }
                     className={classNames(
                       projectcss.all,
-                      sty.theOpenAiApiCanBeAppliedToVirtuallyAnyTaskThatInvolvesUnderstandingOrGeneratingNaturalLanguageOrCodeWeOfferASpectrumOfModelsWithDifferentLevelsOfPowerSuitableForDifferentTasksAsWellAsTheAbilityToFineTuneYourOwnCustomModelsTheseModelsCanBeUsedForEverythingFromContentGenerationToSemanticSearchAndClassification
+                      projectcss.__wab_text,
+                      sty.text__frkdp
                     )}
                   >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__uc66V
-                      )}
-                    >
-                      {
-                        "The OpenAI API can be applied to virtually any task that involves understanding or generating natural language or code. We offer a spectrum of models with different levels of power suitable for different tasks, as well as the ability to fine-tune your own custom models. These models can be used for everything from content generation to semantic search and classification."
-                      }
-                    </div>
+                    {"Introduction"}
                   </div>
 
                   <div
-                    data-plasmic-name={"keyConcepts2"}
-                    data-plasmic-override={overrides.keyConcepts2}
-                    className={classNames(projectcss.all, sty.keyConcepts2)}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text___3QVq3
-                      )}
-                    >
-                      {"Key concepts"}
-                    </div>
-                  </div>
-
-                  <div
-                    data-plasmic-name={
-                      "weRecommendCompletingOurQuickstartTutorialToGetAcquaintedWithKeyConceptsThroughAHandsOnInteractiveExample"
-                    }
-                    data-plasmic-override={
-                      overrides.weRecommendCompletingOurQuickstartTutorialToGetAcquaintedWithKeyConceptsThroughAHandsOnInteractiveExample
-                    }
                     className={classNames(
                       projectcss.all,
-                      sty.weRecommendCompletingOurQuickstartTutorialToGetAcquaintedWithKeyConceptsThroughAHandsOnInteractiveExample
+                      projectcss.__wab_text,
+                      sty.text__ye5Nx
                     )}
                   >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__rdi5Q
-                      )}
-                    >
-                      {
-                        "We recommend completing our quickstart tutorial to get acquainted with key concepts through a hands-on, interactive example."
-                      }
-                    </div>
+                    {"Overview"}
                   </div>
 
                   <div
-                    data-plasmic-name={"div9"}
-                    data-plasmic-override={overrides.div9}
-                    className={classNames(projectcss.all, sty.div9)}
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__bHgGt
+                    )}
+                  >
+                    {
+                      "Presell.AI can be used to amplify growth for virtually any product or service. We offer fine-tuned customer acquisition models for common offerings such as Life Insurance in addition to providing users with the ability to fine-tune their own custom models from scratch in seconds using Generative AI & Prompt Engineering."
+                    }
+                  </div>
+
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__r6QKq
+                    )}
+                  >
+                    {"Key Concepts "}
+                  </div>
+
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__zvIg9
+                    )}
+                  >
+                    {"The platform is "}
+                  </div>
+
+                  <div
+                    className={classNames(projectcss.all, sty.columns__xvQ3K)}
                   >
                     <div
-                      data-plasmic-name={"div10"}
-                      data-plasmic-override={overrides.div10}
-                      className={classNames(projectcss.all, sty.div10)}
+                      className={classNames(projectcss.all, sty.column__gfuEy)}
                     >
                       <p.PlasmicImg
-                        data-plasmic-name={"img"}
-                        data-plasmic-override={overrides.img}
                         alt={""}
-                        className={classNames(sty.img)}
-                        displayHeight={"54px" as const}
+                        className={classNames(sty.img__bN8QJ)}
+                        displayHeight={
+                          hasVariant(globalVariants, "screen", "mobile")
+                            ? ("80px" as const)
+                            : ("60px" as const)
+                        }
                         displayMaxHeight={"none" as const}
                         displayMaxWidth={"100%" as const}
                         displayMinHeight={"0" as const}
                         displayMinWidth={"0" as const}
-                        displayWidth={"54px" as const}
+                        displayWidth={
+                          hasVariant(globalVariants, "screen", "mobile")
+                            ? ("100%" as const)
+                            : ("79px" as const)
+                        }
                         loading={"lazy" as const}
-                        src={{
-                          src: "/plasmic/www_presell_ai/images/iconBgBluesvg.bin",
-                          fullWidth: 54,
-                          fullHeight: 54,
-                          aspectRatio: 1
-                        }}
                       />
-
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox___0Uq3X
-                        )}
-                      >
-                        <Frame4Icon
-                          className={classNames(projectcss.all, sty.svg__nPZz)}
-                          role={"img"}
-                        />
-                      </div>
                     </div>
 
-                    <p.Stack
-                      as={"div"}
-                      data-plasmic-name={"div11"}
-                      data-plasmic-override={overrides.div11}
-                      hasGap={true}
-                      className={classNames(projectcss.all, sty.div11)}
+                    <div
+                      className={classNames(projectcss.all, sty.column__zMl2Z)}
                     >
                       <div
                         className={classNames(
                           projectcss.all,
                           projectcss.__wab_text,
-                          sty.text__n43Q
+                          sty.text__qBdcf
                         )}
                       >
                         {"Quickstart tutorial"}
                       </div>
 
                       <div
-                        data-plasmic-name={"div12"}
-                        data-plasmic-override={overrides.div12}
-                        className={classNames(projectcss.all, sty.div12)}
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__ymOe
+                        )}
+                      >
+                        {
+                          "Learn by building a quick sample growth marketing campaign"
+                        }
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__rTyYw
+                    )}
+                  >
+                    {"Campaign"}
+                  </div>
+
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__r7R7P
+                    )}
+                  >
+                    {
+                      "Campaigns are the highest most parent element within Presell.AI. "
+                    }
+                  </div>
+
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text___16Cxb
+                    )}
+                  >
+                    {"Produc†"}
+                  </div>
+
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__y87TL
+                    )}
+                  >
+                    {
+                      "Products are used to populate the assets within Campaigns. "
+                    }
+                  </div>
+
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__t2L7V
+                    )}
+                  >
+                    {"Funnel"}
+                  </div>
+
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__f1OV4
+                    )}
+                  >
+                    {
+                      "Funnels are sequentially generated webpages that create a linear path to conversion. "
+                    }
+                  </div>
+
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__deD6C
+                    )}
+                  >
+                    {"Traffic"}
+                  </div>
+
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__mr91D
+                    )}
+                  >
+                    {
+                      "Traffic is paid or organic visitors interacting with individual Funnel webpages"
+                    }
+                  </div>
+
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__nWuJx
+                    )}
+                  >
+                    {"Followup"}
+                  </div>
+
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__tTuS4
+                    )}
+                  >
+                    {
+                      "Followups are outbound communications to Funnel visitors."
+                    }
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <FooterSection
+              data-plasmic-name={"footerSection"}
+              data-plasmic-override={overrides.footerSection}
+              className={classNames("__wab_instance", sty.footerSection)}
+            />
+          </div>
+
+          {true ? (
+            <div
+              data-plasmic-name={
+                "platformopenaicomByHtmltodesignFreeVersion19022023235909Gmt5"
+              }
+              data-plasmic-override={
+                overrides.platformopenaicomByHtmltodesignFreeVersion19022023235909Gmt5
+              }
+              className={classNames(
+                projectcss.all,
+                sty.platformopenaicomByHtmltodesignFreeVersion19022023235909Gmt5
+              )}
+            >
+              <div
+                data-plasmic-name={"div"}
+                data-plasmic-override={overrides.div}
+                className={classNames(projectcss.all, sty.div)}
+              >
+                <div
+                  data-plasmic-name={"div2"}
+                  data-plasmic-override={overrides.div2}
+                  className={classNames(projectcss.all, sty.div2)}
+                >
+                  <div
+                    data-plasmic-name={"div3"}
+                    data-plasmic-override={overrides.div3}
+                    className={classNames(projectcss.all, sty.div3)}
+                  >
+                    <div
+                      data-plasmic-name={"div4"}
+                      data-plasmic-override={overrides.div4}
+                      className={classNames(projectcss.all, sty.div4)}
+                    >
+                      <div
+                        data-plasmic-name={"getStarted"}
+                        data-plasmic-override={overrides.getStarted}
+                        className={classNames(projectcss.all, sty.getStarted)}
                       >
                         <div
                           className={classNames(
                             projectcss.all,
                             projectcss.__wab_text,
-                            sty.text__nDyyH
+                            sty.text___88OqP
                           )}
                         >
-                          {"Learn by building a quick sample application"}
+                          {"Get started"}
                         </div>
                       </div>
-                    </p.Stack>
-                  </div>
 
-                  <div
-                    data-plasmic-name={"promptsAndCompletions"}
-                    data-plasmic-override={overrides.promptsAndCompletions}
-                    className={classNames(
-                      projectcss.all,
-                      sty.promptsAndCompletions
-                    )}
-                  >
+                      <div
+                        data-plasmic-name={"a"}
+                        data-plasmic-override={overrides.a}
+                        className={classNames(projectcss.all, sty.a)}
+                      >
+                        <div
+                          data-plasmic-name={"introduction"}
+                          data-plasmic-override={overrides.introduction}
+                          className={classNames(
+                            projectcss.all,
+                            sty.introduction
+                          )}
+                        >
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__ocoDy
+                            )}
+                          >
+                            {"Introduction"}
+                          </div>
+                        </div>
+                      </div>
+
+                      <div
+                        data-plasmic-name={"overview"}
+                        data-plasmic-override={overrides.overview}
+                        className={classNames(projectcss.all, sty.overview)}
+                      >
+                        {true ? (
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text___5AC0I
+                            )}
+                          >
+                            {"Overview"}
+                          </div>
+                        ) : null}
+                      </div>
+
+                      {true ? (
+                        <div
+                          data-plasmic-name={"keyConcepts"}
+                          data-plasmic-override={overrides.keyConcepts}
+                          className={classNames(
+                            projectcss.all,
+                            sty.keyConcepts
+                          )}
+                        >
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__lyyqD
+                            )}
+                          >
+                            {"Key concepts"}
+                          </div>
+                        </div>
+                      ) : null}
+                      {true ? (
+                        <div
+                          data-plasmic-name={"nextSteps"}
+                          data-plasmic-override={overrides.nextSteps}
+                          className={classNames(projectcss.all, sty.nextSteps)}
+                        >
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__yc9Z
+                            )}
+                          >
+                            {"Next steps"}
+                          </div>
+                        </div>
+                      ) : null}
+
+                      <div
+                        data-plasmic-name={"quickstart"}
+                        data-plasmic-override={overrides.quickstart}
+                        className={classNames(projectcss.all, sty.quickstart)}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__oEXo
+                          )}
+                        >
+                          {"Quickstart"}
+                        </div>
+                      </div>
+
+                      <div
+                        data-plasmic-name={"libraries"}
+                        data-plasmic-override={overrides.libraries}
+                        className={classNames(projectcss.all, sty.libraries)}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__hjMPo
+                          )}
+                        >
+                          {"Libraries"}
+                        </div>
+                      </div>
+
+                      <div
+                        data-plasmic-name={"models"}
+                        data-plasmic-override={overrides.models}
+                        className={classNames(projectcss.all, sty.models)}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__dSpSg
+                          )}
+                        >
+                          {"Models"}
+                        </div>
+                      </div>
+
+                      <div
+                        data-plasmic-name={"tutorials"}
+                        data-plasmic-override={overrides.tutorials}
+                        className={classNames(projectcss.all, sty.tutorials)}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__gPeOl
+                          )}
+                        >
+                          {"Tutorials"}
+                        </div>
+                      </div>
+
+                      <div
+                        data-plasmic-name={"usagePolicies"}
+                        data-plasmic-override={overrides.usagePolicies}
+                        className={classNames(
+                          projectcss.all,
+                          sty.usagePolicies
+                        )}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__qR97W
+                          )}
+                        >
+                          {"Usage policies"}
+                        </div>
+                      </div>
+                    </div>
+
                     <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text___8Np98
-                      )}
+                      data-plasmic-name={"div5"}
+                      data-plasmic-override={overrides.div5}
+                      className={classNames(projectcss.all, sty.div5)}
                     >
-                      {"Prompts and completions"}
+                      <div
+                        data-plasmic-name={"guides"}
+                        data-plasmic-override={overrides.guides}
+                        className={classNames(projectcss.all, sty.guides)}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__ujgst
+                          )}
+                        >
+                          {"Guides"}
+                        </div>
+                      </div>
+
+                      <div
+                        data-plasmic-name={"textCompletion"}
+                        data-plasmic-override={overrides.textCompletion}
+                        className={classNames(
+                          projectcss.all,
+                          sty.textCompletion
+                        )}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__g6QNr
+                          )}
+                        >
+                          {"Text completion"}
+                        </div>
+                      </div>
+
+                      <div
+                        data-plasmic-name={"codeCompletion"}
+                        data-plasmic-override={overrides.codeCompletion}
+                        className={classNames(
+                          projectcss.all,
+                          sty.codeCompletion
+                        )}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__mKdt4
+                          )}
+                        >
+                          {"Code completion"}
+                        </div>
+                      </div>
+
+                      <div
+                        data-plasmic-name={"imageGeneration"}
+                        data-plasmic-override={overrides.imageGeneration}
+                        className={classNames(
+                          projectcss.all,
+                          sty.imageGeneration
+                        )}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__sGji
+                          )}
+                        >
+                          {"Image generation"}
+                        </div>
+                      </div>
+
+                      <div
+                        data-plasmic-name={"fineTuning"}
+                        data-plasmic-override={overrides.fineTuning}
+                        className={classNames(projectcss.all, sty.fineTuning)}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__c1T3C
+                          )}
+                        >
+                          {"Fine-tuning"}
+                        </div>
+                      </div>
+
+                      <div
+                        data-plasmic-name={"embeddings"}
+                        data-plasmic-override={overrides.embeddings}
+                        className={classNames(projectcss.all, sty.embeddings)}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__nDplM
+                          )}
+                        >
+                          {"Embeddings"}
+                        </div>
+                      </div>
+
+                      <div
+                        data-plasmic-name={"moderation"}
+                        data-plasmic-override={overrides.moderation}
+                        className={classNames(projectcss.all, sty.moderation)}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__lkqjv
+                          )}
+                        >
+                          {"Moderation"}
+                        </div>
+                      </div>
+
+                      <div
+                        data-plasmic-name={"rateLimits"}
+                        data-plasmic-override={overrides.rateLimits}
+                        className={classNames(projectcss.all, sty.rateLimits)}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__u8Bo7
+                          )}
+                        >
+                          {"Rate limits"}
+                        </div>
+                      </div>
+
+                      <div
+                        data-plasmic-name={"errorCodes"}
+                        data-plasmic-override={overrides.errorCodes}
+                        className={classNames(projectcss.all, sty.errorCodes)}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__iXxVh
+                          )}
+                        >
+                          {"Error codes"}
+                        </div>
+                      </div>
+
+                      <div
+                        data-plasmic-name={"safetyBestPractices"}
+                        data-plasmic-override={overrides.safetyBestPractices}
+                        className={classNames(
+                          projectcss.all,
+                          sty.safetyBestPractices
+                        )}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__rFl0
+                          )}
+                        >
+                          {"Safety best practices"}
+                        </div>
+                      </div>
+
+                      <div
+                        data-plasmic-name={"productionBestPractices"}
+                        data-plasmic-override={
+                          overrides.productionBestPractices
+                        }
+                        className={classNames(
+                          projectcss.all,
+                          sty.productionBestPractices
+                        )}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__fmsgj
+                          )}
+                        >
+                          {"Production best practices"}
+                        </div>
+                      </div>
+                    </div>
+
+                    <div
+                      data-plasmic-name={"div6"}
+                      data-plasmic-override={overrides.div6}
+                      className={classNames(projectcss.all, sty.div6)}
+                    >
+                      <div
+                        data-plasmic-name={"apiReference"}
+                        data-plasmic-override={overrides.apiReference}
+                        className={classNames(projectcss.all, sty.apiReference)}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text___8Xh9K
+                          )}
+                        >
+                          {"API Reference"}
+                        </div>
+                      </div>
+
+                      <div
+                        data-plasmic-name={"introduction2"}
+                        data-plasmic-override={overrides.introduction2}
+                        className={classNames(
+                          projectcss.all,
+                          sty.introduction2
+                        )}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__jy7Ww
+                          )}
+                        >
+                          {"Introduction"}
+                        </div>
+                      </div>
                     </div>
                   </div>
+                </div>
 
+                <div
+                  data-plasmic-name={"div7"}
+                  data-plasmic-override={overrides.div7}
+                  className={classNames(projectcss.all, sty.div7)}
+                >
                   <div
-                    data-plasmic-name={
-                      "theCompletionsEndpointIsAtTheCenterOfOurApiItProvidesASimpleInterfaceToOurModelsThatIsExtremelyFlexibleAndPowerfulYouInputSomeTextAsAPromptAndTheModelWillGenerateATextCompletionThatAttemptsToMatchWhateverContextOrPatternYouGaveItForExampleIfYouGiveTheApiThePromptWriteATaglineForAnIceCreamShopItWillReturnACompletionLikeWeServeUpSmilesWithEveryScoop"
-                    }
-                    data-plasmic-override={
-                      overrides.theCompletionsEndpointIsAtTheCenterOfOurApiItProvidesASimpleInterfaceToOurModelsThatIsExtremelyFlexibleAndPowerfulYouInputSomeTextAsAPromptAndTheModelWillGenerateATextCompletionThatAttemptsToMatchWhateverContextOrPatternYouGaveItForExampleIfYouGiveTheApiThePromptWriteATaglineForAnIceCreamShopItWillReturnACompletionLikeWeServeUpSmilesWithEveryScoop
-                    }
-                    className={classNames(
-                      projectcss.all,
-                      sty.theCompletionsEndpointIsAtTheCenterOfOurApiItProvidesASimpleInterfaceToOurModelsThatIsExtremelyFlexibleAndPowerfulYouInputSomeTextAsAPromptAndTheModelWillGenerateATextCompletionThatAttemptsToMatchWhateverContextOrPatternYouGaveItForExampleIfYouGiveTheApiThePromptWriteATaglineForAnIceCreamShopItWillReturnACompletionLikeWeServeUpSmilesWithEveryScoop
-                    )}
+                    data-plasmic-name={"div8"}
+                    data-plasmic-override={overrides.div8}
+                    className={classNames(projectcss.all, sty.div8)}
                   >
                     <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__bhPk
-                      )}
+                      data-plasmic-name={"introduction3"}
+                      data-plasmic-override={overrides.introduction3}
+                      className={classNames(projectcss.all, sty.introduction3)}
                     >
-                      {
-                        "The completions endpoint is at the center of our API. It provides a simple interface to our models that is extremely flexible and powerful. You input some text as a prompt, and the model will generate a text completion that attempts to match whatever context or pattern you gave it. For example, if you give the API the prompt, “Write a tagline for an ice cream shop”, it will return a completion like “We serve up smiles with every scoop!”"
-                      }
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__x8Od2
+                        )}
+                      >
+                        {"Introduction"}
+                      </div>
                     </div>
-                  </div>
 
-                  <div
-                    data-plasmic-name={
-                      "designingYourPromptIsEssentiallyHowYouProgramTheModelUsuallyByProvidingSomeInstructionsOrAFewExamplesThisIsDifferentFromMostOtherNlpServicesWhichAreDesignedForASingleTaskSuchAsSentimentClassificationOrNamedEntityRecognitionInsteadTheCompletionsEndpointCanBeUsedForVirtuallyAnyTaskIncludingContentOrCodeGenerationSummarizationExpansionConversationCreativeWritingStyleTransferAndMore"
-                    }
-                    data-plasmic-override={
-                      overrides.designingYourPromptIsEssentiallyHowYouProgramTheModelUsuallyByProvidingSomeInstructionsOrAFewExamplesThisIsDifferentFromMostOtherNlpServicesWhichAreDesignedForASingleTaskSuchAsSentimentClassificationOrNamedEntityRecognitionInsteadTheCompletionsEndpointCanBeUsedForVirtuallyAnyTaskIncludingContentOrCodeGenerationSummarizationExpansionConversationCreativeWritingStyleTransferAndMore
-                    }
-                    className={classNames(
-                      projectcss.all,
-                      sty.designingYourPromptIsEssentiallyHowYouProgramTheModelUsuallyByProvidingSomeInstructionsOrAFewExamplesThisIsDifferentFromMostOtherNlpServicesWhichAreDesignedForASingleTaskSuchAsSentimentClassificationOrNamedEntityRecognitionInsteadTheCompletionsEndpointCanBeUsedForVirtuallyAnyTaskIncludingContentOrCodeGenerationSummarizationExpansionConversationCreativeWritingStyleTransferAndMore
-                    )}
-                  >
                     <div
+                      data-plasmic-name={"overview2"}
+                      data-plasmic-override={overrides.overview2}
+                      className={classNames(projectcss.all, sty.overview2)}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__hsUe2
+                        )}
+                      >
+                        {"Overview"}
+                      </div>
+                    </div>
+
+                    <div
+                      data-plasmic-name={
+                        "theOpenAiApiCanBeAppliedToVirtuallyAnyTaskThatInvolvesUnderstandingOrGeneratingNaturalLanguageOrCodeWeOfferASpectrumOfModelsWithDifferentLevelsOfPowerSuitableForDifferentTasksAsWellAsTheAbilityToFineTuneYourOwnCustomModelsTheseModelsCanBeUsedForEverythingFromContentGenerationToSemanticSearchAndClassification"
+                      }
+                      data-plasmic-override={
+                        overrides.theOpenAiApiCanBeAppliedToVirtuallyAnyTaskThatInvolvesUnderstandingOrGeneratingNaturalLanguageOrCodeWeOfferASpectrumOfModelsWithDifferentLevelsOfPowerSuitableForDifferentTasksAsWellAsTheAbilityToFineTuneYourOwnCustomModelsTheseModelsCanBeUsedForEverythingFromContentGenerationToSemanticSearchAndClassification
+                      }
                       className={classNames(
                         projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__bJvRb
+                        sty.theOpenAiApiCanBeAppliedToVirtuallyAnyTaskThatInvolvesUnderstandingOrGeneratingNaturalLanguageOrCodeWeOfferASpectrumOfModelsWithDifferentLevelsOfPowerSuitableForDifferentTasksAsWellAsTheAbilityToFineTuneYourOwnCustomModelsTheseModelsCanBeUsedForEverythingFromContentGenerationToSemanticSearchAndClassification
                       )}
                     >
-                      {
-                        "Designing your prompt is essentially how you “program” the model, usually by providing some instructions or a few examples. This is different from most other NLP services which are designed for a single task, such as sentiment classification or named entity recognition. Instead, the completions endpoint can be used for virtually any task including content or code generation, summarization, expansion, conversation, creative writing, style transfer, and more."
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__uc66V
+                        )}
+                      >
+                        {
+                          "The OpenAI API can be applied to virtually any task that involves understanding or generating natural language or code. We offer a spectrum of models with different levels of power suitable for different tasks, as well as the ability to fine-tune your own custom models. These models can be used for everything from content generation to semantic search and classification."
+                        }
+                      </div>
+                    </div>
+
+                    <div
+                      data-plasmic-name={"keyConcepts2"}
+                      data-plasmic-override={overrides.keyConcepts2}
+                      className={classNames(projectcss.all, sty.keyConcepts2)}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text___3QVq3
+                        )}
+                      >
+                        {"Key concepts"}
+                      </div>
+                    </div>
+
+                    <div
+                      data-plasmic-name={
+                        "weRecommendCompletingOurQuickstartTutorialToGetAcquaintedWithKeyConceptsThroughAHandsOnInteractiveExample"
                       }
+                      data-plasmic-override={
+                        overrides.weRecommendCompletingOurQuickstartTutorialToGetAcquaintedWithKeyConceptsThroughAHandsOnInteractiveExample
+                      }
+                      className={classNames(
+                        projectcss.all,
+                        sty.weRecommendCompletingOurQuickstartTutorialToGetAcquaintedWithKeyConceptsThroughAHandsOnInteractiveExample
+                      )}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__rdi5Q
+                        )}
+                      >
+                        {
+                          "We recommend completing our quickstart tutorial to get acquainted with key concepts through a hands-on, interactive example."
+                        }
+                      </div>
+                    </div>
+
+                    <div
+                      data-plasmic-name={"div9"}
+                      data-plasmic-override={overrides.div9}
+                      className={classNames(projectcss.all, sty.div9)}
+                    >
+                      <div
+                        data-plasmic-name={"div10"}
+                        data-plasmic-override={overrides.div10}
+                        className={classNames(projectcss.all, sty.div10)}
+                      >
+                        <p.PlasmicImg
+                          alt={""}
+                          className={classNames(sty.img___44MZr)}
+                          displayHeight={"54px" as const}
+                          displayMaxHeight={"none" as const}
+                          displayMaxWidth={"100%" as const}
+                          displayMinHeight={"0" as const}
+                          displayMinWidth={"0" as const}
+                          displayWidth={"54px" as const}
+                          loading={"lazy" as const}
+                          src={{
+                            src: "/plasmic/www_presell_ai/images/iconBgBluesvg.bin",
+                            fullWidth: 54,
+                            fullHeight: 54,
+                            aspectRatio: 1
+                          }}
+                        />
+
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox___0Uq3X
+                          )}
+                        >
+                          <Frame4Icon
+                            className={classNames(
+                              projectcss.all,
+                              sty.svg__nPZz
+                            )}
+                            role={"img"}
+                          />
+                        </div>
+                      </div>
+
+                      <p.Stack
+                        as={"div"}
+                        data-plasmic-name={"div11"}
+                        data-plasmic-override={overrides.div11}
+                        hasGap={true}
+                        className={classNames(projectcss.all, sty.div11)}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__n43Q
+                          )}
+                        >
+                          {"Quickstart tutorial"}
+                        </div>
+
+                        <div
+                          data-plasmic-name={"div12"}
+                          data-plasmic-override={overrides.div12}
+                          className={classNames(projectcss.all, sty.div12)}
+                        >
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__nDyyH
+                            )}
+                          >
+                            {"Learn by building a quick sample application"}
+                          </div>
+                        </div>
+                      </p.Stack>
+                    </div>
+
+                    <div
+                      data-plasmic-name={"promptsAndCompletions"}
+                      data-plasmic-override={overrides.promptsAndCompletions}
+                      className={classNames(
+                        projectcss.all,
+                        sty.promptsAndCompletions
+                      )}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text___8Np98
+                        )}
+                      >
+                        {"Prompts and completions"}
+                      </div>
+                    </div>
+
+                    <div
+                      data-plasmic-name={
+                        "theCompletionsEndpointIsAtTheCenterOfOurApiItProvidesASimpleInterfaceToOurModelsThatIsExtremelyFlexibleAndPowerfulYouInputSomeTextAsAPromptAndTheModelWillGenerateATextCompletionThatAttemptsToMatchWhateverContextOrPatternYouGaveItForExampleIfYouGiveTheApiThePromptWriteATaglineForAnIceCreamShopItWillReturnACompletionLikeWeServeUpSmilesWithEveryScoop"
+                      }
+                      data-plasmic-override={
+                        overrides.theCompletionsEndpointIsAtTheCenterOfOurApiItProvidesASimpleInterfaceToOurModelsThatIsExtremelyFlexibleAndPowerfulYouInputSomeTextAsAPromptAndTheModelWillGenerateATextCompletionThatAttemptsToMatchWhateverContextOrPatternYouGaveItForExampleIfYouGiveTheApiThePromptWriteATaglineForAnIceCreamShopItWillReturnACompletionLikeWeServeUpSmilesWithEveryScoop
+                      }
+                      className={classNames(
+                        projectcss.all,
+                        sty.theCompletionsEndpointIsAtTheCenterOfOurApiItProvidesASimpleInterfaceToOurModelsThatIsExtremelyFlexibleAndPowerfulYouInputSomeTextAsAPromptAndTheModelWillGenerateATextCompletionThatAttemptsToMatchWhateverContextOrPatternYouGaveItForExampleIfYouGiveTheApiThePromptWriteATaglineForAnIceCreamShopItWillReturnACompletionLikeWeServeUpSmilesWithEveryScoop
+                      )}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__bhPk
+                        )}
+                      >
+                        {
+                          "The completions endpoint is at the center of our API. It provides a simple interface to our models that is extremely flexible and powerful. You input some text as a prompt, and the model will generate a text completion that attempts to match whatever context or pattern you gave it. For example, if you give the API the prompt, “Write a tagline for an ice cream shop”, it will return a completion like “We serve up smiles with every scoop!”"
+                        }
+                      </div>
+                    </div>
+
+                    <div
+                      data-plasmic-name={
+                        "designingYourPromptIsEssentiallyHowYouProgramTheModelUsuallyByProvidingSomeInstructionsOrAFewExamplesThisIsDifferentFromMostOtherNlpServicesWhichAreDesignedForASingleTaskSuchAsSentimentClassificationOrNamedEntityRecognitionInsteadTheCompletionsEndpointCanBeUsedForVirtuallyAnyTaskIncludingContentOrCodeGenerationSummarizationExpansionConversationCreativeWritingStyleTransferAndMore"
+                      }
+                      data-plasmic-override={
+                        overrides.designingYourPromptIsEssentiallyHowYouProgramTheModelUsuallyByProvidingSomeInstructionsOrAFewExamplesThisIsDifferentFromMostOtherNlpServicesWhichAreDesignedForASingleTaskSuchAsSentimentClassificationOrNamedEntityRecognitionInsteadTheCompletionsEndpointCanBeUsedForVirtuallyAnyTaskIncludingContentOrCodeGenerationSummarizationExpansionConversationCreativeWritingStyleTransferAndMore
+                      }
+                      className={classNames(
+                        projectcss.all,
+                        sty.designingYourPromptIsEssentiallyHowYouProgramTheModelUsuallyByProvidingSomeInstructionsOrAFewExamplesThisIsDifferentFromMostOtherNlpServicesWhichAreDesignedForASingleTaskSuchAsSentimentClassificationOrNamedEntityRecognitionInsteadTheCompletionsEndpointCanBeUsedForVirtuallyAnyTaskIncludingContentOrCodeGenerationSummarizationExpansionConversationCreativeWritingStyleTransferAndMore
+                      )}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__bJvRb
+                        )}
+                      >
+                        {
+                          "Designing your prompt is essentially how you “program” the model, usually by providing some instructions or a few examples. This is different from most other NLP services which are designed for a single task, such as sentiment classification or named entity recognition. Instead, the completions endpoint can be used for virtually any task including content or code generation, summarization, expansion, conversation, creative writing, style transfer, and more."
+                        }
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
+          ) : null}
         </div>
       </div>
     </React.Fragment>
@@ -869,6 +1221,8 @@ function PlasmicDocs__RenderFunc(props: {
 const PlasmicDescendants = {
   root: [
     "root",
+    "navbar",
+    "footerSection",
     "platformopenaicomByHtmltodesignFreeVersion19022023235909Gmt5",
     "div",
     "div2",
@@ -909,13 +1263,14 @@ const PlasmicDescendants = {
     "weRecommendCompletingOurQuickstartTutorialToGetAcquaintedWithKeyConceptsThroughAHandsOnInteractiveExample",
     "div9",
     "div10",
-    "img",
     "div11",
     "div12",
     "promptsAndCompletions",
     "theCompletionsEndpointIsAtTheCenterOfOurApiItProvidesASimpleInterfaceToOurModelsThatIsExtremelyFlexibleAndPowerfulYouInputSomeTextAsAPromptAndTheModelWillGenerateATextCompletionThatAttemptsToMatchWhateverContextOrPatternYouGaveItForExampleIfYouGiveTheApiThePromptWriteATaglineForAnIceCreamShopItWillReturnACompletionLikeWeServeUpSmilesWithEveryScoop",
     "designingYourPromptIsEssentiallyHowYouProgramTheModelUsuallyByProvidingSomeInstructionsOrAFewExamplesThisIsDifferentFromMostOtherNlpServicesWhichAreDesignedForASingleTaskSuchAsSentimentClassificationOrNamedEntityRecognitionInsteadTheCompletionsEndpointCanBeUsedForVirtuallyAnyTaskIncludingContentOrCodeGenerationSummarizationExpansionConversationCreativeWritingStyleTransferAndMore"
   ],
+  navbar: ["navbar"],
+  footerSection: ["footerSection"],
   platformopenaicomByHtmltodesignFreeVersion19022023235909Gmt5: [
     "platformopenaicomByHtmltodesignFreeVersion19022023235909Gmt5",
     "div",
@@ -957,7 +1312,6 @@ const PlasmicDescendants = {
     "weRecommendCompletingOurQuickstartTutorialToGetAcquaintedWithKeyConceptsThroughAHandsOnInteractiveExample",
     "div9",
     "div10",
-    "img",
     "div11",
     "div12",
     "promptsAndCompletions",
@@ -1004,7 +1358,6 @@ const PlasmicDescendants = {
     "weRecommendCompletingOurQuickstartTutorialToGetAcquaintedWithKeyConceptsThroughAHandsOnInteractiveExample",
     "div9",
     "div10",
-    "img",
     "div11",
     "div12",
     "promptsAndCompletions",
@@ -1135,7 +1488,6 @@ const PlasmicDescendants = {
     "weRecommendCompletingOurQuickstartTutorialToGetAcquaintedWithKeyConceptsThroughAHandsOnInteractiveExample",
     "div9",
     "div10",
-    "img",
     "div11",
     "div12",
     "promptsAndCompletions",
@@ -1151,7 +1503,6 @@ const PlasmicDescendants = {
     "weRecommendCompletingOurQuickstartTutorialToGetAcquaintedWithKeyConceptsThroughAHandsOnInteractiveExample",
     "div9",
     "div10",
-    "img",
     "div11",
     "div12",
     "promptsAndCompletions",
@@ -1169,9 +1520,8 @@ const PlasmicDescendants = {
     [
       "weRecommendCompletingOurQuickstartTutorialToGetAcquaintedWithKeyConceptsThroughAHandsOnInteractiveExample"
     ],
-  div9: ["div9", "div10", "img", "div11", "div12"],
-  div10: ["div10", "img"],
-  img: ["img"],
+  div9: ["div9", "div10", "div11", "div12"],
+  div10: ["div10"],
   div11: ["div11", "div12"],
   div12: ["div12"],
   promptsAndCompletions: ["promptsAndCompletions"],
@@ -1189,6 +1539,8 @@ type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
   root: "div";
+  navbar: typeof Navbar;
+  footerSection: typeof FooterSection;
   platformopenaicomByHtmltodesignFreeVersion19022023235909Gmt5: "div";
   div: "div";
   div2: "div";
@@ -1229,7 +1581,6 @@ type NodeDefaultElementType = {
   weRecommendCompletingOurQuickstartTutorialToGetAcquaintedWithKeyConceptsThroughAHandsOnInteractiveExample: "div";
   div9: "div";
   div10: "div";
-  img: typeof p.PlasmicImg;
   div11: "div";
   div12: "div";
   promptsAndCompletions: "div";
@@ -1298,6 +1649,8 @@ export const PlasmicDocs = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
+    navbar: makeNodeComponent("navbar"),
+    footerSection: makeNodeComponent("footerSection"),
     platformopenaicomByHtmltodesignFreeVersion19022023235909Gmt5:
       makeNodeComponent(
         "platformopenaicomByHtmltodesignFreeVersion19022023235909Gmt5"
@@ -1347,7 +1700,6 @@ export const PlasmicDocs = Object.assign(
       ),
     div9: makeNodeComponent("div9"),
     div10: makeNodeComponent("div10"),
-    img: makeNodeComponent("img"),
     div11: makeNodeComponent("div11"),
     div12: makeNodeComponent("div12"),
     promptsAndCompletions: makeNodeComponent("promptsAndCompletions"),

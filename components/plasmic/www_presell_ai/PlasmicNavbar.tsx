@@ -17,7 +17,7 @@ import Link, { LinkProps } from "next/link";
 import { useRouter } from "next/router";
 
 import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/host";
+import * as ph from "@plasmicapp/react-web/lib/host";
 
 import {
   hasVariant,
@@ -263,18 +263,7 @@ function PlasmicNavbar__RenderFunc(props: {
                   )}
                   link={"https://app.presell.ai/" as const}
                 >
-                  {hasVariant(globalVariants, "screen", "footer") ? (
-                    <React.Fragment>
-                      <span
-                        className={"plasmic_default__all plasmic_default__span"}
-                        style={{ color: "#000000" }}
-                      >
-                        {"Log in"}
-                      </span>
-                    </React.Fragment>
-                  ) : (
-                    "Log in"
-                  )}
+                  {"Log in"}
                 </div>
               </Button>
             ) : null}
@@ -305,8 +294,6 @@ function PlasmicNavbar__RenderFunc(props: {
                 >
                   {hasVariant(globalVariants, "screen", "mobile")
                     ? "Watch Demo"
-                    : hasVariant(globalVariants, "screen", "footer")
-                    ? "Get Started"
                     : "Get Started"}
                 </div>
               </Button>
@@ -316,13 +303,51 @@ function PlasmicNavbar__RenderFunc(props: {
         {(hasVariant(globalVariants, "screen", "mobile") ? true : true) ? (
           <div className={classNames(projectcss.all, sty.freeBox__h5RcR)}>
             {(hasVariant(globalVariants, "screen", "mobile") ? true : true) ? (
-              <button
+              <p.PlasmicLink
                 className={classNames(
                   projectcss.all,
-                  projectcss.button,
+                  projectcss.a,
                   projectcss.__wab_text,
-                  sty.button__gtKkH
+                  sty.link__gtKkH
                 )}
+                component={Link}
+                href={"https://app.presell.ai/" as const}
+                onClick={async event => {
+                  const $steps = {};
+                  $steps["goToPage"] = true
+                    ? (() => {
+                        const actionArgs = {};
+                        return __wrapUserFunction(
+                          {
+                            type: "InteractionLoc",
+                            actionName: "navigation",
+                            interactionUuid: "U_FM0FfVS",
+                            componentUuid: "1Ua3Zd0YazUX91"
+                          },
+                          () =>
+                            (({ destination }) => {
+                              __nextRouter?.push(destination);
+                            })?.apply(null, [actionArgs]),
+                          actionArgs
+                        );
+                      })()
+                    : undefined;
+                  if (
+                    typeof $steps["goToPage"] === "object" &&
+                    typeof $steps["goToPage"].then === "function"
+                  ) {
+                    $steps["goToPage"] = await __wrapUserPromise(
+                      {
+                        type: "InteractionLoc",
+                        actionName: "navigation",
+                        interactionUuid: "U_FM0FfVS",
+                        componentUuid: "1Ua3Zd0YazUX91"
+                      },
+                      $steps["goToPage"]
+                    );
+                  }
+                }}
+                platform={"nextjs"}
               >
                 <React.Fragment>
                   <span
@@ -332,19 +357,22 @@ function PlasmicNavbar__RenderFunc(props: {
                     {"Log in"}
                   </span>
                 </React.Fragment>
-              </button>
+              </p.PlasmicLink>
             ) : null}
             {(hasVariant(globalVariants, "screen", "mobile") ? true : true) ? (
-              <button
+              <p.PlasmicLink
                 className={classNames(
                   projectcss.all,
-                  projectcss.button,
+                  projectcss.a,
                   projectcss.__wab_text,
-                  sty.button__kzbYy
+                  sty.link__kzbYy
                 )}
+                component={Link}
+                href={"https://www.presell.ai/signup" as const}
+                platform={"nextjs"}
               >
                 {"Get Started"}
-              </button>
+              </p.PlasmicLink>
             ) : null}
           </div>
         ) : null}

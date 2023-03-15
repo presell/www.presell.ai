@@ -35,13 +35,7 @@
   > img {
   margin-left: 16px;
 }
-@media (max-width: 1252px) {
-  .freeBox__tAxQg {
-    padding-bottom: 0px;
-    display: flex;
-  }
-}
-@media (max-width: 1152px) {
+@media (max-width: 640px) {
   .freeBox__tAxQg {
     height: 100px;
     padding-bottom: 0px;
@@ -82,12 +76,7 @@
   > img {
   margin-left: 16px;
 }
-@media (max-width: 1252px) {
-  .freeBox__lKuz5 {
-    max-height: 200px;
-  }
-}
-@media (max-width: 1152px) {
+@media (max-width: 640px) {
   .freeBox__lKuz5 {
     padding-top: 0px;
     padding-bottom: 0px;
@@ -99,14 +88,14 @@
     margin-top: 50px;
   }
 }
-@media (max-width: 1152px) {
+@media (max-width: 640px) {
   .freeBox__lKuz5 > :global(.__wab_flex-container) {
     flex-direction: column;
     margin-left: calc(0px - 0px);
     width: calc(100% + 0px);
   }
 }
-@media (max-width: 1152px) {
+@media (max-width: 640px) {
   .freeBox__lKuz5 > :global(.__wab_flex-container) > *,
   .freeBox__lKuz5 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
   .freeBox__lKuz5 > :global(.__wab_flex-container) > picture > img,
@@ -126,12 +115,7 @@
   max-height: 50px;
   min-width: 0;
 }
-@media (max-width: 1252px) {
-  .blogLogo:global(.__wab_instance) {
-    align-self: flex-start;
-  }
-}
-@media (max-width: 1152px) {
+@media (max-width: 640px) {
   .blogLogo:global(.__wab_instance) {
     align-self: center;
   }
@@ -160,7 +144,7 @@
   > img {
   margin-left: 8px;
 }
-@media (max-width: 1152px) {
+@media (max-width: 640px) {
   .freeBox___4Q05U {
     display: flex;
     width: auto;
@@ -194,7 +178,7 @@
   position: relative;
   display: none;
 }
-@media (max-width: 1152px) {
+@media (max-width: 640px) {
   .button__eqLfb:global(.__wab_instance) {
     margin-top: 0px;
   }
@@ -220,7 +204,7 @@
   position: relative;
   display: none;
 }
-@media (max-width: 1152px) {
+@media (max-width: 640px) {
   .button__bjBaF:global(.__wab_instance) {
     display: none;
   }
@@ -252,7 +236,7 @@
   align-items: stretch;
   justify-content: flex-start;
 }
-@media (max-width: 1152px) {
+@media (max-width: 640px) {
   .form {
     display: flex;
     flex-direction: row;
@@ -263,7 +247,7 @@
     padding-left: 15px;
   }
 }
-@media (max-width: 1152px) {
+@media (max-width: 640px) {
   .form > :global(.__wab_flex-container) {
     flex-direction: row;
     align-items: center;
@@ -274,7 +258,7 @@
     height: calc(100% + 0px);
   }
 }
-@media (max-width: 1152px) {
+@media (max-width: 640px) {
   .form > :global(.__wab_flex-container) > *,
   .form > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
   .form > :global(.__wab_flex-container) > picture > img,
@@ -294,13 +278,7 @@
   flex-shrink: 0;
   margin: 2px 31px 2px 20px;
 }
-@media (max-width: 1252px) {
-  .textInput:global(.__wab_instance) {
-    height: 50px;
-    align-self: flex-end;
-  }
-}
-@media (max-width: 1152px) {
+@media (max-width: 640px) {
   .textInput:global(.__wab_instance) {
     height: 55px;
     width: 210px;
@@ -333,12 +311,7 @@
   border-radius: 5px;
   padding: 5px 0px;
 }
-@media (max-width: 1252px) {
-  .button__bMzU {
-    display: none;
-  }
-}
-@media (max-width: 1152px) {
+@media (max-width: 640px) {
   .button__bMzU {
     display: none;
   }
@@ -347,7 +320,7 @@
   position: relative;
   display: none;
 }
-@media (max-width: 1152px) {
+@media (max-width: 640px) {
   .button__h9Qvo:global(.__wab_instance) {
     display: none;
   }
@@ -368,7 +341,7 @@
   position: relative;
   object-fit: cover;
 }
-@media (max-width: 1152px) {
+@media (max-width: 640px) {
   .svg__g2Oqo {
     display: block;
   }
@@ -380,12 +353,7 @@
   display: none;
   border-radius: 5px;
 }
-@media (max-width: 1252px) {
-  .button__sBf2I {
-    display: flex;
-  }
-}
-@media (max-width: 1152px) {
+@media (max-width: 640px) {
   .button__sBf2I {
     padding-bottom: 10px;
     padding-top: 9px;
@@ -401,12 +369,7 @@
   font-size: 18px;
   color: var(--token-Dow1vpW5h4qT5G);
 }
-@media (max-width: 1252px) {
-  .text___291P5 {
-    text-align: center;
-  }
-}
-@media (max-width: 1152px) {
+@media (max-width: 640px) {
   .text___291P5 {
     text-align: center;
     font-size: 10px;

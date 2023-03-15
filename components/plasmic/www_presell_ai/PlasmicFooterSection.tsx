@@ -17,7 +17,7 @@ import Link, { LinkProps } from "next/link";
 import { useRouter } from "next/router";
 
 import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/host";
+import * as ph from "@plasmicapp/react-web/lib/host";
 
 import {
   hasVariant,
@@ -70,8 +70,8 @@ export const PlasmicFooterSection__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicFooterSection__OverridesType = {
   root?: p.Flex<"div">;
-  img?: p.Flex<typeof p.PlasmicImg>;
   h5?: p.Flex<"h5">;
+  columns?: p.Flex<"div">;
   textInput?: p.Flex<typeof TextInput>;
 };
 
@@ -188,10 +188,8 @@ function PlasmicFooterSection__RenderFunc(props: {
             })}
           >
             <p.PlasmicImg
-              data-plasmic-name={"img"}
-              data-plasmic-override={overrides.img}
               alt={""}
-              className={classNames(sty.img)}
+              className={classNames(sty.img__hSq)}
               displayHeight={"auto" as const}
               displayMaxHeight={"35px" as const}
               displayMaxWidth={"229px" as const}
@@ -207,29 +205,94 @@ function PlasmicFooterSection__RenderFunc(props: {
               }}
             />
 
-            <h5
-              data-plasmic-name={"h5"}
-              data-plasmic-override={overrides.h5}
-              className={classNames(
-                projectcss.all,
-                projectcss.h5,
-                projectcss.__wab_text,
-                sty.h5
-              )}
-            >
-              {"Programmatic AI Marketing"}
-            </h5>
+            {true ? (
+              <h5
+                data-plasmic-name={"h5"}
+                data-plasmic-override={overrides.h5}
+                className={classNames(
+                  projectcss.all,
+                  projectcss.h5,
+                  projectcss.__wab_text,
+                  sty.h5
+                )}
+              >
+                {"A Programmatic AI Marketing Platform"}
+              </h5>
+            ) : null}
+            {true ? (
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__deJbg
+                )}
+              >
+                {
+                  "Where Generative AI & Prompt Engineering Meet Growth Marketing. "
+                }
+              </div>
+            ) : null}
 
             <div
-              className={classNames(
-                projectcss.all,
-                projectcss.__wab_text,
-                sty.text__deJbg
-              )}
+              data-plasmic-name={"columns"}
+              data-plasmic-override={overrides.columns}
+              className={classNames(projectcss.all, sty.columns)}
             >
-              {
-                "Skip the guesswork. Instantly generate and deploy structured campaigns."
-              }
+              <div className={classNames(projectcss.all, sty.column__toY3V)}>
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__s15D0)}
+                  displayHeight={"30px" as const}
+                  displayMaxHeight={"none" as const}
+                  displayMaxWidth={"100%" as const}
+                  displayMinHeight={"0" as const}
+                  displayMinWidth={"0" as const}
+                  displayWidth={"auto" as const}
+                  loading={"lazy" as const}
+                  src={{
+                    src: "/plasmic/www_presell_ai/images/energysvg.svg",
+                    fullWidth: 54,
+                    fullHeight: 150,
+                    aspectRatio: 0.358343
+                  }}
+                />
+              </div>
+
+              <div className={classNames(projectcss.all, sty.column___73A84)}>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__jspJ
+                  )}
+                >
+                  <React.Fragment>
+                    <span
+                      className={"plasmic_default__all plasmic_default__span"}
+                      style={{ color: "#FFFFFF" }}
+                    >
+                      {"Built With Love & Redbull"}
+                    </span>
+                  </React.Fragment>
+                </div>
+
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__qh4Yt
+                  )}
+                >
+                  <React.Fragment>
+                    <span
+                      className={"plasmic_default__all plasmic_default__span"}
+                      style={{ color: "#FFFFFF" }}
+                    >
+                      {"for Growth Marketers by Growth Marketers"}
+                    </span>
+                  </React.Fragment>
+                </div>
+              </div>
             </div>
 
             <div
@@ -241,19 +304,24 @@ function PlasmicFooterSection__RenderFunc(props: {
                 )
               })}
             >
-              <FacebooksvgIcon
-                className={classNames(projectcss.all, sty.svg__slVsB, {
-                  [sty.svgunnamedVariant__slVsBoxEvg]: hasVariant(
-                    $state,
-                    "unnamedVariant",
-                    "unnamedVariant"
-                  )
-                })}
-                link={"https://www.facebook.com/PresellAI" as const}
-                role={"img"}
-              />
-
-              {true ? (
+              {(
+                hasVariant(globalVariants, "screen", "mobile") ? true : true
+              ) ? (
+                <FacebooksvgIcon
+                  className={classNames(projectcss.all, sty.svg__slVsB, {
+                    [sty.svgunnamedVariant__slVsBoxEvg]: hasVariant(
+                      $state,
+                      "unnamedVariant",
+                      "unnamedVariant"
+                    )
+                  })}
+                  link={"https://www.facebook.com/PresellAI" as const}
+                  role={"img"}
+                />
+              ) : null}
+              {(
+                hasVariant(globalVariants, "screen", "mobile") ? true : true
+              ) ? (
                 <TwittersvgIcon
                   className={classNames(projectcss.all, sty.svg__z9SY)}
                   role={"img"}
@@ -272,7 +340,9 @@ function PlasmicFooterSection__RenderFunc(props: {
                 role={"img"}
               />
 
-              {true ? (
+              {(
+                hasVariant(globalVariants, "screen", "mobile") ? true : true
+              ) ? (
                 <LinkedinsvgIcon
                   className={classNames(projectcss.all, sty.svg__dIcrg)}
                   role={"img"}
@@ -323,15 +393,19 @@ function PlasmicFooterSection__RenderFunc(props: {
               {"Presell Vision"}
             </p.PlasmicLink>
 
-            <div
+            <p.PlasmicLink
               className={classNames(
                 projectcss.all,
+                projectcss.a,
                 projectcss.__wab_text,
-                sty.text___8HfjG
+                sty.link___8HfjG
               )}
+              component={Link}
+              href={`/docs`}
+              platform={"nextjs"}
             >
               {"Documentation"}
-            </div>
+            </p.PlasmicLink>
 
             <p.PlasmicLink
               className={classNames(
@@ -369,9 +443,9 @@ function PlasmicFooterSection__RenderFunc(props: {
                 data-plasmic-name={"textInput"}
                 data-plasmic-override={overrides.textInput}
                 className={classNames("__wab_instance", sty.textInput)}
-                onChange={(...args) => {
+                onChange={(...eventArgs) => {
                   p.generateStateOnChangeProp($state, ["textInput", "value"])(
-                    (e => e.target?.value).apply(null, args)
+                    (e => e.target?.value).apply(null, eventArgs)
                   );
                 }}
                 value={p.generateStateValueProp($state, ["textInput", "value"])}
@@ -813,7 +887,9 @@ function PlasmicFooterSection__RenderFunc(props: {
             sty.text__gt6JV
           )}
         >
-          {"Copyrights © 2023 All Rights Reserved by Presell, Inc."}
+          {hasVariant(globalVariants, "screen", "mobile")
+            ? "Copyrights © 2023 All Rights Reserved by Presell, Inc."
+            : "Copyrights © 2023 All Rights Reserved by Presell, Inc."}
         </div>
       </div>
     </div>
@@ -821,9 +897,9 @@ function PlasmicFooterSection__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "img", "h5", "textInput"],
-  img: ["img"],
+  root: ["root", "h5", "columns", "textInput"],
   h5: ["h5"],
+  columns: ["columns"],
   textInput: ["textInput"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -831,8 +907,8 @@ type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
   root: "div";
-  img: typeof p.PlasmicImg;
   h5: "h5";
+  columns: "div";
   textInput: typeof TextInput;
 };
 
@@ -897,8 +973,8 @@ export const PlasmicFooterSection = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    img: makeNodeComponent("img"),
     h5: makeNodeComponent("h5"),
+    columns: makeNodeComponent("columns"),
     textInput: makeNodeComponent("textInput"),
 
     // Metadata about props expected for PlasmicFooterSection

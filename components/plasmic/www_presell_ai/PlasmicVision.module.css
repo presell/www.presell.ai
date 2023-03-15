@@ -13,7 +13,12 @@
 .navbar:global(.__wab_instance) {
   max-width: 100%;
   position: relative;
-  margin-top: 52px;
+  margin-top: 0px;
+}
+@media (max-width: 640px) {
+  .navbar:global(.__wab_instance) {
+    margin-top: 0px;
+  }
 }
 ._1529 {
   width: 1529px;
@@ -21,7 +26,7 @@
   display: block;
   flex-shrink: 0;
 }
-@media (max-width: 1152px) {
+@media (max-width: 640px) {
   ._1529 {
     display: none;
   }
@@ -488,7 +493,7 @@
   width: 301px;
   text-align: left;
 }
-@media (max-width: 1152px) {
+@media (max-width: 640px) {
   .text___89DyK {
     display: none;
   }

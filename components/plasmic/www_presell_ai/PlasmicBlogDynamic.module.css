@@ -45,7 +45,7 @@
   min-width: 0;
   padding: 8px;
 }
-@media (max-width: 1152px) {
+@media (max-width: 640px) {
   .freeBox__tZuPz {
     margin-top: 90px;
     margin-bottom: 50px;

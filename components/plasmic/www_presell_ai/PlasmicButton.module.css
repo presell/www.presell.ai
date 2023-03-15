@@ -5,12 +5,7 @@
   padding: 16px 32px;
   border-width: 0px;
 }
-@media (max-width: 1252px) {
-  .root {
-    background: var(--token-ALOFbXahO);
-  }
-}
-@media (max-width: 1152px) {
+@media (max-width: 640px) {
   .root {
     padding-right: 14px;
     padding-left: 17px;

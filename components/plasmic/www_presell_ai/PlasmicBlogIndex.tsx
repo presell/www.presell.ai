@@ -17,7 +17,7 @@ import Link, { LinkProps } from "next/link";
 import { useRouter } from "next/router";
 
 import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/host";
+import * as ph from "@plasmicapp/react-web/lib/host";
 
 import {
   hasVariant,
@@ -250,8 +250,6 @@ function PlasmicBlogIndex__RenderFunc(props: {
                           displayHeight={
                             hasVariant(globalVariants, "screen", "mobile")
                               ? ("185.63px" as const)
-                              : hasVariant(globalVariants, "screen", "footer")
-                              ? ("250px" as const)
                               : ("475.28px" as const)
                           }
                           displayMaxHeight={"none" as const}
@@ -261,8 +259,6 @@ function PlasmicBlogIndex__RenderFunc(props: {
                           displayWidth={
                             hasVariant(globalVariants, "screen", "mobile")
                               ? ("330px" as const)
-                              : hasVariant(globalVariants, "screen", "footer")
-                              ? ("550px" as const)
                               : ("830px" as const)
                           }
                           loading={"lazy" as const}
@@ -350,8 +346,6 @@ function PlasmicBlogIndex__RenderFunc(props: {
                         ) : null}
                         {(
                           hasVariant(globalVariants, "screen", "mobile")
-                            ? true
-                            : hasVariant(globalVariants, "screen", "footer")
                             ? true
                             : true
                         ) ? (

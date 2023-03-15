@@ -17,7 +17,7 @@ import Link, { LinkProps } from "next/link";
 import { useRouter } from "next/router";
 
 import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/host";
+import * as ph from "@plasmicapp/react-web/lib/host";
 
 import {
   hasVariant,
@@ -195,7 +195,7 @@ function PlasmicVision__RenderFunc(props: {
                         sty.text__ok2Hg
                       )}
                     >
-                      {"Instant. Structured. Growth"}
+                      {"Programmatic AI Marketing."}
                     </div>
 
                     <p.Stack
@@ -212,7 +212,16 @@ function PlasmicVision__RenderFunc(props: {
                           sty.text__nFS
                         )}
                       >
-                        {"A new category of Conversion-Technology."}
+                        <React.Fragment>
+                          <span
+                            className={
+                              "plasmic_default__all plasmic_default__span"
+                            }
+                            style={{ fontStyle: "italic" }}
+                          >
+                            {"Generative AI x Prompt Engineering "}
+                          </span>
+                        </React.Fragment>
                       </div>
 
                       <div
@@ -264,7 +273,7 @@ function PlasmicVision__RenderFunc(props: {
                           )}
                         >
                           {
-                            "Orchestrate a symphony of brands, funnels, and ad accounts from a single self-serve growth platform.\n\nGenerate marketing assets and media buys programmatically without ever leaving Presell AI."
+                            "Orchestrate a symphony of brands, funnels, and ad accounts from a single self-serve growth platform.\n\nGenerate marketing assets and media buys programmatically without ever leaving Presell.AI."
                           }
                         </div>
                       </p.Stack>
@@ -283,7 +292,7 @@ function PlasmicVision__RenderFunc(props: {
                             sty.text__mkEg
                           )}
                         >
-                          {"Trained AI"}
+                          {"Fine-tuned Models"}
                         </div>
 
                         <div
@@ -294,7 +303,7 @@ function PlasmicVision__RenderFunc(props: {
                           )}
                         >
                           {
-                            "Brunson. Ogilvy. Sugerman. Timeless marketing frameworks morphed into dynamic prompts. \n\nReiterative machine learning autonomously drives conversion optimization across every aspect of the customer journey,"
+                            "Brunson. Ogilvy. Sugerman. Timeless marketing frameworks morphed into dynamic prompts. \n\nReiterative machine learning autonomously drives conversion optimization across every aspect of the customer journey."
                           }
                         </div>
                       </p.Stack>

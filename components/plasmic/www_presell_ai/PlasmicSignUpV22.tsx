@@ -17,7 +17,7 @@ import Link, { LinkProps } from "next/link";
 import { useRouter } from "next/router";
 
 import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/host";
+import * as ph from "@plasmicapp/react-web/lib/host";
 
 import {
   hasVariant,
@@ -336,12 +336,12 @@ function PlasmicSignUpV22__RenderFunc(props: {
                     data-plasmic-name={"textInput"}
                     data-plasmic-override={overrides.textInput}
                     className={classNames("__wab_instance", sty.textInput)}
-                    onChange={(...args) => {
+                    onChange={(...eventArgs) => {
                       p.generateStateOnChangeProp($state, [
                         "textInput",
 
                         "value"
-                      ])((e => e.target?.value).apply(null, args));
+                      ])((e => e.target?.value).apply(null, eventArgs));
                     }}
                     placeholder={"Work Email" as const}
                     value={p.generateStateValueProp($state, [
@@ -355,12 +355,12 @@ function PlasmicSignUpV22__RenderFunc(props: {
                     data-plasmic-name={"textInput2"}
                     data-plasmic-override={overrides.textInput2}
                     className={classNames("__wab_instance", sty.textInput2)}
-                    onChange={(...args) => {
+                    onChange={(...eventArgs) => {
                       p.generateStateOnChangeProp($state, [
                         "textInput2",
 
                         "value"
-                      ])((e => e.target?.value).apply(null, args));
+                      ])((e => e.target?.value).apply(null, eventArgs));
                     }}
                     placeholder={"Add a Password" as const}
                     value={p.generateStateValueProp($state, [

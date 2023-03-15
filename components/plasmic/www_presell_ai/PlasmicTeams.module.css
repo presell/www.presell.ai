@@ -20,7 +20,7 @@
   border-radius: 20px;
   padding: 24px;
 }
-@media (max-width: 1152px) {
+@media (max-width: 640px) {
   .freeBox {
     width: 284px;
   }
@@ -38,7 +38,7 @@
 .img > :global(.__wab_img-spacer) > img {
   object-fit: cover;
 }
-@media (max-width: 1152px) {
+@media (max-width: 640px) {
   .img {
     margin-top: 1px;
   }
@@ -55,7 +55,7 @@
   text-align: center;
   min-width: 0;
 }
-@media (max-width: 1152px) {
+@media (max-width: 640px) {
   .text__edbll {
     margin-top: 16px;
   }
@@ -81,7 +81,7 @@
   margin-top: 32px;
   min-width: 0;
 }
-@media (max-width: 1152px) {
+@media (max-width: 640px) {
   .text__wfe8X {
     margin-top: 24px;
   }

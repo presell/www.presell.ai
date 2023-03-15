@@ -17,7 +17,7 @@ import Link, { LinkProps } from "next/link";
 import { useRouter } from "next/router";
 
 import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/host";
+import * as ph from "@plasmicapp/react-web/lib/host";
 
 import {
   hasVariant,
@@ -140,13 +140,7 @@ function PlasmicBlogNavbar__RenderFunc(props: {
         sty.root
       )}
     >
-      {(
-        hasVariant(globalVariants, "screen", "mobile")
-          ? true
-          : hasVariant(globalVariants, "screen", "footer")
-          ? true
-          : true
-      ) ? (
+      {(hasVariant(globalVariants, "screen", "mobile") ? true : true) ? (
         <p.Stack
           as={"div"}
           hasGap={true}
@@ -288,12 +282,12 @@ function PlasmicBlogNavbar__RenderFunc(props: {
                     aria-label={"email" as const}
                     className={classNames("__wab_instance", sty.textInput)}
                     name={"email" as const}
-                    onChange={(...args) => {
+                    onChange={(...eventArgs) => {
                       p.generateStateOnChangeProp($state, [
                         "textInput",
 
                         "value"
-                      ])((e => e.target?.value).apply(null, args));
+                      ])((e => e.target?.value).apply(null, eventArgs));
                     }}
                     placeholder={"📧 Enter Email Address Here" as const}
                     value={p.generateStateValueProp($state, [
@@ -304,11 +298,7 @@ function PlasmicBlogNavbar__RenderFunc(props: {
                   />
 
                   {(
-                    hasVariant(globalVariants, "screen", "mobile")
-                      ? true
-                      : hasVariant(globalVariants, "screen", "footer")
-                      ? true
-                      : true
+                    hasVariant(globalVariants, "screen", "mobile") ? true : true
                   ) ? (
                     <button
                       className={classNames(
@@ -365,9 +355,7 @@ function PlasmicBlogNavbar__RenderFunc(props: {
                       </div>
                     </Button>
                   ) : null}
-                  {(
-                    hasVariant(globalVariants, "screen", "footer") ? true : true
-                  ) ? (
+                  {true ? (
                     <button
                       className={classNames(
                         projectcss.all,

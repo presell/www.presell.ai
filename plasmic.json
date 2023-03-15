@@ -402,6 +402,32 @@
           "cssFilePath": "plasmic/www_presell_ai/PlasmicDocs.module.css",
           "scheme": "blackbox",
           "componentType": "page"
+        },
+        {
+          "id": "LagVuIbBoI",
+          "name": "NewPage2",
+          "type": "managed",
+          "projectId": "hgYa2chxELsjCrsDiarb3T",
+          "renderModuleFilePath": "plasmic/www_presell_ai/PlasmicNewPage2.tsx",
+          "importSpec": {
+            "modulePath": "../pages/new-page-3.tsx"
+          },
+          "cssFilePath": "plasmic/www_presell_ai/PlasmicNewPage2.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "RS5FAb31Ux",
+          "name": "Test",
+          "type": "managed",
+          "projectId": "hgYa2chxELsjCrsDiarb3T",
+          "renderModuleFilePath": "plasmic/www_presell_ai/PlasmicTest.tsx",
+          "importSpec": {
+            "modulePath": "Test.tsx"
+          },
+          "cssFilePath": "plasmic/www_presell_ai/PlasmicTest.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [
@@ -1011,6 +1037,11 @@
           "id": "UXW-V-Bao",
           "name": "icon_bg_blue.svg",
           "filePath": "../public/plasmic/www_presell_ai/images/iconBgBluesvg.bin"
+        },
+        {
+          "id": "q6P-FcYzW",
+          "name": "energy.svg",
+          "filePath": "../public/plasmic/www_presell_ai/images/energysvg.svg"
         }
       ],
       "indirect": false,
@@ -1121,6 +1152,12 @@
         "name": "Screen",
         "projectId": "hgYa2chxELsjCrsDiarb3T",
         "contextFilePath": "plasmic/www_presell_ai/PlasmicGlobalVariant__Screen.tsx"
+      },
+      {
+        "id": "I_A5QK2YWB",
+        "name": "Experiment",
+        "projectId": "hgYa2chxELsjCrsDiarb3T",
+        "contextFilePath": "plasmic/www_presell_ai/PlasmicGlobalVariant__Experiment.tsx"
       }
     ]
   },
@@ -1128,6 +1165,6 @@
   "nextjsConfig": {
     "pagesDir": "../pages"
   },
-  "cliVersion": "0.1.219",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.219/dist/plasmic.schema.json"
+  "cliVersion": "0.1.222",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.222/dist/plasmic.schema.json"
 }

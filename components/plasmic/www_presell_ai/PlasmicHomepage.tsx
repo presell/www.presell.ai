@@ -17,7 +17,7 @@ import Link, { LinkProps } from "next/link";
 import { useRouter } from "next/router";
 
 import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/host";
+import * as ph from "@plasmicapp/react-web/lib/host";
 
 import {
   hasVariant,
@@ -219,7 +219,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     sty.text___67RyA
                   )}
                 >
-                  {"🖱️ 𝗦𝘁𝗲𝗽 𝟭: Paste ANY web link "}
+                  {"🖱️ 𝗦𝘁𝗲𝗽 𝟭: State your product"}
                 </div>
 
                 <div
@@ -229,7 +229,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     sty.text__o8Uwq
                   )}
                 >
-                  {"🪄 𝗦𝘁𝗲𝗽 𝟮: Generate funnel & ads "}
+                  {"🪄 𝗦𝘁𝗲𝗽 𝟮: Generate assets"}
                 </div>
 
                 <div
@@ -239,7 +239,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     sty.text___4TFeL
                   )}
                 >
-                  {"📢  𝗦𝘁𝗲𝗽 𝟯: Plug-and-play in any ad account"}
+                  {"📢  𝗦𝘁𝗲𝗽 𝟯: Click to activate traffic"}
                 </div>
               </div>
             </p.Stack>
@@ -1211,8 +1211,21 @@ function PlasmicHomepage__RenderFunc(props: {
                   >
                     {hasVariant(globalVariants, "screen", "mobile")
                       ? "Lorem Ipsum"
-                      : "Lorem Ipsum"}
+                      : "A New Category"}
                   </h2>
+
+                  <h4
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.h4,
+                      projectcss.__wab_text,
+                      sty.h4__eFTiT
+                    )}
+                  >
+                    {hasVariant(globalVariants, "screen", "mobile")
+                      ? "Lorem Ipsum"
+                      : "Programmatic AI Marketing"}
+                  </h4>
 
                   <div
                     className={classNames(
@@ -1453,6 +1466,340 @@ function PlasmicHomepage__RenderFunc(props: {
                     <p.PlasmicImg
                       alt={""}
                       className={classNames(sty.img__xiRlG)}
+                      displayHeight={"auto" as const}
+                      displayMaxHeight={"none" as const}
+                      displayMaxWidth={"100%" as const}
+                      displayMinHeight={"0" as const}
+                      displayMinWidth={"0" as const}
+                      displayWidth={"auto" as const}
+                      loading={"lazy" as const}
+                      src={{
+                        src: "/plasmic/www_presell_ai/images/heroImgpng.png",
+                        fullWidth: 2280,
+                        fullHeight: 1400,
+                        aspectRatio: undefined
+                      }}
+                    />
+                  ) : null}
+                </div>
+              </div>
+            </Section>
+          ) : null}
+          {true ? (
+            <Section
+              background={"darkBlue" as const}
+              className={classNames("__wab_instance", sty.section__iSxYw)}
+              size={
+                hasVariant(globalVariants, "screen", "mobile")
+                  ? ("fullContentWidth" as const)
+                  : ("fullContentWidth" as const)
+              }
+            >
+              <div className={classNames(projectcss.all, sty.freeBox___3DePm)}>
+                <div
+                  className={classNames(projectcss.all, sty.freeBox___3HVs9)}
+                >
+                  <h2
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.h2,
+                      projectcss.__wab_text,
+                      sty.h2__kPcpt
+                    )}
+                  >
+                    {hasVariant(globalVariants, "screen", "mobile")
+                      ? "Lorem Ipsum"
+                      : "Instantly Generate"}
+                  </h2>
+
+                  <h4
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.h4,
+                      projectcss.__wab_text,
+                      sty.h4__yEYhr
+                    )}
+                  >
+                    {hasVariant(globalVariants, "screen", "mobile")
+                      ? "Lorem Ipsum"
+                      : "Funnels | Ads | Followups"}
+                  </h4>
+
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__d5SB2
+                    )}
+                  >
+                    {hasVariant(globalVariants, "screen", "mobile")
+                      ? "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex."
+                      : "Programmatically From The World's First Self-Serve AI Marketing Platform. "}
+                  </div>
+
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__c3E0D)}
+                  >
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__cdTvj)}
+                    >
+                      <p.PlasmicImg
+                        alt={""}
+                        className={classNames(sty.img__kEnvc)}
+                        displayHeight={"auto" as const}
+                        displayMaxHeight={"none" as const}
+                        displayMaxWidth={
+                          hasVariant(globalVariants, "screen", "mobile")
+                            ? ("24px" as const)
+                            : ("100%" as const)
+                        }
+                        displayMinHeight={"0" as const}
+                        displayMinWidth={"0" as const}
+                        displayWidth={"auto" as const}
+                        loading={"lazy" as const}
+                        src={{
+                          src: "/plasmic/www_presell_ai/images/tickCirclesvg.svg",
+                          fullWidth: 150,
+                          fullHeight: 150,
+                          aspectRatio: 1
+                        }}
+                      />
+                    </div>
+
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__zBnO0)}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__mVlOu
+                        )}
+                      >
+                        <React.Fragment>
+                          <span
+                            className={
+                              "plasmic_default__all plasmic_default__span"
+                            }
+                            style={{ fontWeight: 700 }}
+                          >
+                            {"Step 1:"}
+                          </span>
+                          <React.Fragment>
+                            {" State Your Product"}
+                          </React.Fragment>
+                        </React.Fragment>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__boujq)}
+                  >
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__unHB)}
+                    >
+                      <p.PlasmicImg
+                        alt={""}
+                        className={classNames(sty.img__jY95I)}
+                        displayHeight={"auto" as const}
+                        displayMaxHeight={"none" as const}
+                        displayMaxWidth={
+                          hasVariant(globalVariants, "screen", "mobile")
+                            ? ("24px" as const)
+                            : ("100%" as const)
+                        }
+                        displayMinHeight={"0" as const}
+                        displayMinWidth={"0" as const}
+                        displayWidth={"auto" as const}
+                        loading={"lazy" as const}
+                        src={{
+                          src: "/plasmic/www_presell_ai/images/tickCirclesvg.svg",
+                          fullWidth: 150,
+                          fullHeight: 150,
+                          aspectRatio: 1
+                        }}
+                      />
+                    </div>
+
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__gaoZa)}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__ohdC8
+                        )}
+                      >
+                        <React.Fragment>
+                          <span
+                            className={
+                              "plasmic_default__all plasmic_default__span"
+                            }
+                            style={{ fontWeight: 700 }}
+                          >
+                            {"Step 2: "}
+                          </span>
+                          <React.Fragment>{"Generate Assets"}</React.Fragment>
+                        </React.Fragment>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__iVmEq)}
+                  >
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__dQlcm)}
+                    >
+                      <p.PlasmicImg
+                        alt={""}
+                        className={classNames(sty.img__frQ4G)}
+                        displayHeight={"auto" as const}
+                        displayMaxHeight={"none" as const}
+                        displayMaxWidth={
+                          hasVariant(globalVariants, "screen", "mobile")
+                            ? ("24px" as const)
+                            : ("100%" as const)
+                        }
+                        displayMinHeight={"0" as const}
+                        displayMinWidth={"0" as const}
+                        displayWidth={"auto" as const}
+                        loading={"lazy" as const}
+                        src={{
+                          src: "/plasmic/www_presell_ai/images/tickCirclesvg.svg",
+                          fullWidth: 150,
+                          fullHeight: 150,
+                          aspectRatio: 1
+                        }}
+                      />
+                    </div>
+
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__bgKw)}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__supmk
+                        )}
+                      >
+                        <React.Fragment>
+                          <span
+                            className={
+                              "plasmic_default__all plasmic_default__span"
+                            }
+                            style={{ fontWeight: 700 }}
+                          >
+                            {"Step 3: "}
+                          </span>
+                          <React.Fragment>
+                            {"Click To Activate Traffic"}
+                          </React.Fragment>
+                        </React.Fragment>
+                      </div>
+                    </div>
+                  </div>
+
+                  {true ? (
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__aLd9F)}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__fcdSu
+                        )}
+                      >
+                        <p.PlasmicImg
+                          alt={""}
+                          className={classNames(sty.img__bep7T)}
+                          displayHeight={"auto" as const}
+                          displayMaxHeight={"none" as const}
+                          displayMaxWidth={
+                            hasVariant(globalVariants, "screen", "mobile")
+                              ? ("24px" as const)
+                              : ("100%" as const)
+                          }
+                          displayMinHeight={"0" as const}
+                          displayMinWidth={"0" as const}
+                          displayWidth={"auto" as const}
+                          loading={"lazy" as const}
+                          src={{
+                            src: "/plasmic/www_presell_ai/images/tickCirclesvg.svg",
+                            fullWidth: 150,
+                            fullHeight: 150,
+                            aspectRatio: 1
+                          }}
+                        />
+                      </div>
+
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox___8P7Fh
+                        )}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text___41Cos
+                          )}
+                        >
+                          {"Lorem ipsum dolor sit amet"}
+                        </div>
+                      </div>
+                    </div>
+                  ) : null}
+                </div>
+
+                <div className={classNames(projectcss.all, sty.freeBox__bTwjO)}>
+                  {(
+                    hasVariant(globalVariants, "screen", "mobile") ? true : true
+                  ) ? (
+                    <p.PlasmicImg
+                      alt={""}
+                      className={classNames(sty.img__biDpq)}
+                      displayHeight={
+                        hasVariant(globalVariants, "screen", "mobile")
+                          ? ("100%" as const)
+                          : ("700px" as const)
+                      }
+                      displayMaxHeight={
+                        hasVariant(globalVariants, "screen", "mobile")
+                          ? ("174px" as const)
+                          : ("none" as const)
+                      }
+                      displayMaxWidth={
+                        hasVariant(globalVariants, "screen", "mobile")
+                          ? ("284px" as const)
+                          : ("100%" as const)
+                      }
+                      displayMinHeight={"0" as const}
+                      displayMinWidth={"0" as const}
+                      displayWidth={
+                        hasVariant(globalVariants, "screen", "mobile")
+                          ? ("100%" as const)
+                          : ("1440px" as const)
+                      }
+                      loading={"lazy" as const}
+                      src={{
+                        src: "/plasmic/www_presell_ai/images/frame10Png.png",
+                        fullWidth: 1070,
+                        fullHeight: 1402,
+                        aspectRatio: undefined
+                      }}
+                    />
+                  ) : null}
+                  {(
+                    hasVariant(globalVariants, "screen", "mobile") ? true : true
+                  ) ? (
+                    <p.PlasmicImg
+                      alt={""}
+                      className={classNames(sty.img___6Cbds)}
                       displayHeight={"auto" as const}
                       displayMaxHeight={"none" as const}
                       displayMaxWidth={"100%" as const}
@@ -2764,12 +3111,12 @@ function PlasmicHomepage__RenderFunc(props: {
                     data-plasmic-name={"textInput"}
                     data-plasmic-override={overrides.textInput}
                     className={classNames("__wab_instance", sty.textInput)}
-                    onChange={(...args) => {
+                    onChange={(...eventArgs) => {
                       p.generateStateOnChangeProp($state, [
                         "textInput",
 
                         "value"
-                      ])((e => e.target?.value).apply(null, args));
+                      ])((e => e.target?.value).apply(null, eventArgs));
                     }}
                     value={p.generateStateValueProp($state, [
                       "textInput",
